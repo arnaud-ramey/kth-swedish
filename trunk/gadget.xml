@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
 <ModulePrefs title="KTH Swedsih"
-height="600" width="200" scrolling="false"
-author="arnaud" author_email="arnaud@test.com"
+width="600"
+height="200"
+scrolling="false"
+author="arnaud"
+author_email="arnaud@test.com"
 description="KTH Swedsih"
 thumbnail= "http://www.uwe.ac.uk/bbs/research/mpc/mpc5/kth.jpg"
 />
