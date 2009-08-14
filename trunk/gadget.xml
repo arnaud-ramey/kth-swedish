@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml version="1.0" encoding="UTF-8"?>
 <Module>
-<ModulePrefs title="Java2D Graphic Acceleration Test"
+<ModulePrefs title="KTH Swedsih"
 height="480" width="640" scrolling="false"
 author="arnaud" author_email="arnaud@test.com"
 description="KTH Swedsih"
@@ -18,4 +18,25 @@ code:"Asker/AskerApplet.class",width:640, height:480},null,"1.6");
 </div>
 
 ]]></Content>
-</Module> 
+</Module> -->
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="Java2D Graphic Acceleration Test"
+height="480" width="640" scrolling="false"
+author="stevpan" author_email="stevpan@gmail.com"
+description="Java2D testing"
+thumbnail= "http://hosting.gmodules.com/ig/gadgets/file/101783247823300491382/thumb001.jpg"
+/>
+<Content type="html"><![CDATA[
+
+<script src="http://java.com/js/deployJava.js"></script>
+<div id='testdiv'>
+<script>
+var jarUrl = "http://swingvideo.googlecode.com/files/j2d.jar";
+deployJava.runApplet({archive:jarUrl,
+code:"j2dtest.class",width:640, height:480},null,"1.6");
+</script>
+</div>
+
+]]></Content>
+</Module>
