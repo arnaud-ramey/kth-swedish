@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="Java2D Graphic Acceleration Test"
+height="480" width="640" scrolling="false"
+author="arnaud" author_email="arnaud@test.com"
+description="KTH Swedsih"
+thumbnail= "http://www.uwe.ac.uk/bbs/research/mpc/mpc5/kth.jpg"
+/>
+<Content type="html"><![CDATA[
+
+<script src="http://java.com/js/deployJava.js"></script>
+<div id='testdiv'>
+<script>
+var jarUrl = "http://code.google.com/p/kth-swedish/source/browse/trunk/asker.jar";
+deployJava.runApplet({archive:jarUrl,
+code:"Asker/AskerApplet.class",width:640, height:480},null,"1.6");
+</script>
+</div>
+
+]]></Content>
+</Module> 
