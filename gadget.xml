@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
 <ModulePrefs title="KTH Swedsih"
-height="480" width="640" scrolling="false"
+height="600" width="200" scrolling="false"
 author="arnaud" author_email="arnaud@test.com"
 description="KTH Swedsih"
 thumbnail= "http://www.uwe.ac.uk/bbs/research/mpc/mpc5/kth.jpg"
@@ -13,7 +13,7 @@ thumbnail= "http://www.uwe.ac.uk/bbs/research/mpc/mpc5/kth.jpg"
     <script>
         var jarUrl = "http://kth-swedish.googlecode.com/svn/trunk/asker.jar";
         var codeName = "Asker/AskerApplet.class";
-        deployJava.runApplet({archive:jarUrl, code:codeName, width:640, height:480},null,"1.6");
+        deployJava.runApplet({archive:jarUrl, code:codeName, width:600, height:200},null,"1.6");
     </script>
 </div>
 
