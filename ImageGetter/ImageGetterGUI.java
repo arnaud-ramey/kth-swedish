@@ -6,6 +6,7 @@ import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
+import java.awt.image.ImagingOpException;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -133,10 +134,18 @@ public class ImageGetterGUI extends JPanel {
 	private void refreshWordImage() {
 		word_image_picture_field.setIcon(null);
 		if (currentWord().hasPicture()) {
-			BufferedImage i = Image_IO.getImageFromURL(currentWord()
-					.getPictureFilename(),
-					word_image_picture_field.getWidth() * 9 / 10,
-					word_image_picture_field.getHeight() * 9 / 10, true);
+			// compute the dimensions
+			String path = currentWord().getPictureFilename();
+			int w = word_image_picture_field.getWidth() * 9 / 10;
+			int h = word_image_picture_field.getHeight() * 9 / 10;
+			
+			// try to load the image
+			BufferedImage i = new BufferedImage(1,1,1);
+			try {
+				i = Image_IO.getImageFromURL(path, w, h, true);
+			} catch (ImagingOpException e) {}
+			
+			// refresh the fields
 			word_image_picture_field.setIcon(new ImageIcon(i));
 			word_image_filename_field.setText("Current picture : '"
 					+ currentWord().getPictureFilename() + "'");
@@ -287,7 +296,7 @@ public class ImageGetterGUI extends JPanel {
 		// // System.out.println(word_selector_pattern.getText());
 		// refreshComboBox();
 		// }
-		//		});
+		// });
 		word_selector_pattern.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				refreshComboBox();
@@ -376,9 +385,9 @@ public class ImageGetterGUI extends JPanel {
 	/**
 	 * create window
 	 */
-	public static void window() {
+	public static void window(String file) {
 		ListOfWords w = new ListOfWords();
-		w.readFile("/voc.kvtml");
+		w.readFile(file);
 
 		ImageGetterGUI gui = new ImageGetterGUI();
 		gui.setWords(w);
@@ -395,6 +404,7 @@ public class ImageGetterGUI extends JPanel {
 	 * tests
 	 */
 	public static void main(String[] args) {
-		ImageGetterGUI.window();
+		// ImageGetterGUI.window("/voc.kvtml");
+		ImageGetterGUI.window("/test.kvtml");
 	}
 }

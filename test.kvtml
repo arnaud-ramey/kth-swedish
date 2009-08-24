@@ -6,7 +6,7 @@
     <title>little test</title>
     <author>Arnaud</author>
     <license>Public Domain</license>
-    <date>2009-08-18</date>
+    <date>2009-08-24</date>
     <category>Languages</category>
   </information>
   <identifiers>
@@ -83,15 +83,17 @@
     <entry id="1" >
       <translation id="0" >
         <text>a car</text>
+        <image>Images/a_train.jpg</image>
       </translation>
       <translation id="1" >
         <text>en bil</text>
+        <image>Images/a_car.jpg</image>
       </translation>
     </entry>
     <entry id="2" >
       <translation id="0" >
         <text>a guy</text>
-        <image>Images/a_guy.jpg</image>
+        <image>Images/a_bear__-s.jpg</image>
       </translation>
       <translation id="1" >
         <text>en kille</text>
@@ -101,7 +103,7 @@
     <entry id="3" >
       <translation id="0" >
         <text>a house</text>
-        <image>Images/a_house.jpg</image>
+        <image>Images/a_wall,_s.jpg</image>
       </translation>
       <translation id="1" >
         <text>ett hus</text>
@@ -111,7 +113,7 @@
     <entry id="4" >
       <translation id="0" >
         <text>a student</text>
-        <image>Images/a_student.jpg</image>
+        <image>Images/a_head.jpg</image>
       </translation>
       <translation id="1" >
         <text>en studente</text>
@@ -121,7 +123,7 @@
     <entry id="5" >
       <translation id="0" >
         <text>eat</text>
-        <image>Images/eat.jpg</image>
+        <image>Images/food.jpg</image>
       </translation>
       <translation id="1" >
         <text>äter</text>
