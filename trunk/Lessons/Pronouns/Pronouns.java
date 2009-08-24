@@ -39,7 +39,13 @@ public class Pronouns {
 	 * @return
 	 */
 	static Question question_objective(int person) {
-		String radix = "Hon måsta se " + Question.UNKNOWN + " !";
+		int person_subject = person;
+		while (person_subject == person) 
+			person_subject = (int) (Math.random() * nominative.length);
+		String radix = nominative[person_subject];
+		radix = radix + " måsta se " + Question.UNKNOWN + " !";
+		radix = LibUtils.firstLetterUpperCase(radix);
+		
 		String question = radix.replace(Question.UNKNOWN, Question.UNKNOWN
 				+ " [" + nominative[person] + "]");
 		String answer = radix.replace(Question.UNKNOWN, LibUtils
@@ -55,7 +61,9 @@ public class Pronouns {
 	static Question question_reflexive(int person) {
 		String question = nominative[person] + " måste skynda "
 				+ Question.UNKNOWN + " nu.";
-		String answer = question.replace(Question.UNKNOWN, LibUtils.emphasize( reflexive[person] ) );
+		question = LibUtils.firstLetterUpperCase(question);
+		String answer = question.replace(Question.UNKNOWN, LibUtils
+				.emphasize(reflexive[person]));
 		return new Question("Reflexive pronouns", question, answer);
 	}
 
@@ -65,15 +73,25 @@ public class Pronouns {
 	 * @return
 	 */
 	static Question question_possessive(int person) {
-		String radix = "Det är " + Question.UNKNOWN + " bok, "
-				+ Question.UNKNOWN + " radergummi och " + Question.UNKNOWN
-				+ " pennor.";
-		String question = "[" + nominative[person] + "] " + radix;
-		String answer = radix.replaceFirst(Question.UNKNOWN,
-				LibUtils.emphasize( possessive_en[person] ) );
-		answer = answer.replaceFirst(Question.UNKNOWN, LibUtils.emphasize ( possessive_ett[person] ) );
-		answer = answer.replaceFirst(Question.UNKNOWN,
-				LibUtils.emphasize( possessive_plural[person] ) );
+		String radix = "", question = "";
+		if (Math.random() > .6) {
+			radix = "Det är xxx bok, xxx radergummi och xxx pennor.";
+			radix = radix.replaceAll("xxx", Question.UNKNOWN);
+			question = "[" + nominative[person] + "] " + radix;
+		} else {
+			radix = nominative[person] + " är glad därför att xxx bror, "
+					+ "xxx barn och xxx föräldrar ringde.";
+			radix = radix.replaceAll("xxx", Question.UNKNOWN);
+			radix = LibUtils.firstLetterUpperCase(radix);
+			question = radix;
+		}
+
+		String answer = radix.replaceFirst(Question.UNKNOWN, LibUtils
+				.emphasize(possessive_en[person]));
+		answer = answer.replaceFirst(Question.UNKNOWN, LibUtils
+				.emphasize(possessive_ett[person]));
+		answer = answer.replaceFirst(Question.UNKNOWN, LibUtils
+				.emphasize(possessive_plural[person]));
 		return new Question("Possessive pronouns", question, answer);
 	}
 
@@ -82,20 +100,34 @@ public class Pronouns {
 	 *            the number of the person
 	 * @return
 	 */
-	static Question question_possesive_reflexive(int person) {
-		String radix = nominative[person] + " leker med " + Question.UNKNOWN
-				+ " hund, kammar " + Question.UNKNOWN + " hår, och dansar med "
-				+ Question.UNKNOWN + " föräldrar.";
-		String question = radix;
-		String answer = radix.replaceFirst(Question.UNKNOWN,
-				LibUtils.emphasize( possessive_reflexive_en[person] ) );
-		answer = answer.replaceFirst(Question.UNKNOWN,
-				LibUtils.emphasize(possessive_reflexive_ett[person] ) );
-		answer = answer.replaceFirst(Question.UNKNOWN,
-				LibUtils.emphasize(possessive_reflexive_plural[person] ) );
+	static Question question_possessive_reflexive(int person) {
+		String radix = "", question = "";
+		if (Math.random() > .6) {
+			radix = nominative[person] + " leker med xxx hund, "
+					+ "kammar xxx hår, och dansar med xxx föräldrar.";
+			radix = radix.replaceAll("xxx", Question.UNKNOWN);
+		} else {
+			radix = nominative[person] + " är glad därför att "
+					+ nominative[person] + " har xxx dator, xxx äpple "
+					+ "och xxx lampor.";
+			radix = radix.replaceAll("xxx", Question.UNKNOWN);
+		}
+
+		radix = LibUtils.firstLetterUpperCase(radix);
+		question = radix;
+
+		String answer = radix.replaceFirst(Question.UNKNOWN, LibUtils
+				.emphasize(possessive_reflexive_en[person]));
+		answer = answer.replaceFirst(Question.UNKNOWN, LibUtils
+				.emphasize(possessive_reflexive_ett[person]));
+		answer = answer.replaceFirst(Question.UNKNOWN, LibUtils
+				.emphasize(possessive_reflexive_plural[person]));
 		return new Question("Poss. refl. pronouns", question, answer);
 	}
 
+	/**
+	 * @return a random {@link Question} among the above ones
+	 */
 	public static Question randomQuestion() {
 		int type_of_question = (int) (Math.random() * 4);
 		int person = (int) (Math.random() * nominative.length);
@@ -110,13 +142,17 @@ public class Pronouns {
 			if (type_of_question == 2)
 				return question_possessive(person);
 			if (type_of_question == 3)
-				return question_possesive_reflexive(person);
+				return question_possessive_reflexive(person);
 		}
 		return null;
 	}
 
 	public static void main(String[] args) {
 		// System.out.println(question_objective((int) (Math.random() * 9)));
+		// System.out.println(question_possessive((int) (Math.random() * 9)));
+		// System.out
+		// .println(question_possessive_reflexive((int) (Math.random() * 9)));
+
 		System.out.println(randomQuestion());
 	}
 }
