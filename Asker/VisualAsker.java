@@ -13,6 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import IO.LibUtils;
 import Lessons.VocParser.WordPicker;
 
 public class VisualAsker extends JPanel {
@@ -113,7 +114,7 @@ public class VisualAsker extends JPanel {
 			// delete the number at the beginnings
 			String text = lessons[i];
 			text = text.substring(text.indexOf(" ")+1);
-			text = text.substring(0, 1).toUpperCase() + text.substring(1);
+			text = LibUtils.firstLetterUpperCase( text );
 			// create the button
 			JButton butt = new JButton(text);
 			butt.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 12));
