@@ -51,9 +51,10 @@ public class HourTranslator {
 	public static Question randomQuestion() {
 		int hour = (int) (Math.random() * 24);
 		int minute = 5 * (int) (Math.random() * 12);
-		String q = "Vad är klockan ? " + hour + "." + (minute < 10 ? "0" : "")
-				+ minute + " !";
-		return new Question("Hours", q, translate(hour, minute));
+		String hour_string = hour + "." + (minute < 10 ? "0" : "") + minute;
+		String que = "Vad är klockan ? " + hour_string +" !";
+		String ans = hour_string + " : " + translate(hour, minute);
+		return new Question("Hours", que, ans);
 	}
 
 	public static void main(String[] args) {

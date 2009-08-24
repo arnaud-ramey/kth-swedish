@@ -7,7 +7,7 @@
     <author>Arnaud</author>
     <contact>arnaud.ramey@m4x.org</contact>
     <license>Public Domain</license>
-    <date>2009-08-20</date>
+    <date>2009-08-24</date>
     <category>Languages</category>
   </information>
   <identifiers>
@@ -23,6 +23,1346 @@
   <entries>
     <entry id="0" >
       <translation id="0" >
+        <text>Lasse always use to watch TV in the evenings.</text>
+      </translation>
+      <translation id="1" >
+        <text>Lasse brukar alltid tittar på TV på kvällarna.</text>
+      </translation>
+    </entry>
+    <entry id="1" >
+      <translation id="0" >
+        <text>Can you call me tonight ?</text>
+      </translation>
+      <translation id="1" >
+        <text>Kan du ringa mig ikväll ?</text>
+      </translation>
+    </entry>
+    <entry id="2" >
+      <translation id="0" >
+        <text>The bed will stand close to the window.</text>
+      </translation>
+      <translation id="1" >
+        <text>Sängen ska stå vid fönstret.</text>
+      </translation>
+    </entry>
+    <entry id="3" >
+      <translation id="0" >
+        <text>You must brush your teeth before you go to bed !</text>
+      </translation>
+      <translation id="1" >
+        <text>Du måste borsta tänderna innan du lägger dig !</text>
+      </translation>
+    </entry>
+    <entry id="4" >
+      <translation id="0" >
+        <text>Are you used to read newspaper in the morning ?</text>
+      </translation>
+      <translation id="1" >
+        <text>Brukar du läsa på tidningen på morgonen ?</text>
+      </translation>
+    </entry>
+    <entry id="5" >
+      <translation id="0" >
+        <text>Lisa doesn't want to stay in the flat.</text>
+      </translation>
+      <translation id="1" >
+        <text>Lisa vill inte sta i lagenheten.</text>
+      </translation>
+    </entry>
+    <entry id="6" >
+      <translation id="0" >
+        <text>Per will get up at 7 and then go to KTH.</text>
+      </translation>
+      <translation id="1" >
+        <text>Per ska stigga up klockan 7 och sedan gå till KTH.</text>
+      </translation>
+    </entry>
+    <entry id="7" >
+      <translation id="0" >
+        <text>Maria and Peter alwaus use to drink wine during the weekend.</text>
+      </translation>
+      <translation id="1" >
+        <text>Maria och Peter brukade alltig dricka vin på helgen.</text>
+      </translation>
+    </entry>
+    <entry id="8" >
+      <translation id="0" >
+        <text>Per needs to buy a new metro card.</text>
+      </translation>
+      <translation id="1" >
+        <text>Per behöver köpa ett nytt månadskart.</text>
+      </translation>
+    </entry>
+    <entry id="9" >
+      <translation id="0" >
+        <text>Gustav wanted to study history at the university last year.</text>
+      </translation>
+      <translation id="1" >
+        <text>Gustav ville studera historia på universitetet förra året.</text>
+      </translation>
+    </entry>
+    <entry id="10" >
+      <translation id="0" >
+        <text>You are not allowed to not smoke here.</text>
+      </translation>
+      <translation id="1" >
+        <text>Man ska inte röka här.</text>
+      </translation>
+    </entry>
+    <entry id="11" >
+      <translation id="0" >
+        <text>Shall I open the window ?</text>
+      </translation>
+      <translation id="1" >
+        <text>Ska jag öppna fönstret ?</text>
+      </translation>
+    </entry>
+    <entry id="12" >
+      <translation id="0" >
+        <text>I've read the book and I find it is good.</text>
+      </translation>
+      <translation id="1" >
+        <text>Jag har läst boken och jag tycker den är bra.</text>
+      </translation>
+    </entry>
+    <entry id="13" >
+      <translation id="0" >
+        <text>We like to travel.</text>
+      </translation>
+      <translation id="1" >
+        <text>Vi tycker om att resa.</text>
+      </translation>
+    </entry>
+    <entry id="14" >
+      <translation id="0" >
+        <text>- What did you think of the movie ? - It was great !</text>
+      </translation>
+      <translation id="1" >
+        <text>- Vad tyckte du om filmen ? - Den var jättebra !</text>
+      </translation>
+    </entry>
+    <entry id="15" >
+      <translation id="0" >
+        <text>She thinks to the problem the whole year.</text>
+      </translation>
+      <translation id="1" >
+        <text>Hon tänkte på problemet hela dagen.</text>
+      </translation>
+    </entry>
+    <entry id="16" >
+      <translation id="0" >
+        <text>Tomorrow I will go to the cinema.</text>
+      </translation>
+      <translation id="1" >
+        <text>I morgon tänker jag gå på bio.</text>
+      </translation>
+    </entry>
+    <entry id="17" >
+      <translation id="0" >
+        <text>I didn't see the program on TV, but I think it is good.</text>
+      </translation>
+      <translation id="1" >
+        <text>Jag har inte sett programmet på TV, men jag tror det är bra.</text>
+      </translation>
+    </entry>
+    <entry id="18" >
+      <translation id="0" >
+        <text>I believe in god.</text>
+      </translation>
+      <translation id="1" >
+        <text>Jag tror på Gud.</text>
+      </translation>
+    </entry>
+    <entry id="19" >
+      <translation id="0" >
+        <text>You shouldn't believe her. She always lies.</text>
+      </translation>
+      <translation id="1" >
+        <text>Du ska inte tro på henne. Hon ljuger jämt.</text>
+      </translation>
+    </entry>
+    <entry id="20" >
+      <translation id="0" >
+        <text>Can you speak english ? Yes, I can.</text>
+      </translation>
+      <translation id="1" >
+        <text>Kan du tala svenska ? Ja, det kan jag.</text>
+      </translation>
+    </entry>
+    <entry id="21" >
+      <translation id="0" >
+        <text>Do you want to go to the movies ? No I don't.</text>
+      </translation>
+      <translation id="1" >
+        <text>Vill du gå på bio ? Nej, det vill jag inte.</text>
+      </translation>
+    </entry>
+    <entry id="22" >
+      <translation id="0" >
+        <text>Do you have a brother ? No, I don't.</text>
+      </translation>
+      <translation id="1" >
+        <text>Har du en bror ? Nej, det har jag inte.</text>
+      </translation>
+    </entry>
+    <entry id="23" >
+      <translation id="0" >
+        <text>Don't you have any money ? Yes, we do.</text>
+      </translation>
+      <translation id="1" >
+        <text>Har ni inga pengar ? Jo, det har vi.</text>
+      </translation>
+    </entry>
+    <entry id="24" >
+      <translation id="0" >
+        <text>Is she sad ? Yes, she is.</text>
+      </translation>
+      <translation id="1" >
+        <text>Är hon ledsen ? Ja, det är hon.</text>
+      </translation>
+    </entry>
+    <entry id="25" >
+      <translation id="0" >
+        <text>Does Sven speak swedish ? No, he doesn't.</text>
+      </translation>
+      <translation id="1" >
+        <text>Talar Sven svenska ? Nej, det gör han inte.</text>
+      </translation>
+    </entry>
+    <entry id="26" >
+      <translation id="0" >
+        <text>Is your name Ollie ? Yes it is.</text>
+      </translation>
+      <translation id="1" >
+        <text>Heter du Ollie ? Ja, det gör jag.</text>
+      </translation>
+    </entry>
+    <entry id="27" >
+      <translation id="0" >
+        <text>Did they sleep bad last night ? No, they didn't.</text>
+      </translation>
+      <translation id="1" >
+        <text>Sov de dåligt i natt ? Nej, de gjorde de inte.</text>
+      </translation>
+    </entry>
+    <entry id="28" >
+      <translation id="0" >
+        <text>Will she go to Greece next sommer ? Yes she will.</text>
+      </translation>
+      <translation id="1" >
+        <text>Ska hon åka till Grekland i sommar ? Ja, det ska hon.</text>
+      </translation>
+    </entry>
+    <entry id="29" >
+      <translation id="0" >
+        <text>what ?</text>
+      </translation>
+      <translation id="1" >
+        <text>vad ?</text>
+        <grade>
+          <currentgrade>2</currentgrade>
+          <count>2</count>
+          <errorcount>0</errorcount>
+          <date>2009-08-05T20:56:08</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="30" >
+      <translation id="0" >
+        <text>where ?</text>
+      </translation>
+      <translation id="1" >
+        <text>var ?</text>
+        <grade>
+          <currentgrade>1</currentgrade>
+          <count>1</count>
+          <errorcount>0</errorcount>
+          <date>2009-08-05T20:43:41</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="31" >
+      <translation id="0" >
+        <text>when ?</text>
+      </translation>
+      <translation id="1" >
+        <text>när ?</text>
+        <grade>
+          <currentgrade>1</currentgrade>
+          <count>4</count>
+          <errorcount>2</errorcount>
+          <date>2009-08-05T20:55:50</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="32" >
+      <translation id="0" >
+        <text>who ?</text>
+      </translation>
+      <translation id="1" >
+        <text>vem ?</text>
+        <grade>
+          <currentgrade>0</currentgrade>
+          <count>3</count>
+          <errorcount>2</errorcount>
+          <date>2009-08-05T20:44:50</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="33" >
+      <translation id="0" >
+        <text>whose ?</text>
+      </translation>
+      <translation id="1" >
+        <text>vems ?</text>
+        <grade>
+          <currentgrade>2</currentgrade>
+          <count>2</count>
+          <errorcount>0</errorcount>
+          <date>2009-08-05T20:50:47</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="34" >
+      <translation id="0" >
+        <text>where from ?</text>
+      </translation>
+      <translation id="1" >
+        <text>varifrån ?</text>
+        <grade>
+          <currentgrade>2</currentgrade>
+          <count>4</count>
+          <errorcount>1</errorcount>
+          <date>2009-08-07T17:02:43</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="35" >
+      <translation id="0" >
+        <text>why ?</text>
+      </translation>
+      <translation id="1" >
+        <text>varför ?</text>
+        <grade>
+          <currentgrade>0</currentgrade>
+          <count>5</count>
+          <errorcount>4</errorcount>
+          <date>2009-08-05T20:49:36</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="36" >
+      <translation id="0" >
+        <text>how ?</text>
+      </translation>
+      <translation id="1" >
+        <text>hur ?</text>
+        <grade>
+          <currentgrade>2</currentgrade>
+          <count>2</count>
+          <errorcount>0</errorcount>
+          <date>2009-08-05T20:54:50</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="37" >
+      <translation id="0" >
+        <text>at what time ?</text>
+      </translation>
+      <translation id="1" >
+        <text>hur dags ?</text>
+        <grade>
+          <currentgrade>0</currentgrade>
+          <count>3</count>
+          <errorcount>2</errorcount>
+          <date>2009-08-05T20:49:26</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="38" >
+      <translation id="0" >
+        <text>how much ?</text>
+      </translation>
+      <translation id="1" >
+        <text>hur mycket ?</text>
+        <grade>
+          <currentgrade>3</currentgrade>
+          <count>3</count>
+          <errorcount>0</errorcount>
+          <date>2009-08-07T17:05:48</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="39" >
+      <translation id="0" >
+        <text>how many ?</text>
+      </translation>
+      <translation id="1" >
+        <text>hur många ?</text>
+        <grade>
+          <currentgrade>1</currentgrade>
+          <count>6</count>
+          <errorcount>4</errorcount>
+          <date>2009-08-05T20:55:56</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="40" >
+      <translation id="0" >
+        <text>for how long ?</text>
+      </translation>
+      <translation id="1" >
+        <text>hur länge ?</text>
+        <grade>
+          <currentgrade>1</currentgrade>
+          <count>4</count>
+          <errorcount>2</errorcount>
+          <date>2009-08-05T20:56:04</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="41" >
+      <translation id="0" >
+        <text>how far ?</text>
+      </translation>
+      <translation id="1" >
+        <text>hur långt ?</text>
+        <grade>
+          <currentgrade>0</currentgrade>
+          <count>3</count>
+          <errorcount>2</errorcount>
+          <date>2009-08-05T20:56:15</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="42" >
+      <translation id="0" >
+        <text>how often ?</text>
+      </translation>
+      <translation id="1" >
+        <text>hur ofta ?</text>
+        <grade>
+          <currentgrade>1</currentgrade>
+          <count>8</count>
+          <errorcount>6</errorcount>
+          <date>2009-08-05T20:51:04</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="43" >
+      <translation id="0" >
+        <text>where to ?</text>
+      </translation>
+      <translation id="1" >
+        <text>vart ?</text>
+      </translation>
+    </entry>
+    <entry id="44" >
+      <translation id="0" >
+        <text>nice (X2) / ugly</text>
+      </translation>
+      <translation id="1" >
+        <text>fin = vacker / ful</text>
+      </translation>
+    </entry>
+    <entry id="45" >
+      <translation id="0" >
+        <text>poor / rich</text>
+      </translation>
+      <translation id="1" >
+        <text>fattig / rik</text>
+      </translation>
+    </entry>
+    <entry id="46" >
+      <translation id="0" >
+        <text>happy (X2) / sad (X3)</text>
+      </translation>
+      <translation id="1" >
+        <text>glad = lycklig / ledsen = sorglig = olycklig</text>
+      </translation>
+    </entry>
+    <entry id="47" >
+      <translation id="0" >
+        <text>wrong / rgiht</text>
+      </translation>
+      <translation id="1" >
+        <text>fel / rätt</text>
+      </translation>
+    </entry>
+    <entry id="48" >
+      <translation id="0" >
+        <text>easy / hard = difficult</text>
+      </translation>
+      <translation id="1" >
+        <text>lätt / svår</text>
+      </translation>
+    </entry>
+    <entry id="49" >
+      <translation id="0" >
+        <text>good / bad</text>
+      </translation>
+      <translation id="1" >
+        <text>bra / dålig</text>
+      </translation>
+    </entry>
+    <entry id="50" >
+      <translation id="0" >
+        <text>long / short</text>
+      </translation>
+      <translation id="1" >
+        <text>lång / kort</text>
+      </translation>
+    </entry>
+    <entry id="51" >
+      <translation id="0" >
+        <text>small / big</text>
+      </translation>
+      <translation id="1" >
+        <text>liten / stor</text>
+      </translation>
+    </entry>
+    <entry id="52" >
+      <translation id="0" >
+        <text>dark / light</text>
+      </translation>
+      <translation id="1" >
+        <text>mörk / ljus</text>
+      </translation>
+    </entry>
+    <entry id="53" >
+      <translation id="0" >
+        <text>boring / funny</text>
+      </translation>
+      <translation id="1" >
+        <text>tråkig / rolig</text>
+      </translation>
+    </entry>
+    <entry id="54" >
+      <translation id="0" >
+        <text>strong / weak</text>
+      </translation>
+      <translation id="1" >
+        <text>stark / svag</text>
+      </translation>
+    </entry>
+    <entry id="55" >
+      <translation id="0" >
+        <text>similar / different</text>
+      </translation>
+      <translation id="1" >
+        <text>lika / olika</text>
+      </translation>
+    </entry>
+    <entry id="56" >
+      <translation id="0" >
+        <text>heavy / light</text>
+      </translation>
+      <translation id="1" >
+        <text>tung / lätt</text>
+      </translation>
+    </entry>
+    <entry id="57" >
+      <translation id="0" >
+        <text>wet / dry</text>
+      </translation>
+      <translation id="1" >
+        <text>våt / torr</text>
+      </translation>
+    </entry>
+    <entry id="58" >
+      <translation id="0" >
+        <text>dirty / clean</text>
+      </translation>
+      <translation id="1" >
+        <text>smutsig / ren</text>
+      </translation>
+    </entry>
+    <entry id="59" >
+      <translation id="0" >
+        <text>allowed / forbidden</text>
+      </translation>
+      <translation id="1" >
+        <text>tillåten / förbjuden</text>
+      </translation>
+    </entry>
+    <entry id="60" >
+      <translation id="0" >
+        <text>pleasant / unpleasant</text>
+      </translation>
+      <translation id="1" >
+        <text>trevlig / otrevlig</text>
+      </translation>
+    </entry>
+    <entry id="61" >
+      <translation id="0" >
+        <text>old / young</text>
+      </translation>
+      <translation id="1" >
+        <text>gammal / ung</text>
+      </translation>
+    </entry>
+    <entry id="62" >
+      <translation id="0" >
+        <text>soft / hard</text>
+      </translation>
+      <translation id="1" >
+        <text>mjuk / hård</text>
+      </translation>
+    </entry>
+    <entry id="63" >
+      <translation id="0" >
+        <text>calm / worried</text>
+      </translation>
+      <translation id="1" >
+        <text>lugn / orolig</text>
+      </translation>
+    </entry>
+    <entry id="64" >
+      <translation id="0" >
+        <text>healthy / sick</text>
+      </translation>
+      <translation id="1" >
+        <text>frisk / sjuk</text>
+      </translation>
+    </entry>
+    <entry id="65" >
+      <translation id="0" >
+        <text>wide / narrow</text>
+      </translation>
+      <translation id="1" >
+        <text>bred / smal</text>
+      </translation>
+    </entry>
+    <entry id="66" >
+      <translation id="0" >
+        <text>fast / slow</text>
+      </translation>
+      <translation id="1" >
+        <text>snagg / långsam</text>
+      </translation>
+    </entry>
+    <entry id="67" >
+      <translation id="0" >
+        <text>high / low</text>
+      </translation>
+      <translation id="1" >
+        <text>hög / låg</text>
+      </translation>
+    </entry>
+    <entry id="68" >
+      <translation id="0" >
+        <text>fat / slim</text>
+      </translation>
+      <translation id="1" >
+        <text>tjock / smal</text>
+      </translation>
+    </entry>
+    <entry id="69" >
+      <translation id="0" >
+        <text>hungry / replete</text>
+      </translation>
+      <translation id="1" >
+        <text>hungrig / mätt</text>
+      </translation>
+    </entry>
+    <entry id="70" >
+      <translation id="0" >
+        <text>cheap / expensive</text>
+      </translation>
+      <translation id="1" >
+        <text>billig / dyr</text>
+      </translation>
+    </entry>
+    <entry id="71" >
+      <translation id="0" >
+        <text>vigorous / tired</text>
+      </translation>
+      <translation id="1" >
+        <text>pigg / trött</text>
+      </translation>
+    </entry>
+    <entry id="72" >
+      <translation id="0" >
+        <text>used / new</text>
+      </translation>
+      <translation id="1" >
+        <text>gammal / ny</text>
+      </translation>
+    </entry>
+    <entry id="73" >
+      <translation id="0" >
+        <text>ancient / modern</text>
+      </translation>
+      <translation id="1" >
+        <text>forntid / modern</text>
+      </translation>
+    </entry>
+    <entry id="74" >
+      <translation id="0" >
+        <text>intact / broken</text>
+      </translation>
+      <translation id="1" >
+        <text>hel / sönder</text>
+      </translation>
+    </entry>
+    <entry id="75" >
+      <translation id="0" >
+        <text>empty / full</text>
+      </translation>
+      <translation id="1" >
+        <text>tom / full</text>
+      </translation>
+    </entry>
+    <entry id="76" >
+      <translation id="0" >
+        <text>free / occupied</text>
+      </translation>
+      <translation id="1" >
+        <text>ledig / upptagen</text>
+      </translation>
+    </entry>
+    <entry id="77" >
+      <translation id="0" >
+        <text>open / closed</text>
+      </translation>
+      <translation id="1" >
+        <text>öppen / stangd</text>
+      </translation>
+    </entry>
+    <entry id="78" >
+      <translation id="0" >
+        <text>a chair, -s</text>
+        <image>Images/a_chair,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en stol, -ar</text>
+        <image>Images/a_chair,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="79" >
+      <translation id="0" >
+        <text>a armchair, -s</text>
+        <image>Images/a_armchair.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en fåtölj, -er</text>
+        <image>Images/a_armchair.jpg</image>
+      </translation>
+    </entry>
+    <entry id="80" >
+      <translation id="0" >
+        <text>a sofa, -s</text>
+        <image>Images/a_sofa,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en soff /a, -or</text>
+        <image>Images/a_sofa,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="81" >
+      <translation id="0" >
+        <text>a desk, -s</text>
+        <image>Images/a_desk,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>ett skrivbord, =</text>
+        <image>Images/a_desk,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="82" >
+      <translation id="0" >
+        <text>a dining table, -s</text>
+        <image>Images/a_dining_table,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>ett mattbord, =</text>
+        <image>Images/a_dining_table,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="83" >
+      <translation id="0" >
+        <text>a coffee table</text>
+        <image>Images/a_coffee_table.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>ett soffboard, =</text>
+        <image>Images/a_coffee_table.jpg</image>
+      </translation>
+    </entry>
+    <entry id="84" >
+      <translation id="0" >
+        <text>a carpet, -s</text>
+        <image>Images/a_carpet,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en matt /a, -or</text>
+        <image>Images/a_carpet,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="85" >
+      <translation id="0" >
+        <text>a lamp, -s</text>
+        <image>Images/a_lamp,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en lamp /a, -or</text>
+        <image>Images/a_lamp,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="86" >
+      <translation id="0" >
+        <text>a bookshelf, -ves</text>
+        <image>Images/a_bookshelf,_-ves.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en bokhyll /a, -or</text>
+        <image>Images/a_bookshelf,_-ves.jpg</image>
+      </translation>
+    </entry>
+    <entry id="87" >
+      <translation id="0" >
+        <text>a bed, -s</text>
+        <image>Images/a_bed,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en säng, -ar</text>
+        <image>Images/a_bed,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="88" >
+      <translation id="0" >
+        <text>a sideboard, -s = a chest of drawers</text>
+        <image>Images/a_sideboard,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en byrå, -ar</text>
+        <image>Images/a_sideboard,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="89" >
+      <translation id="0" >
+        <text>an alarm clock, -s</text>
+        <image>Images/an_alarm_clock,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en väckarklock /a, -or</text>
+        <image>Images/an_alarm_clock,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="90" >
+      <translation id="0" >
+        <text>a window, -s</text>
+        <image>Images/a_window,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>ett fönster, =</text>
+        <image>Images/a_window,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="91" >
+      <translation id="0" >
+        <text>a garden, s</text>
+        <image>Images/a_garden,_s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>ett garden, -er</text>
+        <image>Images/a_garden,_s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="92" >
+      <translation id="0" >
+        <text>a mirror, -s</text>
+        <image>Images/a_mirror,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en speg /el, -lar</text>
+        <image>Images/a_mirror,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="93" >
+      <translation id="0" >
+        <text>a phone, -s</text>
+        <image>Images/a_phone,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en telefon, -er</text>
+        <image>Images/a_phone,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="94" >
+      <translation id="0" >
+        <text>a poster, -s</text>
+        <image>Images/a_poster,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en affisch, -er</text>
+        <image>Images/a_poster,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="95" >
+      <translation id="0" >
+        <text>a painting, -s</text>
+        <image>Images/a_painting,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en tavl /a, -or</text>
+        <image>Images/a_painting,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="96" >
+      <translation id="0" >
+        <text>a fridge, -s</text>
+        <image>Images/a_fridge,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en kylskåp, =</text>
+        <image>Images/a_fridge,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="97" >
+      <translation id="0" >
+        <text>a oven, -s</text>
+        <image>Images/a_oven,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en spis, -ar</text>
+        <image>Images/a_oven,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="98" >
+      <translation id="0" >
+        <text>a computer, -s</text>
+        <image>Images/a_computer,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en dator, -er</text>
+        <image>Images/a_computer,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="99" >
+      <translation id="0" >
+        <text>a shelf, -ves</text>
+        <image>Images/a_shelf,_-ves.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>ett skåp, =</text>
+        <image>Images/a_shelf,_-ves.jpg</image>
+      </translation>
+    </entry>
+    <entry id="100" >
+      <translation id="0" >
+        <text>a radio, -s</text>
+        <image>Images/a_radio,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en radio, radioapparater</text>
+        <image>Images/a_radio,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="101" >
+      <translation id="0" >
+        <text>a TV, -s</text>
+        <image>Images/a_TV,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en TV, TV-apparater</text>
+        <image>Images/a_TV,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="102" >
+      <translation id="0" >
+        <text>a living room, -s</text>
+        <image>Images/a_living_room,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>ett vardagsrum</text>
+        <image>Images/a_living_room,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="103" >
+      <translation id="0" >
+        <text>a door, -s</text>
+        <image>Images/a_door,_-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en dörr, -ar</text>
+        <image>Images/a_door,_-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="104" >
+      <translation id="0" >
+        <text>a sink</text>
+        <image>Images/a_sink.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en diskbänk, -ar</text>
+        <image>Images/a_sink.jpg</image>
+      </translation>
+    </entry>
+    <entry id="105" >
+      <translation id="0" >
+        <text>a wall, s</text>
+        <image>Images/a_wall,_s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en vägg, -ar</text>
+        <image>Images/a_wall,_s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="106" >
+      <translation id="0" >
+        <text>a ceiling</text>
+        <image>Images/a_ceiling.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>ett tak</text>
+        <image>Images/a_ceiling.jpg</image>
+      </translation>
+    </entry>
+    <entry id="107" >
+      <translation id="0" >
+        <text>a floor = a ground</text>
+        <image>Images/a_floor.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>ett golv</text>
+        <image>Images/a_floor.jpg</image>
+      </translation>
+    </entry>
+    <entry id="108" >
+      <translation id="0" >
+        <text>a grandfather</text>
+      </translation>
+      <translation id="1" >
+        <text>en farfar</text>
+      </translation>
+    </entry>
+    <entry id="109" >
+      <translation id="0" >
+        <text>a grandmother</text>
+      </translation>
+      <translation id="1" >
+        <text>en farmor</text>
+      </translation>
+    </entry>
+    <entry id="110" >
+      <translation id="0" >
+        <text>a father</text>
+      </translation>
+      <translation id="1" >
+        <text>en far</text>
+      </translation>
+    </entry>
+    <entry id="111" >
+      <translation id="0" >
+        <text>a mother</text>
+      </translation>
+      <translation id="1" >
+        <text>en mor</text>
+      </translation>
+    </entry>
+    <entry id="112" >
+      <translation id="0" >
+        <text>a sister</text>
+      </translation>
+      <translation id="1" >
+        <text>en syster</text>
+        <grade>
+          <currentgrade>1</currentgrade>
+          <count>1</count>
+          <errorcount>0</errorcount>
+          <date>2009-08-07T17:02:19</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="113" >
+      <translation id="0" >
+        <text>a brother-in-law</text>
+      </translation>
+      <translation id="1" >
+        <text>en svåger</text>
+      </translation>
+    </entry>
+    <entry id="114" >
+      <translation id="0" >
+        <text>a brother</text>
+      </translation>
+      <translation id="1" >
+        <text>en bror</text>
+      </translation>
+    </entry>
+    <entry id="115" >
+      <translation id="0" >
+        <text>a uncle</text>
+      </translation>
+      <translation id="1" >
+        <text>en farbror</text>
+      </translation>
+    </entry>
+    <entry id="116" >
+      <translation id="0" >
+        <text>a friend</text>
+      </translation>
+      <translation id="1" >
+        <text>en kompis</text>
+        <grade>
+          <currentgrade>1</currentgrade>
+          <count>2</count>
+          <errorcount>1</errorcount>
+          <date>2009-08-07T17:02:14</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="117" >
+      <translation id="0" >
+        <text>a cousin</text>
+      </translation>
+      <translation id="1" >
+        <text>en kusin</text>
+      </translation>
+    </entry>
+    <entry id="118" >
+      <translation id="0" >
+        <text>a daughter</text>
+      </translation>
+      <translation id="1" >
+        <text>en dotter</text>
+      </translation>
+    </entry>
+    <entry id="119" >
+      <translation id="0" >
+        <text>in the corner of X</text>
+      </translation>
+      <translation id="1" >
+        <text>i hörnet av X</text>
+      </translation>
+    </entry>
+    <entry id="120" >
+      <translation id="0" >
+        <text>in the middle of the ground</text>
+      </translation>
+      <translation id="1" >
+        <text>mitt på golvet</text>
+      </translation>
+    </entry>
+    <entry id="121" >
+      <translation id="0" >
+        <text>in front of X</text>
+      </translation>
+      <translation id="1" >
+        <text>framför X</text>
+      </translation>
+    </entry>
+    <entry id="122" >
+      <translation id="0" >
+        <text>behind X</text>
+      </translation>
+      <translation id="1" >
+        <text>bakom X</text>
+      </translation>
+    </entry>
+    <entry id="123" >
+      <translation id="0" >
+        <text>over X</text>
+      </translation>
+      <translation id="1" >
+        <text>över X</text>
+      </translation>
+    </entry>
+    <entry id="124" >
+      <translation id="0" >
+        <text>under the cars</text>
+      </translation>
+      <translation id="1" >
+        <text>under bilen</text>
+      </translation>
+    </entry>
+    <entry id="125" >
+      <translation id="0" >
+        <text>on the side of X</text>
+      </translation>
+      <translation id="1" >
+        <text>bredvid X</text>
+      </translation>
+    </entry>
+    <entry id="126" >
+      <translation id="0" >
+        <text>between X and Y / between them</text>
+      </translation>
+      <translation id="1" >
+        <text>mellan X och Y / mellan dem</text>
+      </translation>
+    </entry>
+    <entry id="127" >
+      <translation id="0" >
+        <text>among X</text>
+      </translation>
+      <translation id="1" >
+        <text>bland X</text>
+      </translation>
+    </entry>
+    <entry id="128" >
+      <translation id="0" >
+        <text>on the left / right (of X)</text>
+      </translation>
+      <translation id="1" >
+        <text>till vänster / höger (om X)</text>
+      </translation>
+    </entry>
+    <entry id="129" >
+      <translation id="0" >
+        <text>close to the see</text>
+      </translation>
+      <translation id="1" >
+        <text>vid havet</text>
+      </translation>
+    </entry>
+    <entry id="130" >
+      <translation id="0" >
+        <text>vid väggen</text>
+      </translation>
+      <translation id="1" >
+        <text>to the wall</text>
+      </translation>
+    </entry>
+    <entry id="131" >
+      <translation id="0" >
+        <text>I go out / I am out.</text>
+      </translation>
+      <translation id="1" >
+        <text>jag gå ut / jag är ute.</text>
+      </translation>
+    </entry>
+    <entry id="132" >
+      <translation id="0" >
+        <text>I go home / I am home.</text>
+      </translation>
+      <translation id="1" >
+        <text>jag gå hem / jag är hemma.</text>
+      </translation>
+    </entry>
+    <entry id="133" >
+      <translation id="0" >
+        <text>I go inside / I am inside.</text>
+      </translation>
+      <translation id="1" >
+        <text>jag gå in / jag är inne.</text>
+      </translation>
+    </entry>
+    <entry id="134" >
+      <translation id="0" >
+        <text>I go there / I am there.</text>
+      </translation>
+      <translation id="1" >
+        <text>jag gå dit / jag är dör.</text>
+      </translation>
+    </entry>
+    <entry id="135" >
+      <translation id="0" >
+        <text>I go up / I am up.</text>
+      </translation>
+      <translation id="1" >
+        <text>jag gå up / jag är uppe.</text>
+      </translation>
+    </entry>
+    <entry id="136" >
+      <translation id="0" >
+        <text>I go here / I am here.</text>
+      </translation>
+      <translation id="1" >
+        <text>jag gå fram / jag är framme.</text>
+      </translation>
+    </entry>
+    <entry id="137" >
+      <translation id="0" >
+        <text>I live at Norregatan 7 in Östersund.</text>
+      </translation>
+      <translation id="1" >
+        <text>Jag bor på Norregatan 7 i Östersund.</text>
+      </translation>
+    </entry>
+    <entry id="138" >
+      <translation id="0" >
+        <text>I return to Spain.</text>
+      </translation>
+      <translation id="1" >
+        <text>jag åker tillbaka till Spanien.</text>
+      </translation>
+    </entry>
+    <entry id="139" >
+      <translation id="0" >
+        <text>I'm at home.</text>
+      </translation>
+      <translation id="1" >
+        <text>jag är hemma.</text>
+      </translation>
+    </entry>
+    <entry id="140" >
+      <translation id="0" >
+        <text>to hang to the ceiling</text>
+      </translation>
+      <translation id="1" >
+        <text>hänga (jag hänger) i taket</text>
+      </translation>
+    </entry>
+    <entry id="141" >
+      <translation id="0" >
+        <text>to study at (in) the university (spatial position)</text>
+      </translation>
+      <translation id="1" >
+        <text>läsa vid universitetet</text>
+      </translation>
+    </entry>
+    <entry id="142" >
+      <translation id="0" >
+        <text>in the hospital</text>
+      </translation>
+      <translation id="1" >
+        <text>på sjukhus</text>
+      </translation>
+    </entry>
+    <entry id="143" >
+      <translation id="0" >
+        <text>at the doctor</text>
+      </translation>
+      <translation id="1" >
+        <text>hos doktorn</text>
+      </translation>
+    </entry>
+    <entry id="144" >
+      <translation id="0" >
+        <text>in the street</text>
+      </translation>
+      <translation id="1" >
+        <text>på gatan</text>
+      </translation>
+    </entry>
+    <entry id="145" >
+      <translation id="0" >
+        <text>to go to the church</text>
+      </translation>
+      <translation id="1" >
+        <text>gå i kirkan</text>
+      </translation>
+    </entry>
+    <entry id="146" >
+      <translation id="0" >
+        <text>on the walls</text>
+      </translation>
+      <translation id="1" >
+        <text>på väggarna</text>
+      </translation>
+    </entry>
+    <entry id="147" >
+      <translation id="0" >
+        <text>the home of my teacher</text>
+      </translation>
+      <translation id="1" >
+        <text>hemm hos min lärare</text>
+      </translation>
+    </entry>
+    <entry id="148" >
+      <translation id="0" >
         <text>A month, three months</text>
       </translation>
       <translation id="1" >
@@ -35,7 +1375,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="1" >
+    <entry id="149" >
       <translation id="0" >
         <text>A year</text>
       </translation>
@@ -49,15 +1389,15 @@
         </grade>
       </translation>
     </entry>
-    <entry id="2" >
+    <entry id="150" >
       <translation id="0" >
-        <text>a day</text>
+        <text>a day, -s</text>
       </translation>
       <translation id="1" >
-        <text>en dag</text>
+        <text>en dag, -ar</text>
       </translation>
     </entry>
-    <entry id="3" >
+    <entry id="151" >
       <translation id="0" >
         <text>a week</text>
       </translation>
@@ -71,15 +1411,15 @@
         </grade>
       </translation>
     </entry>
-    <entry id="4" >
+    <entry id="152" >
       <translation id="0" >
-        <text>the weekend</text>
+        <text>a weekend</text>
       </translation>
       <translation id="1" >
-        <text>helg</text>
+        <text>en helg</text>
       </translation>
     </entry>
-    <entry id="5" >
+    <entry id="153" >
       <translation id="0" >
         <text>a hour</text>
       </translation>
@@ -87,12 +1427,12 @@
         <text>en timme (ar)</text>
       </translation>
     </entry>
-    <entry id="6" >
+    <entry id="154" >
       <translation id="0" >
-        <text>a minute (s)</text>
+        <text>a minute, -s</text>
       </translation>
       <translation id="1" >
-        <text>en minut (er)</text>
+        <text>en minut, -er</text>
         <grade>
           <currentgrade>1</currentgrade>
           <count>1</count>
@@ -101,7 +1441,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="7" >
+    <entry id="155" >
       <translation id="0" >
         <text>a second</text>
       </translation>
@@ -115,7 +1455,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="8" >
+    <entry id="156" >
       <translation id="0" >
         <text>monday</text>
       </translation>
@@ -129,7 +1469,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="9" >
+    <entry id="157" >
       <translation id="0" >
         <text>tuesday</text>
       </translation>
@@ -137,7 +1477,7 @@
         <text>tisdag</text>
       </translation>
     </entry>
-    <entry id="10" >
+    <entry id="158" >
       <translation id="0" >
         <text>wednesday</text>
       </translation>
@@ -145,7 +1485,7 @@
         <text>onsdag</text>
       </translation>
     </entry>
-    <entry id="11" >
+    <entry id="159" >
       <translation id="0" >
         <text>thursday</text>
       </translation>
@@ -153,7 +1493,7 @@
         <text>torsdag</text>
       </translation>
     </entry>
-    <entry id="12" >
+    <entry id="160" >
       <translation id="0" >
         <text>friday</text>
       </translation>
@@ -167,7 +1507,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="13" >
+    <entry id="161" >
       <translation id="0" >
         <text>saturday</text>
       </translation>
@@ -175,7 +1515,7 @@
         <text>lördag</text>
       </translation>
     </entry>
-    <entry id="14" >
+    <entry id="162" >
       <translation id="0" >
         <text>sunday</text>
       </translation>
@@ -183,7 +1523,7 @@
         <text>söndag</text>
       </translation>
     </entry>
-    <entry id="15" >
+    <entry id="163" >
       <translation id="0" >
         <text>a season</text>
         <image>Images/a_season.jpg</image>
@@ -199,7 +1539,7 @@
         <image>Images/a_season.jpg</image>
       </translation>
     </entry>
-    <entry id="16" >
+    <entry id="164" >
       <translation id="0" >
         <text>a spring (season)</text>
       </translation>
@@ -207,7 +1547,7 @@
         <text>en vår</text>
       </translation>
     </entry>
-    <entry id="17" >
+    <entry id="165" >
       <translation id="0" >
         <text>a summer</text>
       </translation>
@@ -215,15 +1555,15 @@
         <text>en sommar</text>
       </translation>
     </entry>
-    <entry id="18" >
+    <entry id="166" >
       <translation id="0" >
         <text>a autumn</text>
       </translation>
       <translation id="1" >
-        <text>en töst</text>
+        <text>en höst</text>
       </translation>
     </entry>
-    <entry id="19" >
+    <entry id="167" >
       <translation id="0" >
         <text>a winter</text>
       </translation>
@@ -231,7 +1571,7 @@
         <text>en vinter</text>
       </translation>
     </entry>
-    <entry id="20" >
+    <entry id="168" >
       <translation id="0" >
         <text>a date</text>
       </translation>
@@ -239,7 +1579,7 @@
         <text>ett datur</text>
       </translation>
     </entry>
-    <entry id="21" >
+    <entry id="169" >
       <translation id="0" >
         <text>now</text>
       </translation>
@@ -247,7 +1587,7 @@
         <text>nu</text>
       </translation>
     </entry>
-    <entry id="22" >
+    <entry id="170" >
       <translation id="0" >
         <text>last week</text>
       </translation>
@@ -261,7 +1601,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="23" >
+    <entry id="171" >
       <translation id="0" >
         <text>this week</text>
       </translation>
@@ -269,7 +1609,7 @@
         <text>den här veckan</text>
       </translation>
     </entry>
-    <entry id="24" >
+    <entry id="172" >
       <translation id="0" >
         <text>tonight / in the evening</text>
       </translation>
@@ -283,7 +1623,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="25" >
+    <entry id="173" >
       <translation id="0" >
         <text>last summer</text>
       </translation>
@@ -297,7 +1637,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="26" >
+    <entry id="174" >
       <translation id="0" >
         <text>this morning</text>
       </translation>
@@ -305,7 +1645,7 @@
         <text>i morse</text>
       </translation>
     </entry>
-    <entry id="27" >
+    <entry id="175" >
       <translation id="0" >
         <text>it is the 13th february.</text>
       </translation>
@@ -313,7 +1653,7 @@
         <text>det är den trettonde februari.</text>
       </translation>
     </entry>
-    <entry id="28" >
+    <entry id="176" >
       <translation id="0" >
         <text>last year</text>
       </translation>
@@ -321,7 +1661,7 @@
         <text>i fjol</text>
       </translation>
     </entry>
-    <entry id="29" >
+    <entry id="177" >
       <translation id="0" >
         <text>always / never</text>
       </translation>
@@ -329,7 +1669,7 @@
         <text>alltyd / aldrig</text>
       </translation>
     </entry>
-    <entry id="30" >
+    <entry id="178" >
       <translation id="0" >
         <text>early</text>
       </translation>
@@ -337,7 +1677,7 @@
         <text>tidigt</text>
       </translation>
     </entry>
-    <entry id="31" >
+    <entry id="179" >
       <translation id="0" >
         <text>last Friday</text>
       </translation>
@@ -345,7 +1685,7 @@
         <text>i fredags</text>
       </translation>
     </entry>
-    <entry id="32" >
+    <entry id="180" >
       <translation id="0" >
         <text>last year</text>
       </translation>
@@ -353,7 +1693,7 @@
         <text>i fjol</text>
       </translation>
     </entry>
-    <entry id="33" >
+    <entry id="181" >
       <translation id="0" >
         <text>over the weekend</text>
       </translation>
@@ -361,7 +1701,7 @@
         <text>över helgen</text>
       </translation>
     </entry>
-    <entry id="34" >
+    <entry id="182" >
       <translation id="0" >
         <text>on friday = this coming friday</text>
       </translation>
@@ -369,7 +1709,7 @@
         <text>på fredag</text>
       </translation>
     </entry>
-    <entry id="35" >
+    <entry id="183" >
       <translation id="0" >
         <text>once a year</text>
       </translation>
@@ -377,7 +1717,7 @@
         <text>en gång om året</text>
       </translation>
     </entry>
-    <entry id="36" >
+    <entry id="184" >
       <translation id="0" >
         <text>every morning (X2)</text>
       </translation>
@@ -385,7 +1725,7 @@
         <text>på morgonen = varje morgon</text>
       </translation>
     </entry>
-    <entry id="37" >
+    <entry id="185" >
       <translation id="0" >
         <text>every friday</text>
       </translation>
@@ -393,7 +1733,7 @@
         <text>på fredagorna</text>
       </translation>
     </entry>
-    <entry id="38" >
+    <entry id="186" >
       <translation id="0" >
         <text>during one hour</text>
       </translation>
@@ -401,7 +1741,7 @@
         <text>under en timme</text>
       </translation>
     </entry>
-    <entry id="39" >
+    <entry id="187" >
       <translation id="0" >
         <text>every autumn</text>
       </translation>
@@ -409,7 +1749,7 @@
         <text>på hosten</text>
       </translation>
     </entry>
-    <entry id="40" >
+    <entry id="188" >
       <translation id="0" >
         <text>next autumn</text>
       </translation>
@@ -417,7 +1757,7 @@
         <text>nästa höst</text>
       </translation>
     </entry>
-    <entry id="41" >
+    <entry id="189" >
       <translation id="0" >
         <text>last autumn (X2)</text>
       </translation>
@@ -425,1103 +1765,69 @@
         <text>i hostas = förra hösten</text>
       </translation>
     </entry>
-    <entry id="42" >
+    <entry id="190" >
       <translation id="0" >
-        <text>nice (X2) / ugly</text>
+        <text>last night</text>
       </translation>
       <translation id="1" >
-        <text>fin = vacker / ful</text>
+        <text>i natt</text>
       </translation>
     </entry>
-    <entry id="43" >
+    <entry id="191" >
       <translation id="0" >
-        <text>poor / rich</text>
+        <text>every weekend</text>
       </translation>
       <translation id="1" >
-        <text>fattig / rik</text>
+        <text>på helgen</text>
       </translation>
     </entry>
-    <entry id="44" >
+    <entry id="192" >
       <translation id="0" >
-        <text>happy (X2) / sad (X3)</text>
+        <text>sometimes</text>
       </translation>
       <translation id="1" >
-        <text>glad = lycklig / ledsen = sorglig = olycklig</text>
+        <text>i bland</text>
       </translation>
     </entry>
-    <entry id="45" >
+    <entry id="193" >
       <translation id="0" >
-        <text>wrong / rgiht</text>
+        <text>this summer</text>
       </translation>
       <translation id="1" >
-        <text>fel / rätt</text>
+        <text>i sommer</text>
       </translation>
     </entry>
-    <entry id="46" >
+    <entry id="194" >
       <translation id="0" >
-        <text>easy / hard = difficult</text>
+        <text>have you ever done this ?</text>
       </translation>
       <translation id="1" >
-        <text>lätt / svår</text>
+        <text>har du någonsin gjort det ?</text>
       </translation>
     </entry>
-    <entry id="47" >
+    <entry id="195" >
       <translation id="0" >
-        <text>good / bad</text>
+        <text>I've never done this.</text>
       </translation>
       <translation id="1" >
-        <text>bra / dålig</text>
+        <text>det har jag adrig gjort.</text>
       </translation>
     </entry>
-    <entry id="48" >
+    <entry id="196" >
       <translation id="0" >
-        <text>long / short</text>
+        <text>before, I sleep.</text>
       </translation>
       <translation id="1" >
-        <text>lång / kort</text>
-      </translation>
-    </entry>
-    <entry id="49" >
-      <translation id="0" >
-        <text>small / big</text>
-      </translation>
-      <translation id="1" >
-        <text>liten / stor</text>
-      </translation>
-    </entry>
-    <entry id="50" >
-      <translation id="0" >
-        <text>dark / light</text>
-      </translation>
-      <translation id="1" >
-        <text>mörk / ljus</text>
-      </translation>
-    </entry>
-    <entry id="51" >
-      <translation id="0" >
-        <text>boring / funny</text>
-      </translation>
-      <translation id="1" >
-        <text>tråkig / rolig</text>
-      </translation>
-    </entry>
-    <entry id="52" >
-      <translation id="0" >
-        <text>strong / weak</text>
-      </translation>
-      <translation id="1" >
-        <text>stark / svag</text>
-      </translation>
-    </entry>
-    <entry id="53" >
-      <translation id="0" >
-        <text>similar / different</text>
-      </translation>
-      <translation id="1" >
-        <text>lika / olika</text>
-      </translation>
-    </entry>
-    <entry id="54" >
-      <translation id="0" >
-        <text>heavy / light</text>
-      </translation>
-      <translation id="1" >
-        <text>tung / lätt</text>
-      </translation>
-    </entry>
-    <entry id="55" >
-      <translation id="0" >
-        <text>wet / dry</text>
-      </translation>
-      <translation id="1" >
-        <text>våt / torr</text>
-      </translation>
-    </entry>
-    <entry id="56" >
-      <translation id="0" >
-        <text>dirty / clean</text>
-      </translation>
-      <translation id="1" >
-        <text>smutsig / ren</text>
-      </translation>
-    </entry>
-    <entry id="57" >
-      <translation id="0" >
-        <text>allowed / forbidden</text>
-      </translation>
-      <translation id="1" >
-        <text>tillåten / förbjuden</text>
-      </translation>
-    </entry>
-    <entry id="58" >
-      <translation id="0" >
-        <text>pleasant / unpleasant</text>
-      </translation>
-      <translation id="1" >
-        <text>trevlig / otrevlig</text>
-      </translation>
-    </entry>
-    <entry id="59" >
-      <translation id="0" >
-        <text>old / young</text>
-      </translation>
-      <translation id="1" >
-        <text>gammal / ung</text>
-      </translation>
-    </entry>
-    <entry id="60" >
-      <translation id="0" >
-        <text>soft / hard</text>
-      </translation>
-      <translation id="1" >
-        <text>mjuk / hård</text>
-      </translation>
-    </entry>
-    <entry id="61" >
-      <translation id="0" >
-        <text>calm / worried</text>
-      </translation>
-      <translation id="1" >
-        <text>lugn / orolig</text>
-      </translation>
-    </entry>
-    <entry id="62" >
-      <translation id="0" >
-        <text>healthy / sick</text>
-      </translation>
-      <translation id="1" >
-        <text>frisk / sjuk</text>
-      </translation>
-    </entry>
-    <entry id="63" >
-      <translation id="0" >
-        <text>wide / narrow</text>
-      </translation>
-      <translation id="1" >
-        <text>bred / smal</text>
-      </translation>
-    </entry>
-    <entry id="64" >
-      <translation id="0" >
-        <text>fast / slow</text>
-      </translation>
-      <translation id="1" >
-        <text>snagg / långsam</text>
-      </translation>
-    </entry>
-    <entry id="65" >
-      <translation id="0" >
-        <text>high / low</text>
-      </translation>
-      <translation id="1" >
-        <text>hög / låg</text>
-      </translation>
-    </entry>
-    <entry id="66" >
-      <translation id="0" >
-        <text>fat / slim</text>
-      </translation>
-      <translation id="1" >
-        <text>tjock / smal</text>
-      </translation>
-    </entry>
-    <entry id="67" >
-      <translation id="0" >
-        <text>hungry / replete</text>
-      </translation>
-      <translation id="1" >
-        <text>hungrig / mätt</text>
-      </translation>
-    </entry>
-    <entry id="68" >
-      <translation id="0" >
-        <text>cheap / expensive</text>
-      </translation>
-      <translation id="1" >
-        <text>billig / dyr</text>
-      </translation>
-    </entry>
-    <entry id="69" >
-      <translation id="0" >
-        <text>vigorous / tired</text>
-      </translation>
-      <translation id="1" >
-        <text>pigg / trött</text>
-      </translation>
-    </entry>
-    <entry id="70" >
-      <translation id="0" >
-        <text>used / new</text>
-      </translation>
-      <translation id="1" >
-        <text>gammal / ny</text>
-      </translation>
-    </entry>
-    <entry id="71" >
-      <translation id="0" >
-        <text>ancient / modern</text>
-      </translation>
-      <translation id="1" >
-        <text>forntid / modern</text>
-      </translation>
-    </entry>
-    <entry id="72" >
-      <translation id="0" >
-        <text>intact / broken</text>
-      </translation>
-      <translation id="1" >
-        <text>hel / sönder</text>
-      </translation>
-    </entry>
-    <entry id="73" >
-      <translation id="0" >
-        <text>empty / full</text>
-      </translation>
-      <translation id="1" >
-        <text>tom / full</text>
-      </translation>
-    </entry>
-    <entry id="74" >
-      <translation id="0" >
-        <text>free / occupied</text>
-      </translation>
-      <translation id="1" >
-        <text>ledig / upptagen</text>
-      </translation>
-    </entry>
-    <entry id="75" >
-      <translation id="0" >
-        <text>open / closed</text>
-      </translation>
-      <translation id="1" >
-        <text>öppen / stangd</text>
-      </translation>
-    </entry>
-    <entry id="76" >
-      <translation id="0" >
-        <text>a chair, -s</text>
-        <image>Images/a_chair,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en stol, -ar</text>
-        <image>Images/a_chair,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="77" >
-      <translation id="0" >
-        <text>a armchair</text>
-        <image>Images/a_armchair.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en fåtölj, -er</text>
-        <image>Images/a_armchair.jpg</image>
-      </translation>
-    </entry>
-    <entry id="78" >
-      <translation id="0" >
-        <text>a sofa, -s</text>
-        <image>Images/a_sofa,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en soff /a, -or</text>
-        <image>Images/a_sofa,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="79" >
-      <translation id="0" >
-        <text>a desk, -s</text>
-        <image>Images/a_desk,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>ett skrivbord, =</text>
-        <image>Images/a_desk,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="80" >
-      <translation id="0" >
-        <text>a dining table, -s</text>
-        <image>Images/a_dining_table,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>ett mattbord, =</text>
-        <image>Images/a_dining_table,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="81" >
-      <translation id="0" >
-        <text>a coffee table</text>
-        <image>Images/a_coffee_table.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>ett soffboard, =</text>
-        <image>Images/a_coffee_table.jpg</image>
-      </translation>
-    </entry>
-    <entry id="82" >
-      <translation id="0" >
-        <text>a carpet, -s</text>
-        <image>Images/a_carpet,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en matt /a, -or</text>
-        <image>Images/a_carpet,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="83" >
-      <translation id="0" >
-        <text>a lamp, -s</text>
-        <image>Images/a_lamp,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en lamp /a, -or</text>
-        <image>Images/a_lamp,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="84" >
-      <translation id="0" >
-        <text>a bookshelf, -ves</text>
-        <image>Images/a_bookshelf,_-ves.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en bokhyll /a, -or</text>
-        <image>Images/a_bookshelf,_-ves.jpg</image>
-      </translation>
-    </entry>
-    <entry id="85" >
-      <translation id="0" >
-        <text>a bed, -s</text>
-        <image>Images/a_bed,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en säng, -ar</text>
-        <image>Images/a_bed,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="86" >
-      <translation id="0" >
-        <text>a sideboard, -s</text>
-        <image>Images/a_sideboard,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en byrå, ar</text>
-        <image>Images/a_sideboard,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="87" >
-      <translation id="0" >
-        <text>an alarm clock, -s</text>
-        <image>Images/an_alarm_clock,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en väckarklock /a, -or</text>
-        <image>Images/an_alarm_clock,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="88" >
-      <translation id="0" >
-        <text>a window, -s</text>
-        <image>Images/a_window,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>ett fönster, =</text>
-        <image>Images/a_window,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="89" >
-      <translation id="0" >
-        <text>a garden, s</text>
-        <image>Images/a_garden,_s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>ett garden, -er</text>
-        <image>Images/a_garden,_s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="90" >
-      <translation id="0" >
-        <text>a mirror, -s</text>
-        <image>Images/a_mirror,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en speg /el, -lar</text>
-        <image>Images/a_mirror,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="91" >
-      <translation id="0" >
-        <text>a phone, -s</text>
-        <image>Images/a_phone,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en telefon, -er</text>
-        <image>Images/a_phone,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="92" >
-      <translation id="0" >
-        <text>a poster, -s</text>
-        <image>Images/a_poster,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en affisch, -er</text>
-        <image>Images/a_poster,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="93" >
-      <translation id="0" >
-        <text>a painting, -s</text>
-        <image>Images/a_painting,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en tavl /a, -or</text>
-        <image>Images/a_painting,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="94" >
-      <translation id="0" >
-        <text>a fridge, -s</text>
-        <image>Images/a_fridge,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en kylskåp, =</text>
-        <image>Images/a_fridge,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="95" >
-      <translation id="0" >
-        <text>a oven, -s</text>
-        <image>Images/a_oven,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en spis, -ar</text>
-        <image>Images/a_oven,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="96" >
-      <translation id="0" >
-        <text>a computer, -s</text>
-        <image>Images/a_computer,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en dator, -er</text>
-        <image>Images/a_computer,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="97" >
-      <translation id="0" >
-        <text>a shelf, -ves</text>
-        <image>Images/a_shelf,_-ves.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>ett skåp, =</text>
-        <image>Images/a_shelf,_-ves.jpg</image>
-      </translation>
-    </entry>
-    <entry id="98" >
-      <translation id="0" >
-        <text>a radio, -s</text>
-        <image>Images/a_radio,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en radio, radioapparater</text>
-        <image>Images/a_radio,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="99" >
-      <translation id="0" >
-        <text>a TV, -s</text>
-        <image>Images/a_TV,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en TV, TV-apparater</text>
-        <image>Images/a_TV,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="100" >
-      <translation id="0" >
-        <text>a living room, -s</text>
-        <image>Images/a_living_room,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>ett vardagsrum</text>
-        <image>Images/a_living_room,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="101" >
-      <translation id="0" >
-        <text>a door, -s</text>
-        <image>Images/a_door,_-s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en dörr, -ar</text>
-        <image>Images/a_door,_-s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="102" >
-      <translation id="0" >
-        <text>a sink</text>
-        <image>Images/a_sink.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en diskbänk, -ar</text>
-        <image>Images/a_sink.jpg</image>
-      </translation>
-    </entry>
-    <entry id="103" >
-      <translation id="0" >
-        <text>a wall, s</text>
-        <image>Images/a_wall,_s.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en vägg, -ar</text>
-        <image>Images/a_wall,_s.jpg</image>
-      </translation>
-    </entry>
-    <entry id="104" >
-      <translation id="0" >
-        <text>a ceiling</text>
-        <image>Images/a_ceiling.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>ett tak</text>
-        <image>Images/a_ceiling.jpg</image>
-      </translation>
-    </entry>
-    <entry id="105" >
-      <translation id="0" >
-        <text>a floor</text>
-        <image>Images/a_floor.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>ett golv</text>
-        <image>Images/a_floor.jpg</image>
-      </translation>
-    </entry>
-    <entry id="106" >
-      <translation id="0" >
-        <text>a grandfather</text>
-      </translation>
-      <translation id="1" >
-        <text>en farfar</text>
-      </translation>
-    </entry>
-    <entry id="107" >
-      <translation id="0" >
-        <text>a grandmother</text>
-      </translation>
-      <translation id="1" >
-        <text>en farmor</text>
-      </translation>
-    </entry>
-    <entry id="108" >
-      <translation id="0" >
-        <text>a father</text>
-      </translation>
-      <translation id="1" >
-        <text>en far</text>
-      </translation>
-    </entry>
-    <entry id="109" >
-      <translation id="0" >
-        <text>a mother</text>
-      </translation>
-      <translation id="1" >
-        <text>en mor</text>
-      </translation>
-    </entry>
-    <entry id="110" >
-      <translation id="0" >
-        <text>a sister</text>
-      </translation>
-      <translation id="1" >
-        <text>en syster</text>
+        <text>vorüt, jag sover;</text>
         <grade>
           <currentgrade>1</currentgrade>
-          <count>1</count>
-          <errorcount>0</errorcount>
-          <date>2009-08-07T17:02:19</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="111" >
-      <translation id="0" >
-        <text>a brother-in-law</text>
-      </translation>
-      <translation id="1" >
-        <text>en svåger</text>
-      </translation>
-    </entry>
-    <entry id="112" >
-      <translation id="0" >
-        <text>a brother</text>
-      </translation>
-      <translation id="1" >
-        <text>en bror</text>
-      </translation>
-    </entry>
-    <entry id="113" >
-      <translation id="0" >
-        <text>a uncle</text>
-      </translation>
-      <translation id="1" >
-        <text>en farbror</text>
-      </translation>
-    </entry>
-    <entry id="114" >
-      <translation id="0" >
-        <text>a friend</text>
-      </translation>
-      <translation id="1" >
-        <text>en kompis</text>
-        <grade>
-          <currentgrade>1</currentgrade>
-          <count>2</count>
-          <errorcount>1</errorcount>
-          <date>2009-08-07T17:02:14</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="115" >
-      <translation id="0" >
-        <text>a cousin</text>
-      </translation>
-      <translation id="1" >
-        <text>en kusin</text>
-      </translation>
-    </entry>
-    <entry id="116" >
-      <translation id="0" >
-        <text>a daughter</text>
-      </translation>
-      <translation id="1" >
-        <text>en dotter</text>
-      </translation>
-    </entry>
-    <entry id="117" >
-      <translation id="0" >
-        <text>what ?</text>
-      </translation>
-      <translation id="1" >
-        <text>vad ?</text>
-        <grade>
-          <currentgrade>2</currentgrade>
-          <count>2</count>
-          <errorcount>0</errorcount>
-          <date>2009-08-05T20:56:08</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="118" >
-      <translation id="0" >
-        <text>where ?</text>
-      </translation>
-      <translation id="1" >
-        <text>var ?</text>
-        <grade>
-          <currentgrade>1</currentgrade>
-          <count>1</count>
-          <errorcount>0</errorcount>
-          <date>2009-08-05T20:43:41</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="119" >
-      <translation id="0" >
-        <text>when ?</text>
-      </translation>
-      <translation id="1" >
-        <text>när ?</text>
-        <grade>
-          <currentgrade>1</currentgrade>
-          <count>4</count>
-          <errorcount>2</errorcount>
-          <date>2009-08-05T20:55:50</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="120" >
-      <translation id="0" >
-        <text>who ?</text>
-      </translation>
-      <translation id="1" >
-        <text>vem ?</text>
-        <grade>
-          <currentgrade>0</currentgrade>
           <count>3</count>
           <errorcount>2</errorcount>
-          <date>2009-08-05T20:44:50</date>
+          <date>2009-08-09T17:12:38</date>
         </grade>
       </translation>
     </entry>
-    <entry id="121" >
-      <translation id="0" >
-        <text>whose ?</text>
-      </translation>
-      <translation id="1" >
-        <text>vems ?</text>
-        <grade>
-          <currentgrade>2</currentgrade>
-          <count>2</count>
-          <errorcount>0</errorcount>
-          <date>2009-08-05T20:50:47</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="122" >
-      <translation id="0" >
-        <text>where from ?</text>
-      </translation>
-      <translation id="1" >
-        <text>varifrån ?</text>
-        <grade>
-          <currentgrade>2</currentgrade>
-          <count>4</count>
-          <errorcount>1</errorcount>
-          <date>2009-08-07T17:02:43</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="123" >
-      <translation id="0" >
-        <text>why ?</text>
-      </translation>
-      <translation id="1" >
-        <text>varför ?</text>
-        <grade>
-          <currentgrade>0</currentgrade>
-          <count>5</count>
-          <errorcount>4</errorcount>
-          <date>2009-08-05T20:49:36</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="124" >
-      <translation id="0" >
-        <text>how ?</text>
-      </translation>
-      <translation id="1" >
-        <text>hur ?</text>
-        <grade>
-          <currentgrade>2</currentgrade>
-          <count>2</count>
-          <errorcount>0</errorcount>
-          <date>2009-08-05T20:54:50</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="125" >
-      <translation id="0" >
-        <text>at what time ?</text>
-      </translation>
-      <translation id="1" >
-        <text>hur dags ?</text>
-        <grade>
-          <currentgrade>0</currentgrade>
-          <count>3</count>
-          <errorcount>2</errorcount>
-          <date>2009-08-05T20:49:26</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="126" >
-      <translation id="0" >
-        <text>how much ?</text>
-      </translation>
-      <translation id="1" >
-        <text>hur mycket ?</text>
-        <grade>
-          <currentgrade>3</currentgrade>
-          <count>3</count>
-          <errorcount>0</errorcount>
-          <date>2009-08-07T17:05:48</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="127" >
-      <translation id="0" >
-        <text>how many ?</text>
-      </translation>
-      <translation id="1" >
-        <text>hur många ?</text>
-        <grade>
-          <currentgrade>1</currentgrade>
-          <count>6</count>
-          <errorcount>4</errorcount>
-          <date>2009-08-05T20:55:56</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="128" >
-      <translation id="0" >
-        <text>for how long ?</text>
-      </translation>
-      <translation id="1" >
-        <text>hur länge ?</text>
-        <grade>
-          <currentgrade>1</currentgrade>
-          <count>4</count>
-          <errorcount>2</errorcount>
-          <date>2009-08-05T20:56:04</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="129" >
-      <translation id="0" >
-        <text>how far ?</text>
-      </translation>
-      <translation id="1" >
-        <text>hur långt ?</text>
-        <grade>
-          <currentgrade>0</currentgrade>
-          <count>3</count>
-          <errorcount>2</errorcount>
-          <date>2009-08-05T20:56:15</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="130" >
-      <translation id="0" >
-        <text>how often ?</text>
-      </translation>
-      <translation id="1" >
-        <text>hur ofta ?</text>
-        <grade>
-          <currentgrade>1</currentgrade>
-          <count>8</count>
-          <errorcount>6</errorcount>
-          <date>2009-08-05T20:51:04</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="131" >
-      <translation id="0" >
-        <text>where to ?</text>
-      </translation>
-      <translation id="1" >
-        <text>vart ?</text>
-      </translation>
-    </entry>
-    <entry id="132" >
-      <translation id="0" >
-        <text>I</text>
-      </translation>
-      <translation id="1" >
-        <text>jag</text>
-      </translation>
-    </entry>
-    <entry id="133" >
-      <translation id="0" >
-        <text>you (sing)</text>
-      </translation>
-      <translation id="1" >
-        <text>du</text>
-        <grade>
-          <currentgrade>1</currentgrade>
-          <count>1</count>
-          <errorcount>0</errorcount>
-          <date>2009-08-07T17:05:21</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="134" >
-      <translation id="0" >
-        <text>he</text>
-      </translation>
-      <translation id="1" >
-        <text>han</text>
-      </translation>
-    </entry>
-    <entry id="135" >
-      <translation id="0" >
-        <text>she</text>
-      </translation>
-      <translation id="1" >
-        <text>hon</text>
-      </translation>
-    </entry>
-    <entry id="136" >
-      <translation id="0" >
-        <text>it</text>
-      </translation>
-      <translation id="1" >
-        <text>den / det</text>
-      </translation>
-    </entry>
-    <entry id="137" >
-      <translation id="0" >
-        <text>we</text>
-      </translation>
-      <translation id="1" >
-        <text>vi</text>
-      </translation>
-    </entry>
-    <entry id="138" >
-      <translation id="0" >
-        <text>you (plural)</text>
-      </translation>
-      <translation id="1" >
-        <text>ni</text>
-      </translation>
-    </entry>
-    <entry id="139" >
-      <translation id="0" >
-        <text>My name is Arnaud.</text>
-      </translation>
-      <translation id="1" >
-        <text>jag heter Arnaud.</text>
-      </translation>
-    </entry>
-    <entry id="140" >
-      <translation id="0" >
-        <text>Whar is your name ?</text>
-      </translation>
-      <translation id="1" >
-        <text>Vad heter du ?</text>
-      </translation>
-    </entry>
-    <entry id="141" >
-      <translation id="0" >
-        <text>good</text>
-      </translation>
-      <translation id="1" >
-        <text>bra</text>
-      </translation>
-    </entry>
-    <entry id="142" >
-      <translation id="0" >
-        <text>not good</text>
-      </translation>
-      <translation id="1" >
-        <text>dåligt</text>
-      </translation>
-    </entry>
-    <entry id="143" >
-      <translation id="0" >
-        <text>a little of Swedish</text>
-      </translation>
-      <translation id="1" >
-        <text>lite Svenska</text>
-      </translation>
-    </entry>
-    <entry id="144" >
-      <translation id="0" >
-        <text>english</text>
-      </translation>
-      <translation id="1" >
-        <text>engelska</text>
-      </translation>
-    </entry>
-    <entry id="145" >
-      <translation id="0" >
-        <text>spanish</text>
-      </translation>
-      <translation id="1" >
-        <text>spanska</text>
-      </translation>
-    </entry>
-    <entry id="146" >
-      <translation id="0" >
-        <text>german</text>
-      </translation>
-      <translation id="1" >
-        <text>com</text>
-      </translation>
-    </entry>
-    <entry id="147" >
-      <translation id="0" >
-        <text>french</text>
-      </translation>
-      <translation id="1" >
-        <text>franska</text>
-      </translation>
-    </entry>
-    <entry id="148" >
-      <translation id="0" >
-        <text>italian</text>
-      </translation>
-      <translation id="1" >
-        <text>italienska</text>
-      </translation>
-    </entry>
-    <entry id="149" >
-      <translation id="0" >
-        <text>turkish</text>
-      </translation>
-      <translation id="1" >
-        <text>turkiska</text>
-        <grade>
-          <currentgrade>1</currentgrade>
-          <count>1</count>
-          <errorcount>0</errorcount>
-          <date>2009-08-07T17:05:44</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="150" >
-      <translation id="0" >
-        <text>from (X2)</text>
-      </translation>
-      <translation id="1" >
-        <text>från / ifrån</text>
-      </translation>
-    </entry>
-    <entry id="151" >
-      <translation id="0" >
-        <text>one question</text>
-      </translation>
-      <translation id="1" >
-        <text>en fråga</text>
-      </translation>
-    </entry>
-    <entry id="152" >
-      <translation id="0" >
-        <text>one answer</text>
-      </translation>
-      <translation id="1" >
-        <text>ett svar</text>
-      </translation>
-    </entry>
-    <entry id="153" >
-      <translation id="0" >
-        <text>much</text>
-      </translation>
-      <translation id="1" >
-        <text>mycket</text>
-      </translation>
-    </entry>
-    <entry id="154" >
-      <translation id="0" >
-        <text>how are you ? (X2)</text>
-      </translation>
-      <translation id="1" >
-        <text>hur mår du ? / hur är det ?</text>
-      </translation>
-    </entry>
-    <entry id="155" >
-      <translation id="0" >
-        <text>i'm fine, thanks !</text>
-      </translation>
-      <translation id="1" >
-        <text>jag mår bra, tack !</text>
-      </translation>
-    </entry>
-    <entry id="156" >
-      <translation id="0" >
-        <text>and you ?</text>
-      </translation>
-      <translation id="1" >
-        <text>och du ?</text>
-      </translation>
-    </entry>
-    <entry id="157" >
-      <translation id="0" >
-        <text>wassup ?</text>
-      </translation>
-      <translation id="1" >
-        <text>hur är läger ?</text>
-      </translation>
-    </entry>
-    <entry id="158" >
+    <entry id="197" >
       <translation id="0" >
         <text>today</text>
       </translation>
@@ -1535,15 +1841,283 @@
         </grade>
       </translation>
     </entry>
-    <entry id="159" >
+    <entry id="198" >
       <translation id="0" >
-        <text>homework</text>
+        <text>for the next two years</text>
+      </translation>
+      <translation id="1" >
+        <text>för två år framåt</text>
+      </translation>
+    </entry>
+    <entry id="199" >
+      <translation id="0" >
+        <text>he starts at 12:30.</text>
+      </translation>
+      <translation id="1" >
+        <text>han börjar klockan 12:30.</text>
+      </translation>
+    </entry>
+    <entry id="200" >
+      <translation id="0" >
+        <text>what time is it ? (X2)</text>
+      </translation>
+      <translation id="1" >
+        <text>vad / hur mycket är klockan ?</text>
+      </translation>
+    </entry>
+    <entry id="201" >
+      <translation id="0" >
+        <text>an afternoon, -s</text>
+      </translation>
+      <translation id="1" >
+        <text>en eftermiddag, -ar</text>
+      </translation>
+    </entry>
+    <entry id="202" >
+      <translation id="0" >
+        <text>in one year</text>
+      </translation>
+      <translation id="1" >
+        <text>om ett år</text>
+      </translation>
+    </entry>
+    <entry id="203" >
+      <translation id="0" >
+        <text>first, then</text>
+      </translation>
+      <translation id="1" >
+        <text>först ... sedan</text>
+      </translation>
+    </entry>
+    <entry id="204" >
+      <translation id="0" >
+        <text>I</text>
+      </translation>
+      <translation id="1" >
+        <text>jag</text>
+      </translation>
+    </entry>
+    <entry id="205" >
+      <translation id="0" >
+        <text>you (sing)</text>
+      </translation>
+      <translation id="1" >
+        <text>du</text>
+        <grade>
+          <currentgrade>1</currentgrade>
+          <count>1</count>
+          <errorcount>0</errorcount>
+          <date>2009-08-07T17:05:21</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="206" >
+      <translation id="0" >
+        <text>he</text>
+      </translation>
+      <translation id="1" >
+        <text>han</text>
+      </translation>
+    </entry>
+    <entry id="207" >
+      <translation id="0" >
+        <text>she</text>
+      </translation>
+      <translation id="1" >
+        <text>hon</text>
+      </translation>
+    </entry>
+    <entry id="208" >
+      <translation id="0" >
+        <text>it</text>
+      </translation>
+      <translation id="1" >
+        <text>den / det</text>
+      </translation>
+    </entry>
+    <entry id="209" >
+      <translation id="0" >
+        <text>we</text>
+      </translation>
+      <translation id="1" >
+        <text>vi</text>
+      </translation>
+    </entry>
+    <entry id="210" >
+      <translation id="0" >
+        <text>you (plural)</text>
+      </translation>
+      <translation id="1" >
+        <text>ni</text>
+      </translation>
+    </entry>
+    <entry id="211" >
+      <translation id="0" >
+        <text>My name is Arnaud.</text>
+      </translation>
+      <translation id="1" >
+        <text>jag heter Arnaud.</text>
+      </translation>
+    </entry>
+    <entry id="212" >
+      <translation id="0" >
+        <text>Whar is your name ?</text>
+      </translation>
+      <translation id="1" >
+        <text>Vad heter du ?</text>
+      </translation>
+    </entry>
+    <entry id="213" >
+      <translation id="0" >
+        <text>good</text>
+      </translation>
+      <translation id="1" >
+        <text>bra</text>
+      </translation>
+    </entry>
+    <entry id="214" >
+      <translation id="0" >
+        <text>not good</text>
+      </translation>
+      <translation id="1" >
+        <text>dåligt</text>
+      </translation>
+    </entry>
+    <entry id="215" >
+      <translation id="0" >
+        <text>a little of Swedish</text>
+      </translation>
+      <translation id="1" >
+        <text>lite Svenska</text>
+      </translation>
+    </entry>
+    <entry id="216" >
+      <translation id="0" >
+        <text>english</text>
+      </translation>
+      <translation id="1" >
+        <text>engelska</text>
+      </translation>
+    </entry>
+    <entry id="217" >
+      <translation id="0" >
+        <text>spanish</text>
+      </translation>
+      <translation id="1" >
+        <text>spanska</text>
+      </translation>
+    </entry>
+    <entry id="218" >
+      <translation id="0" >
+        <text>german</text>
+      </translation>
+      <translation id="1" >
+        <text>com</text>
+      </translation>
+    </entry>
+    <entry id="219" >
+      <translation id="0" >
+        <text>french</text>
+      </translation>
+      <translation id="1" >
+        <text>franska</text>
+      </translation>
+    </entry>
+    <entry id="220" >
+      <translation id="0" >
+        <text>italian</text>
+      </translation>
+      <translation id="1" >
+        <text>italienska</text>
+      </translation>
+    </entry>
+    <entry id="221" >
+      <translation id="0" >
+        <text>turkish</text>
+      </translation>
+      <translation id="1" >
+        <text>turkiska</text>
+        <grade>
+          <currentgrade>1</currentgrade>
+          <count>1</count>
+          <errorcount>0</errorcount>
+          <date>2009-08-07T17:05:44</date>
+        </grade>
+      </translation>
+    </entry>
+    <entry id="222" >
+      <translation id="0" >
+        <text>from (X2)</text>
+      </translation>
+      <translation id="1" >
+        <text>från / ifrån</text>
+      </translation>
+    </entry>
+    <entry id="223" >
+      <translation id="0" >
+        <text>one question</text>
+      </translation>
+      <translation id="1" >
+        <text>en fråga</text>
+      </translation>
+    </entry>
+    <entry id="224" >
+      <translation id="0" >
+        <text>one answer</text>
+      </translation>
+      <translation id="1" >
+        <text>ett svar</text>
+      </translation>
+    </entry>
+    <entry id="225" >
+      <translation id="0" >
+        <text>much</text>
+      </translation>
+      <translation id="1" >
+        <text>mycket</text>
+      </translation>
+    </entry>
+    <entry id="226" >
+      <translation id="0" >
+        <text>how are you ? (X2)</text>
+      </translation>
+      <translation id="1" >
+        <text>hur mår du ? / hur är det ?</text>
+      </translation>
+    </entry>
+    <entry id="227" >
+      <translation id="0" >
+        <text>i'm fine, thanks !</text>
+      </translation>
+      <translation id="1" >
+        <text>jag mår bra, tack !</text>
+      </translation>
+    </entry>
+    <entry id="228" >
+      <translation id="0" >
+        <text>and you ?</text>
+      </translation>
+      <translation id="1" >
+        <text>och du ?</text>
+      </translation>
+    </entry>
+    <entry id="229" >
+      <translation id="0" >
+        <text>wassup ?</text>
+      </translation>
+      <translation id="1" >
+        <text>hur är läger ?</text>
+      </translation>
+    </entry>
+    <entry id="230" >
+      <translation id="0" >
+        <text>a homework</text>
       </translation>
       <translation id="1" >
         <text>en läxa</text>
       </translation>
     </entry>
-    <entry id="160" >
+    <entry id="231" >
       <translation id="0" >
         <text>happy</text>
       </translation>
@@ -1551,7 +2125,7 @@
         <text>glad</text>
       </translation>
     </entry>
-    <entry id="161" >
+    <entry id="232" >
       <translation id="0" >
         <text>sad</text>
       </translation>
@@ -1559,7 +2133,7 @@
         <text>trött</text>
       </translation>
     </entry>
-    <entry id="162" >
+    <entry id="233" >
       <translation id="0" >
         <text>hungry</text>
       </translation>
@@ -1573,7 +2147,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="163" >
+    <entry id="234" >
       <translation id="0" >
         <text>sick</text>
       </translation>
@@ -1581,7 +2155,7 @@
         <text>sjuk [huk]</text>
       </translation>
     </entry>
-    <entry id="164" >
+    <entry id="235" >
       <translation id="0" >
         <text>I come from Sweden.</text>
       </translation>
@@ -1595,7 +2169,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="165" >
+    <entry id="236" >
       <translation id="0" >
         <text>where are you from ?</text>
       </translation>
@@ -1603,7 +2177,7 @@
         <text>var kommer du ifrån ?</text>
       </translation>
     </entry>
-    <entry id="166" >
+    <entry id="237" >
       <translation id="0" >
         <text>I live in Lund.</text>
       </translation>
@@ -1611,7 +2185,7 @@
         <text>jag bor i Lund.</text>
       </translation>
     </entry>
-    <entry id="167" >
+    <entry id="238" >
       <translation id="0" >
         <text>where do you live ?</text>
       </translation>
@@ -1619,7 +2193,7 @@
         <text>var bor du ?</text>
       </translation>
     </entry>
-    <entry id="168" >
+    <entry id="239" >
       <translation id="0" >
         <text>I speak swedish.</text>
       </translation>
@@ -1627,7 +2201,7 @@
         <text>jag talar svenska.</text>
       </translation>
     </entry>
-    <entry id="169" >
+    <entry id="240" >
       <translation id="0" >
         <text>what do you speak (for a language) ?</text>
       </translation>
@@ -1635,7 +2209,7 @@
         <text>vad talar du för språk ?</text>
       </translation>
     </entry>
-    <entry id="170" >
+    <entry id="241" >
       <translation id="0" >
         <text>I'm married.</text>
       </translation>
@@ -1643,7 +2217,7 @@
         <text>jag är gift [jift].</text>
       </translation>
     </entry>
-    <entry id="171" >
+    <entry id="242" >
       <translation id="0" >
         <text>are you also married ?</text>
       </translation>
@@ -1651,7 +2225,7 @@
         <text>är du också gift ?</text>
       </translation>
     </entry>
-    <entry id="172" >
+    <entry id="243" >
       <translation id="0" >
         <text>no, I'm not married</text>
       </translation>
@@ -1659,7 +2233,7 @@
         <text>nej, jag är inte gift</text>
       </translation>
     </entry>
-    <entry id="173" >
+    <entry id="244" >
       <translation id="0" >
         <text>I got three children.</text>
       </translation>
@@ -1667,7 +2241,7 @@
         <text>jag har 3 barn.</text>
       </translation>
     </entry>
-    <entry id="174" >
+    <entry id="245" >
       <translation id="0" >
         <text>have you also got children ?</text>
       </translation>
@@ -1675,7 +2249,7 @@
         <text>har du också barn ?</text>
       </translation>
     </entry>
-    <entry id="175" >
+    <entry id="246" >
       <translation id="0" >
         <text>I am 41 years old.</text>
       </translation>
@@ -1683,7 +2257,7 @@
         <text>jag är 41 år.</text>
       </translation>
     </entry>
-    <entry id="176" >
+    <entry id="247" >
       <translation id="0" >
         <text>how old are you ?</text>
       </translation>
@@ -1691,7 +2265,7 @@
         <text>hur gammal är du ?</text>
       </translation>
     </entry>
-    <entry id="177" >
+    <entry id="248" >
       <translation id="0" >
         <text>twenty two</text>
       </translation>
@@ -1699,15 +2273,15 @@
         <text>tjugotvå</text>
       </translation>
     </entry>
-    <entry id="178" >
+    <entry id="249" >
       <translation id="0" >
         <text>where are you from ?</text>
       </translation>
       <translation id="1" >
-        <text>varifrån kommer han ?</text>
+        <text>varifrån kommer du ?</text>
       </translation>
     </entry>
-    <entry id="179" >
+    <entry id="250" >
       <translation id="0" >
         <text>do you enjoy being in sweden ?</text>
       </translation>
@@ -1715,7 +2289,7 @@
         <text>trivs ni i Sverige ?</text>
       </translation>
     </entry>
-    <entry id="180" >
+    <entry id="251" >
       <translation id="0" >
         <text>a shop</text>
       </translation>
@@ -1723,7 +2297,7 @@
         <text>en affär</text>
       </translation>
     </entry>
-    <entry id="181" >
+    <entry id="252" >
       <translation id="0" >
         <text>a girl, three girls</text>
       </translation>
@@ -1731,7 +2305,7 @@
         <text>en flicka, tre flickor</text>
       </translation>
     </entry>
-    <entry id="182" >
+    <entry id="253" >
       <translation id="0" >
         <text>a boy, three boys</text>
       </translation>
@@ -1739,7 +2313,7 @@
         <text>en pojke, tre pojkar</text>
       </translation>
     </entry>
-    <entry id="183" >
+    <entry id="254" >
       <translation id="0" >
         <text>work as a secretary</text>
       </translation>
@@ -1747,7 +2321,7 @@
         <text>arbetar som sekretare</text>
       </translation>
     </entry>
-    <entry id="184" >
+    <entry id="255" >
       <translation id="0" >
         <text>her husband</text>
       </translation>
@@ -1755,7 +2329,7 @@
         <text>hennes man</text>
       </translation>
     </entry>
-    <entry id="185" >
+    <entry id="256" >
       <translation id="0" >
         <text>nice to meet you</text>
       </translation>
@@ -1763,7 +2337,7 @@
         <text>trevligt att träffas</text>
       </translation>
     </entry>
-    <entry id="186" >
+    <entry id="257" >
       <translation id="0" >
         <text>goodbye</text>
       </translation>
@@ -1771,7 +2345,7 @@
         <text>hej då</text>
       </translation>
     </entry>
-    <entry id="187" >
+    <entry id="258" >
       <translation id="0" >
         <text>useful</text>
       </translation>
@@ -1779,7 +2353,7 @@
         <text>användara</text>
       </translation>
     </entry>
-    <entry id="188" >
+    <entry id="259" >
       <translation id="0" >
         <text>a host student</text>
       </translation>
@@ -1787,7 +2361,7 @@
         <text>en gäststuderande [jest]</text>
       </translation>
     </entry>
-    <entry id="189" >
+    <entry id="260" >
       <translation id="0" >
         <text>a scientist</text>
         <image>Images/a_scientist.jpg</image>
@@ -1797,7 +2371,7 @@
         <image>Images/a_scientist.jpg</image>
       </translation>
     </entry>
-    <entry id="190" >
+    <entry id="261" >
       <translation id="0" >
         <text>when are you born ?</text>
       </translation>
@@ -1811,7 +2385,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="191" >
+    <entry id="262" >
       <translation id="0" >
         <text>the roof</text>
         <image>Images/the_roof.jpg</image>
@@ -1821,7 +2395,7 @@
         <image>Images/the_roof.jpg</image>
       </translation>
     </entry>
-    <entry id="192" >
+    <entry id="263" >
       <translation id="0" >
         <text>a page</text>
       </translation>
@@ -1829,15 +2403,7 @@
         <text>en sida</text>
       </translation>
     </entry>
-    <entry id="193" >
-      <translation id="0" >
-        <text>short</text>
-      </translation>
-      <translation id="1" >
-        <text>brev</text>
-      </translation>
-    </entry>
-    <entry id="194" >
+    <entry id="264" >
       <translation id="0" >
         <text>ground floor</text>
       </translation>
@@ -1851,7 +2417,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="195" >
+    <entry id="265" >
       <translation id="0" >
         <text>to</text>
       </translation>
@@ -1859,7 +2425,7 @@
         <text>till</text>
       </translation>
     </entry>
-    <entry id="196" >
+    <entry id="266" >
       <translation id="0" >
         <text>a boat</text>
         <image>Images/a_boat.jpg</image>
@@ -1869,7 +2435,7 @@
         <image>Images/a_boat.jpg</image>
       </translation>
     </entry>
-    <entry id="197" >
+    <entry id="267" >
       <translation id="0" >
         <text>a train</text>
         <image>Images/a_train.jpg</image>
@@ -1879,7 +2445,7 @@
         <image>Images/a_train.jpg</image>
       </translation>
     </entry>
-    <entry id="198" >
+    <entry id="268" >
       <translation id="0" >
         <text>who is it ?</text>
       </translation>
@@ -1887,7 +2453,7 @@
         <text>vem är det ?</text>
       </translation>
     </entry>
-    <entry id="199" >
+    <entry id="269" >
       <translation id="0" >
         <text>soon</text>
       </translation>
@@ -1895,7 +2461,7 @@
         <text>snart</text>
       </translation>
     </entry>
-    <entry id="200" >
+    <entry id="270" >
       <translation id="0" >
         <text>to listen</text>
       </translation>
@@ -1909,7 +2475,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="201" >
+    <entry id="271" >
       <translation id="0" >
         <text>to talk = speak (X2) with X about Y</text>
       </translation>
@@ -1923,7 +2489,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="202" >
+    <entry id="272" >
       <translation id="0" >
         <text>to play</text>
       </translation>
@@ -1937,7 +2503,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="203" >
+    <entry id="273" >
       <translation id="0" >
         <text>to read</text>
       </translation>
@@ -1951,7 +2517,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="204" >
+    <entry id="274" >
       <translation id="0" >
         <text>to drink</text>
       </translation>
@@ -1965,7 +2531,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="205" >
+    <entry id="275" >
       <translation id="0" >
         <text>to lay down</text>
       </translation>
@@ -1979,7 +2545,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="206" >
+    <entry id="276" >
       <translation id="0" >
         <text>to sit</text>
       </translation>
@@ -1993,7 +2559,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="207" >
+    <entry id="277" >
       <translation id="0" >
         <text>to stand up</text>
       </translation>
@@ -2007,7 +2573,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="208" >
+    <entry id="278" >
       <translation id="0" >
         <text>to sleep</text>
       </translation>
@@ -2021,7 +2587,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="209" >
+    <entry id="279" >
       <translation id="0" >
         <text>to eat</text>
       </translation>
@@ -2035,7 +2601,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="210" >
+    <entry id="280" >
       <translation id="0" >
         <text>to do</text>
       </translation>
@@ -2049,12 +2615,12 @@
         </grade>
       </translation>
     </entry>
-    <entry id="211" >
+    <entry id="281" >
       <translation id="0" >
-        <text>to work</text>
+        <text>to work (X2)</text>
       </translation>
       <translation id="1" >
-        <text>jobba = arbetta</text>
+        <text>jobba = arbeta</text>
         <grade>
           <currentgrade>7</currentgrade>
           <count>8</count>
@@ -2063,7 +2629,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="212" >
+    <entry id="282" >
       <translation id="0" >
         <text>to be</text>
       </translation>
@@ -2077,7 +2643,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="213" >
+    <entry id="283" >
       <translation id="0" >
         <text>to have</text>
       </translation>
@@ -2091,7 +2657,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="214" >
+    <entry id="284" >
       <translation id="0" >
         <text>to walk</text>
       </translation>
@@ -2105,21 +2671,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="215" >
-      <translation id="0" >
-        <text>to write</text>
-      </translation>
-      <translation id="1" >
-        <text>skriva</text>
-        <grade>
-          <currentgrade>7</currentgrade>
-          <count>10</count>
-          <errorcount>2</errorcount>
-          <date>2009-08-07T00:40:58</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="216" >
+    <entry id="285" >
       <translation id="0" >
         <text>to buy</text>
       </translation>
@@ -2133,7 +2685,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="217" >
+    <entry id="286" >
       <translation id="0" >
         <text>to sell</text>
       </translation>
@@ -2147,7 +2699,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="218" >
+    <entry id="287" >
       <translation id="0" >
         <text>to call by phone</text>
       </translation>
@@ -2161,7 +2713,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="219" >
+    <entry id="288" >
       <translation id="0" >
         <text>to talk = speak (X2) with X about Y</text>
       </translation>
@@ -2175,7 +2727,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="220" >
+    <entry id="289" >
       <translation id="0" >
         <text>to salute</text>
       </translation>
@@ -2189,7 +2741,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="221" >
+    <entry id="290" >
       <translation id="0" >
         <text>to play (ex: guitar)</text>
       </translation>
@@ -2203,7 +2755,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="222" >
+    <entry id="291" >
       <translation id="0" >
         <text>to smoke</text>
       </translation>
@@ -2217,7 +2769,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="223" >
+    <entry id="292" >
       <translation id="0" >
         <text>to cry</text>
       </translation>
@@ -2231,7 +2783,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="224" >
+    <entry id="293" >
       <translation id="0" >
         <text>to run</text>
       </translation>
@@ -2245,7 +2797,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="225" >
+    <entry id="294" >
       <translation id="0" >
         <text>to say</text>
       </translation>
@@ -2259,7 +2811,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="226" >
+    <entry id="295" >
       <translation id="0" >
         <text>to get</text>
       </translation>
@@ -2273,7 +2825,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="227" >
+    <entry id="296" >
       <translation id="0" >
         <text>to see</text>
       </translation>
@@ -2287,7 +2839,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="228" >
+    <entry id="297" >
       <translation id="0" >
         <text>to give</text>
       </translation>
@@ -2301,7 +2853,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="229" >
+    <entry id="298" >
       <translation id="0" >
         <text>to take</text>
       </translation>
@@ -2315,7 +2867,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="230" >
+    <entry id="299" >
       <translation id="0" >
         <text>to write</text>
       </translation>
@@ -2329,7 +2881,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="231" >
+    <entry id="300" >
       <translation id="0" >
         <text>to come</text>
       </translation>
@@ -2343,7 +2895,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="232" >
+    <entry id="301" >
       <translation id="0" >
         <text>to clean</text>
       </translation>
@@ -2351,7 +2903,7 @@
         <text>städa</text>
       </translation>
     </entry>
-    <entry id="233" >
+    <entry id="302" >
       <translation id="0" >
         <text>to dust</text>
       </translation>
@@ -2359,7 +2911,7 @@
         <text>damma</text>
       </translation>
     </entry>
-    <entry id="234" >
+    <entry id="303" >
       <translation id="0" >
         <text>to sweep</text>
       </translation>
@@ -2367,7 +2919,7 @@
         <text>sopa</text>
       </translation>
     </entry>
-    <entry id="235" >
+    <entry id="304" >
       <translation id="0" >
         <text>to dry</text>
       </translation>
@@ -2375,7 +2927,7 @@
         <text>torka</text>
       </translation>
     </entry>
-    <entry id="236" >
+    <entry id="305" >
       <translation id="0" >
         <text>to wash</text>
       </translation>
@@ -2383,7 +2935,7 @@
         <text>tvätta</text>
       </translation>
     </entry>
-    <entry id="237" >
+    <entry id="306" >
       <translation id="0" >
         <text>to make the bed</text>
       </translation>
@@ -2397,7 +2949,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="238" >
+    <entry id="307" >
       <translation id="0" >
         <text>to live</text>
       </translation>
@@ -2411,7 +2963,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="239" >
+    <entry id="308" >
       <translation id="0" >
         <text>to begin</text>
       </translation>
@@ -2419,7 +2971,7 @@
         <text>börga</text>
       </translation>
     </entry>
-    <entry id="240" >
+    <entry id="309" >
       <translation id="0" >
         <text>to dance</text>
       </translation>
@@ -2427,7 +2979,7 @@
         <text>dansa</text>
       </translation>
     </entry>
-    <entry id="241" >
+    <entry id="310" >
       <translation id="0" >
         <text>to swim</text>
       </translation>
@@ -2435,7 +2987,7 @@
         <text>simma</text>
       </translation>
     </entry>
-    <entry id="242" >
+    <entry id="311" >
       <translation id="0" >
         <text>to count</text>
       </translation>
@@ -2449,7 +3001,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="243" >
+    <entry id="312" >
       <translation id="0" >
         <text>to study</text>
       </translation>
@@ -2463,7 +3015,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="244" >
+    <entry id="313" >
       <translation id="0" >
         <text>to train</text>
       </translation>
@@ -2477,7 +3029,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="245" >
+    <entry id="314" >
       <translation id="0" >
         <text>to sew</text>
       </translation>
@@ -2491,7 +3043,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="246" >
+    <entry id="315" >
       <translation id="0" >
         <text>to wake up</text>
       </translation>
@@ -2505,7 +3057,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="247" >
+    <entry id="316" >
       <translation id="0" >
         <text>to wait</text>
       </translation>
@@ -2519,7 +3071,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="248" >
+    <entry id="317" >
       <translation id="0" >
         <text>to go / I go by car</text>
       </translation>
@@ -2533,7 +3085,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="249" >
+    <entry id="318" >
       <translation id="0" >
         <text>to dishwash</text>
       </translation>
@@ -2547,7 +3099,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="250" >
+    <entry id="319" >
       <translation id="0" >
         <text>to take a shower</text>
       </translation>
@@ -2561,15 +3113,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="251" >
-      <translation id="0" >
-        <text>to understand</text>
-      </translation>
-      <translation id="1" >
-        <text>förstå</text>
-      </translation>
-    </entry>
-    <entry id="252" >
+    <entry id="320" >
       <translation id="0" >
         <text>to shop</text>
       </translation>
@@ -2583,7 +3127,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="253" >
+    <entry id="321" >
       <translation id="0" >
         <text>to feel</text>
       </translation>
@@ -2597,7 +3141,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="254" >
+    <entry id="322" >
       <translation id="0" >
         <text>to meet</text>
       </translation>
@@ -2611,7 +3155,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="255" >
+    <entry id="323" >
       <translation id="0" >
         <text>to feel like home</text>
       </translation>
@@ -2625,7 +3169,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="256" >
+    <entry id="324" >
       <translation id="0" >
         <text>to bicycle</text>
       </translation>
@@ -2639,7 +3183,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="257" >
+    <entry id="325" >
       <translation id="0" >
         <text>to drive</text>
       </translation>
@@ -2653,7 +3197,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="258" >
+    <entry id="326" >
       <translation id="0" >
         <text>to cook</text>
       </translation>
@@ -2667,7 +3211,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="259" >
+    <entry id="327" >
       <translation id="0" >
         <text>to move</text>
       </translation>
@@ -2675,7 +3219,7 @@
         <text>flytta</text>
       </translation>
     </entry>
-    <entry id="260" >
+    <entry id="328" >
       <translation id="0" >
         <text>a flat</text>
       </translation>
@@ -2683,7 +3227,7 @@
         <text>en lägenhet</text>
       </translation>
     </entry>
-    <entry id="261" >
+    <entry id="329" >
       <translation id="0" >
         <text>when did you arrive in SW ?</text>
       </translation>
@@ -2691,7 +3235,7 @@
         <text>när kom du till Sverige ?</text>
       </translation>
     </entry>
-    <entry id="262" >
+    <entry id="330" >
       <translation id="0" >
         <text>a week ago</text>
       </translation>
@@ -2705,7 +3249,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="263" >
+    <entry id="331" >
       <translation id="0" >
         <text>food</text>
         <image>Images/food.jpg</image>
@@ -2715,7 +3259,7 @@
         <image>Images/food.jpg</image>
       </translation>
     </entry>
-    <entry id="264" >
+    <entry id="332" >
       <translation id="0" >
         <text>a sandwich</text>
         <image>Images/a_sandwich.jpg</image>
@@ -2725,7 +3269,7 @@
         <image>Images/a_sandwich.jpg</image>
       </translation>
     </entry>
-    <entry id="265" >
+    <entry id="333" >
       <translation id="0" >
         <text>free</text>
       </translation>
@@ -2739,7 +3283,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="266" >
+    <entry id="334" >
       <translation id="0" >
         <text>home</text>
       </translation>
@@ -2747,7 +3291,7 @@
         <text>hem</text>
       </translation>
     </entry>
-    <entry id="267" >
+    <entry id="335" >
       <translation id="0" >
         <text>to take a walk</text>
       </translation>
@@ -2755,7 +3299,7 @@
         <text>gå en promenad</text>
       </translation>
     </entry>
-    <entry id="268" >
+    <entry id="336" >
       <translation id="0" >
         <text>big</text>
       </translation>
@@ -2763,7 +3307,7 @@
         <text>stor</text>
       </translation>
     </entry>
-    <entry id="269" >
+    <entry id="337" >
       <translation id="0" >
         <text>white</text>
       </translation>
@@ -2771,7 +3315,7 @@
         <text>vit</text>
       </translation>
     </entry>
-    <entry id="270" >
+    <entry id="338" >
       <translation id="0" >
         <text>black</text>
       </translation>
@@ -2779,7 +3323,7 @@
         <text>svart</text>
       </translation>
     </entry>
-    <entry id="271" >
+    <entry id="339" >
       <translation id="0" >
         <text>every, each</text>
       </translation>
@@ -2787,12 +3331,12 @@
         <text>varje</text>
       </translation>
     </entry>
-    <entry id="272" >
+    <entry id="340" >
       <translation id="0" >
-        <text>friend(s)</text>
+        <text>a friend, -s</text>
       </translation>
       <translation id="1" >
-        <text>kompis(ar)</text>
+        <text>en kompis, -ar</text>
         <grade>
           <currentgrade>1</currentgrade>
           <count>1</count>
@@ -2801,7 +3345,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="273" >
+    <entry id="341" >
       <translation id="0" >
         <text>all the verbs</text>
       </translation>
@@ -2809,7 +3353,7 @@
         <text>alla verb</text>
       </translation>
     </entry>
-    <entry id="274" >
+    <entry id="342" >
       <translation id="0" >
         <text>what will you do tomorrow ?</text>
       </translation>
@@ -2817,7 +3361,7 @@
         <text>vad ska du göra i morgon ?</text>
       </translation>
     </entry>
-    <entry id="275" >
+    <entry id="343" >
       <translation id="0" >
         <text>what did you say ?</text>
       </translation>
@@ -2831,15 +3375,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="276" >
-      <translation id="0" >
-        <text>the ground</text>
-      </translation>
-      <translation id="1" >
-        <text>golv</text>
-      </translation>
-    </entry>
-    <entry id="277" >
+    <entry id="344" >
       <translation id="0" >
         <text>clothes</text>
       </translation>
@@ -2847,7 +3383,7 @@
         <text>kläder</text>
       </translation>
     </entry>
-    <entry id="278" >
+    <entry id="345" >
       <translation id="0" >
         <text>please</text>
       </translation>
@@ -2855,15 +3391,7 @@
         <text>varsågod</text>
       </translation>
     </entry>
-    <entry id="279" >
-      <translation id="0" >
-        <text>I live at Norregatan 7 in Östersund.</text>
-      </translation>
-      <translation id="1" >
-        <text>Jag bor på Norregatan 7 i Östersund.</text>
-      </translation>
-    </entry>
-    <entry id="280" >
+    <entry id="346" >
       <translation id="0" >
         <text>a school</text>
       </translation>
@@ -2871,7 +3399,7 @@
         <text>en skola</text>
       </translation>
     </entry>
-    <entry id="281" >
+    <entry id="347" >
       <translation id="0" >
         <text>or</text>
       </translation>
@@ -2879,7 +3407,7 @@
         <text>eller</text>
       </translation>
     </entry>
-    <entry id="282" >
+    <entry id="348" >
       <translation id="0" >
         <text>a studentroom</text>
       </translation>
@@ -2893,7 +3421,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="283" >
+    <entry id="349" >
       <translation id="0" >
         <text>six words</text>
       </translation>
@@ -2901,7 +3429,7 @@
         <text>sex ord</text>
       </translation>
     </entry>
-    <entry id="284" >
+    <entry id="350" >
       <translation id="0" >
         <text>be right/correct</text>
       </translation>
@@ -2909,7 +3437,7 @@
         <text>skämmar</text>
       </translation>
     </entry>
-    <entry id="285" >
+    <entry id="351" >
       <translation id="0" >
         <text>free</text>
       </translation>
@@ -2917,7 +3445,7 @@
         <text>gratis</text>
       </translation>
     </entry>
-    <entry id="286" >
+    <entry id="352" >
       <translation id="0" >
         <text>a hometown</text>
       </translation>
@@ -2925,7 +3453,7 @@
         <text>en hemstad</text>
       </translation>
     </entry>
-    <entry id="287" >
+    <entry id="353" >
       <translation id="0" >
         <text>what shall I do, choose ?</text>
       </translation>
@@ -2933,7 +3461,7 @@
         <text>vad ska jag ta ?</text>
       </translation>
     </entry>
-    <entry id="288" >
+    <entry id="354" >
       <translation id="0" >
         <text>no one knew</text>
       </translation>
@@ -2941,7 +3469,7 @@
         <text>ingen visste</text>
       </translation>
     </entry>
-    <entry id="289" >
+    <entry id="355" >
       <translation id="0" >
         <text>a hope</text>
       </translation>
@@ -2949,7 +3477,7 @@
         <text>ett hopp</text>
       </translation>
     </entry>
-    <entry id="290" >
+    <entry id="356" >
       <translation id="0" >
         <text>two weeks</text>
       </translation>
@@ -2957,7 +3485,7 @@
         <text>två veckors</text>
       </translation>
     </entry>
-    <entry id="291" >
+    <entry id="357" >
       <translation id="0" >
         <text>a town</text>
       </translation>
@@ -2965,7 +3493,7 @@
         <text>en stad</text>
       </translation>
     </entry>
-    <entry id="292" >
+    <entry id="358" >
       <translation id="0" >
         <text>far from</text>
       </translation>
@@ -2973,15 +3501,7 @@
         <text>lång från</text>
       </translation>
     </entry>
-    <entry id="293" >
-      <translation id="0" >
-        <text>for the next two years</text>
-      </translation>
-      <translation id="1" >
-        <text>för två år framåt</text>
-      </translation>
-    </entry>
-    <entry id="294" >
+    <entry id="359" >
       <translation id="0" >
         <text>to travel light</text>
       </translation>
@@ -2989,7 +3509,7 @@
         <text>resa med lite baggage</text>
       </translation>
     </entry>
-    <entry id="295" >
+    <entry id="360" >
       <translation id="0" >
         <text>other students</text>
       </translation>
@@ -2997,7 +3517,7 @@
         <text>övrig studeranden</text>
       </translation>
     </entry>
-    <entry id="296" >
+    <entry id="361" >
       <translation id="0" >
         <text>the ball that I look at</text>
       </translation>
@@ -3005,7 +3525,7 @@
         <text>ballen som jag tittar på</text>
       </translation>
     </entry>
-    <entry id="297" >
+    <entry id="362" >
       <translation id="0" >
         <text>to hitchhike</text>
       </translation>
@@ -3013,7 +3533,7 @@
         <text>lifta</text>
       </translation>
     </entry>
-    <entry id="298" >
+    <entry id="363" >
       <translation id="0" >
         <text>to ride horses</text>
       </translation>
@@ -3021,7 +3541,7 @@
         <text>rida häst</text>
       </translation>
     </entry>
-    <entry id="299" >
+    <entry id="364" >
       <translation id="0" >
         <text>hela dagen</text>
       </translation>
@@ -3029,7 +3549,7 @@
         <text>the whole day</text>
       </translation>
     </entry>
-    <entry id="300" >
+    <entry id="365" >
       <translation id="0" >
         <text>this book</text>
       </translation>
@@ -3037,7 +3557,7 @@
         <text>den här boken</text>
       </translation>
     </entry>
-    <entry id="301" >
+    <entry id="366" >
       <translation id="0" >
         <text>think about consequences !</text>
       </translation>
@@ -3045,7 +3565,7 @@
         <text>tänka på konsekvensema !</text>
       </translation>
     </entry>
-    <entry id="302" >
+    <entry id="367" >
       <translation id="0" >
         <text>to try to sell</text>
       </translation>
@@ -3053,7 +3573,7 @@
         <text>tänka sälja</text>
       </translation>
     </entry>
-    <entry id="303" >
+    <entry id="368" >
       <translation id="0" >
         <text>a teacher who is named X</text>
       </translation>
@@ -3061,7 +3581,7 @@
         <text>en lärare som heter X</text>
       </translation>
     </entry>
-    <entry id="304" >
+    <entry id="369" >
       <translation id="0" >
         <text>a human being, -s</text>
       </translation>
@@ -3069,7 +3589,7 @@
         <text>en människa, -or</text>
       </translation>
     </entry>
-    <entry id="305" >
+    <entry id="370" >
       <translation id="0" >
         <text>terrific</text>
       </translation>
@@ -3077,7 +3597,7 @@
         <text>jättefin</text>
       </translation>
     </entry>
-    <entry id="306" >
+    <entry id="371" >
       <translation id="0" >
         <text>to follow</text>
       </translation>
@@ -3085,7 +3605,7 @@
         <text>följa</text>
       </translation>
     </entry>
-    <entry id="307" >
+    <entry id="372" >
       <translation id="0" >
         <text>unfortunately</text>
       </translation>
@@ -3093,7 +3613,7 @@
         <text>tyvär</text>
       </translation>
     </entry>
-    <entry id="308" >
+    <entry id="373" >
       <translation id="0" >
         <text>it's raining</text>
       </translation>
@@ -3101,7 +3621,7 @@
         <text>det regnar</text>
       </translation>
     </entry>
-    <entry id="309" >
+    <entry id="374" >
       <translation id="0" >
         <text>small</text>
       </translation>
@@ -3109,7 +3629,7 @@
         <text>liten</text>
       </translation>
     </entry>
-    <entry id="310" >
+    <entry id="375" >
       <translation id="0" >
         <text>expensive</text>
       </translation>
@@ -3117,7 +3637,7 @@
         <text>dyr</text>
       </translation>
     </entry>
-    <entry id="311" >
+    <entry id="376" >
       <translation id="0" >
         <text>computer science</text>
       </translation>
@@ -3125,7 +3645,7 @@
         <text>datavetenskap</text>
       </translation>
     </entry>
-    <entry id="312" >
+    <entry id="377" >
       <translation id="0" >
         <text>to laugh</text>
       </translation>
@@ -3133,7 +3653,7 @@
         <text>skratta</text>
       </translation>
     </entry>
-    <entry id="313" >
+    <entry id="378" >
       <translation id="0" >
         <text>a backpack</text>
         <image>Images/a_backpack.jpg</image>
@@ -3143,7 +3663,7 @@
         <image>Images/a_backpack.jpg</image>
       </translation>
     </entry>
-    <entry id="314" >
+    <entry id="379" >
       <translation id="0" >
         <text>a postcard</text>
         <image>Images/a_postcard.jpg</image>
@@ -3153,7 +3673,7 @@
         <image>Images/a_postcard.jpg</image>
       </translation>
     </entry>
-    <entry id="315" >
+    <entry id="380" >
       <translation id="0" >
         <text>enough is enough</text>
       </translation>
@@ -3161,7 +3681,7 @@
         <text>glassen är slut</text>
       </translation>
     </entry>
-    <entry id="316" >
+    <entry id="381" >
       <translation id="0" >
         <text>busy</text>
       </translation>
@@ -3169,7 +3689,7 @@
         <text>upptagen</text>
       </translation>
     </entry>
-    <entry id="317" >
+    <entry id="382" >
       <translation id="0" >
         <text>which day ?</text>
       </translation>
@@ -3183,7 +3703,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="318" >
+    <entry id="383" >
       <translation id="0" >
         <text>which year ?</text>
       </translation>
@@ -3197,7 +3717,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="319" >
+    <entry id="384" >
       <translation id="0" >
         <text>(a) time</text>
       </translation>
@@ -3211,7 +3731,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="320" >
+    <entry id="385" >
       <translation id="0" >
         <text>I don't know.</text>
       </translation>
@@ -3225,12 +3745,12 @@
         </grade>
       </translation>
     </entry>
-    <entry id="321" >
+    <entry id="386" >
       <translation id="0" >
-        <text>profession</text>
+        <text>a profession, -s</text>
       </translation>
       <translation id="1" >
-        <text>yrke</text>
+        <text>ett yrke, -n</text>
         <grade>
           <currentgrade>1</currentgrade>
           <count>4</count>
@@ -3239,7 +3759,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="322" >
+    <entry id="387" >
       <translation id="0" >
         <text>in the University</text>
       </translation>
@@ -3253,7 +3773,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="323" >
+    <entry id="388" >
       <translation id="0" >
         <text>after the summer</text>
       </translation>
@@ -3267,7 +3787,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="324" >
+    <entry id="389" >
       <translation id="0" >
         <text>a boy</text>
       </translation>
@@ -3281,7 +3801,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="325" >
+    <entry id="390" >
       <translation id="0" >
         <text>a girl</text>
       </translation>
@@ -3295,7 +3815,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="326" >
+    <entry id="391" >
       <translation id="0" >
         <text>relatives</text>
       </translation>
@@ -3309,7 +3829,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="327" >
+    <entry id="392" >
       <translation id="0" >
         <text>a letter (mail)</text>
         <image>Images/a_letter_(mail).jpg</image>
@@ -3325,7 +3845,7 @@
         <image>Images/a_letter_(mail).jpg</image>
       </translation>
     </entry>
-    <entry id="328" >
+    <entry id="393" >
       <translation id="0" >
         <text>engaged</text>
       </translation>
@@ -3339,7 +3859,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="329" >
+    <entry id="394" >
       <translation id="0" >
         <text>before Summer</text>
       </translation>
@@ -3353,7 +3873,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="330" >
+    <entry id="395" >
       <translation id="0" >
         <text>after Summer</text>
       </translation>
@@ -3367,12 +3887,12 @@
         </grade>
       </translation>
     </entry>
-    <entry id="331" >
+    <entry id="396" >
       <translation id="0" >
         <text>what do you like to do ?</text>
       </translation>
       <translation id="1" >
-        <text>vad tycker dy om att göra ?</text>
+        <text>vad tycker du om att göra ?</text>
         <grade>
           <currentgrade>0</currentgrade>
           <count>3</count>
@@ -3381,21 +3901,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="332" >
-      <translation id="0" >
-        <text>before, I sleep</text>
-      </translation>
-      <translation id="1" >
-        <text>vorüt, jag sover</text>
-        <grade>
-          <currentgrade>1</currentgrade>
-          <count>3</count>
-          <errorcount>2</errorcount>
-          <date>2009-08-09T17:12:38</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="333" >
+    <entry id="397" >
       <translation id="0" >
         <text>nobody</text>
       </translation>
@@ -3409,7 +3915,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="334" >
+    <entry id="398" >
       <translation id="0" >
         <text>only</text>
       </translation>
@@ -3417,7 +3923,7 @@
         <text>bara</text>
       </translation>
     </entry>
-    <entry id="335" >
+    <entry id="399" >
       <translation id="0" >
         <text>very few</text>
       </translation>
@@ -3425,7 +3931,7 @@
         <text>mycket lite</text>
       </translation>
     </entry>
-    <entry id="336" >
+    <entry id="400" >
       <translation id="0" >
         <text>with a friend</text>
       </translation>
@@ -3433,15 +3939,15 @@
         <text>hos en kompis</text>
       </translation>
     </entry>
-    <entry id="337" >
+    <entry id="401" >
       <translation id="0" >
-        <text>beer</text>
+        <text>a beer</text>
       </translation>
       <translation id="1" >
-        <text>öl</text>
+        <text>ett öl</text>
       </translation>
     </entry>
-    <entry id="338" >
+    <entry id="402" >
       <translation id="0" >
         <text>furniture</text>
       </translation>
@@ -3449,23 +3955,15 @@
         <text>möbler</text>
       </translation>
     </entry>
-    <entry id="339" >
+    <entry id="403" >
       <translation id="0" >
-        <text>kitchen</text>
+        <text>a kitchen</text>
       </translation>
       <translation id="1" >
-        <text>köket [sheket]</text>
+        <text>et kök -> köket [sheket]</text>
       </translation>
     </entry>
-    <entry id="340" >
-      <translation id="0" >
-        <text>he starts at 12:30;</text>
-      </translation>
-      <translation id="1" >
-        <text>han börjar klockan 12:30.</text>
-      </translation>
-    </entry>
-    <entry id="341" >
+    <entry id="404" >
       <translation id="0" >
         <text>a cashier</text>
       </translation>
@@ -3473,7 +3971,7 @@
         <text>en affärsbitrade</text>
       </translation>
     </entry>
-    <entry id="342" >
+    <entry id="405" >
       <translation id="0" >
         <text>excuse me !</text>
       </translation>
@@ -3481,15 +3979,7 @@
         <text>ursäkta !</text>
       </translation>
     </entry>
-    <entry id="343" >
-      <translation id="0" >
-        <text>what time is it ? (X2)</text>
-      </translation>
-      <translation id="1" >
-        <text>vad / hur mycket är klockan ?</text>
-      </translation>
-    </entry>
-    <entry id="344" >
+    <entry id="406" >
       <translation id="0" >
         <text>a birthday</text>
       </translation>
@@ -3497,7 +3987,7 @@
         <text>en födelsedag</text>
       </translation>
     </entry>
-    <entry id="345" >
+    <entry id="407" >
       <translation id="0" >
         <text>a table</text>
         <image>Images/a_table.jpg</image>
@@ -3507,7 +3997,7 @@
         <image>Images/a_table.jpg</image>
       </translation>
     </entry>
-    <entry id="346" >
+    <entry id="408" >
       <translation id="0" >
         <text>neither in the bus nor in the car</text>
       </translation>
@@ -3515,7 +4005,7 @@
         <text>inte på bussen heller i bil</text>
       </translation>
     </entry>
-    <entry id="347" >
+    <entry id="409" >
       <translation id="0" >
         <text>it belongs to me</text>
       </translation>
@@ -3523,7 +4013,7 @@
         <text>den tillhör mig</text>
       </translation>
     </entry>
-    <entry id="348" >
+    <entry id="410" >
       <translation id="0" >
         <text>again</text>
       </translation>
@@ -3531,7 +4021,7 @@
         <text>igen</text>
       </translation>
     </entry>
-    <entry id="349" >
+    <entry id="411" >
       <translation id="0" >
         <text>money</text>
         <image>Images/money.jpg</image>
@@ -3541,7 +4031,7 @@
         <image>Images/money.jpg</image>
       </translation>
     </entry>
-    <entry id="350" >
+    <entry id="412" >
       <translation id="0" >
         <text>to shout</text>
       </translation>
@@ -3549,7 +4039,7 @@
         <text>ropa</text>
       </translation>
     </entry>
-    <entry id="351" >
+    <entry id="413" >
       <translation id="0" >
         <text>to hurry</text>
       </translation>
@@ -3557,7 +4047,7 @@
         <text>skynda</text>
       </translation>
     </entry>
-    <entry id="352" >
+    <entry id="414" >
       <translation id="0" >
         <text>I shout at him.</text>
       </translation>
@@ -3565,7 +4055,7 @@
         <text>jag ropa på honor.</text>
       </translation>
     </entry>
-    <entry id="353" >
+    <entry id="415" >
       <translation id="0" >
         <text>in love with X</text>
       </translation>
@@ -3573,7 +4063,7 @@
         <text>kär i X [sher]</text>
       </translation>
     </entry>
-    <entry id="354" >
+    <entry id="416" >
       <translation id="0" >
         <text>a name</text>
       </translation>
@@ -3581,7 +4071,7 @@
         <text>ett nam</text>
       </translation>
     </entry>
-    <entry id="355" >
+    <entry id="417" >
       <translation id="0" >
         <text>a study</text>
       </translation>
@@ -3589,7 +4079,7 @@
         <text>en studier</text>
       </translation>
     </entry>
-    <entry id="356" >
+    <entry id="418" >
       <translation id="0" >
         <text>a watch</text>
         <image>Images/a_watch.jpg</image>
@@ -3599,17 +4089,7 @@
         <image>Images/a_watch.jpg</image>
       </translation>
     </entry>
-    <entry id="357" >
-      <translation id="0" >
-        <text>a phone</text>
-        <image>Images/a_phone.jpg</image>
-      </translation>
-      <translation id="1" >
-        <text>en telefon</text>
-        <image>Images/a_phone.jpg</image>
-      </translation>
-    </entry>
-    <entry id="358" >
+    <entry id="419" >
       <translation id="0" >
         <text>a adress</text>
       </translation>
@@ -3617,7 +4097,7 @@
         <text>en adress</text>
       </translation>
     </entry>
-    <entry id="359" >
+    <entry id="420" >
       <translation id="0" >
         <text>I've been in Sweden for one week.</text>
       </translation>
@@ -3625,7 +4105,7 @@
         <text>jag har varit i Sverige i en vecka.</text>
       </translation>
     </entry>
-    <entry id="360" >
+    <entry id="421" >
       <translation id="0" >
         <text>I arrived a week ago.</text>
       </translation>
@@ -3633,7 +4113,7 @@
         <text>jag kom för en vecka sedan.</text>
       </translation>
     </entry>
-    <entry id="361" >
+    <entry id="422" >
       <translation id="0" >
         <text>I was born the 19th July.</text>
       </translation>
@@ -3641,7 +4121,7 @@
         <text>jag fyller år den nittonde Juli.</text>
       </translation>
     </entry>
-    <entry id="362" >
+    <entry id="423" >
       <translation id="0" >
         <text>because</text>
       </translation>
@@ -3649,7 +4129,7 @@
         <text>därför att</text>
       </translation>
     </entry>
-    <entry id="363" >
+    <entry id="424" >
       <translation id="0" >
         <text>to understand</text>
       </translation>
@@ -3663,7 +4143,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="364" >
+    <entry id="425" >
       <translation id="0" >
         <text>I learn Swedish to understand.</text>
       </translation>
@@ -3671,15 +4151,7 @@
         <text>jag läser Svenska för att första.</text>
       </translation>
     </entry>
-    <entry id="365" >
-      <translation id="0" >
-        <text>I return to Spain.</text>
-      </translation>
-      <translation id="1" >
-        <text>jag åker tillbaka till Spanien.</text>
-      </translation>
-    </entry>
-    <entry id="366" >
+    <entry id="426" >
       <translation id="0" >
         <text>I went to Ikea yesterday.</text>
       </translation>
@@ -3687,7 +4159,7 @@
         <text>i går akte jag till Ikea.</text>
       </translation>
     </entry>
-    <entry id="367" >
+    <entry id="427" >
       <translation id="0" >
         <text>I learn Swedish so as to I understand.</text>
       </translation>
@@ -3695,7 +4167,7 @@
         <text>jag läser Svenska därför att jag vill förstå.</text>
       </translation>
     </entry>
-    <entry id="368" >
+    <entry id="428" >
       <translation id="0" >
         <text>I use to eat</text>
       </translation>
@@ -3709,7 +4181,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="369" >
+    <entry id="429" >
       <translation id="0" >
         <text>can you speak swedish ? Yes I can.</text>
       </translation>
@@ -3717,7 +4189,7 @@
         <text>kan du tala svenska ? jag, det kan jag.</text>
       </translation>
     </entry>
-    <entry id="370" >
+    <entry id="430" >
       <translation id="0" >
         <text>do you have time ? No, I don't.</text>
       </translation>
@@ -3725,7 +4197,7 @@
         <text>Har du tid ? Nej, det har jag inte.</text>
       </translation>
     </entry>
-    <entry id="371" >
+    <entry id="431" >
       <translation id="0" >
         <text>tired</text>
       </translation>
@@ -3733,7 +4205,7 @@
         <text>trött</text>
       </translation>
     </entry>
-    <entry id="372" >
+    <entry id="432" >
       <translation id="0" >
         <text>to sing</text>
       </translation>
@@ -3741,7 +4213,7 @@
         <text>sjunga</text>
       </translation>
     </entry>
-    <entry id="373" >
+    <entry id="433" >
       <translation id="0" >
         <text>I must work.</text>
       </translation>
@@ -3749,15 +4221,7 @@
         <text>jag måste arbeta.</text>
       </translation>
     </entry>
-    <entry id="374" >
-      <translation id="0" >
-        <text>I'm at home.</text>
-      </translation>
-      <translation id="1" >
-        <text>jag är hemma.</text>
-      </translation>
-    </entry>
-    <entry id="375" >
+    <entry id="434" >
       <translation id="0" >
         <text>or</text>
       </translation>
@@ -3771,7 +4235,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="376" >
+    <entry id="435" >
       <translation id="0" >
         <text>my phone number is...</text>
       </translation>
@@ -3779,7 +4243,7 @@
         <text>mitt telefonnummer är...</text>
       </translation>
     </entry>
-    <entry id="377" >
+    <entry id="436" >
       <translation id="0" >
         <text>what does X mean ? Ut means...</text>
       </translation>
@@ -3787,7 +4251,7 @@
         <text>Vad betyder X ? Det betyder...</text>
       </translation>
     </entry>
-    <entry id="378" >
+    <entry id="437" >
       <translation id="0" >
         <text>A cup of coffee costs 8 crowns.</text>
       </translation>
@@ -3795,21 +4259,7 @@
         <text>En kopp kaffe kostar 8 kronor.</text>
       </translation>
     </entry>
-    <entry id="379" >
-      <translation id="0" >
-        <text>food</text>
-      </translation>
-      <translation id="1" >
-        <text>mat</text>
-        <grade>
-          <currentgrade>1</currentgrade>
-          <count>1</count>
-          <errorcount>0</errorcount>
-          <date>2009-08-12T21:14:13</date>
-        </grade>
-      </translation>
-    </entry>
-    <entry id="380" >
+    <entry id="438" >
       <translation id="0" >
         <text>carefully</text>
       </translation>
@@ -3817,7 +4267,7 @@
         <text>ordentligt</text>
       </translation>
     </entry>
-    <entry id="381" >
+    <entry id="439" >
       <translation id="0" >
         <text>sick</text>
       </translation>
@@ -3825,7 +4275,7 @@
         <text>sjuk</text>
       </translation>
     </entry>
-    <entry id="382" >
+    <entry id="440" >
       <translation id="0" >
         <text>could he be afraid ?</text>
       </translation>
@@ -3833,7 +4283,7 @@
         <text>skulle han vara rädd ?</text>
       </translation>
     </entry>
-    <entry id="383" >
+    <entry id="441" >
       <translation id="0" >
         <text>to think</text>
       </translation>
@@ -3841,7 +4291,7 @@
         <text>tycka</text>
       </translation>
     </entry>
-    <entry id="384" >
+    <entry id="442" >
       <translation id="0" >
         <text>to like (X2)</text>
       </translation>
@@ -3849,7 +4299,7 @@
         <text>gilla = tycka om (jag tycker om)</text>
       </translation>
     </entry>
-    <entry id="385" >
+    <entry id="443" >
       <translation id="0" >
         <text>best</text>
       </translation>
@@ -3863,7 +4313,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="386" >
+    <entry id="444" >
       <translation id="0" >
         <text>to change</text>
       </translation>
@@ -3871,7 +4321,7 @@
         <text>byta</text>
       </translation>
     </entry>
-    <entry id="387" >
+    <entry id="445" >
       <translation id="0" >
         <text>some</text>
       </translation>
@@ -3879,7 +4329,7 @@
         <text>någon / något</text>
       </translation>
     </entry>
-    <entry id="388" >
+    <entry id="446" >
       <translation id="0" >
         <text>if</text>
       </translation>
@@ -3887,7 +4337,7 @@
         <text>om</text>
       </translation>
     </entry>
-    <entry id="389" >
+    <entry id="447" >
       <translation id="0" >
         <text>somebody</text>
       </translation>
@@ -3895,7 +4345,7 @@
         <text>någon</text>
       </translation>
     </entry>
-    <entry id="390" >
+    <entry id="448" >
       <translation id="0" >
         <text>to forget</text>
       </translation>
@@ -3909,7 +4359,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="391" >
+    <entry id="449" >
       <translation id="0" >
         <text>isn't there anybody here who speaks english ?</text>
       </translation>
@@ -3923,7 +4373,7 @@
         </grade>
       </translation>
     </entry>
-    <entry id="392" >
+    <entry id="450" >
       <translation id="0" >
         <text>there is</text>
       </translation>
@@ -3931,7 +4381,7 @@
         <text>det finns</text>
       </translation>
     </entry>
-    <entry id="393" >
+    <entry id="451" >
       <translation id="0" >
         <text>you have to call</text>
       </translation>
@@ -3939,7 +4389,7 @@
         <text>du behövar ringa</text>
       </translation>
     </entry>
-    <entry id="394" >
+    <entry id="452" >
       <translation id="0" >
         <text>to disturb</text>
       </translation>
@@ -3947,7 +4397,7 @@
         <text>störa</text>
       </translation>
     </entry>
-    <entry id="395" >
+    <entry id="453" >
       <translation id="0" >
         <text>an apple</text>
         <image>Images/an_apple.jpg</image>
@@ -3963,7 +4413,7 @@
         <image>Images/an_apple.jpg</image>
       </translation>
     </entry>
-    <entry id="396" >
+    <entry id="454" >
       <translation id="0" >
         <text>old</text>
       </translation>
@@ -3971,7 +4421,7 @@
         <text>gamla</text>
       </translation>
     </entry>
-    <entry id="397" >
+    <entry id="455" >
       <translation id="0" >
         <text>a guy</text>
       </translation>
@@ -3979,7 +4429,7 @@
         <text>en kille</text>
       </translation>
     </entry>
-    <entry id="398" >
+    <entry id="456" >
       <translation id="0" >
         <text>well done</text>
       </translation>
@@ -3987,7 +4437,7 @@
         <text>bra gjort</text>
       </translation>
     </entry>
-    <entry id="399" >
+    <entry id="457" >
       <translation id="0" >
         <text>to guess</text>
       </translation>
@@ -3995,7 +4445,7 @@
         <text>gissa</text>
       </translation>
     </entry>
-    <entry id="400" >
+    <entry id="458" >
       <translation id="0" >
         <text>to make progress</text>
       </translation>
@@ -4003,7 +4453,7 @@
         <text>göra (jag gör) framsteg</text>
       </translation>
     </entry>
-    <entry id="401" >
+    <entry id="459" >
       <translation id="0" >
         <text>let's go</text>
       </translation>
@@ -4011,7 +4461,7 @@
         <text>nu åker vi</text>
       </translation>
     </entry>
-    <entry id="402" >
+    <entry id="460" >
       <translation id="0" >
         <text>her boyfriend</text>
       </translation>
@@ -4019,7 +4469,7 @@
         <text>hennes pojkvän</text>
       </translation>
     </entry>
-    <entry id="403" >
+    <entry id="461" >
       <translation id="0" >
         <text>now they will engage themselves.</text>
       </translation>
@@ -4027,15 +4477,7 @@
         <text>nu ska de förlova sig.</text>
       </translation>
     </entry>
-    <entry id="404" >
-      <translation id="0" >
-        <text>first, then</text>
-      </translation>
-      <translation id="1" >
-        <text>först ... sedan</text>
-      </translation>
-    </entry>
-    <entry id="405" >
+    <entry id="462" >
       <translation id="0" >
         <text>to shave oneself</text>
       </translation>
@@ -4043,7 +4485,7 @@
         <text>raka sig</text>
       </translation>
     </entry>
-    <entry id="406" >
+    <entry id="463" >
       <translation id="0" >
         <text>put ones clothes on/off</text>
       </translation>
@@ -4051,7 +4493,7 @@
         <text>klä på/av sig</text>
       </translation>
     </entry>
-    <entry id="407" >
+    <entry id="464" >
       <translation id="0" >
         <text>to be late</text>
       </translation>
@@ -4059,7 +4501,7 @@
         <text>vara sena</text>
       </translation>
     </entry>
-    <entry id="408" >
+    <entry id="465" >
       <translation id="0" >
         <text>they must decide themselves.</text>
       </translation>
@@ -4067,7 +4509,7 @@
         <text>de måste bestämma sig.</text>
       </translation>
     </entry>
-    <entry id="409" >
+    <entry id="466" >
       <translation id="0" >
         <text>I washed myself this morning.</text>
       </translation>
@@ -4075,7 +4517,7 @@
         <text>I morse tvättade jag mig.</text>
       </translation>
     </entry>
-    <entry id="410" >
+    <entry id="467" >
       <translation id="0" >
         <text>to need</text>
       </translation>
@@ -4083,7 +4525,7 @@
         <text>behöva (jag behöver)</text>
       </translation>
     </entry>
-    <entry id="411" >
+    <entry id="468" >
       <translation id="0" >
         <text>hot , cold</text>
       </translation>
@@ -4091,7 +4533,7 @@
         <text>varm , kall</text>
       </translation>
     </entry>
-    <entry id="412" >
+    <entry id="469" >
       <translation id="0" >
         <text>the same</text>
       </translation>
@@ -4099,7 +4541,7 @@
         <text>detsamma</text>
       </translation>
     </entry>
-    <entry id="413" >
+    <entry id="470" >
       <translation id="0" >
         <text>take care !</text>
       </translation>
@@ -4107,7 +4549,7 @@
         <text>sköt om dig !</text>
       </translation>
     </entry>
-    <entry id="414" >
+    <entry id="471" >
       <translation id="0" >
         <text>the we say so (to hang up).</text>
       </translation>
@@ -4115,15 +4557,7 @@
         <text>då säger vi det.</text>
       </translation>
     </entry>
-    <entry id="415" >
-      <translation id="0" >
-        <text>inside</text>
-      </translation>
-      <translation id="1" >
-        <text>inne</text>
-      </translation>
-    </entry>
-    <entry id="416" >
+    <entry id="472" >
       <translation id="0" >
         <text>unfortunately</text>
       </translation>
@@ -4131,7 +4565,7 @@
         <text>tyvärr</text>
       </translation>
     </entry>
-    <entry id="417" >
+    <entry id="473" >
       <translation id="0" >
         <text>a moment</text>
       </translation>
@@ -4139,7 +4573,7 @@
         <text>ett ögonblick</text>
       </translation>
     </entry>
-    <entry id="418" >
+    <entry id="474" >
       <translation id="0" >
         <text>perhaps</text>
       </translation>
@@ -4147,7 +4581,7 @@
         <text>kanske</text>
       </translation>
     </entry>
-    <entry id="419" >
+    <entry id="475" >
       <translation id="0" >
         <text>a pillow</text>
         <image>Images/en_kudde.jpg</image>
@@ -4157,7 +4591,7 @@
         <image>Images/en_kudde.jpg</image>
       </translation>
     </entry>
-    <entry id="420" >
+    <entry id="476" >
       <translation id="0" >
         <text>a old man</text>
       </translation>
@@ -4165,7 +4599,7 @@
         <text>en gubbe</text>
       </translation>
     </entry>
-    <entry id="421" >
+    <entry id="477" >
       <translation id="0" >
         <text>a wife</text>
       </translation>
@@ -4173,15 +4607,15 @@
         <text>en fru</text>
       </translation>
     </entry>
-    <entry id="422" >
+    <entry id="478" >
       <translation id="0" >
         <text>a woman</text>
       </translation>
       <translation id="1" >
-        <text>en kvinna (or)</text>
+        <text>en kvinna, -or</text>
       </translation>
     </entry>
-    <entry id="423" >
+    <entry id="479" >
       <translation id="0" >
         <text>to hit on</text>
       </translation>
@@ -4189,7 +4623,7 @@
         <text>ragga</text>
       </translation>
     </entry>
-    <entry id="424" >
+    <entry id="480" >
       <translation id="0" >
         <text>a newspaper, -s</text>
         <image>Images/a_newspaper__-s.jpg</image>
@@ -4199,7 +4633,7 @@
         <image>Images/a_newspaper__-s.jpg</image>
       </translation>
     </entry>
-    <entry id="425" >
+    <entry id="481" >
       <translation id="0" >
         <text>between 7 and 10 years</text>
       </translation>
@@ -4207,7 +4641,7 @@
         <text>mellan 7 och 10 år</text>
       </translation>
     </entry>
-    <entry id="426" >
+    <entry id="482" >
       <translation id="0" >
         <text>usual</text>
       </translation>
@@ -4215,7 +4649,7 @@
         <text>vanlig</text>
       </translation>
     </entry>
-    <entry id="427" >
+    <entry id="483" >
       <translation id="0" >
         <text>a work</text>
       </translation>
@@ -4223,7 +4657,7 @@
         <text>ett arbet</text>
       </translation>
     </entry>
-    <entry id="428" >
+    <entry id="484" >
       <translation id="0" >
         <text>some friends</text>
       </translation>
@@ -4231,7 +4665,7 @@
         <text>några kompisar</text>
       </translation>
     </entry>
-    <entry id="429" >
+    <entry id="485" >
       <translation id="0" >
         <text>to sleep like a log</text>
       </translation>
@@ -4239,7 +4673,7 @@
         <text>sova (jag sover) som enstock</text>
       </translation>
     </entry>
-    <entry id="430" >
+    <entry id="486" >
       <translation id="0" >
         <text>to miss</text>
       </translation>
@@ -4247,7 +4681,7 @@
         <text>sakna</text>
       </translation>
     </entry>
-    <entry id="431" >
+    <entry id="487" >
       <translation id="0" >
         <text>I miss my family.</text>
       </translation>
@@ -4255,7 +4689,7 @@
         <text>jag saknar min familj.</text>
       </translation>
     </entry>
-    <entry id="432" >
+    <entry id="488" >
       <translation id="0" >
         <text>both are ...</text>
       </translation>
@@ -4263,7 +4697,7 @@
         <text>båda är...</text>
       </translation>
     </entry>
-    <entry id="433" >
+    <entry id="489" >
       <translation id="0" >
         <text>it's a shame that...</text>
       </translation>
@@ -4271,7 +4705,7 @@
         <text>det är synd att ...</text>
       </translation>
     </entry>
-    <entry id="434" >
+    <entry id="490" >
       <translation id="0" >
         <text>to survive</text>
       </translation>
@@ -4279,7 +4713,7 @@
         <text>överleva</text>
       </translation>
     </entry>
-    <entry id="435" >
+    <entry id="491" >
       <translation id="0" >
         <text>a girlfriend</text>
       </translation>
@@ -4287,7 +4721,7 @@
         <text>en flickvän</text>
       </translation>
     </entry>
-    <entry id="436" >
+    <entry id="492" >
       <translation id="0" >
         <text>what are they doing ?</text>
       </translation>
@@ -4295,7 +4729,7 @@
         <text>vad gör de ?</text>
       </translation>
     </entry>
-    <entry id="437" >
+    <entry id="493" >
       <translation id="0" >
         <text>what were they doing ?</text>
       </translation>
@@ -4303,7 +4737,7 @@
         <text>vad gjorde de ?</text>
       </translation>
     </entry>
-    <entry id="438" >
+    <entry id="494" >
       <translation id="0" >
         <text>what are they gonna do ?</text>
       </translation>
@@ -4311,7 +4745,7 @@
         <text>vad ska de göra ?</text>
       </translation>
     </entry>
-    <entry id="439" >
+    <entry id="495" >
       <translation id="0" >
         <text>to look at</text>
       </translation>
@@ -4319,15 +4753,15 @@
         <text>titta på</text>
       </translation>
     </entry>
-    <entry id="440" >
+    <entry id="496" >
       <translation id="0" >
-        <text>I don't know how they are called;</text>
+        <text>I don't know how they are called (X2).</text>
       </translation>
       <translation id="1" >
-        <text>jag vet inte vad de heter.</text>
+        <text>jag vet inte vad de heter / kallas.</text>
       </translation>
     </entry>
-    <entry id="441" >
+    <entry id="497" >
       <translation id="0" >
         <text>a boyfriend , a girlfriend</text>
       </translation>
@@ -4335,7 +4769,7 @@
         <text>en pojkvän, en flickvän</text>
       </translation>
     </entry>
-    <entry id="442" >
+    <entry id="498" >
       <translation id="0" >
         <text>a guy , a chick</text>
       </translation>
@@ -4343,7 +4777,7 @@
         <text>en kille, en tjej</text>
       </translation>
     </entry>
-    <entry id="443" >
+    <entry id="499" >
       <translation id="0" >
         <text>a man , a woman</text>
       </translation>
@@ -4351,17 +4785,17 @@
         <text>en man , en kvinna</text>
       </translation>
     </entry>
-    <entry id="444" >
+    <entry id="500" >
       <translation id="0" >
-        <text>a concert(s)</text>
+        <text>a concert, -s</text>
         <image>Images/a_concert(s).jpg</image>
       </translation>
       <translation id="1" >
-        <text>en konsert'er)</text>
+        <text>en konsert, -er</text>
         <image>Images/a_concert(s).jpg</image>
       </translation>
     </entry>
-    <entry id="445" >
+    <entry id="501" >
       <translation id="0" >
         <text>here / there</text>
       </translation>
@@ -4369,7 +4803,7 @@
         <text>här / där</text>
       </translation>
     </entry>
-    <entry id="446" >
+    <entry id="502" >
       <translation id="0" >
         <text>do you like music ?</text>
       </translation>
@@ -4377,7 +4811,7 @@
         <text>gillar du musik ?</text>
       </translation>
     </entry>
-    <entry id="447" >
+    <entry id="503" >
       <translation id="0" >
         <text>but</text>
       </translation>
@@ -4385,15 +4819,7 @@
         <text>men</text>
       </translation>
     </entry>
-    <entry id="448" >
-      <translation id="0" >
-        <text>an afternoon(s)</text>
-      </translation>
-      <translation id="1" >
-        <text>en eftermiddag(ar)</text>
-      </translation>
-    </entry>
-    <entry id="449" >
+    <entry id="504" >
       <translation id="0" >
         <text>the sun</text>
         <image>Images/the_sun.jpg</image>
@@ -4403,7 +4829,7 @@
         <image>Images/the_sun.jpg</image>
       </translation>
     </entry>
-    <entry id="450" >
+    <entry id="505" >
       <translation id="0" >
         <text>nothing</text>
       </translation>
@@ -4411,7 +4837,7 @@
         <text>ingen</text>
       </translation>
     </entry>
-    <entry id="451" >
+    <entry id="506" >
       <translation id="0" >
         <text>a tent</text>
         <image>Images/a_tent.jpg</image>
@@ -4421,7 +4847,7 @@
         <image>Images/a_tent.jpg</image>
       </translation>
     </entry>
-    <entry id="452" >
+    <entry id="507" >
       <translation id="0" >
         <text>we have nothing to do.</text>
       </translation>
@@ -4429,7 +4855,7 @@
         <text>vi har inget att höra.</text>
       </translation>
     </entry>
-    <entry id="453" >
+    <entry id="508" >
       <translation id="0" >
         <text>a job</text>
       </translation>
@@ -4437,7 +4863,7 @@
         <text>ett jobb</text>
       </translation>
     </entry>
-    <entry id="454" >
+    <entry id="509" >
       <translation id="0" >
         <text>too large</text>
       </translation>
@@ -4445,7 +4871,7 @@
         <text>alltför stor</text>
       </translation>
     </entry>
-    <entry id="455" >
+    <entry id="510" >
       <translation id="0" >
         <text>a festival</text>
       </translation>
@@ -4453,7 +4879,7 @@
         <text>en festival</text>
       </translation>
     </entry>
-    <entry id="456" >
+    <entry id="511" >
       <translation id="0" >
         <text>very good</text>
       </translation>
@@ -4461,7 +4887,7 @@
         <text>jättebra</text>
       </translation>
     </entry>
-    <entry id="457" >
+    <entry id="512" >
       <translation id="0" >
         <text>difficult</text>
       </translation>
@@ -4469,7 +4895,7 @@
         <text>svår</text>
       </translation>
     </entry>
-    <entry id="458" >
+    <entry id="513" >
       <translation id="0" >
         <text>because it is not easy.</text>
       </translation>
@@ -4477,7 +4903,7 @@
         <text>därför att det inte är lätt.</text>
       </translation>
     </entry>
-    <entry id="459" >
+    <entry id="514" >
       <translation id="0" >
         <text>my normal day</text>
       </translation>
@@ -4485,7 +4911,7 @@
         <text>min normala dag</text>
       </translation>
     </entry>
-    <entry id="460" >
+    <entry id="515" >
       <translation id="0" >
         <text>it is hot</text>
       </translation>
@@ -4493,7 +4919,7 @@
         <text>det är varmt</text>
       </translation>
     </entry>
-    <entry id="461" >
+    <entry id="516" >
       <translation id="0" >
         <text>it is hard</text>
       </translation>
@@ -4501,7 +4927,7 @@
         <text>det är svårt</text>
       </translation>
     </entry>
-    <entry id="462" >
+    <entry id="517" >
       <translation id="0" >
         <text>it is easy</text>
       </translation>
@@ -4509,7 +4935,7 @@
         <text>det är lätt</text>
       </translation>
     </entry>
-    <entry id="463" >
+    <entry id="518" >
       <translation id="0" >
         <text>easy</text>
       </translation>
@@ -4517,7 +4943,7 @@
         <text>lätt</text>
       </translation>
     </entry>
-    <entry id="464" >
+    <entry id="519" >
       <translation id="0" >
         <text>he is visiting his siter.</text>
       </translation>
@@ -4525,15 +4951,7 @@
         <text>han är på besök hos sin syster.</text>
       </translation>
     </entry>
-    <entry id="465" >
-      <translation id="0" >
-        <text>to study at (in) the university (spatial position)</text>
-      </translation>
-      <translation id="1" >
-        <text>läsa vid universitetet</text>
-      </translation>
-    </entry>
-    <entry id="466" >
+    <entry id="520" >
       <translation id="0" >
         <text>to have a sore throat</text>
       </translation>
@@ -4541,17 +4959,17 @@
         <text>har ont i halsen</text>
       </translation>
     </entry>
-    <entry id="467" >
+    <entry id="521" >
       <translation id="0" >
-        <text>a plate (s)</text>
+        <text>a plate, -s</text>
         <image>Images/a_plate_(s).jpg</image>
       </translation>
       <translation id="1" >
-        <text>en tallrik (ar)</text>
+        <text>en tallrik, -ar</text>
         <image>Images/a_plate_(s).jpg</image>
       </translation>
     </entry>
-    <entry id="468" >
+    <entry id="522" >
       <translation id="0" >
         <text>a head</text>
         <image>Images/a_head.jpg</image>
@@ -4561,7 +4979,7 @@
         <image>Images/a_head.jpg</image>
       </translation>
     </entry>
-    <entry id="469" >
+    <entry id="523" >
       <translation id="0" >
         <text>a cupboard</text>
       </translation>
@@ -4569,7 +4987,7 @@
         <text>ett skåp</text>
       </translation>
     </entry>
-    <entry id="470" >
+    <entry id="524" >
       <translation id="0" >
         <text>a forest</text>
         <image>Images/a_forest.jpg</image>
@@ -4579,7 +4997,7 @@
         <image>Images/a_forest.jpg</image>
       </translation>
     </entry>
-    <entry id="471" >
+    <entry id="525" >
       <translation id="0" >
         <text>in the city</text>
       </translation>
@@ -4587,7 +5005,7 @@
         <text>i stan</text>
       </translation>
     </entry>
-    <entry id="472" >
+    <entry id="526" >
       <translation id="0" >
         <text>a sea</text>
         <image>Images/a_sea.jpg</image>
@@ -4597,31 +5015,7 @@
         <image>Images/a_sea.jpg</image>
       </translation>
     </entry>
-    <entry id="473" >
-      <translation id="0" >
-        <text>on the left / right</text>
-      </translation>
-      <translation id="1" >
-        <text>till vänster / höger</text>
-      </translation>
-    </entry>
-    <entry id="474" >
-      <translation id="0" >
-        <text>in the hospital</text>
-      </translation>
-      <translation id="1" >
-        <text>på sjukhus</text>
-      </translation>
-    </entry>
-    <entry id="475" >
-      <translation id="0" >
-        <text>at the doctor</text>
-      </translation>
-      <translation id="1" >
-        <text>hos doktorn</text>
-      </translation>
-    </entry>
-    <entry id="476" >
+    <entry id="527" >
       <translation id="0" >
         <text>evil</text>
       </translation>
@@ -4629,7 +5023,7 @@
         <text>ont / ond</text>
       </translation>
     </entry>
-    <entry id="477" >
+    <entry id="528" >
       <translation id="0" >
         <text>a village</text>
       </translation>
@@ -4637,7 +5031,7 @@
         <text>en by</text>
       </translation>
     </entry>
-    <entry id="478" >
+    <entry id="529" >
       <translation id="0" >
         <text>a tree</text>
         <image>Images/a_tree.jpg</image>
@@ -4647,16 +5041,17 @@
         <image>Images/a_tree.jpg</image>
       </translation>
     </entry>
-    <entry id="479" >
+    <entry id="530" >
       <translation id="0" >
-        <text>a bird (s)</text>
+        <text>a bird, -s</text>
+        <image>Images/a_bird__s_.jpg</image>
       </translation>
       <translation id="1" >
-        <text>en fågel (fåglarna)</text>
+        <text>en fågel, fåglarna</text>
         <image>Images/a_bird__s_.jpg</image>
       </translation>
     </entry>
-    <entry id="480" >
+    <entry id="531" >
       <translation id="0" >
         <text>I'm in a hurry.</text>
       </translation>
@@ -4664,111 +5059,7 @@
         <text>jag har brått.</text>
       </translation>
     </entry>
-    <entry id="481" >
-      <translation id="0" >
-        <text>to go to the church</text>
-      </translation>
-      <translation id="1" >
-        <text>gå i kirkan</text>
-      </translation>
-    </entry>
-    <entry id="482" >
-      <translation id="0" >
-        <text>in the street</text>
-      </translation>
-      <translation id="1" >
-        <text>på gatan</text>
-      </translation>
-    </entry>
-    <entry id="483" >
-      <translation id="0" >
-        <text>to the left</text>
-      </translation>
-      <translation id="1" >
-        <text>till vänster</text>
-      </translation>
-    </entry>
-    <entry id="484" >
-      <translation id="0" >
-        <text>to the right</text>
-      </translation>
-      <translation id="1" >
-        <text>till höger</text>
-      </translation>
-    </entry>
-    <entry id="485" >
-      <translation id="0" >
-        <text>in the corner</text>
-      </translation>
-      <translation id="1" >
-        <text>i hörnet</text>
-      </translation>
-    </entry>
-    <entry id="486" >
-      <translation id="0" >
-        <text>in the middle of</text>
-      </translation>
-      <translation id="1" >
-        <text>mitt på</text>
-      </translation>
-    </entry>
-    <entry id="487" >
-      <translation id="0" >
-        <text>in front of</text>
-      </translation>
-      <translation id="1" >
-        <text>framför</text>
-      </translation>
-    </entry>
-    <entry id="488" >
-      <translation id="0" >
-        <text>behind</text>
-      </translation>
-      <translation id="1" >
-        <text>bakom</text>
-      </translation>
-    </entry>
-    <entry id="489" >
-      <translation id="0" >
-        <text>over</text>
-      </translation>
-      <translation id="1" >
-        <text>över</text>
-      </translation>
-    </entry>
-    <entry id="490" >
-      <translation id="0" >
-        <text>under</text>
-      </translation>
-      <translation id="1" >
-        <text>under</text>
-      </translation>
-    </entry>
-    <entry id="491" >
-      <translation id="0" >
-        <text>on the side of</text>
-      </translation>
-      <translation id="1" >
-        <text>bredvid</text>
-      </translation>
-    </entry>
-    <entry id="492" >
-      <translation id="0" >
-        <text>between</text>
-      </translation>
-      <translation id="1" >
-        <text>mellan</text>
-      </translation>
-    </entry>
-    <entry id="493" >
-      <translation id="0" >
-        <text>among</text>
-      </translation>
-      <translation id="1" >
-        <text>bland</text>
-      </translation>
-    </entry>
-    <entry id="494" >
+    <entry id="532" >
       <translation id="0" >
         <text>a workday</text>
       </translation>
@@ -4776,7 +5067,7 @@
         <text>en vardag</text>
       </translation>
     </entry>
-    <entry id="495" >
+    <entry id="533" >
       <translation id="0" >
         <text>cold (X2)</text>
       </translation>
@@ -4784,7 +5075,7 @@
         <text>kylligt = kall</text>
       </translation>
     </entry>
-    <entry id="496" >
+    <entry id="534" >
       <translation id="0" >
         <text>a soap</text>
         <image>Images/a_soap.jpg</image>
@@ -4794,7 +5085,7 @@
         <image>Images/a_soap.jpg</image>
       </translation>
     </entry>
-    <entry id="497" >
+    <entry id="535" >
       <translation id="0" >
         <text>lots of books</text>
       </translation>
@@ -4802,15 +5093,7 @@
         <text>massar av böcker</text>
       </translation>
     </entry>
-    <entry id="498" >
-      <translation id="0" >
-        <text>to hang to the ceiling</text>
-      </translation>
-      <translation id="1" >
-        <text>hänga (jag hänger) i taket</text>
-      </translation>
-    </entry>
-    <entry id="499" >
+    <entry id="536" >
       <translation id="0" >
         <text>to remember something</text>
       </translation>
@@ -4818,7 +5101,7 @@
         <text>komma ihåg att nagån</text>
       </translation>
     </entry>
-    <entry id="500" >
+    <entry id="537" >
       <translation id="0" >
         <text>nice</text>
       </translation>
@@ -4826,7 +5109,7 @@
         <text>trevlig</text>
       </translation>
     </entry>
-    <entry id="501" >
+    <entry id="538" >
       <translation id="0" >
         <text>a nice child</text>
       </translation>
@@ -4834,7 +5117,7 @@
         <text>ett trevligt barn</text>
       </translation>
     </entry>
-    <entry id="502" >
+    <entry id="539" >
       <translation id="0" >
         <text>a bag</text>
         <image>Images/a_bag.jpg</image>
@@ -4844,7 +5127,7 @@
         <image>Images/a_bag.jpg</image>
       </translation>
     </entry>
-    <entry id="503" >
+    <entry id="540" >
       <translation id="0" >
         <text>In which school / university do you study ?</text>
       </translation>
@@ -4852,7 +5135,7 @@
         <text>Vilken skola / vilket universitet studerar du på ?</text>
       </translation>
     </entry>
-    <entry id="504" >
+    <entry id="541" >
       <translation id="0" >
         <text>a suggestion</text>
       </translation>
@@ -4860,7 +5143,7 @@
         <text>ett förstag</text>
       </translation>
     </entry>
-    <entry id="505" >
+    <entry id="542" >
       <translation id="0" >
         <text>I can speak a little swedish.</text>
       </translation>
@@ -4868,7 +5151,7 @@
         <text>Jag kan prata lite svenska.</text>
       </translation>
     </entry>
-    <entry id="506" >
+    <entry id="543" >
       <translation id="0" >
         <text>She wants to study swedish.</text>
       </translation>
@@ -4876,7 +5159,7 @@
         <text>hon vill studera svenska.</text>
       </translation>
     </entry>
-    <entry id="507" >
+    <entry id="544" >
       <translation id="0" >
         <text>we will learn "hjälpverg" i dag</text>
       </translation>
@@ -4884,7 +5167,7 @@
         <text>vi ska lära oss hjälpverb i dag</text>
       </translation>
     </entry>
-    <entry id="508" >
+    <entry id="545" >
       <translation id="0" >
         <text>i must read much swedish at home.</text>
       </translation>
@@ -4892,7 +5175,7 @@
         <text>jag måste läsa mycket svenska hemma.</text>
       </translation>
     </entry>
-    <entry id="509" >
+    <entry id="546" >
       <translation id="0" >
         <text>we need to listen, read, write and speak.</text>
       </translation>
@@ -4900,7 +5183,7 @@
         <text>vi behöver lyssna, läsa, skriva och prata.</text>
       </translation>
     </entry>
-    <entry id="510" >
+    <entry id="547" >
       <translation id="0" >
         <text>you are not allowed to smoke at school.</text>
       </translation>
@@ -4908,7 +5191,7 @@
         <text>du får inte röka i skolan.</text>
       </translation>
     </entry>
-    <entry id="511" >
+    <entry id="548" >
       <translation id="0" >
         <text>in the disco, we use to dance, talk, write and drink beer</text>
       </translation>
@@ -4916,7 +5199,7 @@
         <text>på disko brukar vi dansa, prata, skratta och dricka öl</text>
       </translation>
     </entry>
-    <entry id="512" >
+    <entry id="549" >
       <translation id="0" >
         <text>you should eat fruits everyday.</text>
       </translation>
@@ -4924,7 +5207,7 @@
         <text>du bör äta frukt varje dag.</text>
       </translation>
     </entry>
-    <entry id="513" >
+    <entry id="550" >
       <translation id="0" >
         <text>do you want a icecream ?</text>
       </translation>
@@ -4932,7 +5215,7 @@
         <text>vill du ha glass ?</text>
       </translation>
     </entry>
-    <entry id="514" >
+    <entry id="551" >
       <translation id="0" >
         <text>don't you want coffee ?</text>
       </translation>
@@ -4940,7 +5223,7 @@
         <text>vill du inte ha kaffe ?</text>
       </translation>
     </entry>
-    <entry id="515" >
+    <entry id="552" >
       <translation id="0" >
         <text>a neighbour</text>
       </translation>
@@ -4948,7 +5231,7 @@
         <text>en granne</text>
       </translation>
     </entry>
-    <entry id="516" >
+    <entry id="553" >
       <translation id="0" >
         <text>to finish</text>
       </translation>
@@ -4956,173 +5239,346 @@
         <text>sluta</text>
       </translation>
     </entry>
+    <entry id="554" >
+      <translation id="0" >
+        <text>a class, -es</text>
+      </translation>
+      <translation id="1" >
+        <text>en klass, -er</text>
+      </translation>
+    </entry>
+    <entry id="555" >
+      <translation id="0" >
+        <text>to become</text>
+      </translation>
+      <translation id="1" >
+        <text>bli (jag blir)</text>
+      </translation>
+    </entry>
+    <entry id="556" >
+      <translation id="0" >
+        <text>an archipel, -s</text>
+      </translation>
+      <translation id="1" >
+        <text>en skårgard, -ar</text>
+      </translation>
+    </entry>
+    <entry id="557" >
+      <translation id="0" >
+        <text>a light, -s</text>
+      </translation>
+      <translation id="1" >
+        <text>ett ljus, -a</text>
+      </translation>
+    </entry>
+    <entry id="558" >
+      <translation id="0" >
+        <text>a lake, -s</text>
+      </translation>
+      <translation id="1" >
+        <text>en sjö, sjar</text>
+      </translation>
+    </entry>
+    <entry id="559" >
+      <translation id="0" >
+        <text>- thanks. - you're welcome</text>
+      </translation>
+      <translation id="1" >
+        <text>- tack. - ingen orsak.</text>
+      </translation>
+    </entry>
+    <entry id="560" >
+      <translation id="0" >
+        <text>a thing, -s</text>
+      </translation>
+      <translation id="1" >
+        <text>en sak, -er</text>
+      </translation>
+    </entry>
+    <entry id="561" >
+      <translation id="0" >
+        <text>of course</text>
+      </translation>
+      <translation id="1" >
+        <text>javisst</text>
+      </translation>
+    </entry>
+    <entry id="562" >
+      <translation id="0" >
+        <text>good-looking</text>
+      </translation>
+      <translation id="1" >
+        <text>snygg</text>
+      </translation>
+    </entry>
+    <entry id="563" >
+      <translation id="0" >
+        <text>a bridge</text>
+      </translation>
+      <translation id="1" >
+        <text>en bro</text>
+      </translation>
+    </entry>
+    <entry id="564" >
+      <translation id="0" >
+        <text>approximately</text>
+      </translation>
+      <translation id="1" >
+        <text>circa</text>
+      </translation>
+    </entry>
+    <entry id="565" >
+      <translation id="0" >
+        <text>a bear, -s</text>
+      </translation>
+      <translation id="1" >
+        <text>en björn, -ar</text>
+      </translation>
+    </entry>
+    <entry id="566" >
+      <translation id="0" >
+        <text>in my freetime</text>
+      </translation>
+      <translation id="1" >
+        <text>på min fritid</text>
+      </translation>
+    </entry>
+    <entry id="567" >
+      <translation id="0" >
+        <text>visit (X2) friends</text>
+      </translation>
+      <translation id="1" >
+        <text>åka på besök / besöka kompisar</text>
+      </translation>
+    </entry>
+    <entry id="568" >
+      <translation id="0" >
+        <text>to get up</text>
+      </translation>
+      <translation id="1" >
+        <text>stiga upp</text>
+      </translation>
+    </entry>
+    <entry id="569" >
+      <translation id="0" >
+        <text>how many brothers and sisters do you got ?</text>
+      </translation>
+      <translation id="1" >
+        <text>hur många syskon har du ?</text>
+      </translation>
+    </entry>
+    <entry id="570" >
+      <translation id="0" >
+        <text>think first, then write !</text>
+      </translation>
+      <translation id="1" >
+        <text>tänka först, och skriv sedan !</text>
+      </translation>
+    </entry>
+    <entry id="571" >
+      <translation id="0" >
+        <text>get a letter from X</text>
+      </translation>
+      <translation id="1" >
+        <text>få ett brev från X</text>
+      </translation>
+    </entry>
+    <entry id="572" >
+      <translation id="0" >
+        <text>to have a walk / walks</text>
+      </translation>
+      <translation id="1" >
+        <text>ta en promenad / promenades</text>
+      </translation>
+    </entry>
   </entries>
   <lessons>
     <container>
+      <name>GRAM</name>
+      <container>
+        <name>Help verbs</name>
+        <entry id="0" />
+        <entry id="1" />
+        <entry id="2" />
+        <entry id="3" />
+        <entry id="4" />
+        <entry id="5" />
+        <entry id="6" />
+        <entry id="7" />
+        <entry id="8" />
+        <entry id="9" />
+        <entry id="10" />
+        <entry id="11" />
+      </container>
+      <container>
+        <name>Tycka, tänka, tro</name>
+        <entry id="12" />
+        <entry id="13" />
+        <entry id="14" />
+        <entry id="15" />
+        <entry id="16" />
+        <entry id="17" />
+        <entry id="18" />
+        <entry id="19" />
+      </container>
+      <container>
+        <name>Short answers</name>
+        <entry id="20" />
+        <entry id="21" />
+        <entry id="22" />
+        <entry id="23" />
+        <entry id="24" />
+        <entry id="25" />
+        <entry id="26" />
+        <entry id="27" />
+        <entry id="28" />
+      </container>
+      <container>
+        <name>Interrogative words</name>
+        <entry id="29" />
+        <entry id="30" />
+        <entry id="31" />
+        <entry id="32" />
+        <entry id="33" />
+        <entry id="34" />
+        <entry id="35" />
+        <entry id="36" />
+        <entry id="37" />
+        <entry id="38" />
+        <entry id="39" />
+        <entry id="40" />
+        <entry id="41" />
+        <entry id="42" />
+        <entry id="43" />
+      </container>
+    </container>
+    <container>
+      <name>VOC</name>
+      <container>
+        <name>Adjectives-Contraries</name>
+        <entry id="44" />
+        <entry id="45" />
+        <entry id="46" />
+        <entry id="47" />
+        <entry id="48" />
+        <entry id="49" />
+        <entry id="50" />
+        <entry id="51" />
+        <entry id="52" />
+        <entry id="53" />
+        <entry id="54" />
+        <entry id="55" />
+        <entry id="56" />
+        <entry id="57" />
+        <entry id="58" />
+        <entry id="59" />
+        <entry id="60" />
+        <entry id="61" />
+        <entry id="62" />
+        <entry id="63" />
+        <entry id="64" />
+        <entry id="65" />
+        <entry id="66" />
+        <entry id="67" />
+        <entry id="68" />
+        <entry id="69" />
+        <entry id="70" />
+        <entry id="71" />
+        <entry id="72" />
+        <entry id="73" />
+        <entry id="74" />
+        <entry id="75" />
+        <entry id="76" />
+        <entry id="77" />
+      </container>
+      <container>
+        <name>Furniture</name>
+        <entry id="78" />
+        <entry id="79" />
+        <entry id="80" />
+        <entry id="81" />
+        <entry id="82" />
+        <entry id="83" />
+        <entry id="84" />
+        <entry id="85" />
+        <entry id="86" />
+        <entry id="87" />
+        <entry id="88" />
+        <entry id="89" />
+        <entry id="90" />
+        <entry id="91" />
+        <entry id="92" />
+        <entry id="93" />
+        <entry id="94" />
+        <entry id="95" />
+        <entry id="96" />
+        <entry id="97" />
+        <entry id="98" />
+        <entry id="99" />
+        <entry id="100" />
+        <entry id="101" />
+        <entry id="102" />
+        <entry id="103" />
+        <entry id="104" />
+        <entry id="105" />
+        <entry id="106" />
+        <entry id="107" />
+      </container>
+      <container>
+        <name>Family</name>
+        <entry id="108" />
+        <entry id="109" />
+        <entry id="110" />
+        <entry id="111" />
+        <entry id="112" />
+        <entry id="113" />
+        <entry id="114" />
+        <entry id="115" />
+        <entry id="116" />
+        <entry id="117" />
+        <entry id="118" />
+      </container>
+    </container>
+    <container>
+      <name>Places</name>
+      <container>
+        <name>Positions</name>
+        <entry id="119" />
+        <entry id="120" />
+        <entry id="121" />
+        <entry id="122" />
+        <entry id="123" />
+        <entry id="124" />
+        <entry id="125" />
+        <entry id="126" />
+        <entry id="127" />
+        <entry id="128" />
+        <entry id="129" />
+        <entry id="130" />
+      </container>
+      <container>
+        <name>Other</name>
+        <entry id="131" />
+        <entry id="132" />
+        <entry id="133" />
+        <entry id="134" />
+        <entry id="135" />
+        <entry id="136" />
+        <entry id="137" />
+        <entry id="138" />
+        <entry id="139" />
+        <entry id="140" />
+        <entry id="141" />
+        <entry id="142" />
+        <entry id="143" />
+        <entry id="144" />
+        <entry id="145" />
+        <entry id="146" />
+        <entry id="147" />
+      </container>
+    </container>
+    <container>
       <name>Time</name>
-      <entry id="0" />
-      <entry id="1" />
-      <entry id="2" />
-      <entry id="3" />
-      <entry id="4" />
-      <entry id="5" />
-      <entry id="6" />
-      <entry id="7" />
-      <entry id="8" />
-      <entry id="9" />
-      <entry id="10" />
-      <entry id="11" />
-      <entry id="12" />
-      <entry id="13" />
-      <entry id="14" />
-      <entry id="15" />
-      <entry id="16" />
-      <entry id="17" />
-      <entry id="18" />
-      <entry id="19" />
-      <entry id="20" />
-      <entry id="21" />
-      <entry id="22" />
-      <entry id="23" />
-      <entry id="24" />
-      <entry id="25" />
-      <entry id="26" />
-      <entry id="27" />
-      <entry id="28" />
-      <entry id="29" />
-      <entry id="30" />
-      <entry id="31" />
-      <entry id="32" />
-      <entry id="33" />
-      <entry id="34" />
-      <entry id="35" />
-      <entry id="36" />
-      <entry id="37" />
-      <entry id="38" />
-      <entry id="39" />
-      <entry id="40" />
-      <entry id="41" />
-    </container>
-    <container>
-      <name>Adjectives-Contraries</name>
-      <entry id="42" />
-      <entry id="43" />
-      <entry id="44" />
-      <entry id="45" />
-      <entry id="46" />
-      <entry id="47" />
-      <entry id="48" />
-      <entry id="49" />
-      <entry id="50" />
-      <entry id="51" />
-      <entry id="52" />
-      <entry id="53" />
-      <entry id="54" />
-      <entry id="55" />
-      <entry id="56" />
-      <entry id="57" />
-      <entry id="58" />
-      <entry id="59" />
-      <entry id="60" />
-      <entry id="61" />
-      <entry id="62" />
-      <entry id="63" />
-      <entry id="64" />
-      <entry id="65" />
-      <entry id="66" />
-      <entry id="67" />
-      <entry id="68" />
-      <entry id="69" />
-      <entry id="70" />
-      <entry id="71" />
-      <entry id="72" />
-      <entry id="73" />
-      <entry id="74" />
-      <entry id="75" />
-    </container>
-    <container>
-      <name>Furniture</name>
-      <entry id="76" />
-      <entry id="77" />
-      <entry id="78" />
-      <entry id="79" />
-      <entry id="80" />
-      <entry id="81" />
-      <entry id="82" />
-      <entry id="83" />
-      <entry id="84" />
-      <entry id="85" />
-      <entry id="86" />
-      <entry id="87" />
-      <entry id="88" />
-      <entry id="89" />
-      <entry id="90" />
-      <entry id="91" />
-      <entry id="92" />
-      <entry id="93" />
-      <entry id="94" />
-      <entry id="95" />
-      <entry id="96" />
-      <entry id="97" />
-      <entry id="98" />
-      <entry id="99" />
-      <entry id="100" />
-      <entry id="101" />
-      <entry id="102" />
-      <entry id="103" />
-      <entry id="104" />
-      <entry id="105" />
-    </container>
-    <container>
-      <name>Family</name>
-      <entry id="106" />
-      <entry id="107" />
-      <entry id="108" />
-      <entry id="109" />
-      <entry id="110" />
-      <entry id="111" />
-      <entry id="112" />
-      <entry id="113" />
-      <entry id="114" />
-      <entry id="115" />
-      <entry id="116" />
-    </container>
-    <container>
-      <name>Interrogative words</name>
-      <entry id="117" />
-      <entry id="118" />
-      <entry id="119" />
-      <entry id="120" />
-      <entry id="121" />
-      <entry id="122" />
-      <entry id="123" />
-      <entry id="124" />
-      <entry id="125" />
-      <entry id="126" />
-      <entry id="127" />
-      <entry id="128" />
-      <entry id="129" />
-      <entry id="130" />
-      <entry id="131" />
-    </container>
-    <container>
-      <name>Lesson 01</name>
-      <entry id="132" />
-      <entry id="133" />
-      <entry id="134" />
-      <entry id="135" />
-      <entry id="136" />
-      <entry id="137" />
-      <entry id="138" />
-      <entry id="139" />
-      <entry id="140" />
-      <entry id="141" />
-      <entry id="142" />
-      <entry id="143" />
-      <entry id="144" />
-      <entry id="145" />
-      <entry id="146" />
-      <entry id="147" />
       <entry id="148" />
       <entry id="149" />
       <entry id="150" />
@@ -5156,88 +5612,85 @@
       <entry id="178" />
       <entry id="179" />
       <entry id="180" />
+      <entry id="181" />
+      <entry id="182" />
+      <entry id="183" />
+      <entry id="184" />
+      <entry id="185" />
+      <entry id="186" />
+      <entry id="187" />
+      <entry id="188" />
+      <entry id="189" />
+      <entry id="190" />
+      <entry id="191" />
+      <entry id="192" />
+      <entry id="193" />
+      <entry id="194" />
+      <entry id="195" />
+      <entry id="196" />
+      <entry id="197" />
+      <entry id="198" />
+      <entry id="199" />
+      <entry id="200" />
+      <entry id="201" />
+      <entry id="202" />
+      <entry id="203" />
+    </container>
+    <container>
+      <name>Lesson 01</name>
+      <entry id="204" />
+      <entry id="205" />
+      <entry id="206" />
+      <entry id="207" />
+      <entry id="208" />
+      <entry id="209" />
+      <entry id="210" />
+      <entry id="211" />
+      <entry id="212" />
+      <entry id="213" />
+      <entry id="214" />
+      <entry id="215" />
+      <entry id="216" />
+      <entry id="217" />
+      <entry id="218" />
+      <entry id="219" />
+      <entry id="220" />
+      <entry id="221" />
+      <entry id="222" />
+      <entry id="223" />
+      <entry id="224" />
+      <entry id="225" />
+      <entry id="226" />
+      <entry id="227" />
+      <entry id="228" />
+      <entry id="229" />
+      <entry id="230" />
+      <entry id="231" />
+      <entry id="232" />
+      <entry id="233" />
+      <entry id="234" />
+      <entry id="235" />
+      <entry id="236" />
+      <entry id="237" />
+      <entry id="238" />
+      <entry id="239" />
+      <entry id="240" />
+      <entry id="241" />
+      <entry id="242" />
+      <entry id="243" />
+      <entry id="244" />
+      <entry id="245" />
+      <entry id="246" />
+      <entry id="247" />
+      <entry id="248" />
+      <entry id="249" />
+      <entry id="250" />
+      <entry id="251" />
     </container>
     <container>
       <name>Lesson 02</name>
       <container>
         <name>Lesson</name>
-        <entry id="181" />
-        <entry id="182" />
-        <entry id="183" />
-        <entry id="184" />
-        <entry id="185" />
-        <entry id="186" />
-        <entry id="187" />
-        <entry id="188" />
-        <entry id="189" />
-        <entry id="190" />
-        <entry id="191" />
-        <entry id="192" />
-        <entry id="193" />
-        <entry id="194" />
-        <entry id="195" />
-        <entry id="196" />
-        <entry id="197" />
-        <entry id="198" />
-        <entry id="199" />
-      </container>
-      <container>
-        <name>Verbs</name>
-        <entry id="200" />
-        <entry id="201" />
-        <entry id="202" />
-        <entry id="203" />
-        <entry id="204" />
-        <entry id="205" />
-        <entry id="206" />
-        <entry id="207" />
-        <entry id="208" />
-        <entry id="209" />
-        <entry id="210" />
-        <entry id="211" />
-        <entry id="212" />
-        <entry id="213" />
-        <entry id="214" />
-        <entry id="215" />
-        <entry id="216" />
-        <entry id="217" />
-        <entry id="218" />
-        <entry id="219" />
-        <entry id="220" />
-        <entry id="221" />
-        <entry id="222" />
-        <entry id="223" />
-        <entry id="224" />
-        <entry id="225" />
-        <entry id="226" />
-        <entry id="227" />
-        <entry id="228" />
-        <entry id="229" />
-        <entry id="230" />
-        <entry id="231" />
-      </container>
-      <container>
-        <name>Extra verbs</name>
-        <entry id="232" />
-        <entry id="233" />
-        <entry id="234" />
-        <entry id="235" />
-        <entry id="236" />
-        <entry id="237" />
-        <entry id="238" />
-        <entry id="239" />
-        <entry id="240" />
-        <entry id="241" />
-        <entry id="242" />
-        <entry id="243" />
-        <entry id="244" />
-        <entry id="245" />
-        <entry id="246" />
-        <entry id="247" />
-        <entry id="248" />
-        <entry id="249" />
-        <entry id="250" />
-        <entry id="251" />
         <entry id="252" />
         <entry id="253" />
         <entry id="254" />
@@ -5246,38 +5699,32 @@
         <entry id="257" />
         <entry id="258" />
         <entry id="259" />
+        <entry id="260" />
+        <entry id="261" />
+        <entry id="262" />
+        <entry id="263" />
+        <entry id="264" />
+        <entry id="265" />
+        <entry id="266" />
+        <entry id="267" />
+        <entry id="268" />
+        <entry id="269" />
       </container>
-    </container>
-    <container>
-      <name>Lesson 03</name>
-      <entry id="260" />
-      <entry id="261" />
-      <entry id="262" />
-      <entry id="263" />
-      <entry id="264" />
-      <entry id="265" />
-      <entry id="266" />
-      <entry id="267" />
-      <entry id="268" />
-      <entry id="269" />
-      <entry id="270" />
-      <entry id="271" />
-      <entry id="272" />
-      <entry id="273" />
-      <entry id="274" />
-      <entry id="275" />
-      <entry id="276" />
-      <entry id="277" />
-      <entry id="278" />
-      <entry id="279" />
-      <entry id="280" />
-      <entry id="281" />
-      <entry id="282" />
-    </container>
-    <container>
-      <name>Lesson 04</name>
       <container>
-        <name>Extra</name>
+        <name>Verbs</name>
+        <entry id="270" />
+        <entry id="271" />
+        <entry id="272" />
+        <entry id="273" />
+        <entry id="274" />
+        <entry id="275" />
+        <entry id="276" />
+        <entry id="277" />
+        <entry id="278" />
+        <entry id="279" />
+        <entry id="280" />
+        <entry id="281" />
+        <entry id="282" />
         <entry id="283" />
         <entry id="284" />
         <entry id="285" />
@@ -5296,6 +5743,9 @@
         <entry id="298" />
         <entry id="299" />
         <entry id="300" />
+      </container>
+      <container>
+        <name>Extra verbs</name>
         <entry id="301" />
         <entry id="302" />
         <entry id="303" />
@@ -5312,9 +5762,6 @@
         <entry id="314" />
         <entry id="315" />
         <entry id="316" />
-      </container>
-      <container>
-        <name>Lesson</name>
         <entry id="317" />
         <entry id="318" />
         <entry id="319" />
@@ -5326,16 +5773,16 @@
         <entry id="325" />
         <entry id="326" />
         <entry id="327" />
-        <entry id="328" />
-        <entry id="329" />
-        <entry id="330" />
-        <entry id="331" />
-        <entry id="332" />
-        <entry id="333" />
       </container>
     </container>
     <container>
-      <name>Lesson 05</name>
+      <name>Lesson 03</name>
+      <entry id="328" />
+      <entry id="329" />
+      <entry id="330" />
+      <entry id="331" />
+      <entry id="332" />
+      <entry id="333" />
       <entry id="334" />
       <entry id="335" />
       <entry id="336" />
@@ -5351,21 +5798,21 @@
       <entry id="346" />
       <entry id="347" />
       <entry id="348" />
-      <entry id="349" />
-      <entry id="350" />
-      <entry id="351" />
-      <entry id="352" />
-      <entry id="353" />
-      <entry id="354" />
-      <entry id="355" />
-      <entry id="356" />
-      <entry id="357" />
-      <entry id="358" />
     </container>
     <container>
-      <name>Lesson 06</name>
+      <name>Lesson 04</name>
       <container>
-        <name>Lesson</name>
+        <name>Extra</name>
+        <entry id="349" />
+        <entry id="350" />
+        <entry id="351" />
+        <entry id="352" />
+        <entry id="353" />
+        <entry id="354" />
+        <entry id="355" />
+        <entry id="356" />
+        <entry id="357" />
+        <entry id="358" />
         <entry id="359" />
         <entry id="360" />
         <entry id="361" />
@@ -5391,7 +5838,7 @@
         <entry id="381" />
       </container>
       <container>
-        <name>Extra</name>
+        <name>Lesson</name>
         <entry id="382" />
         <entry id="383" />
         <entry id="384" />
@@ -5408,14 +5855,14 @@
         <entry id="395" />
         <entry id="396" />
         <entry id="397" />
-        <entry id="398" />
-        <entry id="399" />
-        <entry id="400" />
-        <entry id="401" />
       </container>
     </container>
     <container>
-      <name>Lesson 07</name>
+      <name>Lesson 05</name>
+      <entry id="398" />
+      <entry id="399" />
+      <entry id="400" />
+      <entry id="401" />
       <entry id="402" />
       <entry id="403" />
       <entry id="404" />
@@ -5434,41 +5881,38 @@
       <entry id="417" />
       <entry id="418" />
       <entry id="419" />
-      <entry id="420" />
-      <entry id="421" />
-      <entry id="422" />
-      <entry id="423" />
-      <entry id="424" />
-      <entry id="425" />
     </container>
     <container>
-      <name>Lesson 08</name>
-      <entry id="426" />
-      <entry id="427" />
-      <entry id="428" />
-      <entry id="429" />
-      <entry id="430" />
-      <entry id="431" />
-      <entry id="432" />
-      <entry id="433" />
-      <entry id="434" />
-      <entry id="435" />
-    </container>
-    <container>
-      <name>Lesson 09</name>
-      <entry id="436" />
-      <entry id="437" />
-      <entry id="438" />
-      <entry id="439" />
-      <entry id="440" />
-      <entry id="441" />
-      <entry id="442" />
-      <entry id="443" />
-    </container>
-    <container>
-      <name>Lesson 10</name>
+      <name>Lesson 06</name>
+      <container>
+        <name>Lesson</name>
+        <entry id="420" />
+        <entry id="421" />
+        <entry id="422" />
+        <entry id="423" />
+        <entry id="424" />
+        <entry id="425" />
+        <entry id="426" />
+        <entry id="427" />
+        <entry id="428" />
+        <entry id="429" />
+        <entry id="430" />
+        <entry id="431" />
+        <entry id="432" />
+        <entry id="433" />
+        <entry id="434" />
+        <entry id="435" />
+        <entry id="436" />
+        <entry id="437" />
+        <entry id="438" />
+        <entry id="439" />
+      </container>
       <container>
         <name>Extra</name>
+        <entry id="440" />
+        <entry id="441" />
+        <entry id="442" />
+        <entry id="443" />
         <entry id="444" />
         <entry id="445" />
         <entry id="446" />
@@ -5485,75 +5929,66 @@
         <entry id="457" />
         <entry id="458" />
         <entry id="459" />
-        <entry id="460" />
-        <entry id="461" />
-        <entry id="462" />
-        <entry id="463" />
-      </container>
-      <container>
-        <name>Lesson</name>
-        <entry id="464" />
-        <entry id="465" />
-        <entry id="466" />
-        <entry id="467" />
-        <entry id="468" />
-        <entry id="469" />
-        <entry id="470" />
-        <entry id="471" />
-        <entry id="472" />
-        <entry id="473" />
-        <entry id="474" />
-        <entry id="475" />
-        <entry id="476" />
-        <entry id="477" />
-        <entry id="478" />
-        <entry id="479" />
-        <entry id="480" />
-        <entry id="481" />
-        <entry id="482" />
       </container>
     </container>
     <container>
-      <name>Lesson 11</name>
+      <name>Lesson 07</name>
+      <entry id="460" />
+      <entry id="461" />
+      <entry id="462" />
+      <entry id="463" />
+      <entry id="464" />
+      <entry id="465" />
+      <entry id="466" />
+      <entry id="467" />
+      <entry id="468" />
+      <entry id="469" />
+      <entry id="470" />
+      <entry id="471" />
+      <entry id="472" />
+      <entry id="473" />
+      <entry id="474" />
+      <entry id="475" />
+      <entry id="476" />
+      <entry id="477" />
+      <entry id="478" />
+      <entry id="479" />
+      <entry id="480" />
+      <entry id="481" />
+    </container>
+    <container>
+      <name>Lesson 08</name>
+      <entry id="482" />
+      <entry id="483" />
+      <entry id="484" />
+      <entry id="485" />
+      <entry id="486" />
+      <entry id="487" />
+      <entry id="488" />
+      <entry id="489" />
+      <entry id="490" />
+      <entry id="491" />
+    </container>
+    <container>
+      <name>Lesson 09</name>
+      <entry id="492" />
+      <entry id="493" />
+      <entry id="494" />
+      <entry id="495" />
+      <entry id="496" />
+      <entry id="497" />
+      <entry id="498" />
+      <entry id="499" />
+    </container>
+    <container>
+      <name>Lesson 10</name>
       <container>
-        <name>Positions</name>
-        <entry id="483" />
-        <entry id="484" />
-        <entry id="485" />
-        <entry id="486" />
-        <entry id="487" />
-        <entry id="488" />
-        <entry id="489" />
-        <entry id="490" />
-        <entry id="491" />
-        <entry id="492" />
-        <entry id="493" />
-      </container>
-      <container>
-        <name>Others</name>
-        <entry id="494" />
-        <entry id="495" />
-        <entry id="496" />
-        <entry id="497" />
-        <entry id="498" />
-        <entry id="499" />
+        <name>Extra</name>
         <entry id="500" />
         <entry id="501" />
         <entry id="502" />
-      </container>
-    </container>
-    <container>
-      <name>Lesson 12</name>
-      <container>
-        <name>Lesson</name>
         <entry id="503" />
         <entry id="504" />
-      </container>
-    </container>
-    <container>
-      <name>Lesson 13</name>
-      <container>
-        <name>Help Words</name>
         <entry id="505" />
         <entry id="506" />
         <entry id="507" />
@@ -5564,12 +5999,98 @@
         <entry id="512" />
         <entry id="513" />
         <entry id="514" />
+        <entry id="515" />
+        <entry id="516" />
+        <entry id="517" />
+        <entry id="518" />
+      </container>
+      <container>
+        <name>Lesson</name>
+        <entry id="519" />
+        <entry id="520" />
+        <entry id="521" />
+        <entry id="522" />
+        <entry id="523" />
+        <entry id="524" />
+        <entry id="525" />
+        <entry id="526" />
+        <entry id="527" />
+        <entry id="528" />
+        <entry id="529" />
+        <entry id="530" />
+        <entry id="531" />
+      </container>
+    </container>
+    <container>
+      <name>Lesson 11</name>
+      <container>
+        <name>Others</name>
+        <entry id="532" />
+        <entry id="533" />
+        <entry id="534" />
+        <entry id="535" />
+        <entry id="536" />
+        <entry id="537" />
+        <entry id="538" />
+        <entry id="539" />
+      </container>
+    </container>
+    <container>
+      <name>Lesson 12</name>
+      <container>
+        <name>Lesson</name>
+        <entry id="540" />
+        <entry id="541" />
+      </container>
+    </container>
+    <container>
+      <name>Lesson 13</name>
+      <container>
+        <name>Help Words</name>
+        <entry id="542" />
+        <entry id="543" />
+        <entry id="544" />
+        <entry id="545" />
+        <entry id="546" />
+        <entry id="547" />
+        <entry id="548" />
+        <entry id="549" />
+        <entry id="550" />
+        <entry id="551" />
       </container>
       <container>
         <name>Others</name>
-        <entry id="515" />
-        <entry id="516" />
+        <entry id="552" />
+        <entry id="553" />
       </container>
+    </container>
+    <container>
+      <name>Lesson 14</name>
+      <entry id="554" />
+      <entry id="555" />
+      <entry id="556" />
+      <entry id="557" />
+      <entry id="558" />
+      <entry id="559" />
+      <entry id="560" />
+      <entry id="561" />
+    </container>
+    <container>
+      <name>Lesson 15</name>
+      <entry id="562" />
+      <entry id="563" />
+      <entry id="564" />
+      <entry id="565" />
+    </container>
+    <container>
+      <name>Lesson 16</name>
+      <entry id="566" />
+      <entry id="567" />
+      <entry id="568" />
+      <entry id="569" />
+      <entry id="570" />
+      <entry id="571" />
+      <entry id="572" />
     </container>
   </lessons>
   <wordtypes>
