@@ -7,7 +7,7 @@ import Lessons.VocParser.WordPicker;
 
 public class Prepositions {
 	static String[] PREPOSITIONS = new String[] { "i", "på", "vid", "om",
-		"hos", "från", "till", "med", "att", "av" };
+		"hos", "från", "till", "med", "att", "av", "upp" };
 
 	/**
 	 * @param w
