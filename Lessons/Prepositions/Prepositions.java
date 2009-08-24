@@ -1,12 +1,13 @@
 package Lessons.Prepositions;
 
 import Asker.Question;
+import IO.LibUtils;
 import Lessons.VocParser.Word;
 import Lessons.VocParser.WordPicker;
 
 public class Prepositions {
 	static String[] PREPOSITIONS = new String[] { "i", "på", "vid", "om",
-			"hos", "från", "till", "med" };
+		"hos", "från", "till", "med", "att", "av" };
 
 	/**
 	 * @param w
@@ -14,20 +15,14 @@ public class Prepositions {
 	 * @return the index of the found preposition if any, -1 otherwise
 	 */
 	private static int containsParticle(Word w) {
-		for (int i = 0; i < PREPOSITIONS.length; i++) {
-			if (w.get1().contains(addSpaces(PREPOSITIONS[i])))
-				return i;
+		String[] words = w.get1().split(" ");
+		for (String word : words) {
+			for (int i = 0; i < PREPOSITIONS.length; i++) {
+				if (word.equals(PREPOSITIONS[i]))
+					return i;
+			}
 		}
 		return -1;
-	}
-
-	/**
-	 * @param s
-	 *            a {@link String}
-	 * @return " " + s + " "
-	 */
-	private static String addSpaces(String s) {
-		return " " + s + " ";
 	}
 
 	/**
@@ -44,25 +39,31 @@ public class Prepositions {
 				break;
 		}
 
-		String question = w.get1();
-		for (String s : PREPOSITIONS)
-			question = question.replace(addSpaces(s),
-					addSpaces(Question.UNKNOWN));
-		// question = question.replace(addSpaces(PREPOSITIONS[pronoun_index]),
-		// addSpaces(Question.UNKNOWN));
+		// replace the preposition with the "____"
+		String[] words = w.get1().split(" ");
+		String question = "", answer = "";
+		for (String word : words) {
+			String word_q = word, word_a = word;
+			for (String s : PREPOSITIONS) {
+				if ( word.equals(s) ) {
+					word_q = Question.UNKNOWN;
+					word_a = LibUtils.emphasize(word);
+				}
+			}
+			question = question + (question.length() > 0 ? " " : "") + word_q;
+			answer = answer + (answer.length() > 0 ? " " : "") + word_a;
+		}
+		
+		// add the translation
 		question = question + " (" + w.get0() + ")";
-
-		String answer = w.get1();
-		// answer = answer.replace(addSpaces(PREPOSITIONS[pronoun_index]),
-		// addSpaces(
-		// PREPOSITIONS[pronoun_index]).toUpperCase());
-		// answer = w.get0() + " | " + answer;
+		answer = answer + " (" + w.get0() + ")";
 
 		Question q = new Question("Prepositions", question, answer);
 		return q;
 	}
 
 	public static void main(String[] args) {
-		System.out.println(randomQuestion());
+		for (int i = 0; i < 10; i++)
+			System.out.println(randomQuestion());
 	}
 }

@@ -36,7 +36,7 @@ public class VisualAsker extends JPanel {
 
 	private JButton unknownWord_field = new JButton("");
 
-	private JTextField answer_field;
+	private JButton answer_field = new JButton("");
 
 	private JButton knowButton;
 
@@ -84,7 +84,10 @@ public class VisualAsker extends JPanel {
 	 * display the content of the answer
 	 */
 	private void displayAnswer() {
-		answer_field.setText(currentQuestion.answer);
+		String text = currentQuestion.answer;
+		text = "<center>" + text + "</center>";
+		text = "<html>" + text + "</html>";
+		answer_field.setText(text);
 	}
 
 	/**
@@ -159,8 +162,6 @@ public class VisualAsker extends JPanel {
 			return;
 		}
 
-		answer_field = new JTextField("");
-		answer_field.setEditable(false);
 		answer_field.setBackground(BLUE);
 		answer_field.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 16));
 		answer_field.setHorizontalAlignment(JTextField.CENTER);

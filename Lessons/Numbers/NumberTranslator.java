@@ -42,7 +42,7 @@ public class NumberTranslator {
 			} else if (dozen == 1) { /* 10 to 20 */
 				rep += (rep.length()>0?" ":"") + ten_to_twenty[units];
 			} else {
-				rep += multiples_of_ten[dozen] + (units != 0 ? " " + numbers[units] : "");
+				rep += (rep.length()>0?" ":"") + multiples_of_ten[dozen] + (units != 0 ? " " + numbers[units] : "");
 			}
 		}
 
@@ -56,9 +56,9 @@ public class NumberTranslator {
 	public static Question randomQuestion(int max) {
 		int n = (int) (max * Math.random());
 		String n_s = translate(n);
-		if (Math.random() < .5)
-			return new Question("Numbers", "" + n, n_s);
-		return new Question("Numbers", n_s, "" + n);
+		String ans = n + " = " + n_s;
+		String question = (Math.random() < .5 ? "" + n : n_s);
+		return new Question("Numbers", question, ans);
 	}
 
 	public static void main(String[] args) {

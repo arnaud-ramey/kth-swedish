@@ -82,7 +82,7 @@ public class IO {
 	 */
 	public static String[] readFile(String filename) {
 		InputStream stream = Verb.class.getResourceAsStream(filename);
-		Reader r = new InputStreamReader(stream);
+		Reader r = null;
 		try {
 			r = new InputStreamReader(stream, "UTF-8");
 		} catch (UnsupportedEncodingException e1) {
