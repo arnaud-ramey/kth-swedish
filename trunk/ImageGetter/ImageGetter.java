@@ -7,7 +7,7 @@ import IO.IO;
 import IO.Image_IO;
 
 public class ImageGetter {
-	static String DEFAULT_DIR = "Images/";
+	public static String DEFAULT_DIR = "Images/";
 
 	public static int MAX_WIDTH = 300;
 

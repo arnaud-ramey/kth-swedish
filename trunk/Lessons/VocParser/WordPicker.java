@@ -214,7 +214,7 @@ public class WordPicker {
 	 */
 	public static WordPicker defaultWordPicker() {
 		WordPicker wp = new WordPicker();
-		wp.setListofWords("/voc.kvtml");
+		wp.setListofWords(ListOfWords.defaultListOfWords());
 		return wp;
 	}
 
@@ -361,8 +361,7 @@ public class WordPicker {
 	 * tests
 	 */
 	public static void main(String[] args) {
-		WordPicker wp = new WordPicker();
-		wp.setListofWords("/voc.kvtml");
+		WordPicker wp = WordPicker.defaultWordPicker();
 		wp.forbidAllLessons();
 		wp.setLesson(0, true);
 		System.out.println(wp);

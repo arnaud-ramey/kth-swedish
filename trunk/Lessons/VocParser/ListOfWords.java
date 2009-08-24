@@ -257,9 +257,10 @@ public class ListOfWords {
 
 		totalCounts = sum;
 	}
-	
+
 	/**
-	 * @param lesson the index of the lesson
+	 * @param lesson
+	 *            the index of the lesson
 	 * @return the number of words in this lesson
 	 */
 	public int getNumberOfWordsInLesson(int lesson) {
@@ -292,9 +293,17 @@ public class ListOfWords {
 			System.out.println(w);
 	}
 
-	public static void test() {
+	/**
+	 * @return the default {@link ListOfWords}
+	 */
+	public static ListOfWords defaultListOfWords() {
 		ListOfWords l = new ListOfWords();
 		l.readFile("/voc.kvtml");
+		return l;
+	}
+
+	public static void test() {
+		ListOfWords l = ListOfWords.defaultListOfWords();
 		System.out.println(l.infoString());
 		// l.displayAllWords();
 		System.out.println(l.getRandomWord());
@@ -302,7 +311,7 @@ public class ListOfWords {
 
 	public static void test2() {
 		ListOfWords l = new ListOfWords();
-		l.readFile("/test_orig.kvtml");
+		l.readFile("/test.kvtml");
 
 		System.out.println(l.infoString());
 		l.displayAllWords();
@@ -331,8 +340,8 @@ public class ListOfWords {
 	 * tests
 	 */
 	public static void main(String[] args) {
-		// test();
-		test2();
+		test();
+		// test2();
 
 		// for (int i = 0 ; i < 100 ; i++) System.out.println( m.getRandomWord()
 		// );

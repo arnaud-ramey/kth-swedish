@@ -13,8 +13,6 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.event.CaretEvent;
-import javax.swing.event.CaretListener;
 
 import Asker.VisualAsker;
 import IO.Image_IO;
@@ -284,9 +282,14 @@ public class ImageGetterGUI extends JPanel {
 		});
 
 		/* list pattern */
-		word_selector_pattern.addCaretListener(new CaretListener() {
-			public void caretUpdate(CaretEvent arg0) {
-				// System.out.println(word_selector_pattern.getText());
+		// word_selector_pattern.addCaretListener(new CaretListener() {
+		// public void caretUpdate(CaretEvent arg0) {
+		// // System.out.println(word_selector_pattern.getText());
+		// refreshComboBox();
+		// }
+		//		});
+		word_selector_pattern.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
 				refreshComboBox();
 			}
 		});
