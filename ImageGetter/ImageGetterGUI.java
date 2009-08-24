@@ -138,13 +138,14 @@ public class ImageGetterGUI extends JPanel {
 			String path = currentWord().getPictureFilename();
 			int w = word_image_picture_field.getWidth() * 9 / 10;
 			int h = word_image_picture_field.getHeight() * 9 / 10;
-			
+
 			// try to load the image
-			BufferedImage i = new BufferedImage(1,1,1);
+			BufferedImage i = new BufferedImage(1, 1, 1);
 			try {
 				i = Image_IO.getImageFromURL(path, w, h, true);
-			} catch (ImagingOpException e) {}
-			
+			} catch (ImagingOpException e) {
+			}
+
 			// refresh the fields
 			word_image_picture_field.setIcon(new ImageIcon(i));
 			word_image_filename_field.setText("Current picture : '"
@@ -404,7 +405,7 @@ public class ImageGetterGUI extends JPanel {
 	 * tests
 	 */
 	public static void main(String[] args) {
-		// ImageGetterGUI.window("/voc.kvtml");
-		ImageGetterGUI.window("/test.kvtml");
+		ImageGetterGUI.window("/voc.kvtml");
+		// ImageGetterGUI.window("/test.kvtml");
 	}
 }

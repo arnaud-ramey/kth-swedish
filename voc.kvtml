@@ -792,11 +792,11 @@
     <entry id="84" >
       <translation id="0" >
         <text>a carpet, -s</text>
-        <image>Images/a_carpet,_-s.jpg</image>
+        <image>Images/a_carpet__-s.jpg</image>
       </translation>
       <translation id="1" >
         <text>en matt /a, -or</text>
-        <image>Images/a_carpet,_-s.jpg</image>
+        <image>Images/a_carpet__-s.jpg</image>
       </translation>
     </entry>
     <entry id="85" >
@@ -842,11 +842,11 @@
     <entry id="89" >
       <translation id="0" >
         <text>an alarm clock, -s</text>
-        <image>Images/an_alarm_clock,_-s.jpg</image>
+        <image>Images/an_alarm_clock__-s.jpg</image>
       </translation>
       <translation id="1" >
         <text>en väckarklock /a, -or</text>
-        <image>Images/an_alarm_clock,_-s.jpg</image>
+        <image>Images/an_alarm_clock__-s.jpg</image>
       </translation>
     </entry>
     <entry id="90" >
@@ -952,11 +952,11 @@
     <entry id="100" >
       <translation id="0" >
         <text>a radio, -s</text>
-        <image>Images/a_radio,_-s.jpg</image>
+        <image>Images/a_radio__-s.jpg</image>
       </translation>
       <translation id="1" >
         <text>en radio, radioapparater</text>
-        <image>Images/a_radio,_-s.jpg</image>
+        <image>Images/a_radio__-s.jpg</image>
       </translation>
     </entry>
     <entry id="101" >
@@ -3840,9 +3840,11 @@
     <entry id="392" >
       <translation id="0" >
         <text>a beer</text>
+        <image>Images/a_beer.jpg</image>
       </translation>
       <translation id="1" >
         <text>ett öl</text>
+        <image>Images/a_beer.jpg</image>
       </translation>
     </entry>
     <entry id="393" >
@@ -3856,9 +3858,11 @@
     <entry id="394" >
       <translation id="0" >
         <text>a kitchen</text>
+        <image>Images/a_kitchen.jpg</image>
       </translation>
       <translation id="1" >
         <text>et kök -> köket [sheket]</text>
+        <image>Images/a_kitchen.jpg</image>
       </translation>
     </entry>
     <entry id="395" >
@@ -3880,9 +3884,11 @@
     <entry id="397" >
       <translation id="0" >
         <text>a birthday</text>
+        <image>Images/a_birthday.jpg</image>
       </translation>
       <translation id="1" >
         <text>en födelsedag</text>
+        <image>Images/a_birthday.jpg</image>
       </translation>
     </entry>
     <entry id="398" >
