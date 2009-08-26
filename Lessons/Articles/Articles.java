@@ -17,12 +17,12 @@ public class Articles {
 	private static Word getRandomWordWithArticle(int article_index) {
 		WordPicker wp = WordPicker.defaultWordPicker();
 		Word w = null;
-		String article = ARTICLES[article_index] + " ";
+		String article = ARTICLES[article_index];
 		while (true) {
 			w = wp.getRandomWord();
-			String swe = w.get1();
+			String[] swe_words = w.get1().split(" ");
 			// is a sentence
-			if (swe.startsWith(article))
+			if (swe_words.length > 0 && swe_words[0].equals(article))
 				return w;
 		}
 	}
@@ -39,13 +39,26 @@ public class Articles {
 	 */
 	public static Question randomQuestion() {
 		Word w = getRandomWord();
-		String question = w.get1();
-		String answer = w.toString_onlyWords();
+		String[] words = w.get1().split(" ");
+		String question = "", answer = "";
+
 		// replace the articles
-		for (String art : ARTICLES) {
-			question = question.replace(art + " ", Question.UNKNOWN + " ");
-			answer = answer.replace(art + " ", LibUtils.emphasize(art) + " ");
+		for (String word : words) {
+			String word_q = word, word_a = word;
+			for (String art : ARTICLES) {
+				// replace the articles
+				if (word.equals( art ) ) {
+					word_q = Question.UNKNOWN;
+					word_a = LibUtils.emphasize(art);
+					break;
+				}
+			}
+			question = question + (question.length() > 0 ? " " : "") + word_q;
+			answer = answer + (answer.length() > 0 ? " " : "") + word_a;
 		}
+
+		// add the translation
+		answer = w.get0() + " | " + answer;
 
 		Question q = new Question("articles", question, answer);
 		return q;
