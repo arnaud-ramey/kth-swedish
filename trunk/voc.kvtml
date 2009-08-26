@@ -4678,9 +4678,11 @@
     <entry id="567" >
       <translation id="0" >
         <text>a coffee machine, -s</text>
+        <image>Images/a_coffee_machine__-s.jpg</image>
       </translation>
       <translation id="1" >
         <text>en kaffebryggar /e, -na</text>
+        <image>Images/a_coffee_machine__-s.jpg</image>
       </translation>
     </entry>
     <entry id="568" >
@@ -4694,9 +4696,11 @@
     <entry id="569" >
       <translation id="0" >
         <text>a coffee</text>
+        <image>Images/a_coffee.jpg</image>
       </translation>
       <translation id="1" >
         <text>ett kaffe</text>
+        <image>Images/a_coffee.jpg</image>
       </translation>
     </entry>
     <entry id="570" >
@@ -4741,21 +4745,35 @@
     </entry>
     <entry id="575" >
       <translation id="0" >
-        <text>a passport</text>
+        <text>an island, -s</text>
+        <image>Images/an_island__-s.jpg</image>
       </translation>
       <translation id="1" >
-        <text>ett pass, =</text>
+        <text>en ö, öar</text>
+        <image>Images/an_island__-s.jpg</image>
       </translation>
     </entry>
     <entry id="576" >
       <translation id="0" >
-        <text>a cheese, -s</text>
+        <text>a passport</text>
+        <image>Images/a_passport.jpg</image>
       </translation>
       <translation id="1" >
-        <text>en ost, -ar</text>
+        <text>ett pass, =</text>
+        <image>Images/a_passport.jpg</image>
       </translation>
     </entry>
     <entry id="577" >
+      <translation id="0" >
+        <text>a cheese, -s</text>
+        <image>Images/a_cheese__-s.jpg</image>
+      </translation>
+      <translation id="1" >
+        <text>en ost, -ar</text>
+        <image>Images/a_cheese__-s.jpg</image>
+      </translation>
+    </entry>
+    <entry id="578" >
       <translation id="0" >
         <text>I was in Malmö 4 years ago.</text>
       </translation>
@@ -4763,7 +4781,7 @@
         <text>jag var i Malmö för 4 år sedan.</text>
       </translation>
     </entry>
-    <entry id="578" >
+    <entry id="579" >
       <translation id="0" >
         <text>a map from Stockholm</text>
       </translation>
@@ -4771,7 +4789,7 @@
         <text>en karta över Stockholm</text>
       </translation>
     </entry>
-    <entry id="579" >
+    <entry id="580" >
       <translation id="0" >
         <text>a weather</text>
       </translation>
@@ -4779,7 +4797,7 @@
         <text>ett väder</text>
       </translation>
     </entry>
-    <entry id="580" >
+    <entry id="581" >
       <translation id="0" >
         <text>to begin / to end</text>
       </translation>
@@ -4787,7 +4805,7 @@
         <text>börja / sluta</text>
       </translation>
     </entry>
-    <entry id="581" >
+    <entry id="582" >
       <translation id="0" >
         <text>to go out of the bus</text>
       </translation>
@@ -4795,15 +4813,17 @@
         <text>stiga (jag stiger) av bussen</text>
       </translation>
     </entry>
-    <entry id="582" >
+    <entry id="583" >
       <translation id="0" >
         <text>a castle</text>
+        <image>Images/a_castle.jpg</image>
       </translation>
       <translation id="1" >
         <text>ett slott</text>
+        <image>Images/a_castle.jpg</image>
       </translation>
     </entry>
-    <entry id="583" >
+    <entry id="584" >
       <translation id="0" >
         <text>a statue of wood</text>
       </translation>
@@ -4811,7 +4831,7 @@
         <text>en staty av trä</text>
       </translation>
     </entry>
-    <entry id="584" >
+    <entry id="585" >
       <translation id="0" >
         <text>famous</text>
       </translation>
@@ -5528,11 +5548,11 @@
       <entry id="572" />
       <entry id="573" />
       <entry id="574" />
+      <entry id="575" />
     </container>
     <container>
       <name>Lesson 18</name>
       <inpractice>true</inpractice>
-      <entry id="575" />
       <entry id="576" />
       <entry id="577" />
       <entry id="578" />
@@ -5542,6 +5562,7 @@
       <entry id="582" />
       <entry id="583" />
       <entry id="584" />
+      <entry id="585" />
     </container>
   </lessons>
   <wordtypes>
