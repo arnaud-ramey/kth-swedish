@@ -8,19 +8,35 @@ import Lessons.VocParser.WordPicker;
 public class Articles {
 	static String[] ARTICLES = new String[] { "en", "ett" };
 
-	private static Word getRandomWord() {
+	/**
+	 * 
+	 * @param article_index
+	 *            the index of the chosen article
+	 * @return a random {@link Word} starting with the chosen article
+	 */
+	private static Word getRandomWordWithArticle(int article_index) {
 		WordPicker wp = WordPicker.defaultWordPicker();
 		Word w = null;
+		String article = ARTICLES[article_index] + " ";
 		while (true) {
 			w = wp.getRandomWord();
 			String swe = w.get1();
 			// is a sentence
-			for (String art : ARTICLES)
-			if (swe.startsWith(art + " "))
+			if (swe.startsWith(article))
 				return w;
 		}
 	}
 
+	/**
+	 * @return a random {@link Word} starting with a random article
+	 */
+	private static Word getRandomWord() {
+		return getRandomWordWithArticle((int) (Math.random() * ARTICLES.length));
+	}
+
+	/**
+	 * @return a random {@link Question} about an article
+	 */
 	public static Question randomQuestion() {
 		Word w = getRandomWord();
 		String question = w.get1();
@@ -36,7 +52,8 @@ public class Articles {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(getRandomWord());
-		System.out.println(randomQuestion());
+		for (int i = 0; i < 10; i++)
+			// System.out.println(getRandomWord());
+			System.out.println(randomQuestion());
 	}
 }
