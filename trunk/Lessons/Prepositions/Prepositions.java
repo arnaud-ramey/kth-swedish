@@ -62,6 +62,7 @@ public class Prepositions {
 				if (word.equals(s)) {
 					word_q = Question.UNKNOWN;
 					word_a = LibUtils.emphasize(word);
+					break;
 				}
 			}
 			question = question + (question.length() > 0 ? " " : "") + word_q;
