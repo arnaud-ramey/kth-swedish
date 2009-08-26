@@ -6,8 +6,21 @@ import Lessons.VocParser.Word;
 import Lessons.VocParser.WordPicker;
 
 public class Prepositions {
-	static String[] PREPOSITIONS = new String[] { "i", "på", "vid", "om",
-		"hos", "från", "till", "med", "att", "av", "upp" };
+	static String[] PREPOSITIONS = new String[] { //
+	 "i", //
+			"på", //
+			"om", //
+			"hos", //
+			"vid", //
+			"från", //
+			"till", //
+			"med", //
+			"att", //
+			"av", //
+			"upp", //
+			"över", //
+			"för" //
+	};
 
 	/**
 	 * @param w
@@ -45,7 +58,7 @@ public class Prepositions {
 		for (String word : words) {
 			String word_q = word, word_a = word;
 			for (String s : PREPOSITIONS) {
-				if ( word.equals(s) ) {
+				if (word.equals(s)) {
 					word_q = Question.UNKNOWN;
 					word_a = LibUtils.emphasize(word);
 				}
@@ -53,7 +66,7 @@ public class Prepositions {
 			question = question + (question.length() > 0 ? " " : "") + word_q;
 			answer = answer + (answer.length() > 0 ? " " : "") + word_a;
 		}
-		
+
 		// add the translation
 		question = question + " (" + w.get0() + ")";
 		answer = answer + " (" + w.get0() + ")";
