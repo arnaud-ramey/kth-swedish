@@ -7,7 +7,7 @@ import Lessons.VocParser.WordPicker;
 
 public class Prepositions {
 	static String[] PREPOSITIONS = new String[] { //
-	 "i", //
+	"i", //
 			"på", //
 			"om", //
 			"hos", //
@@ -27,15 +27,16 @@ public class Prepositions {
 	 *            a chosen {@link Word}
 	 * @return the index of the found preposition if any, -1 otherwise
 	 */
-	private static int containsParticle(Word w) {
+	private static boolean containsParticle(Word w, int index) {
 		String[] words = w.get1().split(" ");
 		for (String word : words) {
-			for (int i = 0; i < PREPOSITIONS.length; i++) {
-				if (word.equals(PREPOSITIONS[i]))
-					return i;
-			}
+			// for (int index = 0; index < PREPOSITIONS.length; index++) {
+			if (word.equals(PREPOSITIONS[index]))
+				return true;
+			// return index;
+			// }
 		}
-		return -1;
+		return false;
 	}
 
 	/**
@@ -44,11 +45,11 @@ public class Prepositions {
 	public static Question randomQuestion() {
 		WordPicker wp = WordPicker.defaultWordPicker();
 		Word w = null;
-		int pronoun_index;
+		int pronoun_index = (int) (Math.random() * PREPOSITIONS.length);
+		
 		while (true) {
 			w = wp.getRandomWord();
-			pronoun_index = containsParticle(w);
-			if (pronoun_index != -1)
+			if (containsParticle(w, pronoun_index))
 				break;
 		}
 
