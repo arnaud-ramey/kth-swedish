@@ -15,4 +15,15 @@ public class LibUtils {
 		return rep;
 	}
 
+	/**
+	 * @param s
+	 *            a {@link String}
+	 * @return s with the first letter in upper case, and everything else lower
+	 *         case
+	 */
+	public static String firstLetterUpperCase_otherLowerCase(String s) {
+		String low = s.toLowerCase();
+		return firstLetterUpperCase(low);
+	}
+
 }
