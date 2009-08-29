@@ -1,5 +1,7 @@
 package Lessons.VocParser;
 
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
@@ -14,6 +16,7 @@ import javax.swing.JComponent;
 
 import Asker.Question;
 import Asker.VisualAsker;
+import IO.LibUtils;
 
 public class WordPicker {
 	public ListOfWords listOfWords;
@@ -245,13 +248,15 @@ public class WordPicker {
 	 * 
 	 */
 	public void vocLesson_makeButtons(final VisualAsker jp) {
-		int ITEMS_PER_LINE = 3;
+		int ITEMS_PER_LINE = 4;
 		final JButton validate = new JButton();
 
 		/* create JCheckBoxes */
 		final LinkedList<JCheckBox> boxes = new LinkedList<JCheckBox>();
 		final LinkedList<Integer> lessons_associated_with_boxes = new LinkedList<Integer>();
 		int counter = 0;
+		Color color_bck = null;
+		
 		for (int i = 0; i < listOfWords.lessons.size(); i++) {
 			int nb_in_lesson = listOfWords.getNumberOfWordsInLesson(i);
 			if (nb_in_lesson == 0)
@@ -260,8 +265,10 @@ public class WordPicker {
 			title = title.replace("[", "").replace("]", "");
 			title = title.replace("Lesson ", "L");
 			title = title + " [" + nb_in_lesson + "]";
+			title = LibUtils.firstLetterUpperCase_otherLowerCase(title);
 			JCheckBox jc = new JCheckBox(title, true);
 			jc.setSelected(true);
+			jc.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 11));
 
 			// add an action listener to change the OK button
 			jc.addActionListener(new ActionListener() {
@@ -270,18 +277,22 @@ public class WordPicker {
 							lessons_associated_with_boxes);
 				};
 			});
+			
 			// give a color per line
 			boolean color_idx = (counter++ % (2 * ITEMS_PER_LINE) < ITEMS_PER_LINE);
-			if (color_idx)
-				jc.setBackground(VisualAsker.BLUE);
-			else
-				jc.setBackground(VisualAsker.YELLOW);
+			color_bck = (color_idx ? VisualAsker.BLUE : VisualAsker.YELLOW);
+			jc.setBackground(color_bck);
+
+			// add the box
 			boxes.add(jc);
 			lessons_associated_with_boxes.add(i);
 		}
+		
+		/* put the good background color */
+		jp.setBackground(color_bck);
 
 		/* create buttons to check and uncheck everything */
-		JButton uncheck_all = new JButton("Select all / select none");
+		JButton uncheck_all = new JButton("Select all/none");
 		uncheck_all.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int counter = 0;
@@ -352,7 +363,7 @@ public class WordPicker {
 			} else
 				c.gridx++;
 		} // end for button
-
+		
 		refreshButton(validate, boxes, lessons_associated_with_boxes);
 		jp.validate();
 	}
