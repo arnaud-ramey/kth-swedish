@@ -133,7 +133,7 @@ public class ImageGetterGUI extends JPanel {
 	 */
 	private void refreshWordImage() {
 		word_image_picture_field.setIcon(null);
-		if (currentWord().hasPicture()) {
+		if (currentWord().containsPicture()) {
 			// compute the dimensions
 			String path = currentWord().getPictureFilename();
 			int w = word_image_picture_field.getWidth() * 9 / 10;
@@ -171,7 +171,7 @@ public class ImageGetterGUI extends JPanel {
 			String s = w.toString_onlyWords();
 			if (!s.contains(word_selector_pattern.getText()))
 				continue;
-			if (w.hasPicture())
+			if (w.containsPicture())
 				s = PIC_PREFIX + s;
 			// cut the string
 			if (s.length() > 50)

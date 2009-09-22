@@ -192,7 +192,7 @@ public class WordPicker {
 				.toString_onlyWords());
 
 		// if there is an image, take it
-		if (this_question_type == QUESTION_TYPE_0_TO_ALL && w.hasPicture())
+		if (this_question_type == QUESTION_TYPE_0_TO_ALL && w.containsPicture())
 			rep.setImage_question(w.getPictureFilename());
 		return rep;
 	}

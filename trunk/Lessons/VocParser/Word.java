@@ -1,5 +1,7 @@
 package Lessons.VocParser;
 
+import java.util.Vector;
+
 public class Word {
 	/** the line where the word is beginning in the kvtml file */
 	int beginningLine;
@@ -21,6 +23,7 @@ public class Word {
 
 	/**
 	 * constructor
+	 * 
 	 * @param father
 	 * @param begin_line
 	 * @param indx
@@ -30,7 +33,11 @@ public class Word {
 		beginningLine = begin_line;
 		index = indx;
 	}
-
+	
+	public ListOfWords getFatherList() {
+		return fatherList;
+	}
+	
 	/**
 	 * add a new field to the word
 	 * 
@@ -44,14 +51,24 @@ public class Word {
 	public void addField(int lineNb, String tag, String value) {
 		String line = value;
 		line = "<" + tag + ">" + line + "</" + tag + ">";
-
-		// add the good number of spaces for a correct indentation
-		String lineBefore = fatherList.getLine(lineNb - 1);
-		int i = 0;
-		while (i < lineBefore.length() && lineBefore.charAt(i++) == ' ')
-			line = " " + line;
-
+		line = indentLine(lineNb - 1, line, 0);
 		fatherList.addLine(lineNb, line);
+	}
+
+	public String indentLine(int lineNb, String line, int addedSpaces) {
+		// add the good number of spaces for a correct indentation
+		String lineBefore = fatherList.getLine(lineNb);
+		
+		int nb_spaces_to_add = 0;
+		while (nb_spaces_to_add < lineBefore.length()
+				&& lineBefore.charAt(nb_spaces_to_add) == ' ') {
+			nb_spaces_to_add++;
+		}
+		nb_spaces_to_add += addedSpaces;
+		
+		for (int i = 0; i < nb_spaces_to_add; i++)
+			line = " " + line;
+		return line;
 	}
 
 	/**
@@ -75,6 +92,27 @@ public class Word {
 		this.proba = proba;
 	}
 
+	public boolean containsLine(String line) {
+		return (getLineContaining(beginningLine, line) != -1);
+	}
+
+	public boolean containsField(String tag) {
+		return containsLine("<" + tag);
+	}
+
+	public boolean containsLanguage(int id) {
+		String line = "translation id=\"" + id + "\"";
+		String line_bad = "<" + line + " />";
+		return containsLine(line) && !containsLine(line_bad);
+	}
+
+	/**
+	 * returns <code>true</code> if there is already a picture
+	 */
+	public boolean containsPicture() {
+		return containsField("image");
+	}
+
 	public void decreaseErrorCount() {
 		if (getErrorCount() > 0)
 			setErrorCount(-1 + getErrorCount());
@@ -94,19 +132,6 @@ public class Word {
 		// System.out.println("numberOfLanguages:" + numberOfLanguages);
 	}
 
-	/**
-	 * @return the end line number
-	 */
-	public int getEndLineIndex() {
-		int rep = beginningLine - 1;
-		String s;
-		do {
-			rep++;
-			s = fatherList.getLine(rep);
-		} while (!s.contains("</entry>"));
-		return rep;
-	}
-
 	public String get0() {
 		return getForeignWord(0);
 	}
@@ -124,6 +149,19 @@ public class Word {
 	 */
 	public int getCount() {
 		return getFieldInt(beginningLine, "count");
+	}
+
+	/**
+	 * @return the end line number
+	 */
+	public int getEndLineIndex() {
+		int rep = beginningLine - 1;
+		String s;
+		do {
+			rep++;
+			s = fatherList.getLine(rep);
+		} while (!s.contains("</entry>"));
+		return rep;
 	}
 
 	public int getErrorCount() {
@@ -214,7 +252,7 @@ public class Word {
 	 * @return the filename of the picture
 	 */
 	public String getPictureFilename() {
-		if (!hasPicture())
+		if (!containsPicture())
 			return "";
 		return getField(getLineContaining(beginningLine, "<image>"), "image");
 	}
@@ -232,10 +270,13 @@ public class Word {
 	}
 
 	/**
-	 * returns <code>true</code> if there is already a picture
+	 * @return the success rate in %
 	 */
-	public boolean hasPicture() {
-		return (getLineContaining(beginningLine, "<image>") != -1);
+	public double getSuccessRate() {
+		int count = getCount();
+		if (count == 0)
+			return 100;
+		return 100 * (count - getErrorCount()) / count;
 	}
 
 	public void increaseCount() {
@@ -267,7 +308,7 @@ public class Word {
 	 */
 	public void removePicture() {
 		// if there is no picture -> do nothing
-		if (!hasPicture())
+		if (!containsPicture())
 			return;
 
 		int line_index = beginningLine;
@@ -355,6 +396,59 @@ public class Word {
 		fatherList.setLine(goodLineNb, newLine);
 	}
 
+	public void setForeignWord(int idLanguage, String text) {
+		String line_one_line = "<translation id=\"" + idLanguage + "\" />";
+		String line_multi_begin = "<translation id=\"" + idLanguage + "\" >";
+		String line_multi_end = "</translation>";
+
+		int lineBegin = 0;
+		int nbLinesToErase = 0;
+		Vector<String> lines = new Vector<String>();
+		
+		/*
+		 * find the line where to insert
+		 */
+		// first case : contains <translation id="1" />
+		if (containsLine(line_one_line)) {
+			lineBegin = getLineContaining(beginningLine, line_one_line);
+			nbLinesToErase = 1;
+		}
+		// second case : contains <translation id="1" >
+		else if (containsLine(line_multi_begin) ) {
+			lineBegin = getLineContaining(beginningLine, line_multi_begin);
+			int lineEnd = getLineContaining(lineBegin, line_multi_end);
+			// System.out.println("lineBegin: " + lineBegin);
+			// System.out.println("lineEnd: " + lineEnd);
+			nbLinesToErase = lineEnd - lineBegin + 1;
+		}
+		// last case : contains nothing
+		else {
+			lineBegin = getEndLineIndex();
+			nbLinesToErase = 0;
+		}
+		
+		/*
+		 *  erase the old lines
+		 */
+		for (int i = 0; i < nbLinesToErase; i++)
+			fatherList.removeLine(lineBegin);
+		
+
+		/*
+		 * add new lines
+		 */
+		lines.add(indentLine(lineBegin-1, line_multi_begin, 0) );
+		String textLine = "<text>" + text + "</text>";
+		lines.add(indentLine(lineBegin-1, textLine, 2) );
+		if (containsPicture()) {
+			String pictureLine = "<image>" + getPictureFilename() + "</image>";
+			lines.add( indentLine(lineBegin-1, pictureLine, 2) );
+		}
+		lines.add(indentLine(lineBegin-1, line_multi_end, 0) );
+
+		fatherList.addLines(lineBegin, lines);
+	}
+
 	/**
 	 * change the picture of a word
 	 * 
@@ -362,7 +456,7 @@ public class Word {
 	 *            the new picture
 	 */
 	public void setPicture(String filename) {
-		if (hasPicture()) {
+		if (containsPicture()) {
 			setAllFields(beginningLine, "image", filename);
 		}
 		/* if has no picture, change the field */
@@ -377,25 +471,15 @@ public class Word {
 		}
 	}
 
-	/**
-	 * @return the success rate in %
-	 */
-	public double getSuccessRate() {
-		int count = getCount();
-		if (count == 0)
-			return 100;
-		return 100 * (count - getErrorCount()) / count;
-	}
-
 	public String toString() {
 		String rep = "";
 		rep += "#" + index;
-		rep += " (";
+		rep += " (line ";
 		rep += beginningLine;
 		rep += ", " + lesson_name + "=" + getLessonNumber();
 		rep += ") ";
 		rep += toString_onlyWords();
-		rep += (hasPicture() ? " [" + getPictureFilename() + "]" : "");
+		rep += (containsPicture() ? " [" + getPictureFilename() + "]" : "");
 		rep += " - " + (getCount() - getErrorCount()) + " of " + getCount();
 		rep += " (" + (int) getSuccessRate() + "%)";
 		rep += "->proba:" + (int) proba;
@@ -480,5 +564,9 @@ public class Word {
 		// System.out.println(w);
 
 		// System.out.println(w.getRandomLanguage());
+		
+		w.printLines();
+		w.setForeignWord(2, "new");
+		w.printLines();
 	}
 }
