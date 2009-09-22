@@ -48,7 +48,7 @@ public class UselessImagesFinder {
 
 		// remove all the used filenames
 		for (Word w : list.getWords()) {
-			if (!w.hasPicture())
+			if (!w.containsPicture())
 				continue;
 			String pic_filename = w.getPictureFilename();
 			filenames.remove(pic_filename);
@@ -88,7 +88,7 @@ public class UselessImagesFinder {
 
 		// remove all the used filenames
 		for (Word w : list.getWords()) {
-			if (!w.hasPicture())
+			if (!w.containsPicture())
 				continue;
 			String pic_filename = w.getPictureFilename();
 			boolean contains = filenames.contains(pic_filename);

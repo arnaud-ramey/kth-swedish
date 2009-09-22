@@ -32,6 +32,10 @@ public class ListOfWords {
 	public String getFilename() {
 		return filename;
 	}
+	
+	public Vector<String> getLanguages() {
+		return languages;
+	}
 
 	/**
 	 * read data from a file
@@ -183,6 +187,18 @@ public class ListOfWords {
 		}
 		// add the line
 		lines.add(lineNb, newline);
+	}
+	
+	public void addLines(int lineNb, Vector<String> newLines) {
+		// add the new lines backward
+		for (int i = newLines.size()-1; i >= 0; i--) {
+			this.lines.add(lineNb, newLines.elementAt(i));
+		}
+		// shift the lines after
+		for (Word w : words) {
+			if (w.beginningLine >= lineNb)
+				w.beginningLine+= newLines.size();
+		}
 	}
 
 	public void removeLine(int lineNb) {
