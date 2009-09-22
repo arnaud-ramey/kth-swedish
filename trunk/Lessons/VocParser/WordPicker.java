@@ -7,6 +7,7 @@ import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.LinkedList;
+import java.util.Random;
 import java.util.Vector;
 
 import javax.swing.JButton;
@@ -23,16 +24,12 @@ public class WordPicker {
 
 	private Vector<Boolean> allowedLessons = new Vector<Boolean>();
 
-	public static int QUESTION_TYPE_0_TO_ALL = 1;
+	public static int LANGUAGE_RANDOM = -1;
 
-	public static int QUESTION_TYPE_1_TO_ALL = 2;
+	private int chosenLanguage = LANGUAGE_RANDOM;
 
-	public static int QUESTION_TYPE_RANDOM = 3;
-
-	private int questiontType = QUESTION_TYPE_RANDOM;
-
-	public void setQuestiontType(int questiontType) {
-		this.questiontType = questiontType;
+	public void setQuestiontType(int chosenLanguage) {
+		this.chosenLanguage = chosenLanguage;
 	}
 
 	/**
@@ -177,22 +174,19 @@ public class WordPicker {
 		Word w = getRandomWord_selected_lessons_with_probas();
 
 		// determine the type of question
-		int this_question_type = questiontType;
-		if (questiontType == QUESTION_TYPE_RANDOM)
-			this_question_type = (Math.random() > .7 ? QUESTION_TYPE_1_TO_ALL
-					: QUESTION_TYPE_0_TO_ALL);
+		int this_chosen_language = chosenLanguage;
+		if (chosenLanguage == LANGUAGE_RANDOM)
+			this_chosen_language = new Random().nextInt(w.numberOfLanguages);
 
 		// determine the question
-		String question = "";
-		if (this_question_type == QUESTION_TYPE_0_TO_ALL)
-			question = w.get0();
-		if (this_question_type == QUESTION_TYPE_1_TO_ALL)
-			question = w.get1();
+		String question = w.getForeignWord(this_chosen_language);
+		if (question.length() == 0)
+			return getRandomQuestion();
 		Question rep = new Question("VOC " + w.lesson_name, question, w
 				.toString_onlyWords());
 
 		// if there is an image, take it
-		if (this_question_type == QUESTION_TYPE_0_TO_ALL && w.containsPicture())
+		if (this_chosen_language == 0 && w.containsPicture())
 			rep.setImage_question(w.getPictureFilename());
 		return rep;
 	}
@@ -257,6 +251,8 @@ public class WordPicker {
 		int counter = 0;
 		Color color_bck = null;
 		
+		System.out.println(listOfWords.lessons);
+
 		for (int i = 0; i < listOfWords.lessons.size(); i++) {
 			int nb_in_lesson = listOfWords.getNumberOfWordsInLesson(i);
 			if (nb_in_lesson == 0)
@@ -277,7 +273,7 @@ public class WordPicker {
 							lessons_associated_with_boxes);
 				};
 			});
-			
+
 			// give a color per line
 			boolean color_idx = (counter++ % (2 * ITEMS_PER_LINE) < ITEMS_PER_LINE);
 			color_bck = (color_idx ? VisualAsker.BLUE : VisualAsker.YELLOW);
@@ -287,7 +283,7 @@ public class WordPicker {
 			boxes.add(jc);
 			lessons_associated_with_boxes.add(i);
 		}
-		
+
 		/* put the good background color */
 		jp.setBackground(color_bck);
 
@@ -306,18 +302,19 @@ public class WordPicker {
 		});
 
 		/* create the question language list */
-		String[] possibilies = new String[] { "English -> Swedish",
-				"Swedish -> English", "Random language" };
-		final JComboBox list = new JComboBox(possibilies);
-		list.setSelectedIndex(2);
+		Vector<String> possibilities = new Vector<String>();
+		for (String language : listOfWords.getLanguages())
+			possibilities.add(language + "-> other languages");
+		possibilities.add("Random language");
+
+		final JComboBox list = new JComboBox(possibilities);
+		list.setSelectedIndex(list.getItemCount()-1);
 		list.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (list.getSelectedIndex() == 0)
-					setQuestiontType(QUESTION_TYPE_0_TO_ALL);
-				if (list.getSelectedIndex() == 1)
-					setQuestiontType(QUESTION_TYPE_1_TO_ALL);
-				if (list.getSelectedIndex() == 2)
-					setQuestiontType(QUESTION_TYPE_RANDOM);
+				setQuestiontType(list.getSelectedIndex());
+				// if random item selected => set random
+				if (list.getSelectedIndex() == list.getItemCount() - 1)
+					setQuestiontType(LANGUAGE_RANDOM);
 			}
 		});
 
@@ -363,7 +360,7 @@ public class WordPicker {
 			} else
 				c.gridx++;
 		} // end for button
-		
+
 		refreshButton(validate, boxes, lessons_associated_with_boxes);
 		jp.validate();
 	}
