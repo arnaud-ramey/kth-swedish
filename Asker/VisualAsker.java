@@ -266,7 +266,7 @@ public class VisualAsker extends JPanel {
 		JFrame jf = new JFrame();
 		jf.add(jp);
 		jf.setTitle("Asker");
-		jf.setSize(600, 200);
+		jf.setSize(800, 400);
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		jf.setVisible(true);
 	}
