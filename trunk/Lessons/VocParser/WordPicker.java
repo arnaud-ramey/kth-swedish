@@ -14,6 +14,8 @@ import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 
 import Asker.Question;
 import Asker.VisualAsker;
@@ -242,7 +244,7 @@ public class WordPicker {
 	 * 
 	 */
 	public void vocLesson_makeButtons(final VisualAsker jp) {
-		int ITEMS_PER_LINE = 4;
+		int ITEMS_PER_LINE = 3;
 		final JButton validate = new JButton();
 
 		/* create JCheckBoxes */
@@ -264,7 +266,7 @@ public class WordPicker {
 			title = LibUtils.firstLetterUpperCase_otherLowerCase(title);
 			JCheckBox jc = new JCheckBox(title, true);
 			jc.setSelected(true);
-			jc.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 11));
+			jc.setFont(new Font(Font.DIALOG, Font.PLAIN, 12));
 
 			// add an action listener to change the OK button
 			jc.addActionListener(new ActionListener() {
@@ -341,8 +343,11 @@ public class WordPicker {
 		components.addAll(boxes);
 
 		/* add all the elements of the list to the panel */
-		jp.removeAll();
-		jp.setLayout(new GridBagLayout());
+		JPanel jp_with_scroll = new JPanel();
+		JScrollPane scrollPane = new JScrollPane(jp_with_scroll);
+		scrollPane.getVerticalScrollBar().setUnitIncrement(20);
+		
+		jp_with_scroll.setLayout(new GridBagLayout());
 		GridBagConstraints c = new GridBagConstraints();
 		c.fill = GridBagConstraints.BOTH;
 		c.weighty = 1;
@@ -353,7 +358,7 @@ public class WordPicker {
 		// create button
 		for (int i = 0; i < components.size(); i++) {
 			int i_lessons = i - 2; // 1 for the first lesson
-			jp.add(components.get(i), c);
+			jp_with_scroll.add(components.get(i), c);
 			if (i_lessons % ITEMS_PER_LINE == 0) {
 				c.gridy++;
 				c.gridx = 0;
@@ -361,6 +366,9 @@ public class WordPicker {
 				c.gridx++;
 		} // end for button
 
+		jp.removeAll();
+		jp.setLayout(new GridBagLayout());
+		jp.add(scrollPane, c);
 		refreshButton(validate, boxes, lessons_associated_with_boxes);
 		jp.validate();
 	}
