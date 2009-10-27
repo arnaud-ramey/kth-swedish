@@ -251,8 +251,10 @@ public class VisualAsker extends JPanel {
 	}
 
 	public static void window() {
-		WordPicker wp = new WordPicker();
-		wp.setListofWords("/test.kvtml");
+		// WordPicker wp = new WordPicker();
+		// wp.setListofWords("/test.kvtml");
+		
+		WordPicker wp = WordPicker.defaultWordPicker();
 		// System.out.println(wp.getRandomQuestion());
 
 		VisualAsker jp = new VisualAsker();

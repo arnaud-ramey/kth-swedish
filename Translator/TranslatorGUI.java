@@ -8,9 +8,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.util.LinkedList;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -26,7 +28,7 @@ public class TranslatorGUI extends JPanel {
 	Translator t = new Translator();
 	ListOfWords words;
 
-	int targetLanguage = 2;
+	int targetLanguage = 3;
 
 	/**
 	 * @param t
@@ -52,9 +54,12 @@ public class TranslatorGUI extends JPanel {
 	public void makeButtons(final Word w, final int line,
 			final JPanel panel_whereToAdd, final GridBagConstraints c) {
 		boolean hasAlreadyTraduction = w.containsLanguage(targetLanguage);
-		
+
 		final Border normalBorder = BorderFactory.createEmptyBorder();
-		final Border underlinedBorder = BorderFactory.createLineBorder(Color.red, 1);
+		final Border underlinedBorder = BorderFactory.createLineBorder(
+				Color.red, 1);
+
+		final LinkedList<JComponent> j_components = new LinkedList<JComponent>();
 
 		// the original
 		final JTextField words_textField = new JTextField(w.get0());
@@ -63,6 +68,7 @@ public class TranslatorGUI extends JPanel {
 		words_textField.setToolTipText(w.toString_onlyWords());
 		words_textField.setBorder(normalBorder);
 		words_textField.setHorizontalAlignment(JTextField.RIGHT);
+		j_components.add(words_textField);
 
 		// the translation
 		final String translation_String;
@@ -75,7 +81,7 @@ public class TranslatorGUI extends JPanel {
 		}
 
 		else {
-			translation_String = t.translate(w, targetLanguage);
+			translation_String = t.translate(w, 0, targetLanguage);
 			translation_color = new Color(200, 255, 200);
 			tooltip_String = "This is the translation coming from Google Translator";
 		}
@@ -87,43 +93,48 @@ public class TranslatorGUI extends JPanel {
 		translation_textField.setBackground(translation_color);
 		translation_textField.setToolTipText(tooltip_String);
 		translation_textField.setBorder(normalBorder);
+		j_components.add(translation_textField);
 
 		// button to add
 		final JButton add_JButton = new JButton();
-		add_JButton.setText( (hasAlreadyTraduction ? "Change" : "Add" ) );
+		add_JButton.setText((hasAlreadyTraduction ? "Change" : "Add"));
 		add_JButton.addMouseListener(new MouseListener() {
 			public void mouseReleased(MouseEvent arg0) {
 			}
+
 			public void mousePressed(MouseEvent arg0) {
 			}
+
 			public void mouseClicked(MouseEvent arg0) {
-				w.setForeignWord(targetLanguage, translation_textField.getText());
-				panel_whereToAdd.remove(words_textField);
-				panel_whereToAdd.remove(translation_textField);
+				w.setForeignWord(targetLanguage, translation_textField
+						.getText());
+				// remove the buttons
+				for (JComponent t : j_components)
+					panel_whereToAdd.remove(t);
 				panel_whereToAdd.remove(add_JButton);
+				// make some new
 				makeButtons(w, line, panel_whereToAdd, c);
 				panel_whereToAdd.validate();
 			}
-			
+
 			public void mouseExited(MouseEvent arg0) {
 				words_textField.setBorder(normalBorder);
 				translation_textField.setBorder(normalBorder);
 			}
-			
+
 			public void mouseEntered(MouseEvent arg0) {
 				words_textField.setBorder(underlinedBorder);
 				translation_textField.setBorder(underlinedBorder);
 			}
 		});
+		j_components.add(add_JButton);
 
 		// add the components
 		c.gridy = line;
-		c.gridx = 0;
-		panel_whereToAdd.add(words_textField, c);
-		c.gridx = 1;
-		panel_whereToAdd.add(translation_textField, c);
-		c.gridx = 2;
-		panel_whereToAdd.add(add_JButton, c);
+		for (int i = 0; i < j_components.size(); i++) {
+			c.gridx = i;
+			panel_whereToAdd.add(j_components.get(i), c);
+		}
 	}
 
 	public void makeButtons() {
@@ -179,6 +190,10 @@ public class TranslatorGUI extends JPanel {
 	}
 
 	public static void main(String[] args) {
-		window(ListOfWords.defaultListOfWords());
+		ListOfWords w = ListOfWords.defaultListOfWords();
+		// ListOfWords w = new ListOfWords();
+		// w.readFile("/test.kvtml");
+
+		window(w);
 	}
 }
