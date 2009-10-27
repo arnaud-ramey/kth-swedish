@@ -4,7 +4,7 @@ import java.util.Vector;
 
 public class Word {
 	public static int ENGLISH = 0, SWEDISH = 1, SPANISH = 2, GERMAN = 3;
-	
+
 	/** the line where the word is beginning in the kvtml file */
 	int beginningLine;
 
@@ -35,11 +35,11 @@ public class Word {
 		beginningLine = begin_line;
 		index = indx;
 	}
-	
+
 	public ListOfWords getFatherList() {
 		return fatherList;
 	}
-	
+
 	/**
 	 * add a new field to the word
 	 * 
@@ -60,14 +60,14 @@ public class Word {
 	public String indentLine(int lineNb, String line, int addedSpaces) {
 		// add the good number of spaces for a correct indentation
 		String lineBefore = fatherList.getLine(lineNb);
-		
+
 		int nb_spaces_to_add = 0;
 		while (nb_spaces_to_add < lineBefore.length()
 				&& lineBefore.charAt(nb_spaces_to_add) == ' ') {
 			nb_spaces_to_add++;
 		}
 		nb_spaces_to_add += addedSpaces;
-		
+
 		for (int i = 0; i < nb_spaces_to_add; i++)
 			line = " " + line;
 		return line;
@@ -218,7 +218,7 @@ public class Word {
 	public int getLessonNumber() {
 		return fatherList.lessons.indexOf(lesson_name);
 	}
-	
+
 	public String getLessonName() {
 		return lesson_name;
 	}
@@ -410,7 +410,7 @@ public class Word {
 		int lineBegin = 0;
 		int nbLinesToErase = 0;
 		Vector<String> lines = new Vector<String>();
-		
+
 		/*
 		 * find the line where to insert
 		 */
@@ -420,7 +420,7 @@ public class Word {
 			nbLinesToErase = 1;
 		}
 		// second case : contains <translation id="1" >
-		else if (containsLine(line_multi_begin) ) {
+		else if (containsLine(line_multi_begin)) {
 			lineBegin = getLineContaining(beginningLine, line_multi_begin);
 			int lineEnd = getLineContaining(lineBegin, line_multi_end);
 			// System.out.println("lineBegin: " + lineBegin);
@@ -432,25 +432,24 @@ public class Word {
 			lineBegin = getEndLineIndex();
 			nbLinesToErase = 0;
 		}
-		
+
 		/*
-		 *  erase the old lines
+		 * erase the old lines
 		 */
 		for (int i = 0; i < nbLinesToErase; i++)
 			fatherList.removeLine(lineBegin);
-		
 
 		/*
 		 * add new lines
 		 */
-		lines.add(indentLine(lineBegin-1, line_multi_begin, 0) );
+		lines.add(indentLine(lineBegin - 1, line_multi_begin, 0));
 		String textLine = "<text>" + text + "</text>";
-		lines.add(indentLine(lineBegin-1, textLine, 2) );
+		lines.add(indentLine(lineBegin - 1, textLine, 2));
 		if (containsPicture()) {
 			String pictureLine = "<image>" + getPictureFilename() + "</image>";
-			lines.add( indentLine(lineBegin-1, pictureLine, 2) );
+			lines.add(indentLine(lineBegin - 1, pictureLine, 2));
 		}
-		lines.add(indentLine(lineBegin-1, line_multi_end, 0) );
+		lines.add(indentLine(lineBegin - 1, line_multi_end, 0));
 
 		fatherList.addLines(lineBegin, lines);
 	}
@@ -495,7 +494,8 @@ public class Word {
 	public String toString_onlyWords() {
 		String rep = "";
 		for (int i = 0; i < numberOfLanguages; i++) {
-			rep += (i > 0 ? " | " : "") + getForeignWord(i);
+			rep += (i > 0 ? " | " : "")
+					+ (containsLanguage(i) ? getForeignWord(i) : "");
 		}
 		return rep;
 	}
@@ -570,7 +570,7 @@ public class Word {
 		// System.out.println(w);
 
 		// System.out.println(w.getRandomLanguage());
-		
+
 		w.printLines();
 		w.setForeignWord(2, "new");
 		w.printLines();
