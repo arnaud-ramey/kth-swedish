@@ -6969,8 +6969,12 @@
       <translation id="1" >
         <text>anledning -en -ar</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>una razón</text>
+      </translation>
+      <translation id="3" >
+        <text>ein Grund</text>
+      </translation>
     </entry>
     <entry id="662" >
       <translation id="0" >
@@ -6979,8 +6983,12 @@
       <translation id="1" >
         <text>anmäl /a, -er, -de, t</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>quejarse</text>
+      </translation>
+      <translation id="3" >
+        <text>über etw.klagen </text>
+      </translation>
     </entry>
     <entry id="663" >
       <translation id="0" >
@@ -6989,8 +6997,12 @@
       <translation id="1" >
         <text>avlägs /en, -et, -na</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>remoto</text>
+      </translation>
+      <translation id="3" >
+        <text>entfernt</text>
+      </translation>
     </entry>
     <entry id="664" >
       <translation id="0" >
@@ -6999,8 +7011,12 @@
       <translation id="1" >
         <text>avstånd -et, -</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>una distancia</text>
+      </translation>
+      <translation id="3" >
+        <text>der Abstand</text>
+      </translation>
     </entry>
     <entry id="665" >
       <translation id="0" >
@@ -7010,7 +7026,9 @@
         <text>bedöm /a, -er, -de, t</text>
       </translation>
       <translation id="2" />
-      <translation id="3" />
+      <translation id="3" >
+        <text>beurteilen</text>
+      </translation>
     </entry>
     <entry id="666" >
       <translation id="0" >
@@ -7020,7 +7038,9 @@
         <text>beställ /a, -er, -de, -t</text>
       </translation>
       <translation id="2" />
-      <translation id="3" />
+      <translation id="3" >
+        <text>bestellen</text>
+      </translation>
     </entry>
     <entry id="667" >
       <translation id="0" >
@@ -7030,7 +7050,9 @@
         <text>bidrag -et, -</text>
       </translation>
       <translation id="2" />
-      <translation id="3" />
+      <translation id="3" >
+        <text>der Beitrag</text>
+      </translation>
     </entry>
     <entry id="668" >
       <translation id="0" >
@@ -7039,8 +7061,12 @@
       <translation id="1" >
         <text>däremot</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>al contrario</text>
+      </translation>
+      <translation id="3" >
+        <text>im Gegenteil</text>
+      </translation>
     </entry>
     <entry id="669" >
       <translation id="0" >
@@ -7049,8 +7075,12 @@
       <translation id="1" >
         <text>efterfrågan, -, -0</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>una solicitud</text>
+      </translation>
+      <translation id="3" >
+        <text>der Antrag</text>
+      </translation>
     </entry>
     <entry id="670" >
       <translation id="0" >
@@ -7059,8 +7089,12 @@
       <translation id="1" >
         <text>erfarenhet, -en, -er</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>una experiencia</text>
+      </translation>
+      <translation id="3" >
+        <text>die Erfahrenheit</text>
+      </translation>
     </entry>
     <entry id="671" >
       <translation id="0" >
@@ -7069,8 +7103,12 @@
       <translation id="1" >
         <text>framställ /a, -er, -de, t</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>producir</text>
+      </translation>
+      <translation id="3" >
+        <text>produzieren</text>
+      </translation>
     </entry>
     <entry id="672" >
       <translation id="0" >
@@ -7079,8 +7117,12 @@
       <translation id="1" >
         <text>för /bereda, -bereder, -beredde, -berett</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>preparar</text>
+      </translation>
+      <translation id="3" >
+        <text>etw. vorbereiten</text>
+      </translation>
     </entry>
     <entry id="673" >
       <translation id="0" >
@@ -7089,8 +7131,12 @@
       <translation id="1" >
         <text>förbud -et, -</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>una prohibición</text>
+      </translation>
+      <translation id="3" >
+        <text>das Verbot</text>
+      </translation>
     </entry>
     <entry id="674" >
       <translation id="0" >
@@ -7099,8 +7145,12 @@
       <translation id="1" >
         <text>genomsnitt -ett, -0</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>un promedio</text>
+      </translation>
+      <translation id="3" >
+        <text>der Durchschnitt</text>
+      </translation>
     </entry>
     <entry id="675" >
       <translation id="0" >
@@ -7109,8 +7159,12 @@
       <translation id="1" >
         <text>hänsyn -en, -0</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>un respeto</text>
+      </translation>
+      <translation id="3" >
+        <text>der Respekt</text>
+      </translation>
     </entry>
     <entry id="676" >
       <translation id="0" >
@@ -7119,8 +7173,12 @@
       <translation id="1" >
         <text>inflytande, -t, -0</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>una influencia</text>
+      </translation>
+      <translation id="3" >
+        <text>der Einfluss</text>
+      </translation>
     </entry>
     <entry id="677" >
       <translation id="0" >
@@ -7129,8 +7187,12 @@
       <translation id="1" >
         <text>likgiltig -t,-a</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>indiferente</text>
+      </translation>
+      <translation id="3" >
+        <text>gleichgültig</text>
+      </translation>
     </entry>
     <entry id="678" >
       <translation id="0" >
@@ -7139,8 +7201,12 @@
       <translation id="1" >
         <text>meddelande, -t, -n</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>un mensaje</text>
+      </translation>
+      <translation id="3" >
+        <text>die Nachricht</text>
+      </translation>
     </entry>
     <entry id="679" >
       <translation id="0" >
@@ -7150,7 +7216,9 @@
         <text>misstänk /a, -er, -te, -t</text>
       </translation>
       <translation id="2" />
-      <translation id="3" />
+      <translation id="3" >
+        <text>verdächtigen</text>
+      </translation>
     </entry>
     <entry id="680" >
       <translation id="0" >
@@ -7159,8 +7227,12 @@
       <translation id="1" >
         <text>närvarande</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>presente</text>
+      </translation>
+      <translation id="3" >
+        <text>präsent</text>
+      </translation>
     </entry>
     <entry id="681" >
       <translation id="0" >
@@ -7169,7 +7241,9 @@
       <translation id="1" >
         <text>ogilla, -r, -de, -t</text>
       </translation>
-      <translation id="2" />
+      <translation id="2" >
+        <text>disgustar</text>
+      </translation>
       <translation id="3" />
     </entry>
     <entry id="682" >
@@ -7179,7 +7253,9 @@
       <translation id="1" >
         <text>på /gå, -går, -gick, -gatt</text>
       </translation>
-      <translation id="2" />
+      <translation id="2" >
+        <text>continuar</text>
+      </translation>
       <translation id="3" />
     </entry>
     <entry id="683" >
@@ -7189,8 +7265,12 @@
       <translation id="1" >
         <text>sammanträde, -t, -n</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>una reunión</text>
+      </translation>
+      <translation id="3" >
+        <text>die Versammlung</text>
+      </translation>
     </entry>
     <entry id="684" >
       <translation id="0" >
@@ -7199,7 +7279,9 @@
       <translation id="1" >
         <text>tillfälle, -t, -n</text>
       </translation>
-      <translation id="2" />
+      <translation id="2" >
+        <text>una ocasión</text>
+      </translation>
       <translation id="3" />
     </entry>
     <entry id="685" >
@@ -7209,8 +7291,12 @@
       <translation id="1" >
         <text>und /vika, -viker, -vek, -vikit</text>
       </translation>
-      <translation id="2" />
-      <translation id="3" />
+      <translation id="2" >
+        <text>evitar</text>
+      </translation>
+      <translation id="3" >
+        <text>etw. vermeiden</text>
+      </translation>
     </entry>
   </entries>
   <lessons>
