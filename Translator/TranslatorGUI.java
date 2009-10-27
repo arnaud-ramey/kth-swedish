@@ -28,7 +28,10 @@ public class TranslatorGUI extends JPanel {
 	Translator t = new Translator();
 	ListOfWords words;
 
-	int targetLanguage = 3;
+	int targetLanguage = Word.SPANISH;
+	
+	boolean use_lesson_filter = true;
+	String lesson_filter = "Win.";
 
 	/**
 	 * @param t
@@ -161,6 +164,8 @@ public class TranslatorGUI extends JPanel {
 		System.out.println("*** Starting the translations...");
 		for (int i = 0; i < words.nbWords(); i++) {
 			final Word w = words.getWord(i);
+			if (use_lesson_filter && !w.getLessonName().contains(lesson_filter))
+				continue;
 			makeButtons(w, i, list, c);
 		}
 		System.out.println("*** Translations ended.");

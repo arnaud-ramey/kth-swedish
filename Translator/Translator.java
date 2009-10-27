@@ -1,5 +1,7 @@
 package Translator;
 
+import java.io.UnsupportedEncodingException;
+
 import IO.IO;
 import Lessons.VocParser.ListOfWords;
 import Lessons.VocParser.Word;
@@ -27,10 +29,28 @@ public class Translator {
 	public String translate(String query, String language_orig,
 			String language_dest) {
 		System.out.println("Query: '" + query + "'");
+
+		/* prepair the query - adjustments depending of the languages */
+		if (language_dest.equals(GERMAN)) {
+			if (query.startsWith("a "))
+				query = query.replaceFirst("a ", "the ");
+			if (query.startsWith("an "))
+				query = query.replaceFirst("an ", "the ");
+			if (query.startsWith("to "))
+				query = query.replace("to ", "");
+		}
+		if (language_dest.equals(SPANISH)) {
+			if (query.startsWith("to "))
+				query = query.replace("to ", "");
+		}
+
 		/* prepair the url */
 		// query = query.replace(" ", "%20");
 		// query = query.replace("/", "");
-		query = java.net.URLEncoder.encode(query);
+		try {
+			query = java.net.URLEncoder.encode(query, "UTF-8");
+		} catch (UnsupportedEncodingException e1) {
+		}
 
 		String scheme = "http";
 		String authority = "ajax.googleapis.com";
@@ -49,7 +69,7 @@ public class Translator {
 		// code_language_short(language_orig));
 		// System.out.println("Language dest: " +
 		// code_language_short(language_dest));
-		//System.out.println("url:" + url);
+		// System.out.println("url:" + url);
 		// System.out.println("page_content:" + page_content);
 
 		// get the translation

@@ -3,6 +3,8 @@ package Lessons.VocParser;
 import java.util.Vector;
 
 public class Word {
+	public static int ENGLISH = 0, SWEDISH = 1, SPANISH = 2, GERMAN = 3;
+	
 	/** the line where the word is beginning in the kvtml file */
 	int beginningLine;
 
@@ -215,6 +217,10 @@ public class Word {
 
 	public int getLessonNumber() {
 		return fatherList.lessons.indexOf(lesson_name);
+	}
+	
+	public String getLessonName() {
+		return lesson_name;
 	}
 
 	/**
