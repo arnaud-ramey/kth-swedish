@@ -28,10 +28,10 @@ public class TranslatorGUI extends JPanel {
 	Translator t = new Translator();
 	ListOfWords words;
 
-	int targetLanguage = Word.SPANISH;
+	int targetLanguage;
 	
-	boolean use_lesson_filter = true;
-	String lesson_filter = "Win.";
+	boolean use_lesson_filter = false;
+	String lesson_filter;
 
 	/**
 	 * @param t
@@ -39,7 +39,7 @@ public class TranslatorGUI extends JPanel {
 	public TranslatorGUI(ListOfWords words) {
 		this.words = words;
 
-		makeButtons();
+		//makeButtons();
 	}
 
 	/**
@@ -186,10 +186,18 @@ public class TranslatorGUI extends JPanel {
 	/**
 	 * create a nice window
 	 */
-	public static void window(ListOfWords words) {
+	public static void window(ListOfWords words, int targetLanguage, String lessonFilter) {
+		TranslatorGUI trans = new TranslatorGUI(words);
+		trans.targetLanguage = targetLanguage;
+		if (!lessonFilter.equals("")) {
+			trans.use_lesson_filter = true;
+			trans.lesson_filter = lessonFilter;
+		}
+		trans.makeButtons();
+		
 		JFrame jf = new JFrame("Tran");
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		jf.add(new TranslatorGUI(words));
+		jf.add(trans);
 		jf.setSize(900, 600);
 		jf.setVisible(true);
 	}
@@ -199,6 +207,6 @@ public class TranslatorGUI extends JPanel {
 		// ListOfWords w = new ListOfWords();
 		// w.readFile("/test.kvtml");
 
-		window(w);
+		window(w, Word.SPANISH, "Win.");
 	}
 }

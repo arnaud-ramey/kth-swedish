@@ -2,12 +2,12 @@
 <!DOCTYPE kvtml PUBLIC "kvtml2.dtd" "http://edu.kde.org/kvtml/kvtml2.dtd">
 <kvtml version="2.0" >
   <information>
-    <generator>Parley 0.9.2</generator>
+    <generator>Parley 0.9.2-svn</generator>
     <title>Swedish Lessons</title>
     <author>Arnaud</author>
     <contact>arnaud.ramey@m4x.org</contact>
     <license>Public Domain</license>
-    <date>2009-10-27</date>
+    <date>2009-11-20</date>
     <category>Languages</category>
   </information>
   <identifiers>
@@ -132,6 +132,7 @@
         <text>Man ska inte röka här.</text>
       </translation>
       <translation id="2" />
+      <translation id="3" />
     </entry>
     <entry id="11" >
       <translation id="0" >
@@ -306,6 +307,7 @@
         <text>Ska hon åka till Grekland i sommar ? Ja, det ska hon.</text>
       </translation>
       <translation id="2" />
+      <translation id="3" />
     </entry>
     <entry id="29" >
       <translation id="0" >
@@ -1089,6 +1091,7 @@
       <translation id="2" >
         <image>Images/a_bed,_-s.jpg</image>
       </translation>
+      <translation id="3" />
     </entry>
     <entry id="98" >
       <translation id="0" >
@@ -1419,6 +1422,7 @@
         <text>en svåger</text>
       </translation>
       <translation id="2" />
+      <translation id="3" />
     </entry>
     <entry id="124" >
       <translation id="0" >
@@ -1486,6 +1490,7 @@
       <translation id="2" >
         <text>un novio, una novia</text>
       </translation>
+      <translation id="3" />
     </entry>
     <entry id="130" >
       <translation id="0" >
@@ -2770,6 +2775,7 @@
         <text>ni</text>
       </translation>
       <translation id="2" />
+      <translation id="3" />
     </entry>
     <entry id="256" >
       <translation id="0" >
@@ -3321,6 +3327,7 @@
         <text>vem är det ?</text>
       </translation>
       <translation id="2" />
+      <translation id="3" />
     </entry>
     <entry id="310" >
       <translation id="0" >
@@ -4405,6 +4412,7 @@
         <text>vilken dag ?</text>
       </translation>
       <translation id="2" />
+      <translation id="3" />
     </entry>
     <entry id="416" >
       <translation id="0" >
@@ -4414,6 +4422,7 @@
         <text>vilkett år ?</text>
       </translation>
       <translation id="2" />
+      <translation id="3" />
     </entry>
     <entry id="417" >
       <translation id="0" >
@@ -6758,6 +6767,7 @@
       <translation id="2" >
         <text>absurdo</text>
       </translation>
+      <translation id="3" />
     </entry>
     <entry id="641" >
       <translation id="0" >
@@ -6987,7 +6997,7 @@
         <text>quejarse</text>
       </translation>
       <translation id="3" >
-        <text>über etw.klagen </text>
+        <text>über etw.klagen</text>
       </translation>
     </entry>
     <entry id="663" >
@@ -7025,7 +7035,9 @@
       <translation id="1" >
         <text>bedöm /a, -er, -de, t</text>
       </translation>
-      <translation id="2" />
+      <translation id="2" >
+        <text>juzgar</text>
+      </translation>
       <translation id="3" >
         <text>beurteilen</text>
       </translation>
@@ -7037,7 +7049,9 @@
       <translation id="1" >
         <text>beställ /a, -er, -de, -t</text>
       </translation>
-      <translation id="2" />
+      <translation id="2" >
+        <text>pedir</text>
+      </translation>
       <translation id="3" >
         <text>bestellen</text>
       </translation>
@@ -7049,7 +7063,9 @@
       <translation id="1" >
         <text>bidrag -et, -</text>
       </translation>
-      <translation id="2" />
+      <translation id="2" >
+        <text>una contribución</text>
+      </translation>
       <translation id="3" >
         <text>der Beitrag</text>
       </translation>
@@ -7215,7 +7231,9 @@
       <translation id="1" >
         <text>misstänk /a, -er, -te, -t</text>
       </translation>
-      <translation id="2" />
+      <translation id="2" >
+        <text>sospechar algo de alguien</text>
+      </translation>
       <translation id="3" >
         <text>verdächtigen</text>
       </translation>
@@ -7244,7 +7262,9 @@
       <translation id="2" >
         <text>disgustar</text>
       </translation>
-      <translation id="3" />
+      <translation id="3" >
+        <text>nicht mögen</text>
+      </translation>
     </entry>
     <entry id="682" >
       <translation id="0" >
@@ -7256,7 +7276,9 @@
       <translation id="2" >
         <text>continuar</text>
       </translation>
-      <translation id="3" />
+      <translation id="3" >
+        <text>weitergehen</text>
+      </translation>
     </entry>
     <entry id="683" >
       <translation id="0" >
@@ -7282,7 +7304,9 @@
       <translation id="2" >
         <text>una ocasión</text>
       </translation>
-      <translation id="3" />
+      <translation id="3" >
+        <text>ein Gelegenheit</text>
+      </translation>
     </entry>
     <entry id="685" >
       <translation id="0" >
@@ -7296,6 +7320,356 @@
       </translation>
       <translation id="3" >
         <text>etw. vermeiden</text>
+      </translation>
+    </entry>
+    <entry id="686" >
+      <translation id="0" >
+        <text>to consider</text>
+      </translation>
+      <translation id="1" >
+        <text>an/ se, -ser, -såg, -sett</text>
+      </translation>
+      <translation id="2" >
+        <text>considerar</text>
+      </translation>
+      <translation id="3" >
+        <text>etw betrachten</text>
+      </translation>
+    </entry>
+    <entry id="687" >
+      <translation id="0" >
+        <text>to engage</text>
+      </translation>
+      <translation id="1" >
+        <text>anställ/ a, -er -de -t</text>
+      </translation>
+      <translation id="2" >
+        <text>contratar</text>
+      </translation>
+      <translation id="3" >
+        <text>jmdn anwerben</text>
+      </translation>
+    </entry>
+    <entry id="688" >
+      <translation id="0" >
+        <text>a department / division</text>
+      </translation>
+      <translation id="1" >
+        <text>avledning -en -ar</text>
+      </translation>
+      <translation id="2" >
+        <text>un departamento o división</text>
+      </translation>
+      <translation id="3" >
+        <text>die Abteilung</text>
+      </translation>
+    </entry>
+    <entry id="689" >
+      <translation id="0" >
+        <text>a fee</text>
+      </translation>
+      <translation id="1" >
+        <text>avgift -en -er</text>
+      </translation>
+      <translation id="2" >
+        <text>una multa</text>
+      </translation>
+      <translation id="3" >
+        <text>die Geldstrafe</text>
+      </translation>
+    </entry>
+    <entry id="690" >
+      <translation id="0" >
+        <text>to bound = limit</text>
+      </translation>
+      <translation id="1" >
+        <text>begränsa -r -de -t</text>
+      </translation>
+      <translation id="2" >
+        <text>limitar</text>
+      </translation>
+      <translation id="3" >
+        <text>etw begrenzen</text>
+      </translation>
+    </entry>
+    <entry id="691" >
+      <translation id="0" >
+        <text>to keep</text>
+      </translation>
+      <translation id="1" >
+        <text>be/ hålla -håller -höll -hållit</text>
+      </translation>
+      <translation id="2" >
+        <text>guardar</text>
+      </translation>
+      <translation id="3" >
+        <text>behalten</text>
+      </translation>
+    </entry>
+    <entry id="692" >
+      <translation id="0" >
+        <text>disappointed</text>
+      </translation>
+      <translation id="1" >
+        <text>besvik/ en -et -na</text>
+      </translation>
+      <translation id="2" >
+        <text>decepcionado</text>
+      </translation>
+      <translation id="3" >
+        <text>enttäuscht</text>
+      </translation>
+    </entry>
+    <entry id="693" >
+      <translation id="0" >
+        <text>beyond</text>
+      </translation>
+      <translation id="1" >
+        <text>bortom</text>
+      </translation>
+      <translation id="2" >
+        <text>más allá de</text>
+      </translation>
+      <translation id="3" >
+        <text>jenseits von etw</text>
+      </translation>
+    </entry>
+    <entry id="694" >
+      <translation id="0" >
+        <text>however</text>
+      </translation>
+      <translation id="1" >
+        <text>emellertid</text>
+      </translation>
+      <translation id="2" >
+        <text>sin embargo</text>
+      </translation>
+      <translation id="3" >
+        <text>jedoch = allerdings</text>
+      </translation>
+    </entry>
+    <entry id="695" >
+      <translation id="0" >
+        <text>stubborn</text>
+      </translation>
+      <translation id="1" >
+        <text>envis -t -a</text>
+      </translation>
+      <translation id="2" >
+        <text>corto de luces</text>
+      </translation>
+      <translation id="3" >
+        <text>verbohrt</text>
+      </translation>
+    </entry>
+    <entry id="696" >
+      <translation id="0" >
+        <text>to remain</text>
+      </translation>
+      <translation id="1" >
+        <text>för/ bli -blir -blev -blivit</text>
+      </translation>
+      <translation id="2" >
+        <text>permanecer</text>
+      </translation>
+      <translation id="3" >
+        <text>bleiben</text>
+      </translation>
+    </entry>
+    <entry id="697" >
+      <translation id="0" >
+        <text>an advantage</text>
+      </translation>
+      <translation id="1" >
+        <text>fördel -en -ar</text>
+      </translation>
+      <translation id="2" >
+        <text>una ventaja</text>
+      </translation>
+      <translation id="3" >
+        <text>den Vorteil,</text>
+      </translation>
+    </entry>
+    <entry id="698" >
+      <translation id="0" >
+        <text>to prefer (to)</text>
+      </translation>
+      <translation id="1" >
+        <text>före/ dra -drar -drog -dragit (framför)</text>
+      </translation>
+      <translation id="2" >
+        <text>preferir una cosa antes que otra</text>
+      </translation>
+      <translation id="3" >
+        <text>etw vorziehen</text>
+      </translation>
+    </entry>
+    <entry id="699" >
+      <translation id="0" >
+        <text>in vain</text>
+      </translation>
+      <translation id="1" >
+        <text>förgäves</text>
+      </translation>
+      <translation id="2" >
+        <text>en vano</text>
+      </translation>
+      <translation id="3" >
+        <text>vergeblich</text>
+      </translation>
+    </entry>
+    <entry id="700" >
+      <translation id="0" >
+        <text>the relation(ship)</text>
+      </translation>
+      <translation id="1" >
+        <text>förhållande -t -n</text>
+      </translation>
+      <translation id="2" >
+        <text>la relación</text>
+      </translation>
+      <translation id="3" >
+        <text>die Beziehung</text>
+      </translation>
+    </entry>
+    <entry id="701" >
+      <translation id="0" >
+        <text>to transform</text>
+      </translation>
+      <translation id="1" >
+        <text>förvandla -r -de -t</text>
+      </translation>
+      <translation id="2" >
+        <text>transformar</text>
+      </translation>
+      <translation id="3" >
+        <text>etw. in etw. wandeln</text>
+      </translation>
+    </entry>
+    <entry id="702" >
+      <translation id="0" >
+        <text>to approve</text>
+      </translation>
+      <translation id="1" >
+        <text>godkän/ na -ner -de -t</text>
+      </translation>
+      <translation id="2" >
+        <text>aprobar</text>
+      </translation>
+      <translation id="3" >
+        <text>zustimmen</text>
+      </translation>
+    </entry>
+    <entry id="703" >
+      <translation id="0" >
+        <text>to divide</text>
+      </translation>
+      <translation id="1" >
+        <text>indela -r -de -t</text>
+      </translation>
+      <translation id="2" >
+        <text>dividir</text>
+      </translation>
+      <translation id="3" >
+        <text>teilen</text>
+      </translation>
+    </entry>
+    <entry id="704" >
+      <translation id="0" >
+        <text>in the presence of</text>
+      </translation>
+      <translation id="1" >
+        <text>inför</text>
+      </translation>
+      <translation id="2" >
+        <text>en la presencia de</text>
+      </translation>
+      <translation id="3" >
+        <text>im Beisein von jdm</text>
+      </translation>
+    </entry>
+    <entry id="705" >
+      <translation id="0" >
+        <text>the content</text>
+      </translation>
+      <translation id="1" >
+        <text>innehåll -et -</text>
+      </translation>
+      <translation id="2" >
+        <text>el contenido</text>
+      </translation>
+      <translation id="3" >
+        <text>der Inhalt</text>
+      </translation>
+    </entry>
+    <entry id="706" >
+      <translation id="0" >
+        <text>to admit</text>
+      </translation>
+      <translation id="1" >
+        <text>med/ ge -ger -gav -gett</text>
+      </translation>
+      <translation id="2" >
+        <text>admitir</text>
+      </translation>
+      <translation id="3" >
+        <text>zugeben</text>
+      </translation>
+    </entry>
+    <entry id="707" >
+      <translation id="0" >
+        <text>to correspond to</text>
+      </translation>
+      <translation id="1" >
+        <text>motsvara -r -de -t</text>
+      </translation>
+      <translation id="2" >
+        <text>corresponder a</text>
+      </translation>
+      <translation id="3" >
+        <text>einer Sache entsprechen</text>
+      </translation>
+    </entry>
+    <entry id="708" >
+      <translation id="0" >
+        <text>immediatly</text>
+      </translation>
+      <translation id="1" >
+        <text>omedelbart</text>
+      </translation>
+      <translation id="2" >
+        <text>inmediatamente</text>
+      </translation>
+      <translation id="3" >
+        <text>sofort</text>
+      </translation>
+    </entry>
+    <entry id="709" >
+      <translation id="0" >
+        <text>a noise</text>
+      </translation>
+      <translation id="1" >
+        <text>oväsen -det -0</text>
+      </translation>
+      <translation id="2" >
+        <text>un ruido</text>
+      </translation>
+      <translation id="3" >
+        <text>der Lärm</text>
+      </translation>
+    </entry>
+    <entry id="710" >
+      <translation id="0" >
+        <text>to discover</text>
+      </translation>
+      <translation id="1" >
+        <text>upptäck/ a -er -te -t</text>
+      </translation>
+      <translation id="2" >
+        <text>descubrir</text>
+      </translation>
+      <translation id="3" >
+        <text>etw entdecken</text>
       </translation>
     </entry>
   </entries>
@@ -8145,6 +8519,35 @@
         <entry id="683" />
         <entry id="684" />
         <entry id="685" />
+      </container>
+      <container>
+        <name>voc2A</name>
+        <inpractice>true</inpractice>
+        <entry id="686" />
+        <entry id="687" />
+        <entry id="688" />
+        <entry id="689" />
+        <entry id="690" />
+        <entry id="691" />
+        <entry id="692" />
+        <entry id="693" />
+        <entry id="694" />
+        <entry id="695" />
+        <entry id="696" />
+        <entry id="697" />
+        <entry id="698" />
+        <entry id="699" />
+        <entry id="700" />
+        <entry id="701" />
+        <entry id="702" />
+        <entry id="703" />
+        <entry id="704" />
+        <entry id="705" />
+        <entry id="706" />
+        <entry id="707" />
+        <entry id="708" />
+        <entry id="709" />
+        <entry id="710" />
       </container>
     </container>
   </lessons>
