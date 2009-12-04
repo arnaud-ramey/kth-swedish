@@ -7,7 +7,7 @@
     <author>Arnaud</author>
     <contact>arnaud.ramey@m4x.org</contact>
     <license>Public Domain</license>
-    <date>2009-11-20</date>
+    <date>2009-12-04</date>
     <category>Languages</category>
   </information>
   <identifiers>
@@ -7672,6 +7672,596 @@
         <text>etw entdecken</text>
       </translation>
     </entry>
+    <entry id="711" >
+      <translation id="0" >
+        <text>a miniskirt</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>una minifalda</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="712" >
+      <translation id="0" >
+        <text>to supply energy</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>suministrar energia</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="713" >
+      <translation id="0" >
+        <text>a prize</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>un galardon / un premio</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="714" >
+      <translation id="0" >
+        <text>the warm-up</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>el calentamiento</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="715" >
+      <translation id="0" >
+        <text>the freenhouse effect</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>el efcto invernadero</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="716" >
+      <translation id="0" >
+        <text>the feedback</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>la retroalimentacion</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="717" >
+      <translation id="0" >
+        <text>in advance</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>de antemano</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="718" >
+      <translation id="0" >
+        <text>the coniferous plants</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>las plantas coniferas</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="719" >
+      <translation id="0" >
+        <text>an investor</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>un inversionista</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="720" >
+      <translation id="0" >
+        <text>a debt</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>una deuda</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="721" >
+      <translation id="0" >
+        <text>the ice</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>el hielo</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="722" >
+      <translation id="0" >
+        <text>a speaker (university)</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>un ponente</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="723" >
+      <translation id="0" >
+        <text>the purchasing power</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>el poder adquisitivo</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="724" >
+      <translation id="0" >
+        <text>a pedestrian</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>un peaton</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="725" >
+      <translation id="0" >
+        <text>a route</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>una ruta</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="726" >
+      <translation id="0" >
+        <text>to escape</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>huir</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="727" >
+      <translation id="0" >
+        <text>the iron</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>el hierro</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="728" >
+      <translation id="0" >
+        <text>a magnet</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>un iman</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="729" >
+      <translation id="0" >
+        <text>the legacy</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>el legado</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="730" >
+      <translation id="0" >
+        <text>hexadecimal</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>sexagesimal</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="731" >
+      <translation id="0" >
+        <text>a penance (Cosa molesta que debe soportarse)</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>una penitencia</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="732" >
+      <translation id="0" >
+        <text>the tool</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>la herramienta</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="733" >
+      <translation id="0" >
+        <text>according to (X2)</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>De acuerdo con / egún</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="734" >
+      <translation id="0" >
+        <text>additionally</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Por añadidura / adicionalmente</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="735" >
+      <translation id="0" >
+        <text>as far as I am concerned</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Por mi parte</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="736" >
+      <translation id="0" >
+        <text>as far as I know</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Que yo sepa</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="737" >
+      <translation id="0" >
+        <text>briefly (stated)</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>En forma breve y concisa</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="738" >
+      <translation id="0" >
+        <text>by the way,</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>A propósito</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="739" >
+      <translation id="0" >
+        <text>due to / because of (that)</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Debido a (eso)</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="740" >
+      <translation id="0" >
+        <text>from that point of view</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Desde este punto de vista</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="741" >
+      <translation id="0" >
+        <text>furthermore / besides / moreover</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Otrosí</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="742" >
+      <translation id="0" >
+        <text>hence</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Por lo tanto</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="743" >
+      <translation id="0" >
+        <text>however / nevertheless</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Sin embargo</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="744" >
+      <translation id="0" >
+        <text>in regards with / in reference to</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>A propósito de</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="745" >
+      <translation id="0" >
+        <text>it consists of</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Consiste en</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="746" >
+      <translation id="0" >
+        <text>It depends</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Según / depende</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="747" >
+      <translation id="0" >
+        <text>it has something/nothing to do with it</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>(Eso) viene al caso / (eso) no viene al caso</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="748" >
+      <translation id="0" >
+        <text>it is self understood</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Se sobrentiende</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="749" >
+      <translation id="0" >
+        <text>it isn't necessary to say that</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Huelga decir que / sobra decir que</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="750" >
+      <translation id="0" >
+        <text>It should be noted / said</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Cabe notar / decir</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="751" >
+      <translation id="0" >
+        <text>likewise</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Asimismo / así mismo</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="752" >
+      <translation id="0" >
+        <text>moreover / furthermore</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Además / es más</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="753" >
+      <translation id="0" >
+        <text>no matter how little</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Por poco que + subjuntivo</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="754" >
+      <translation id="0" >
+        <text>no matter how much</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Por mucho que + subjuntivo</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="755" >
+      <translation id="0" >
+        <text>not to pay attention</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>No prestar atención</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="756" >
+      <translation id="0" >
+        <text>not to pay attention, to overlook (intentionally)</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Pasar por alto</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="757" >
+      <translation id="0" >
+        <text>notwithstanding / nevertheless</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>No obstante</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="758" >
+      <translation id="0" >
+        <text>of course</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Naturalmente,Por supuesto, Desde luego</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="759" >
+      <translation id="0" >
+        <text>on one hand</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Por una parte / Por un lado</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="760" >
+      <translation id="0" >
+        <text>on the other</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Por otro lado / por el otro / Por otra parte / por la otr</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="761" >
+      <translation id="0" >
+        <text>provided that</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Con tal de que + subjuntivo / Siempre y cuando + subjuntivo</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="762" >
+      <translation id="0" >
+        <text>therefore</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Por consiguiente / por ende</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="763" >
+      <translation id="0" >
+        <text>to depend on (upon)</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Depende de</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="764" >
+      <translation id="0" >
+        <text>to ignore / to pay no attention to</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Hacer caso omiso de</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="765" >
+      <translation id="0" >
+        <text>to keep in mind</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Tener presente / tener en cuenta</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="766" >
+      <translation id="0" >
+        <text>to pay attention</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>Hacer caso / prestar atención</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="767" >
+      <translation id="0" >
+        <text>to summarize / in other words</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>En pocas palabras</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="768" >
+      <translation id="0" >
+        <text>whereas / on the other hand</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>En cambio</text>
+      </translation>
+      <translation id="3" />
+    </entry>
+    <entry id="769" >
+      <translation id="0" >
+        <text>with respect (regard) to</text>
+      </translation>
+      <translation id="1" />
+      <translation id="2" >
+        <text>En cuanto a / con respecto a</text>
+      </translation>
+      <translation id="3" />
+    </entry>
   </entries>
   <lessons>
     <container>
@@ -8548,6 +9138,77 @@
         <entry id="708" />
         <entry id="709" />
         <entry id="710" />
+      </container>
+      <container>
+        <name>Esp2</name>
+        <inpractice>true</inpractice>
+        <container>
+          <name>Voc</name>
+          <inpractice>true</inpractice>
+          <entry id="711" />
+          <entry id="712" />
+          <entry id="713" />
+          <entry id="714" />
+          <entry id="715" />
+          <entry id="716" />
+          <entry id="717" />
+          <entry id="718" />
+          <entry id="719" />
+          <entry id="720" />
+          <entry id="721" />
+          <entry id="722" />
+          <entry id="723" />
+          <entry id="724" />
+          <entry id="725" />
+          <entry id="726" />
+          <entry id="727" />
+          <entry id="728" />
+          <entry id="729" />
+          <entry id="730" />
+          <entry id="731" />
+          <entry id="732" />
+        </container>
+        <container>
+          <name>Connectors</name>
+          <inpractice>true</inpractice>
+          <entry id="733" />
+          <entry id="734" />
+          <entry id="735" />
+          <entry id="736" />
+          <entry id="737" />
+          <entry id="738" />
+          <entry id="739" />
+          <entry id="740" />
+          <entry id="741" />
+          <entry id="742" />
+          <entry id="743" />
+          <entry id="744" />
+          <entry id="745" />
+          <entry id="746" />
+          <entry id="747" />
+          <entry id="748" />
+          <entry id="749" />
+          <entry id="750" />
+          <entry id="751" />
+          <entry id="752" />
+          <entry id="753" />
+          <entry id="754" />
+          <entry id="755" />
+          <entry id="756" />
+          <entry id="757" />
+          <entry id="758" />
+          <entry id="759" />
+          <entry id="760" />
+          <entry id="761" />
+          <entry id="762" />
+          <entry id="763" />
+          <entry id="764" />
+          <entry id="765" />
+          <entry id="766" />
+          <entry id="767" />
+          <entry id="768" />
+          <entry id="769" />
+        </container>
       </container>
     </container>
   </lessons>
