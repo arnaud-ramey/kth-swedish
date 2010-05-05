@@ -1,7 +1,7 @@
-package Maintaining;
+package Kvtml.Editing.Maintaining;
 
-import Lessons.VocParser.ListOfWords;
-import Lessons.VocParser.Word;
+import Kvtml.VocParser.ListOfWords;
+import Kvtml.VocParser.Word;
 
 public class DoublesFinder {
 	/**

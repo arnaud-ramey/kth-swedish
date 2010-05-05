@@ -2,6 +2,8 @@ package Asker;
 
 import java.util.LinkedList;
 
+import Kvtml.VocParser.WordImagePicker;
+import Kvtml.VocParser.WordPicker;
 import Lessons.Articles.Articles;
 import Lessons.Numbers.HourTranslator;
 import Lessons.Numbers.NumberTranslator;
@@ -10,8 +12,6 @@ import Lessons.Prepositions.Prepositions;
 import Lessons.Pronouns.Pronouns;
 import Lessons.Sentences.Sentences;
 import Lessons.Verbs.Verb;
-import Lessons.VocParser.WordImagePicker;
-import Lessons.VocParser.WordPicker;
 
 public class QuestionQueue {
 	static int WORD_QUEUE_SIZE = 5;

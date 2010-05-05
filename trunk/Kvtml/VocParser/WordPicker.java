@@ -1,4 +1,4 @@
-package Lessons.VocParser;
+package Kvtml.VocParser;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -19,7 +19,7 @@ import javax.swing.JScrollPane;
 
 import Asker.Question;
 import Asker.VisualAsker;
-import IO.LibUtils;
+import Kvtml.IO.LibUtils;
 
 public class WordPicker {
 	public ListOfWords listOfWords;
@@ -252,7 +252,7 @@ public class WordPicker {
 		final LinkedList<Integer> lessons_associated_with_boxes = new LinkedList<Integer>();
 		int counter = 0;
 		Color color_bck = null;
-		
+
 		System.out.println(listOfWords.lessons);
 
 		for (int i = 0; i < listOfWords.lessons.size(); i++) {
@@ -310,7 +310,7 @@ public class WordPicker {
 		possibilities.add("Random language");
 
 		final JComboBox list = new JComboBox(possibilities);
-		list.setSelectedIndex(list.getItemCount()-1);
+		list.setSelectedIndex(list.getItemCount() - 1);
 		list.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setQuestiontType(list.getSelectedIndex());
@@ -346,7 +346,7 @@ public class WordPicker {
 		JPanel jp_with_scroll = new JPanel();
 		JScrollPane scrollPane = new JScrollPane(jp_with_scroll);
 		scrollPane.getVerticalScrollBar().setUnitIncrement(20);
-		
+
 		jp_with_scroll.setLayout(new GridBagLayout());
 		GridBagConstraints c = new GridBagConstraints();
 		c.fill = GridBagConstraints.BOTH;

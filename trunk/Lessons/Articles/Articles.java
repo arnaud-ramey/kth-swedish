@@ -1,9 +1,9 @@
 package Lessons.Articles;
 
 import Asker.Question;
-import IO.LibUtils;
-import Lessons.VocParser.Word;
-import Lessons.VocParser.WordPicker;
+import Kvtml.IO.LibUtils;
+import Kvtml.VocParser.Word;
+import Kvtml.VocParser.WordPicker;
 
 public class Articles {
 	static String[] ARTICLES = new String[] { "en", "ett" };
@@ -47,7 +47,7 @@ public class Articles {
 			String word_q = word, word_a = word;
 			for (String art : ARTICLES) {
 				// replace the articles
-				if (word.equals( art ) ) {
+				if (word.equals(art)) {
 					word_q = Question.UNKNOWN;
 					word_a = LibUtils.emphasize(art);
 					break;

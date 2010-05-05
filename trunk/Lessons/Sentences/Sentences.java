@@ -1,8 +1,8 @@
 package Lessons.Sentences;
 
 import Asker.Question;
-import Lessons.VocParser.Word;
-import Lessons.VocParser.WordPicker;
+import Kvtml.VocParser.Word;
+import Kvtml.VocParser.WordPicker;
 
 public class Sentences {
 	private static String[] endOfSentences = new String[] { ".", " !", " ?" };
@@ -30,7 +30,7 @@ public class Sentences {
 				continue;
 
 			// min number of words
-			 int nb_words = swe.split(" ").length;
+			int nb_words = swe.split(" ").length;
 			if (nb_words < MINIMUM_WORDS)
 				OK = false;
 		}
@@ -60,13 +60,13 @@ public class Sentences {
 	 */
 	public static Question randomShuffleSentence() {
 		Word word = randomSentence();
-		/* prepare the split /=*/
+		/* prepare the split /= */
 		String answer = word.get1();
 		String sentence = answer;
 		sentence = sentence.replace("...", " ...");
 		if (sentence.endsWith(".") && !sentence.endsWith("..."))
 			sentence = sentence.substring(0, sentence.length() - 1) + " .";
-		
+
 		/* split and shuffle */
 		String[] words = sentence.split(" ");
 		shuffleArray(words);

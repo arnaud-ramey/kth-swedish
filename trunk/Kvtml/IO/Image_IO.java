@@ -1,4 +1,4 @@
-package IO;
+package Kvtml.IO;
 
 import java.awt.RenderingHints;
 import java.awt.geom.AffineTransform;
@@ -146,7 +146,8 @@ public class Image_IO {
 		try {
 			i = ImageIO.read(u);
 		} catch (Exception e) {
-			System.out.println("!!! Cannot read the image " + filename_or_url + " !!!");
+			System.out.println("!!! Cannot read the image " + filename_or_url
+					+ " !!!");
 		}
 		return i;
 	}

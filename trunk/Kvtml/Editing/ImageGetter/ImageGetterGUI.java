@@ -1,4 +1,4 @@
-package ImageGetter;
+package Kvtml.Editing.ImageGetter;
 
 import java.awt.Font;
 import java.awt.GridBagConstraints;
@@ -16,9 +16,9 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import Asker.VisualAsker;
-import IO.Image_IO;
-import Lessons.VocParser.ListOfWords;
-import Lessons.VocParser.Word;
+import Kvtml.IO.Image_IO;
+import Kvtml.VocParser.ListOfWords;
+import Kvtml.VocParser.Word;
 
 public class ImageGetterGUI extends JPanel {
 	private static final long serialVersionUID = 1L;

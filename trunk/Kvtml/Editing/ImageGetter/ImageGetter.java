@@ -1,10 +1,10 @@
-package ImageGetter;
+package Kvtml.Editing.ImageGetter;
 
 import java.awt.image.BufferedImage;
 import java.util.LinkedList;
 
-import IO.IO;
-import IO.Image_IO;
+import Kvtml.IO.IO;
+import Kvtml.IO.Image_IO;
 
 public class ImageGetter {
 	public static String DEFAULT_DIR = "Images/";

@@ -1,9 +1,9 @@
 package Lessons.Prepositions;
 
 import Asker.Question;
-import IO.LibUtils;
-import Lessons.VocParser.Word;
-import Lessons.VocParser.WordPicker;
+import Kvtml.IO.LibUtils;
+import Kvtml.VocParser.Word;
+import Kvtml.VocParser.WordPicker;
 
 public class Prepositions {
 	static String[] PREPOSITIONS = new String[] { //
@@ -46,7 +46,7 @@ public class Prepositions {
 		WordPicker wp = WordPicker.defaultWordPicker();
 		Word w = null;
 		int pronoun_index = (int) (Math.random() * PREPOSITIONS.length);
-		
+
 		while (true) {
 			w = wp.getRandomWord();
 			if (containsParticle(w, pronoun_index))
