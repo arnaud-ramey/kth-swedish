@@ -2,7 +2,7 @@ package Asker;
 
 import java.awt.image.BufferedImage;
 
-import IO.Image_IO;
+import Kvtml.IO.Image_IO;
 
 public class Question {
 	public static String UNKNOWN = "___";

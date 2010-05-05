@@ -1,11 +1,11 @@
-package Maintaining;
+package Kvtml.Editing.Maintaining;
 
 import java.io.File;
 import java.util.LinkedList;
 
-import ImageGetter.ImageGetter;
-import Lessons.VocParser.ListOfWords;
-import Lessons.VocParser.Word;
+import Kvtml.Editing.ImageGetter.ImageGetter;
+import Kvtml.VocParser.ListOfWords;
+import Kvtml.VocParser.Word;
 
 public class UselessImagesFinder {
 
@@ -116,8 +116,7 @@ public class UselessImagesFinder {
 	 * @param path
 	 *            the path to the pictures
 	 */
-	public static void checkPictures(ListOfWords list,
-			String path) {
+	public static void checkPictures(ListOfWords list, String path) {
 		System.out.println("USELESS PICS");
 		findUselessImages(list, path);
 		System.out.println();
@@ -126,12 +125,11 @@ public class UselessImagesFinder {
 	}
 
 	public static void main(String[] args) {
-		 checkPictures(ListOfWords.defaultListOfWords(),
-				ImageGetter.DEFAULT_DIR);
+		checkPictures(ListOfWords.defaultListOfWords(), ImageGetter.DEFAULT_DIR);
 
 		// ListOfWords w = new ListOfWords();
 		// w.readFile("/test.kvtml");
-		//		checkPictures(w, ImageGetter.DEFAULT_DIR);
+		// checkPictures(w, ImageGetter.DEFAULT_DIR);
 	}
 
 }

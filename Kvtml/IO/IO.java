@@ -1,4 +1,4 @@
-package IO;
+package Kvtml.IO;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,7 +13,7 @@ import java.util.Scanner;
 import Lessons.Verbs.Verb;
 
 public class IO {
-	
+
 	/**
 	 * Fetch the HTML content of the page as simple text.
 	 * 

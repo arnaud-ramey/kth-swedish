@@ -1,7 +1,7 @@
 package Lessons.Pronouns;
 
 import Asker.Question;
-import IO.LibUtils;
+import Kvtml.IO.LibUtils;
 
 public class Pronouns {
 	static String[] nominative = { "jag", "du", "han", "hon", "den", "det",
@@ -40,12 +40,12 @@ public class Pronouns {
 	 */
 	static Question question_objective(int person) {
 		int person_subject = person;
-		while (person_subject == person) 
+		while (person_subject == person)
 			person_subject = (int) (Math.random() * nominative.length);
 		String radix = nominative[person_subject];
 		radix = radix + " måsta se " + Question.UNKNOWN + " !";
 		radix = LibUtils.firstLetterUpperCase(radix);
-		
+
 		String question = radix.replace(Question.UNKNOWN, Question.UNKNOWN
 				+ " [" + nominative[person] + "]");
 		String answer = radix.replace(Question.UNKNOWN, LibUtils

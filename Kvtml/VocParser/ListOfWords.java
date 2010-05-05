@@ -1,10 +1,10 @@
-package Lessons.VocParser;
+package Kvtml.VocParser;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.util.Vector;
 
-import IO.IO;
+import Kvtml.IO.IO;
 
 public class ListOfWords {
 	private String filename = "";

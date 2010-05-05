@@ -1,4 +1,4 @@
-package Lessons.VocParser;
+package Kvtml.VocParser;
 
 import java.util.Vector;
 

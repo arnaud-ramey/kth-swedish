@@ -1,10 +1,10 @@
-package Translator;
+package Kvtml.Editing.Translator;
 
 import java.io.UnsupportedEncodingException;
 
-import IO.IO;
-import Lessons.VocParser.ListOfWords;
-import Lessons.VocParser.Word;
+import Kvtml.IO.IO;
+import Kvtml.VocParser.ListOfWords;
+import Kvtml.VocParser.Word;
 
 public class Translator {
 

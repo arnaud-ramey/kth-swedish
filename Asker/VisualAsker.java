@@ -16,8 +16,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 
-import IO.LibUtils;
-import Lessons.VocParser.WordPicker;
+import Kvtml.IO.LibUtils;
+import Kvtml.VocParser.WordPicker;
 
 public class VisualAsker extends JPanel {
 	private static final long serialVersionUID = 1L;
@@ -182,6 +182,7 @@ public class VisualAsker extends JPanel {
 		/* create actions */
 		Action knowAction = new AbstractAction() {
 			private static final long serialVersionUID = 1L;
+
 			public void actionPerformed(ActionEvent arg0) {
 				displayAnswer();
 				queue.declareQuestion_known();
@@ -190,20 +191,21 @@ public class VisualAsker extends JPanel {
 		};
 		Action unknowAction = new AbstractAction() {
 			private static final long serialVersionUID = 1L;
+
 			public void actionPerformed(ActionEvent arg0) {
 				displayAnswer();
 				queue.declareQuestion_unknown();
 				displayQuestion();
 			}
 		};
-		
+
 		/* set actions to buttons */
 		knowButton = new JButton(knowAction);
 		knowButton.getInputMap(JButton.WHEN_IN_FOCUSED_WINDOW).put(
 				KeyStroke.getKeyStroke("F1"), "know");
 		knowButton.getActionMap().put("know", knowAction);
 		knowButton.setText("I know.");
-		
+
 		doNotKnowButton = new JButton(unknowAction);
 		doNotKnowButton.getInputMap(JButton.WHEN_IN_FOCUSED_WINDOW).put(
 				KeyStroke.getKeyStroke("F2"), "unknow");
@@ -253,7 +255,7 @@ public class VisualAsker extends JPanel {
 	public static void window() {
 		// WordPicker wp = new WordPicker();
 		// wp.setListofWords("/test.kvtml");
-		
+
 		WordPicker wp = WordPicker.defaultWordPicker();
 		// System.out.println(wp.getRandomQuestion());
 

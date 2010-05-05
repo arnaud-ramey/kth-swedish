@@ -1,7 +1,7 @@
 package Lessons.Verbs;
 
 import Asker.Question;
-import IO.IO;
+import Kvtml.IO.IO;
 
 public class Verb {
 	public String imperativ = "";
@@ -82,8 +82,6 @@ public class Verb {
 		rep += " (" + imperativ + ")";
 		return rep;
 	}
-
-
 
 	public static Question randomVerb() {
 		// URL url = Verb.class.getResource("/Lessons/Verbs/verbs.txt");

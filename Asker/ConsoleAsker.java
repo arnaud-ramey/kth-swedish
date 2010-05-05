@@ -2,7 +2,7 @@ package Asker;
 
 import java.io.IOException;
 
-import IO.IO;
+import Kvtml.IO.IO;
 
 public class ConsoleAsker {
 	Question currentQuestion;

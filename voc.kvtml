@@ -12491,11 +12491,21 @@
       </translation>
       <translation id="1"/>
       <translation id="2">
-        <text>alderedor</text>
+        <text>alrededor</text>
       </translation>
       <translation id="3"/>
     </entry>
     <entry id="1157">
+      <translation id="0">
+        <text>without any doubt</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>sin la menor duda</text>
+      </translation>
+      <translation id="3"/>
+    </entry>
+    <entry id="1158">
       <translation id="0">
         <text>to get</text>
       </translation>
@@ -12507,7 +12517,7 @@
       </translation>
       <translation id="3"/>
     </entry>
-    <entry id="1158">
+    <entry id="1159">
       <translation id="0">
         <text>a crime</text>
       </translation>
@@ -12519,7 +12529,7 @@
       </translation>
       <translation id="3"/>
     </entry>
-    <entry id="1159">
+    <entry id="1160">
       <translation id="0">
         <text>torn</text>
       </translation>
@@ -12531,7 +12541,7 @@
       </translation>
       <translation id="3"/>
     </entry>
-    <entry id="1160">
+    <entry id="1161">
       <translation id="0">
         <text>one floor downstaris</text>
       </translation>
@@ -12541,7 +12551,7 @@
       <translation id="2"/>
       <translation id="3"/>
     </entry>
-    <entry id="1161">
+    <entry id="1162">
       <translation id="0">
         <text>to borrow</text>
       </translation>
@@ -12553,7 +12563,7 @@
       </translation>
       <translation id="3"/>
     </entry>
-    <entry id="1162">
+    <entry id="1163">
       <translation id="0">
         <text>to shake</text>
       </translation>
@@ -12565,7 +12575,7 @@
       </translation>
       <translation id="3"/>
     </entry>
-    <entry id="1163">
+    <entry id="1164">
       <translation id="0">
         <text>to pay attention to</text>
       </translation>
@@ -12577,7 +12587,7 @@
       </translation>
       <translation id="3"/>
     </entry>
-    <entry id="1164">
+    <entry id="1165">
       <translation id="0">
         <text>to commit, perpetrate</text>
       </translation>
@@ -12589,7 +12599,7 @@
       </translation>
       <translation id="3"/>
     </entry>
-    <entry id="1165">
+    <entry id="1166">
       <translation id="0">
         <text>rubbish</text>
       </translation>
@@ -12599,7 +12609,7 @@
       <translation id="2"/>
       <translation id="3"/>
     </entry>
-    <entry id="1166">
+    <entry id="1167">
       <translation id="0">
         <text>a pocket</text>
       </translation>
@@ -12611,7 +12621,7 @@
       </translation>
       <translation id="3"/>
     </entry>
-    <entry id="1167">
+    <entry id="1168">
       <translation id="0">
         <text>a jacket</text>
       </translation>
@@ -12623,7 +12633,7 @@
       </translation>
       <translation id="3"/>
     </entry>
-    <entry id="1168">
+    <entry id="1169">
       <translation id="0">
         <text>a mark</text>
       </translation>
@@ -12633,7 +12643,7 @@
       <translation id="2"/>
       <translation id="3"/>
     </entry>
-    <entry id="1169">
+    <entry id="1170">
       <translation id="0">
         <text>awful</text>
       </translation>
@@ -12645,7 +12655,7 @@
       </translation>
       <translation id="3"/>
     </entry>
-    <entry id="1170">
+    <entry id="1171">
       <translation id="0">
         <text>to push</text>
       </translation>
@@ -13482,10 +13492,13 @@
     </container>
     <container>
       <name>Win.09</name>
+      <inpractice>true</inpractice>
       <container>
         <name>Es3</name>
+        <inpractice>true</inpractice>
         <container>
           <name>Voc</name>
+          <inpractice>true</inpractice>
           <entry id="668"/>
           <entry id="669"/>
           <entry id="670"/>
@@ -13511,6 +13524,7 @@
         </container>
         <container>
           <name>Connectors</name>
+          <inpractice>true</inpractice>
           <entry id="690"/>
           <entry id="691"/>
           <entry id="692"/>
@@ -13554,8 +13568,10 @@
       </container>
       <container>
         <name>Sv3</name>
+        <inpractice>true</inpractice>
         <container>
           <name>voc1A</name>
+          <inpractice>true</inpractice>
           <entry id="729"/>
           <entry id="730"/>
           <entry id="731"/>
@@ -13584,6 +13600,7 @@
         </container>
         <container>
           <name>voc2A</name>
+          <inpractice>true</inpractice>
           <entry id="754"/>
           <entry id="755"/>
           <entry id="756"/>
@@ -13612,6 +13629,7 @@
         </container>
         <container>
           <name>voc3A</name>
+          <inpractice>true</inpractice>
           <entry id="779"/>
           <entry id="780"/>
           <entry id="781"/>
@@ -13640,6 +13658,7 @@
         </container>
         <container>
           <name>voc4A</name>
+          <inpractice>true</inpractice>
           <entry id="804"/>
           <entry id="805"/>
           <entry id="806"/>
@@ -13668,6 +13687,7 @@
         </container>
         <container>
           <name>voc5A</name>
+          <inpractice>true</inpractice>
           <entry id="829"/>
           <entry id="830"/>
           <entry id="831"/>
@@ -13696,6 +13716,7 @@
         </container>
         <container>
           <name>voc6A</name>
+          <inpractice>true</inpractice>
           <entry id="854"/>
           <entry id="855"/>
           <entry id="856"/>
@@ -13724,6 +13745,7 @@
         </container>
         <container>
           <name>voc7A</name>
+          <inpractice>true</inpractice>
           <entry id="879"/>
           <entry id="880"/>
           <entry id="881"/>
@@ -13752,6 +13774,7 @@
         </container>
         <container>
           <name>Gram</name>
+          <inpractice>true</inpractice>
           <container>
             <name>Partikelverben</name>
             <inpractice>true</inpractice>
@@ -13778,6 +13801,7 @@
           </container>
           <container>
             <name>Misc</name>
+            <inpractice>true</inpractice>
             <entry id="924"/>
             <entry id="925"/>
             <entry id="926"/>
@@ -13793,6 +13817,7 @@
           </container>
           <container>
             <name>S-Verbs</name>
+            <inpractice>true</inpractice>
             <entry id="936"/>
             <entry id="937"/>
             <entry id="938"/>
@@ -14059,13 +14084,13 @@
           <entry id="1154"/>
           <entry id="1155"/>
           <entry id="1156"/>
+          <entry id="1157"/>
         </container>
       </container>
     </container>
     <container>
       <name>misc</name>
       <inpractice>true</inpractice>
-      <entry id="1157"/>
       <entry id="1158"/>
       <entry id="1159"/>
       <entry id="1160"/>
@@ -14079,6 +14104,7 @@
       <entry id="1168"/>
       <entry id="1169"/>
       <entry id="1170"/>
+      <entry id="1171"/>
     </container>
   </lessons>
   <wordtypes>

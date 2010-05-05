@@ -1,4 +1,4 @@
-package Translator;
+package Kvtml.Editing.Translator;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -19,8 +19,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 
-import Lessons.VocParser.ListOfWords;
-import Lessons.VocParser.Word;
+import Kvtml.VocParser.ListOfWords;
+import Kvtml.VocParser.Word;
 
 public class TranslatorGUI extends JPanel {
 	private static final long serialVersionUID = 1L;
