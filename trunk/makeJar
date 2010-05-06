@@ -2,7 +2,7 @@
 # Se placer dans le repertoire pere de "src" et "bin"
 
 # Creation du certificat (clef) :
-#keytool -genkey -keystore ArnaudRamey -alias arnaudr
+keytool -genkey -keystore ArnaudRamey -alias arnaudr
 
 #Creation du fichier jar :
 rm asker.jar

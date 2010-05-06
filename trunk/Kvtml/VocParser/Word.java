@@ -2,6 +2,8 @@ package Kvtml.VocParser;
 
 import java.util.Vector;
 
+import Kvtml.VocParser.Lessons.LessonTree;
+
 public class Word {
 	public static int ENGLISH = 0, SWEDISH = 1, SPANISH = 2, GERMAN = 3;
 
@@ -15,6 +17,8 @@ public class Word {
 
 	/** the name of the lesson */
 	String lesson_name;
+	public LessonTree lessonTree;
+	
 
 	/** the number of available languages */
 	int numberOfLanguages;
@@ -214,6 +218,11 @@ public class Word {
 		String rep = getField(l, "text");
 		return rep;
 	}
+	
+	public int getIndex() {
+		return index;
+	}
+
 
 	public int getLessonNumber() {
 		return fatherList.lessons.indexOf(lesson_name);

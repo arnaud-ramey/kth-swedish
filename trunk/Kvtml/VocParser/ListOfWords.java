@@ -224,6 +224,13 @@ public class ListOfWords {
 	public int nbWords() {
 		return words.size();
 	}
+	
+	/**
+	 * @return the number of lessons
+	 */
+	public int nbLessons() {
+		return lessons.size();
+	}
 
 	/**
 	 * get the {@link Word} at a certain index in the list

@@ -13,6 +13,16 @@ import java.util.Scanner;
 import Lessons.Verbs.Verb;
 
 public class IO {
+	
+	static boolean DEBUG = true;
+	/**
+	 * print a {@link String} only if we are in debug mode
+	 * @param s
+	 */
+	public static void debug(String s) {
+		if (DEBUG)
+			System.out.println(s);
+	}
 
 	/**
 	 * Fetch the HTML content of the page as simple text.
