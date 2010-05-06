@@ -22,6 +22,7 @@ public class WordPicker implements Observer {
 	private int totalWordsCounts;
 
 	public void setQuestiontLanguage(int chosenLanguage) {
+		debug("setQuestiontLanguage(" + chosenLanguage + ")");
 		this.chosenLanguage = chosenLanguage;
 	}
 
@@ -128,7 +129,7 @@ public class WordPicker implements Observer {
 			this_chosen_language = new Random().nextInt(w.numberOfLanguages);
 
 		// determine the question
-		String lessonName = "VOC" + w.getLessonName();
+		String lessonName = "VOC:" + w.getLessonName();
 		String question = w.getForeignWord(this_chosen_language);
 		// empty question => next question
 		if (question.length() == 0)

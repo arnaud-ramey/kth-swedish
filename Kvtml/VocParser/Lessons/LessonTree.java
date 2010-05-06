@@ -136,7 +136,7 @@ public class LessonTree {
 		return ans;
 	}
 
-	protected ListOfWords getWords() {
+	public ListOfWords getWords() {
 		return words;
 	}
 

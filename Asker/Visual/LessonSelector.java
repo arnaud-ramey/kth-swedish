@@ -84,8 +84,8 @@ public class LessonSelector extends JPanel {
 			String text = localTree.getLessonName();
 
 			int depth = node.getLevel();
-			int comp = 255 - 30 * depth;
-			Color color = new Color(comp, 255, 255);
+			int comp = Math.min(Math.max(120 + 30 * depth, 0), 255);
+			Color color = new Color(comp, comp, 255);
 			field.setText(text);
 			field.setBorder(null);
 			field.setBackground(color);
@@ -104,7 +104,7 @@ public class LessonSelector extends JPanel {
 			return this;
 		}
 	}
-	
+
 	private void buildPanel() {
 		// Where the tree is initialized:
 		jtree.getSelectionModel().setSelectionMode(
@@ -131,7 +131,7 @@ public class LessonSelector extends JPanel {
 				thisPtr.refreshSelection();
 			} // end valueChanged
 		}; // end selection listener
-		
+
 		/* set the new renderer */
 		jtree.setCellRenderer(new CellRenderer());
 

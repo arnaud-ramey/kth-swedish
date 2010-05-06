@@ -6,11 +6,13 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Vector;
 
 import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -18,8 +20,12 @@ import javax.swing.KeyStroke;
 
 import Asker.Question;
 import Asker.QuestionQueue;
+import Kvtml.IO.IO;
 import Kvtml.IO.LibUtils;
+import Kvtml.VocParser.ListOfWords;
 import Kvtml.VocParser.WordPicker;
+import Kvtml.VocParser.Lessons.LessonSelection;
+import Kvtml.VocParser.Lessons.LessonTree;
 
 public class VisualAsker extends JPanel {
 	private static final long serialVersionUID = 1L;
@@ -38,20 +44,34 @@ public class VisualAsker extends JPanel {
 	/*
 	 * graphical Swing components
 	 */
-	private JTextField lessonTitle_field;
-
+	private JTextField lessonTitle_field = new JTextField("");
 	private JButton unknownWord_field = new JButton("");
-
 	private JButton answer_field = new JButton("");
 
-	private JButton knowButton;
+	private JButton mainTitleButton = new JButton();
+	private JButton knowButton = new JButton();
+	private JButton doNotKnowButton = new JButton();
 
-	private JButton doNotKnowButton;
+	/**
+	 * constructor
+	 */
+	public VisualAsker() {
+		goToMainPage();
+	}
+
+	/**
+	 * return to main page
+	 */
+	public void goToMainPage() {
+		getQueue().setTypeOfQuestion(QuestionQueue.TYPE_OF_QUESTION_UNDEFINED);
+		makeButtons();
+	}
 
 	/**
 	 * get and display the content of the question
 	 */
 	private void displayQuestion() {
+		debug("displayQuestion()");
 		// System.out.println(queue);
 
 		// get the question
@@ -90,6 +110,8 @@ public class VisualAsker extends JPanel {
 	 * display the content of the answer
 	 */
 	private void displayAnswer() {
+		debug("displayAnswer()");
+
 		String text = currentQuestion.answer;
 		text = "<center>" + text + "</center>";
 		text = "<html>" + text + "</html>";
@@ -102,7 +124,9 @@ public class VisualAsker extends JPanel {
 	 * @param lessons
 	 *            the name of the lessons
 	 */
-	private void chooseLesson_makeButtons(String[] lessons) {
+	private void chooseQuestionType_makeButtons() {
+		debug("chooseQuestionType_makeButtons()");
+
 		int ITEMS_PER_LINE = 3;
 
 		/* create panel */
@@ -116,6 +140,7 @@ public class VisualAsker extends JPanel {
 		c.gridx = 0;
 
 		/* create button */
+		String[] lessons = QuestionQueue.possible_type_of_questions;
 		for (int i = 0; i < lessons.length; i++) {
 			final int i_ptr = i;
 			// delete the number at the beginnings
@@ -128,10 +153,15 @@ public class VisualAsker extends JPanel {
 			// add the action listener
 			butt.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					queue.setTypeOfQuestion(i_ptr);
-					if (i_ptr == QuestionQueue.VOCABULARY)
-						queue.wp.getSelection().forbidAllLessons();
-					makeButtons();
+					getQueue().setTypeOfQuestion(i_ptr);
+					getQueue().clearQueueAndRepopulate();
+
+					if (i_ptr == QuestionQueue.TYPE_OF_QUESTION_VOCABULARY) {
+						queue.wp.getSelection().allowAllLessons();
+						chooseLesson_makeButtons();
+					} else {
+						makeButtons();
+					}
 				}
 			});
 			// add it to the panel
@@ -147,35 +177,15 @@ public class VisualAsker extends JPanel {
 	}
 
 	/**
-	 * constructor
+	 * make the buttons to show a question
 	 */
-	public VisualAsker() {
-		makeButtons();
-	}
-
-	/**
-	 * construct the buttons
-	 */
-	public void makeButtons() {
-		setBackground(BLUE);
-		repaint();
-
-		if (queue.getTypeOfQuestion() == -1) {
-			chooseLesson_makeButtons(QuestionQueue.possible_type_of_questions);
-			return;
-		}
-
-		// if (queue.getTypeOfQuestion() == QuestionQueue.VOCABULARY
-		// && queue.wp.areAllLessonsForbidden()) {
-		// queue.wp.vocLesson_makeButtons(this);
-		// return;
-		// }
+	private void showQuestion_makeButtons() {
+		debug("showQuestion_makeButtons()");
 
 		answer_field.setBackground(BLUE);
 		answer_field.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 16));
 		answer_field.setHorizontalAlignment(JTextField.CENTER);
 
-		lessonTitle_field = new JTextField("");
 		lessonTitle_field.setEditable(false);
 		lessonTitle_field.setBackground(BLUE);
 		lessonTitle_field.setFont(new Font(Font.DIALOG, Font.ITALIC, 14));
@@ -186,6 +196,7 @@ public class VisualAsker extends JPanel {
 			private static final long serialVersionUID = 1L;
 
 			public void actionPerformed(ActionEvent arg0) {
+				debug("knowAction.actionPerformed()");
 				displayAnswer();
 				queue.declareQuestion_known();
 				displayQuestion();
@@ -195,6 +206,7 @@ public class VisualAsker extends JPanel {
 			private static final long serialVersionUID = 1L;
 
 			public void actionPerformed(ActionEvent arg0) {
+				debug("unknowAction.actionPerformed()");
 				displayAnswer();
 				queue.declareQuestion_unknown();
 				displayQuestion();
@@ -202,17 +214,26 @@ public class VisualAsker extends JPanel {
 		};
 
 		/* set actions to buttons */
-		knowButton = new JButton(knowAction);
+		knowButton.setAction(knowAction);
 		knowButton.getInputMap(JButton.WHEN_IN_FOCUSED_WINDOW).put(
 				KeyStroke.getKeyStroke("F1"), "know");
 		knowButton.getActionMap().put("know", knowAction);
-		knowButton.setText("I know.");
+		knowButton.setText("I know. (F1)");
 
-		doNotKnowButton = new JButton(unknowAction);
+		doNotKnowButton.setAction(unknowAction);
 		doNotKnowButton.getInputMap(JButton.WHEN_IN_FOCUSED_WINDOW).put(
 				KeyStroke.getKeyStroke("F2"), "unknow");
 		doNotKnowButton.getActionMap().put("unknow", unknowAction);
-		doNotKnowButton.setText("???");
+		doNotKnowButton.setText("I dunno. (F2)");
+
+		mainTitleButton.setAction(new AbstractAction() {
+			private static final long serialVersionUID = 1L;
+
+			public void actionPerformed(ActionEvent e) {
+				goToMainPage();
+			}
+		});
+		mainTitleButton.setText("-> Main title.");
 
 		/* layout */
 		removeAll();
@@ -222,7 +243,7 @@ public class VisualAsker extends JPanel {
 		c.fill = GridBagConstraints.BOTH;
 		c.weighty = 1;
 
-		c.gridheight = 3;
+		c.gridheight = 4;
 		c.weightx = 6;
 		c.gridy = 0;
 		c.gridx = 0;
@@ -231,7 +252,12 @@ public class VisualAsker extends JPanel {
 		c.gridheight = 1;
 		c.weightx = 1;
 		c.gridx = 1;
+
 		c.gridy = 0;
+		c.weighty = 1;
+		add(mainTitleButton, c);
+		c.gridy++;
+		c.weighty = 10;
 		add(lessonTitle_field, c);
 		c.gridy++;
 		add(knowButton, c);
@@ -244,7 +270,90 @@ public class VisualAsker extends JPanel {
 		add(answer_field, c);
 
 		displayQuestion();
+	}
+
+	/**
+	 * display the buttons to choose the lesson
+	 */
+	private void chooseLesson_makeButtons() {
+		debug("chooseLesson_makeButtons()");
+		final WordPicker wp = getQueue().wp;
+		final LessonTree tree = wp.getSelection().getLessonTree();
+		
+		/* create the lesson selector */
+		final LessonSelector selector = new LessonSelector(tree);
+		
+		/* create the question language list */
+		ListOfWords words = tree.getWords();
+		Vector<String> possibilities = new Vector<String>();
+		for (String language : words.getLanguages())
+			possibilities.add(language + "-> other languages");
+		possibilities.add("Random language");
+
+		final JComboBox languageList = new JComboBox(possibilities);
+		languageList.setSelectedIndex(languageList.getItemCount() - 1);
+		
+		/* create the ok button */
+		JButton okButton = new JButton();
+		okButton.setAction(new AbstractAction() {
+			private static final long serialVersionUID = 1L;
+
+			public void actionPerformed(ActionEvent arg0) {
+				// set the new selection
+				debug("Defining new selection...");
+				LessonSelection selection = selector.getLessonSelection();
+				getQueue().wp.setSelection(selection);
+				
+				// set the new language
+				wp.setQuestiontLanguage(languageList.getSelectedIndex());
+				// if random item selected => set random
+				if (languageList.getSelectedIndex() == languageList.getItemCount() - 1)
+					wp.setQuestiontLanguage(WordPicker.LANGUAGE_RANDOM);
+				
+				// repopulate
+				getQueue().clearQueueAndRepopulate();
+				makeButtons();
+			}
+		});
+		okButton.setText("Start !");
+
+		/* put everything */
+		removeAll();
+		setLayout(new GridBagLayout());
+		GridBagConstraints c = new GridBagConstraints();
+		c.fill = GridBagConstraints.BOTH;
+		c.weightx = 1;
+		
+		c.gridy = 0;
+		c.weighty = 1;
+		c.gridwidth = 1;
+		c.gridx = 0;
+		add(languageList, c);
+		c.gridx = 1;
+		add(okButton, c);
+
+		c.gridy++;
+		c.weighty = 10;
+		c.gridwidth = 2;
+		c.gridx = 0;
+		add(selector, c);
 		validate();
+		repaint();
+	}
+
+	/**
+	 * construct the buttons
+	 */
+	public void makeButtons() {
+		debug("makeButtons()");
+		setBackground(BLUE);
+
+		if (queue.getTypeOfQuestion() == QuestionQueue.TYPE_OF_QUESTION_UNDEFINED)
+			chooseQuestionType_makeButtons();
+		else
+			showQuestion_makeButtons();
+		validate();
+		repaint();
 	}
 
 	/**
@@ -254,16 +363,19 @@ public class VisualAsker extends JPanel {
 		return queue;
 	}
 
+	public static void debug(String s) {
+		IO.debug("VisualAsker::" + s);
+	}
+
 	public static void window() {
 		VisualAsker jp = new VisualAsker();
-		
-		WordPicker wp = WordPicker.defaultWordPicker(true);
-		// System.out.println(wp.getRandomQuestion());
-		jp.queue.setWordPicker(wp);
-		System.out.println(jp.queue.wp.toString());
+
+		// WordPicker wp = WordPicker.defaultWordPicker(true);
+		// // System.out.println(wp.getRandomQuestion());
+		// jp.getQueue().setWordPicker(wp);
+		// System.out.println(jp.queue.wp.toString());
 
 		// create window
-		System.out.println("Creating window...");
 		JFrame jf = new JFrame();
 		jf.add(jp);
 		jf.setTitle("Asker");
