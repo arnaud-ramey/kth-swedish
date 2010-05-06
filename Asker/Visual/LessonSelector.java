@@ -41,7 +41,11 @@ public class LessonSelector extends JPanel {
 	 * @param tree
 	 */
 	public LessonSelector(LessonTree tree) {
-		this.lessonSelection = new LessonSelection(tree);
+		this(tree, new LessonSelection(tree, true));
+	}
+	
+	public LessonSelector(LessonTree tree, LessonSelection selec) {
+		this.lessonSelection = selec;
 		jtree = new JTree(tree.getNode());
 		buildPanel();
 	}

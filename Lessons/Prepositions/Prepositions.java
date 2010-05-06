@@ -47,7 +47,7 @@ public class Prepositions {
 		int pronoun_index = (int) (Math.random() * PREPOSITIONS.length);
 
 		while (true) {
-			w = wp.getRandomWord();
+			w = wp.getSelection().getRandomWord();
 			if (containsParticle(w, pronoun_index))
 				break;
 		}

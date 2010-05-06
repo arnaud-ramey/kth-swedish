@@ -99,8 +99,8 @@ public class LessonTree {
 				LessonTree localTree = (LessonTree) localPositionInTree
 						.getUserObject();
 
-				debug("adding word #" + word_id + " to lesson '"
-						+ localTree.getLessonFullName() + "'");
+				// debug("adding word #" + word_id + " to lesson '"
+				// + localTree.getLessonFullName() + "'");
 				word.setLessonTree(localTree);
 				localTree.wordsOfLesson.add(word.getIndex());
 			}
