@@ -15,7 +15,7 @@ thumbnail= "http://www.uwe.ac.uk/bbs/research/mpc/mpc5/kth.jpg"
     </script>
     <script>
         var jarUrl = "http://kth-swedish.googlecode.com/svn/trunk/asker.jar";
-        var codeName = "Asker/AskerApplet.class";
+        var codeName = "Asker/Visual/AskerApplet.class";
         deployJava.runApplet({archive:jarUrl, code:codeName, width:800, height:300},null,"1.6");
     </script>
 </div>
