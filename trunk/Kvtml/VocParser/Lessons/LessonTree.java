@@ -139,12 +139,12 @@ public class LessonTree {
 	protected ListOfWords getWords() {
 		return words;
 	}
-	
+
 	protected Vector<Integer> getWordsOfLesson() {
 		return wordsOfLesson;
 	}
 
-	protected DefaultMutableTreeNode getNode() {
+	public DefaultMutableTreeNode getNode() {
 		return node;
 	}
 
@@ -162,10 +162,6 @@ public class LessonTree {
 		return getLessonName();
 	}
 
-	public static void debug(String s) {
-		IO.debug("LessonTree::" + s);
-	}
-
 	/**
 	 * @return the path from the root to this node
 	 */
@@ -173,12 +169,9 @@ public class LessonTree {
 		return new TreePath(node.getPath());
 	}
 
-	// public static void testTrees() {
-	// DefaultMutableTreeNode tree = new DefaultMutableTreeNode();
-	// DefaultMutableTreeNode son = new DefaultMutableTreeNode();
-	// tree.add(son);
-	// System.out.println(tree.getDepth());
-	// }
+	public static void debug(String s) {
+		IO.debug("LessonTree::" + s);
+	}
 
 	// public void TreeDemo() {
 	// final JTree tree = new JTree(node);
@@ -215,13 +208,17 @@ public class LessonTree {
 	// }
 
 	/**
+	 * @return the {@link LessonTree} obtained by parsing the default kvtml file
+	 */
+	public static LessonTree defaultLessonTree() {
+		return new LessonTree(ListOfWords.defaultListOfWords(), "root");
+	}
+
+	/**
 	 * some tests
 	 */
 	public static void main(String[] args) {
-		// testTrees();
-
-		LessonTree tree = new LessonTree(ListOfWords.defaultListOfWords(),
-				"root");
+		LessonTree tree = defaultLessonTree();
 		System.out.println(tree);
 	}
 

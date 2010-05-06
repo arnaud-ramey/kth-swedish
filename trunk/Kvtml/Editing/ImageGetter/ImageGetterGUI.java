@@ -15,7 +15,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import Asker.VisualAsker;
+import Asker.Visual.VisualAsker;
 import Kvtml.IO.Image_IO;
 import Kvtml.VocParser.ListOfWords;
 import Kvtml.VocParser.Word;
