@@ -117,7 +117,7 @@ public class VisualAsker extends JPanel {
 
 		/* create button */
 		for (int i = 0; i < lessons.length; i++) {
-			final int i_bis = i;
+			final int i_ptr = i;
 			// delete the number at the beginnings
 			String text = lessons[i];
 			text = text.substring(text.indexOf(" ") + 1);
@@ -128,9 +128,9 @@ public class VisualAsker extends JPanel {
 			// add the action listener
 			butt.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					queue.setLesson(i_bis);
-					if (i_bis == QuestionQueue.VOCABULARY)
-						queue.wp.forbidAllLessons();
+					queue.setTypeOfQuestion(i_ptr);
+					if (i_ptr == QuestionQueue.VOCABULARY)
+						queue.wp.getSelection().forbidAllLessons();
 					makeButtons();
 				}
 			});
@@ -161,15 +161,15 @@ public class VisualAsker extends JPanel {
 		repaint();
 
 		if (queue.getTypeOfQuestion() == -1) {
-			chooseLesson_makeButtons(QuestionQueue.possible_lessons);
+			chooseLesson_makeButtons(QuestionQueue.possible_type_of_questions);
 			return;
 		}
 
-		if (queue.getTypeOfQuestion() == QuestionQueue.VOCABULARY
-				&& queue.wp.areAllLessonsForbidden()) {
-			queue.wp.vocLesson_makeButtons(this);
-			return;
-		}
+		// if (queue.getTypeOfQuestion() == QuestionQueue.VOCABULARY
+		// && queue.wp.areAllLessonsForbidden()) {
+		// queue.wp.vocLesson_makeButtons(this);
+		// return;
+		// }
 
 		answer_field.setBackground(BLUE);
 		answer_field.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 16));
@@ -255,15 +255,12 @@ public class VisualAsker extends JPanel {
 	}
 
 	public static void window() {
-		// WordPicker wp = new WordPicker();
-		// wp.setListofWords("/test.kvtml");
-
-		WordPicker wp = WordPicker.defaultWordPicker();
-		// System.out.println(wp.getRandomQuestion());
-
 		VisualAsker jp = new VisualAsker();
+		
+		WordPicker wp = WordPicker.defaultWordPicker(true);
+		// System.out.println(wp.getRandomQuestion());
 		jp.queue.setWordPicker(wp);
-		// jp.queue.wp.listOfWords.displayAllWords();
+		System.out.println(jp.queue.wp.toString());
 
 		// create window
 		System.out.println("Creating window...");

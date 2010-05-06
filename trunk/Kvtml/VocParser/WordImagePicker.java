@@ -7,9 +7,7 @@ public class WordImagePicker {
 	 * @return a random {@link Question} coming from the voc lessons, with a
 	 *         picture
 	 */
-	public static Question randomQuestion() {
-		WordPicker wp = WordPicker.defaultWordPicker();
-		wp.allowAllLessons();
+	public static Question randomQuestion(WordPicker wp) {
 		Word w;
 
 		while (true) {
@@ -25,6 +23,6 @@ public class WordImagePicker {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(randomQuestion());
+		System.out.println(randomQuestion(WordPicker.defaultWordPicker(true)));
 	}
 }

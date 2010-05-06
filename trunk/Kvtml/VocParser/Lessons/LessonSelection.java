@@ -1,5 +1,6 @@
 package Kvtml.VocParser.Lessons;
 
+import java.util.Observable;
 import java.util.Vector;
 
 import javax.swing.tree.TreePath;
@@ -8,7 +9,7 @@ import Kvtml.IO.IO;
 import Kvtml.VocParser.ListOfWords;
 import Kvtml.VocParser.Word;
 
-public class LessonSelection {
+public class LessonSelection extends Observable {
 	private LessonTree lessonTree;
 	private Vector<Integer> allowedWords = new Vector<Integer>();
 	private int nbAlllowedLessons = 0;
@@ -83,6 +84,10 @@ public class LessonSelection {
 		return lesson.isSelected;
 	}
 
+	public boolean areAllLessonsForbidden() {
+		return (getNbAllowedLessons() == 0);
+	}
+
 	// private Vector<LessonTree> allLessons() {
 	// Vector<LessonTree> ans = new Vector<LessonTree>();
 	// allLessons(lessonTree, ans);
@@ -122,7 +127,7 @@ public class LessonSelection {
 	/**
 	 * @return a random {@link Word} in the selection
 	 */
-	public Word getNextWord() {
+	public Word getRandomWord() {
 		int wordIdxInSelection = (int) (Math.random() * allowedWords.size());
 		int wordIdxInKvtml = allowedWords.elementAt(wordIdxInSelection);
 		return words().getWord(wordIdxInKvtml);
@@ -154,6 +159,9 @@ public class LessonSelection {
 	 */
 	private void generateIndex() {
 		debug("generateIndex()");
+		setChanged();
+		notifyObservers();
+
 		// clear the vector
 		allowedWords.clear();
 		nbAlllowedLessons = 0;
@@ -200,16 +208,29 @@ public class LessonSelection {
 	}
 
 	/**
+	 * @param allowAll
+	 *            if <code>true</code>, will allow all the lessons. if
+	 *            <code>false</code>, will forbid all the lessons
+	 * @return the default {@link LessonSelection}, obtained by parsing the
+	 *         default kvtml file and selecting everything
+	 */
+	public static LessonSelection defaultLessonSelection(boolean allowAll) {
+		LessonSelection lessonSelection = new LessonSelection(LessonTree
+				.defaultLessonTree());
+		if (allowAll)
+			lessonSelection.allowAllLessons();
+		return lessonSelection;
+	}
+
+	/**
 	 * some tests
 	 */
 	public static void main(String[] args) {
-		LessonTree tree = new LessonTree(ListOfWords.defaultListOfWords(),
-				"root");
-		LessonSelection selection = new LessonSelection(tree);
+		LessonSelection selection = defaultLessonSelection(false);
 		selection.setLesson("Es", true);
 		System.out.println(selection);
 		for (int i = 0; i < 10; i++) {
-			System.out.println(selection.getNextWord().toString_onlyWords());
+			System.out.println(selection.getRandomWord().toString_onlyWords());
 		}
 	}
 }

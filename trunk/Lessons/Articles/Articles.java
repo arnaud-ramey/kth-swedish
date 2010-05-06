@@ -14,8 +14,8 @@ public class Articles {
 	 *            the index of the chosen article
 	 * @return a random {@link Word} starting with the chosen article
 	 */
-	private static Word getRandomWordWithArticle(int article_index) {
-		WordPicker wp = WordPicker.defaultWordPicker();
+	private static Word getRandomWordWithArticle(WordPicker wp,
+			int article_index) {
 		Word w = null;
 		String article = ARTICLES[article_index];
 		while (true) {
@@ -30,15 +30,16 @@ public class Articles {
 	/**
 	 * @return a random {@link Word} starting with a random article
 	 */
-	private static Word getRandomWord() {
-		return getRandomWordWithArticle((int) (Math.random() * ARTICLES.length));
+	private static Word getRandomWord(WordPicker wp) {
+		return getRandomWordWithArticle(wp,
+				(int) (Math.random() * ARTICLES.length));
 	}
 
 	/**
 	 * @return a random {@link Question} about an article
 	 */
-	public static Question randomQuestion() {
-		Word w = getRandomWord();
+	public static Question randomQuestion(WordPicker wp) {
+		Word w = getRandomWord(wp);
 		String[] words = w.get1().split(" ");
 		String question = "", answer = "";
 
@@ -65,8 +66,9 @@ public class Articles {
 	}
 
 	public static void main(String[] args) {
+		WordPicker wp = WordPicker.defaultWordPicker(true);
 		for (int i = 0; i < 10; i++)
 			// System.out.println(getRandomWord());
-			System.out.println(randomQuestion());
+			System.out.println(randomQuestion(wp));
 	}
 }

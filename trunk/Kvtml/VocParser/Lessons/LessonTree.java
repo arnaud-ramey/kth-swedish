@@ -101,7 +101,7 @@ public class LessonTree {
 
 				debug("adding word #" + word_id + " to lesson '"
 						+ localTree.getLessonFullName() + "'");
-				word.lessonTree = localTree;
+				word.setLessonTree(localTree);
 				localTree.wordsOfLesson.add(word.getIndex());
 			}
 		} // end loop on lines
@@ -211,7 +211,7 @@ public class LessonTree {
 	 * @return the {@link LessonTree} obtained by parsing the default kvtml file
 	 */
 	public static LessonTree defaultLessonTree() {
-		return new LessonTree(ListOfWords.defaultListOfWords(), "root");
+		return ListOfWords.defaultListOfWords().getLessonTree();
 	}
 
 	/**

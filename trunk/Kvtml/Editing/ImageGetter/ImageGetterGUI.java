@@ -85,8 +85,7 @@ public class ImageGetterGUI extends JPanel {
 	}
 
 	public void setDefaultListOfWords() {
-		ListOfWords w = new ListOfWords();
-		w.readFile("/voc.kvtml");
+		ListOfWords w = new ListOfWords("/voc.kvtml");
 		setWords(w);
 	}
 
@@ -386,9 +385,8 @@ public class ImageGetterGUI extends JPanel {
 	/**
 	 * create window
 	 */
-	public static void window(String file) {
-		ListOfWords w = new ListOfWords();
-		w.readFile(file);
+	public static void window(String filename) {
+		ListOfWords w = new ListOfWords(filename);
 
 		ImageGetterGUI gui = new ImageGetterGUI();
 		gui.setWords(w);
