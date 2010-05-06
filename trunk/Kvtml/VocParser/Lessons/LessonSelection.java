@@ -50,6 +50,13 @@ public class LessonSelection extends Observable {
 		for (LessonTree son : tree.getChildren())
 			setLessonTree(son, value);
 	}
+	
+	/**
+	 * @return the lessonTree
+	 */
+	public LessonTree getLessonTree() {
+		return lessonTree;
+	}
 
 	public void allowLessonTree(LessonTree tree) {
 		debug("allowLessonTree(" + tree + ")");

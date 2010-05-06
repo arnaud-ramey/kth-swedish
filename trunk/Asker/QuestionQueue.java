@@ -16,15 +16,15 @@ import Lessons.Verbs.Verb;
 
 public class QuestionQueue {
 	static int WORD_QUEUE_SIZE = 5;
-	private static int TYPE_OF_QUESTION_RANDOM = -1;
+	public static int TYPE_OF_QUESTION_UNDEFINED = -1;
+	public static int TYPE_OF_QUESTION_RANDOM = 0;
+	public static int TYPE_OF_QUESTION_VOCABULARY = 1;
 
 	private LinkedList<Question> queue = new LinkedList<Question>();
 
 	public WordPicker wp = null;
 
-	private int type_of_question = TYPE_OF_QUESTION_RANDOM;
-
-	public static int VOCABULARY = 1;
+	private int type_of_question = TYPE_OF_QUESTION_UNDEFINED;
 
 	public static String[] possible_type_of_questions = {
 			"0: random questions in all the lessons",//
@@ -48,6 +48,7 @@ public class QuestionQueue {
 	 * constructor
 	 */
 	public QuestionQueue() {
+		type_of_question = TYPE_OF_QUESTION_UNDEFINED;
 	}
 
 	private void checkWordPickerStarted() {
@@ -64,7 +65,7 @@ public class QuestionQueue {
 
 		while (queue.size() < WORD_QUEUE_SIZE) {
 			int this_type_of_question = type_of_question;
-			if (this_type_of_question == 0
+			if (this_type_of_question == TYPE_OF_QUESTION_UNDEFINED
 					|| this_type_of_question == TYPE_OF_QUESTION_RANDOM)
 				this_type_of_question = 1 + (int) ((possible_type_of_questions.length - 1) * Math
 						.random());
@@ -74,7 +75,7 @@ public class QuestionQueue {
 
 			// choose a new question and look if it is new
 			do {
-				if (this_type_of_question == VOCABULARY) {
+				if (this_type_of_question == TYPE_OF_QUESTION_VOCABULARY) {
 					checkWordPickerStarted();
 					new_question = wp.getRandomQuestion();
 				}
@@ -135,7 +136,7 @@ public class QuestionQueue {
 	public void setTypeOfQuestion(int newType) {
 		// System.out.println("setLesson()" + l);
 		type_of_question = newType;
-		clearQueueAndRepopulate();
+		// clearQueueAndRepopulate();
 	}
 
 	/**
