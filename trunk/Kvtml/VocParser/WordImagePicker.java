@@ -11,7 +11,7 @@ public class WordImagePicker {
 		Word w;
 
 		while (true) {
-			w = wp.getRandomWord();
+			w = wp.getSelection().getRandomWord();
 			if (w.containsPicture())
 				break;
 		}

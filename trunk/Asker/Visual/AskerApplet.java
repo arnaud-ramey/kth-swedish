@@ -18,7 +18,7 @@ public class AskerApplet extends Applet{
 		c.weighty = 0.5;
 		c.fill = GridBagConstraints.BOTH;
 		this.add(panel,c);
-
+		
 		this.setSize(600, 200);
 	}
 }

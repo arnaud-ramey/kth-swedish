@@ -24,7 +24,9 @@ public class QuestionQueue {
 
 	public WordPicker wp = null;
 
-	private int type_of_question = TYPE_OF_QUESTION_UNDEFINED;
+	private int typeOfQuestion = TYPE_OF_QUESTION_UNDEFINED;
+
+	private int nbQuestionsDone, nbQuestionsKnown;
 
 	public static String[] possible_type_of_questions = {
 			"0: random questions in all the lessons",//
@@ -48,12 +50,12 @@ public class QuestionQueue {
 	 * constructor
 	 */
 	public QuestionQueue() {
-		type_of_question = TYPE_OF_QUESTION_UNDEFINED;
+		typeOfQuestion = TYPE_OF_QUESTION_UNDEFINED;
 	}
 
-	private void checkWordPickerStarted() {
+	public void checkWordPickerStarted() {
 		if (wp == null)
-			setDefaultWordPicker();
+			setDefaultWordPicker(true);
 	}
 
 	/**
@@ -64,7 +66,7 @@ public class QuestionQueue {
 		// System.out.println("type_of_question:" + type_of_question);
 
 		while (queue.size() < WORD_QUEUE_SIZE) {
-			int this_type_of_question = type_of_question;
+			int this_type_of_question = typeOfQuestion;
 			if (this_type_of_question == TYPE_OF_QUESTION_UNDEFINED
 					|| this_type_of_question == TYPE_OF_QUESTION_RANDOM)
 				this_type_of_question = 1 + (int) ((possible_type_of_questions.length - 1) * Math
@@ -126,6 +128,8 @@ public class QuestionQueue {
 	 */
 	public void clearQueueAndRepopulate() {
 		debug("clearQueueAndRepopulate()");
+		nbQuestionsDone = 0;
+		nbQuestionsKnown = 0;
 		queue.clear();
 		repopulateQueue();
 	}
@@ -135,7 +139,7 @@ public class QuestionQueue {
 	 */
 	public void setTypeOfQuestion(int newType) {
 		// System.out.println("setLesson()" + l);
-		type_of_question = newType;
+		typeOfQuestion = newType;
 		// clearQueueAndRepopulate();
 	}
 
@@ -143,15 +147,15 @@ public class QuestionQueue {
 	 * get the type of questions
 	 */
 	public int getTypeOfQuestion() {
-		return type_of_question;
+		return typeOfQuestion;
 	}
 
 	/**
 	 * load a default word picker
 	 */
-	public void setDefaultWordPicker() {
-		// System.out.println("setDefaultWordPicker()");
-		setWordPicker(WordPicker.defaultWordPicker(true));
+	public void setDefaultWordPicker(boolean allowAll) {
+		debug("setDefaultWordPicker()");
+		setWordPicker(WordPicker.defaultWordPicker(allowAll));
 	}
 
 	/**
@@ -161,7 +165,7 @@ public class QuestionQueue {
 	 *            the new one
 	 */
 	public void setWordPicker(WordPicker wp) {
-		// System.out.println("setWordPicker() - " + wp.toString());
+		debug("setWordPicker() - " + wp.toString(false));
 		this.wp = wp;
 		// clearQueueAndRepopulate();
 	}
@@ -178,6 +182,11 @@ public class QuestionQueue {
 	 * 
 	 */
 	public void declareQuestion_known() {
+		nbQuestionsDone++;
+		nbQuestionsKnown++;
+		if (typeOfQuestion == TYPE_OF_QUESTION_VOCABULARY)
+			wp.setLastWordKnown();
+
 		queue.removeFirst();
 		repopulateQueue();
 	}
@@ -187,12 +196,38 @@ public class QuestionQueue {
 	 * 
 	 */
 	public void declareQuestion_unknown() {
+		nbQuestionsDone++;
+		if (typeOfQuestion == TYPE_OF_QUESTION_VOCABULARY)
+			wp.setLastWordUnknown();
+
 		Question q = queue.pollFirst();
 		queue.addLast(q);
 	}
 
 	public static void debug(String s) {
 		IO.debug("QuestionQueue::" + s);
+	}
+
+	/**
+	 * @return the percentage of known answers
+	 */
+	private int shareKnown() {
+		if (nbQuestionsDone == 0)
+			return 100;
+		return (int) (100f * nbQuestionsKnown / nbQuestionsDone);
+	}
+
+	/**
+	 * @return a {@link String} with some stats
+	 */
+	public String info() {
+		String rep = "";
+		rep += "Done:" + nbQuestionsDone;
+		rep += ", Known:" + nbQuestionsKnown;
+		rep += " = " + shareKnown() + "%";
+		if (typeOfQuestion == TYPE_OF_QUESTION_VOCABULARY)
+			rep += ", " + wp.toString(false);
+		return rep;
 	}
 
 	/**
@@ -210,9 +245,9 @@ public class QuestionQueue {
 	 */
 	public static void main(String[] args) {
 		QuestionQueue qq = new QuestionQueue();
-		qq.setDefaultWordPicker();
-		qq.wp.getSelection().forbidAllLessons();
-		qq.wp.getSelection().setLesson("Aug", true);
+		qq.setDefaultWordPicker(false);
+		qq.wp.getSelection().setLesson("Aug.", true);
+		// qq.setTypeOfQuestion(TYPE_OF_QUESTION_VOCABULARY);
 		qq.clearQueueAndRepopulate();
 
 		System.out.println(qq);

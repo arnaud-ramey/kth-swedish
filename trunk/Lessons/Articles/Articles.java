@@ -19,7 +19,7 @@ public class Articles {
 		Word w = null;
 		String article = ARTICLES[article_index];
 		while (true) {
-			w = wp.getRandomWord();
+			w = wp.getSelection().getRandomWord();
 			String[] swe_words = w.get1().split(" ");
 			// is a sentence
 			if (swe_words.length > 0 && swe_words[0].equals(article))

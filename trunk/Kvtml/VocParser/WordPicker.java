@@ -31,31 +31,50 @@ public class WordPicker implements Observer {
 	}
 
 	public void setSelection(LessonSelection selection) {
+		debug("setSelection(Lessons:" + selection.getNbAllowedLessons() + ")");
 		this.selection = selection;
 		selection.addObserver(this);
-		compute_probas();
+		resetSelectionCounts();
+		computeProbas();
+	}
+
+	private void resetSelectionCounts() {
+		debug("resetSelectionCounts()");
+		for (Word w : getSelection().getWords()) {
+			// System.out.println();
+			// w.printLines();
+			w.setCount(0);
+			w.setErrorCount(0);
+		}
 	}
 
 	@Override
 	public void update(Observable o, Object arg) {
 		debug("update() : has been notified !");
-		// the selection has been modified => recompute the probas
-		compute_probas();
+		// the selection has been modified
+		// => reset the counters
+		resetSelectionCounts();
+		// => recompute the probas
+		computeProbas();
 	}
 
 	/**
 	 * compute the proba of every word
 	 */
-	private void compute_probas() {
-		debug("compute_probas()");
+	private void computeProbas() {
+		debug("computeProbas()");
 
+		// update the max and total word counts
 		maxWordCount = 0;
 		totalWordsCounts = 0;
-		// probas.setSize(nbWords());
 		for (Word w : selection.getWords()) {
 			int thisCount = w.getCount();
 			maxWordCount = Math.max(maxWordCount, thisCount);
 			totalWordsCounts += thisCount;
+		}
+
+		// once the indices are updated, update the probas
+		for (Word w : selection.getWords()) {
 			w.computeProba(this);
 		}
 	}
@@ -64,7 +83,10 @@ public class WordPicker implements Observer {
 	 * @return the average count of a {@link Word} in the list
 	 */
 	private double getAverageCount() {
-		return getTotalWordsCount() / selection.getNbAllowedWords();
+		int nbWords = selection.getNbAllowedLessons();
+		if (nbWords == 0)
+			return 0;
+		return getTotalWordsCount() / nbWords;
 	}
 
 	public int getMaxWordCount() {
@@ -75,10 +97,20 @@ public class WordPicker implements Observer {
 		return totalWordsCounts;
 	}
 
-	// private double getProba(int i) {
-	// // return probas.elementAt(i);
-	// return listOfWords.getWord(i).proba;
-	// }
+	/**
+	 * @return the number of words known before
+	 */
+	public int getNbKnownWords() {
+		int ans = 0;
+		for (Word w : getSelection().getWords()) {
+			int count = w.getCount();
+			if (count >= 1 && w.getErrorCount() < count)
+				ans++;
+		}
+		return ans;
+	}
+
+	int lastQuestionWordIndex;
 
 	/**
 	 * get a random {@link Word} according to the proba algorithms
@@ -86,6 +118,8 @@ public class WordPicker implements Observer {
 	 * @return this {@link Word}
 	 */
 	public Word getRandomWord_with_probas() {
+		debug("getRandomWord_with_probas()");
+
 		if (selection.areAllLessonsForbidden()) {
 			System.out
 					.println("All the lessons were fordidden, allowing everything.");
@@ -97,6 +131,9 @@ public class WordPicker implements Observer {
 		for (Word w : selection.getWords())
 			sumProba += w.proba;
 
+		// System.out.println("sum proba:" + sumProba);
+		// selection.displayWords();
+
 		// choose a proba
 		double choice = Math.random() * sumProba;
 
@@ -104,23 +141,22 @@ public class WordPicker implements Observer {
 		sumProba = 0;
 		for (Word w : selection.getWords()) {
 			sumProba += w.proba;
-			if (sumProba > choice)
+			if (sumProba > choice) {
+				lastQuestionWordIndex = w.getIndex();
 				return w;
+			}
 		}
-		return null;
-	}
 
-	/**
-	 * @return a random {@link Word} in the list
-	 */
-	public Word getRandomWord() {
-		return selection.getRandomWord();
+		debug("We didn't find a word matching.");
+		return null;
 	}
 
 	/**
 	 * @return a random {@link Question}
 	 */
 	public Question getRandomQuestion() {
+		debug("getRandomQuestion()");
+
 		Word w = getRandomWord_with_probas();
 
 		// determine the type of question
@@ -132,8 +168,11 @@ public class WordPicker implements Observer {
 		String lessonName = "VOC:" + w.getLessonName();
 		String question = w.getForeignWord(this_chosen_language);
 		// empty question => next question
-		if (question.length() == 0)
+		if (question.length() == 0) {
+			debug("The word '" + w.toString_onlyWords()
+					+ "' makes an empty question.");
 			return getRandomQuestion();
+		}
 		String ans = w.toString_onlyWords();
 		Question rep = new Question(lessonName, question, ans);
 
@@ -146,17 +185,46 @@ public class WordPicker implements Observer {
 	/**
 	 * the string version
 	 */
-	public String toString() {
-		String rep = "Word Picker :\n";
-		rep += " - Chosen language : " + chosenLanguage + "\n";
-		rep += " - Number of lessons : " + selection.getNbAllowedLessons()
-				+ "\n";
-		rep += " - Number of words : " + selection.getNbAllowedWords() + "\n";
-		rep += " - Counts: ";
-		rep += "total=" + getTotalWordsCount();
-		rep += ", max=" + getMaxWordCount();
-		rep += " (avg=" + ((int) (100f * getAverageCount()) / 100f) + ")";
+	public String toString(boolean longVersion) {
+		String rep = "";
+		String endl = (longVersion ? "\n" : ", ");
+		if (longVersion) {
+			rep += "Word Picker :\n";
+			rep += " - Chosen language : " + chosenLanguage + "\n";
+		}
+		rep += (longVersion ? " - Number of lessons : " : "Lessons:");
+		rep += selection.getNbAllowedLessons() + endl;
+
+		int known = getNbKnownWords();
+		int nbWords = selection.getNbAllowedWords();
+		rep += (longVersion ? " - Number of words : " : "Words:");
+		rep += nbWords + endl;
+
+		if (longVersion) {
+			rep += " - Counts: ";
+			rep += "total=" + getTotalWordsCount();
+			rep += ", max=" + getMaxWordCount();
+			rep += " (avg=" + (int) (100f * getAverageCount()) + "%)"
+					+ endl;
+			rep += " - ";
+		}
+		rep += "Knonwn:" + known + " = "
+				+ (int) (100f * known / nbWords) + "%";
 		return rep;
+	}
+
+	public void setLastWordKnown() {
+		debug("setLastWordKnown()");
+		selection.getWord(lastQuestionWordIndex).know(this);
+	}
+
+	public void setLastWordUnknown() {
+		debug("setLastWordUnknown()");
+		selection.getWord(lastQuestionWordIndex).unknow(this);
+	}
+
+	public String toString() {
+		return toString(true);
 	}
 
 	public static void debug(String s) {
@@ -183,5 +251,6 @@ public class WordPicker implements Observer {
 		System.out.println(wp);
 		wp.getSelection().setLesson("Sv", false);
 		System.out.println(wp);
+		// System.out.println(wp.toString(false));
 	}
 }

@@ -42,7 +42,7 @@ public class Word {
 	public ListOfWords getFatherList() {
 		return fatherList;
 	}
-	
+
 	/**
 	 * add a new field to the word
 	 * 
@@ -240,6 +240,7 @@ public class Word {
 	 * @return the line number
 	 */
 	public int getLineContaining(int lineNb, String tag) {
+
 		int currentLineNb = lineNb;
 		while (currentLineNb < fatherList.nbLines()) {
 			String currentLine = fatherList.getLine(currentLineNb);
@@ -390,42 +391,102 @@ public class Word {
 	 *            the new value
 	 */
 	public void setField(int lineNb, String tag, String value) {
-		int goodLineNb = getLineContaining(lineNb, tag);
-		if (goodLineNb == -1)
-			return;
-		String line = fatherList.getLine(goodLineNb);
+		// // //we add the "< />" around
+		// // tag = '<' + tag + "/>";
+		// System.out.println("setField(" + tag + ":" + value + ")");
+		//		
+		// // find the good line
+		// int goodLineNb = getLineContaining(lineNb, tag);
+		// if (goodLineNb == -1)
+		// return;
+		// String line = fatherList.getLine(goodLineNb);
+		//
+		//		
+		// int caretPos = line.indexOf(tag) + tag.length();
+		// String newLine = line.substring(0, caretPos);
+		//
+		// // copy the beginning of the line
+		// while (true) {
+		// char c = line.charAt(caretPos);
+		// newLine += c;
+		// if (c == '>')
+		// break;
+		// caretPos++;
+		// }
+		//
+		// // substitution
+		// newLine += value;
+		//
+		// // end of the line
+		// while (line.charAt(caretPos) != '<')
+		// caretPos++;
+		// newLine += line.substring(caretPos);
+		//
+		// // System.out.println("line:" + newLine);
+		// fatherList.setLine(goodLineNb, newLine);
 
-		int caretPos = line.indexOf(tag) + tag.length();
-		String newLine = line.substring(0, caretPos);
+		String line_oneline = "<" + tag + " />";
+		String line_multi_begin = "<" + tag + ">";
+		String line_multi_end = "</" + tag + ">";
 
-		// beginning of the line
-		while (true) {
-			char c = line.charAt(caretPos);
-			newLine += c;
-			if (c == '>')
-				break;
-			caretPos++;
+		int lineBegin = 0;
+		int nbLinesToErase = 0;
+
+		/*
+		 * find the line where to insert
+		 */
+		// first case : contains <tag />
+		if (containsLine(line_oneline)) {
+			// System.out.println("case 1");
+			lineBegin = getLineContaining(beginningLine, line_oneline);
+			nbLinesToErase = 1;
+		}
+		// second case : contains <tag> </tag>
+		else if (containsLine(line_multi_begin)) {
+			lineBegin = getLineContaining(beginningLine, line_multi_begin);
+			int lineEnd = getLineContaining(lineBegin, line_multi_end);
+			// System.out.println("case 2");
+			// System.out.println("lineBegin: " + lineBegin);
+			// System.out.println("lineEnd: " + lineEnd);
+			if (lineEnd == -1)
+				nbLinesToErase = 1;
+			else
+				nbLinesToErase = lineEnd - lineBegin + 1;
+		}
+		// last case : contains nothing
+		else {
+			lineBegin = getEndLineIndex();
+			nbLinesToErase = 0;
 		}
 
-		// substitution
-		newLine += value;
+		// System.out.println("lineBegin:" + lineBegin + " - "
+		// + fatherList.getLine(lineBegin));
+		// System.out.println("nbLineToErase:" + nbLinesToErase);
 
-		// end of the line
-		while (line.charAt(caretPos) != '<')
-			caretPos++;
-		newLine += line.substring(caretPos);
+		/*
+		 * erase the old lines
+		 */
+		for (int i = 0; i < nbLinesToErase; i++)
+			fatherList.removeLine(lineBegin);
 
-		// System.out.println("line:" + newLine);
-		fatherList.setLine(goodLineNb, newLine);
+		/*
+		 * add new lines
+		 */
+		Vector<String> lines = new Vector<String>();
+		String textLine = line_multi_begin + value + line_multi_end;
+		lines.add(indentLine(lineBegin - 1, textLine, 0));
+
+		fatherList.addLines(lineBegin, lines);
 	}
 
 	/**
 	 * set the translation of the word
+	 * 
 	 * @param idLanguage
 	 * @param text
 	 */
 	public void setForeignWord(int idLanguage, String text) {
-		String line_one_line = "<translation id=\"" + idLanguage + "\" />";
+		String line_one_line = "<translation id=\"" + idLanguage + "\"/>";
 		String line_multi_begin = "<translation id=\"" + idLanguage + "\" >";
 		String line_multi_end = "</translation>";
 
@@ -585,7 +646,8 @@ public class Word {
 		System.out.println(m.toString(true));
 
 		// nbWord = 209;
-		Word w = m.getRandomWord();
+		// Word w = m.getRandomWord();
+		Word w = m.getWord(359);
 		System.out.println(w);
 		// w.unknow();
 		// System.out.println(w);
@@ -600,6 +662,8 @@ public class Word {
 
 		w.printLines();
 		w.setForeignWord(2, "new");
+		w.setCount(10);
+		System.out.println();
 		w.printLines();
 	}
 }

@@ -15,7 +15,7 @@ public class Sentences {
 
 		while (!OK) {
 			OK = false;
-			w = wp.getRandomWord();
+			w = wp.getSelection().getRandomWord();
 			String swe = w.get1();
 
 			// ends with a mark of end of sentence

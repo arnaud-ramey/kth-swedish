@@ -20,10 +20,13 @@ public class LessonSelection extends Observable {
 	 * @param words
 	 *            the list of words where we apply the selection
 	 */
-	public LessonSelection(LessonTree tree) {
+	public LessonSelection(LessonTree tree, boolean allowAllLessons) {
 		this.lessonTree = tree;
-		// deselect all the lessons
-		forbidAllLessons();
+		// select or deselect all the lessons
+		if (allowAllLessons)
+			allowAllLessons();
+		else
+			forbidAllLessons();
 	}
 
 	private ListOfWords words() {
@@ -50,7 +53,7 @@ public class LessonSelection extends Observable {
 		for (LessonTree son : tree.getChildren())
 			setLessonTree(son, value);
 	}
-	
+
 	/**
 	 * @return the lessonTree
 	 */
@@ -131,13 +134,17 @@ public class LessonSelection extends Observable {
 		return ans;
 	}
 
+	public Word getWord(int wordIndex) {
+		return words().getWord(wordIndex);
+	}
+
 	/**
 	 * @return a random {@link Word} in the selection
 	 */
 	public Word getRandomWord() {
 		int wordIdxInSelection = (int) (Math.random() * allowedWords.size());
 		int wordIdxInKvtml = allowedWords.elementAt(wordIdxInSelection);
-		return words().getWord(wordIdxInKvtml);
+		return getWord(wordIdxInKvtml);
 	}
 
 	/**
@@ -166,15 +173,17 @@ public class LessonSelection extends Observable {
 	 */
 	private void generateIndex() {
 		debug("generateIndex()");
-		setChanged();
-		notifyObservers();
-
 		// clear the vector
 		allowedWords.clear();
 		nbAlllowedLessons = 0;
 
 		// recursively add all the words
 		generateIndex_rec(lessonTree);
+
+		// notify the listeners
+		debug("New number of words:" + getNbAllowedWords());
+		setChanged();
+		notifyObservers();
 	}
 
 	/**
@@ -189,6 +198,11 @@ public class LessonSelection extends Observable {
 
 		for (LessonTree child : node.getChildren())
 			generateIndex_rec(child);
+	}
+
+	public void displayWords() {
+		for (Word w : getWords())
+			System.out.println(w.toString());
 	}
 
 	/**
@@ -223,9 +237,7 @@ public class LessonSelection extends Observable {
 	 */
 	public static LessonSelection defaultLessonSelection(boolean allowAll) {
 		LessonSelection lessonSelection = new LessonSelection(LessonTree
-				.defaultLessonTree());
-		if (allowAll)
-			lessonSelection.allowAllLessons();
+				.defaultLessonTree(), allowAll);
 		return lessonSelection;
 	}
 
