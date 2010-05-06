@@ -49,10 +49,17 @@ public class LessonSelector extends JPanel {
 	private void refreshSelection() {
 		debug("refreshSelection()");
 		debug("");
+		/* clear the selection */
+		// turn off the listener before
 		jtree.removeTreeSelectionListener(listener);
-		// jtree.setSelectionPaths(lessonSelection.getSelectionsPathes());
+		jtree.setSelectionPaths(null);
+		/* repaint */
 		refreshInfoButton();
+		revalidate();
+		repaint();
+		/* set the selection listener */
 		jtree.addTreeSelectionListener(listener);
+
 	}
 
 	private void refreshInfoButton() {
@@ -62,7 +69,7 @@ public class LessonSelector extends JPanel {
 		infos.setText(text);
 	}
 
-	class renderer extends JPanel implements TreeCellRenderer {
+	class CellRenderer extends JPanel implements TreeCellRenderer {
 		private static final long serialVersionUID = 1L;
 		/** swing components */
 		protected JCheckBox check = new JCheckBox();
@@ -82,9 +89,11 @@ public class LessonSelector extends JPanel {
 			field.setText(text);
 			field.setBorder(null);
 			field.setBackground(color);
+			if (selected)
+				field.setBackground(Color.red);
 			check.setSelected(lessonSelection.isSelected(localTree));
+			check.setBackground(color);
 
-			this.setBackground(color);
 			this.removeAll();
 			this.setLayout(new GridBagLayout());
 			GridBagConstraints c = newConstraints();
@@ -94,9 +103,8 @@ public class LessonSelector extends JPanel {
 			this.add(field, c);
 			return this;
 		}
-
 	}
-
+	
 	public void buildPanel() {
 		// Where the tree is initialized:
 		jtree.getSelectionModel().setSelectionMode(
@@ -114,17 +122,18 @@ public class LessonSelector extends JPanel {
 
 					if (e.isAddedPath(tp)) {
 						debug("Allowed:" + tp);
-						lessonSelection.allowLessonTree(finalLesson);
+						lessonSelection.switchLessonTree(finalLesson);
 					} else {
 						debug("Forbidden:" + tp);
-						lessonSelection.forbidLessonTree(finalLesson);
+						// lessonSelection.forbidLessonTree(finalLesson);
 					}
 				}// end loop paths
 				thisPtr.refreshSelection();
 			} // end valueChanged
 		}; // end selection listener
-
-		jtree.setCellRenderer(new renderer());
+		
+		/* set the new renderer */
+		jtree.setCellRenderer(new CellRenderer());
 
 		/* make the info button */
 		infos.setEditable(false);
