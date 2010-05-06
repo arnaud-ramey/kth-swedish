@@ -1,4 +1,4 @@
-package Asker;
+package Asker.Visual;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -16,6 +16,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 
+import Asker.Question;
+import Asker.QuestionQueue;
 import Kvtml.IO.LibUtils;
 import Kvtml.VocParser.WordPicker;
 

@@ -1,4 +1,4 @@
-package Asker;
+package Asker.Visual;
 
 import java.applet.Applet;
 import java.awt.GridBagConstraints;

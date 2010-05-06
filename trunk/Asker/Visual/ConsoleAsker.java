@@ -1,7 +1,9 @@
-package Asker;
+package Asker.Visual;
 
 import java.io.IOException;
 
+import Asker.Question;
+import Asker.QuestionQueue;
 import Kvtml.IO.IO;
 
 public class ConsoleAsker {
