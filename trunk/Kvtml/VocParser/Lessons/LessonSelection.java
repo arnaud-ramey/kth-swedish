@@ -11,6 +11,7 @@ import Kvtml.VocParser.Word;
 public class LessonSelection {
 	private LessonTree lessonTree;
 	private Vector<Integer> allowedWords = new Vector<Integer>();
+	private int nbAlllowedLessons = 0;
 
 	/**
 	 * constructors
@@ -43,7 +44,7 @@ public class LessonSelection {
 	}
 
 	private void setLessonTree(LessonTree tree, boolean value) {
-		// debug("setLessonTree(" + tree + ", " + value + ")");
+		debug("setLessonTree(" + tree + ", " + value + ")");
 		tree.isSelected = value;
 		for (LessonTree son : tree.getChildren())
 			setLessonTree(son, value);
@@ -59,6 +60,13 @@ public class LessonSelection {
 		debug("forbidLessonTree(" + tree + ")");
 		setLessonTree(tree, false);
 		generateIndex();
+	}
+
+	public void switchLessonTree(LessonTree tree) {
+		if (isSelected(tree))
+			forbidLessonTree(tree);
+		else
+			allowLessonTree(tree);
 	}
 
 	public void allowAllLessons() {
@@ -86,7 +94,35 @@ public class LessonSelection {
 	// for (LessonTree child : node.getChildren())
 	// allLessons(child, ans);
 	// }
+	
+	/**
+	 * @return the number of allowed lessons
+	 */
+	public int getNbAllowedLessons() {
+		return nbAlllowedLessons;
+	}
+	
+	/**
+	 * @return the size of words in the selection
+	 */
+	public int getNbAllowedWords() {
+		return allowedWords.size();
+	}
 
+	/**
+	 * @return a random {@link Word} in the selection
+	 */
+	public Word getNextWord() {
+		int wordIdxInSelection = (int) (Math.random() * allowedWords.size());
+		int wordIdxInKvtml = allowedWords.elementAt(wordIdxInSelection);
+		return words().getWord(wordIdxInKvtml);
+	}
+
+	/**
+	 * @param lessonName
+	 *            a {@link String} contained in the name of the lessons to
+	 *            change of status
+	 */
 	public void setLesson(String lessonName, boolean value) {
 		debug("setLesson( \"" + lessonName + "\", " + value + ")");
 		setLesson_rec(lessonTree, lessonName, value);
@@ -106,31 +142,46 @@ public class LessonSelection {
 	/**
 	 * generate the list of allowed words
 	 */
-	public void generateIndex() {
+	private void generateIndex() {
 		debug("generateIndex()");
 		// clear the vector
 		allowedWords.clear();
+		nbAlllowedLessons = 0;
 
-		// loop through all the words
-		for (Word w : words().getWords()) {
-			if (isSelected(w.lessonTree))
-				allowedWords.add(w.getIndex());
-		}
+		// recursively add all the words
+		generateIndex_rec(lessonTree);
 	}
 
+	/**
+	 * recusrsively generate the list of allowed words
+	 */
+	private void generateIndex_rec(LessonTree node) {
+		if (isSelected(node)) {
+			// System.out.println("Allowed :" + node.getWordsOfLesson().size());
+			nbAlllowedLessons++;
+			allowedWords.addAll(node.getWordsOfLesson());
+		}
+
+		for (LessonTree child : node.getChildren())
+			generateIndex_rec(child);
+	}
+
+	/**
+	 * a fancy toString() routine
+	 */
 	public String toString() {
 		StringBuilder buffer = new StringBuilder();
 		buffer.append("-> LessonSelection :\n");
 
+		buffer.append("Allowed lessons : (" + getNbAllowedLessons() + ")\n");
 		TreePath[] paths = getSelectionsPath();
-		buffer.append("Allowed lessons : (" + paths.length + ")\n");
 		for (TreePath tp : paths)
 			buffer.append(" * " + tp + '\n');
-		
-		buffer.append("Allowed words : (" + allowedWords.size() + ")\n");
+
+		buffer.append("Allowed words : (" + getNbAllowedWords() + ")\n");
 		// for (int word_idx : allowedWords)
 		// buffer.append(" * " + words().getWord(word_idx) + '\n');
-		
+
 		return buffer.toString();
 	}
 
@@ -147,5 +198,8 @@ public class LessonSelection {
 		LessonSelection selection = new LessonSelection(tree);
 		selection.setLesson("Es", true);
 		System.out.println(selection);
+		for (int i = 0; i < 10	; i++) {
+			System.out.println(selection.getNextWord().toString_onlyWords());
+		}
 	}
 }

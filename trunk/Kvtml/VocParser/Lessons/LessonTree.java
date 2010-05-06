@@ -2,14 +2,8 @@ package Kvtml.VocParser.Lessons;
 
 import java.util.Vector;
 
-import javax.swing.JFrame;
-import javax.swing.JScrollPane;
-import javax.swing.JTree;
-import javax.swing.event.TreeSelectionEvent;
-import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
-import javax.swing.tree.TreeSelectionModel;
 
 import Kvtml.IO.IO;
 import Kvtml.VocParser.ListOfWords;
@@ -30,6 +24,8 @@ public class LessonTree {
 	private ListOfWords words;
 	private String name;
 
+	private Vector<Integer> wordsOfLesson;
+
 	protected boolean isSelected;
 
 	/**
@@ -37,19 +33,36 @@ public class LessonTree {
 	 * 
 	 * @param words
 	 *            the list of words where we apply the Tree
+	 * @param name
+	 *            the name of the lesson
 	 */
 	public LessonTree(ListOfWords words, String name) {
 		this(words, name, true);
 	}
 
+	/**
+	 * constructors
+	 * 
+	 * @param words
+	 *            the list of words where we apply the Tree
+	 * @param name
+	 *            the name of the lesson
+	 * @param needParse
+	 *            <code>true</code> if we need to parse the kvtml file
+	 */
 	private LessonTree(ListOfWords words, String name, boolean needParse) {
 		this.words = words;
 		this.name = name;
 		node = new DefaultMutableTreeNode(this);
+		wordsOfLesson = new Vector<Integer>();
 		if (needParse)
 			parse();
 	}
 
+	/**
+	 * parse the kvtml file to find the name of the lessons and the words they
+	 * contain
+	 */
 	private void parse() {
 		debug("parse()");
 		boolean isStarted = false;
@@ -85,9 +98,11 @@ public class LessonTree {
 				Word word = words.getWord(word_id);
 				LessonTree localTree = (LessonTree) localPositionInTree
 						.getUserObject();
-				word.lessonTree = localTree;
+
 				debug("adding word #" + word_id + " to lesson '"
 						+ localTree.getLessonFullName() + "'");
+				word.lessonTree = localTree;
+				localTree.wordsOfLesson.add(word.getIndex());
 			}
 		} // end loop on lines
 	} // end parse
@@ -99,12 +114,18 @@ public class LessonTree {
 		return name;
 	}
 
+	/**
+	 * @return the tree which is the father
+	 */
 	protected LessonTree getFather() {
 		DefaultMutableTreeNode nodeFather = (DefaultMutableTreeNode) node
 				.getParent();
 		return (LessonTree) nodeFather.getUserObject();
 	}
 
+	/**
+	 * @return the {@link Vector} containing all the children
+	 */
 	protected Vector<LessonTree> getChildren() {
 		Vector<LessonTree> ans = new Vector<LessonTree>();
 		for (int child_idx = 0; child_idx < node.getChildCount(); child_idx++) {
@@ -114,9 +135,13 @@ public class LessonTree {
 		}
 		return ans;
 	}
-	
+
 	protected ListOfWords getWords() {
 		return words;
+	}
+	
+	protected Vector<Integer> getWordsOfLesson() {
+		return wordsOfLesson;
 	}
 
 	protected DefaultMutableTreeNode getNode() {
@@ -141,50 +166,53 @@ public class LessonTree {
 		IO.debug("LessonTree::" + s);
 	}
 
+	/**
+	 * @return the path from the root to this node
+	 */
 	public TreePath getPath() {
-		return new TreePath( node.getPath() );
+		return new TreePath(node.getPath());
 	}
 
-	public static void testTrees() {
-		DefaultMutableTreeNode tree = new DefaultMutableTreeNode();
-		DefaultMutableTreeNode son = new DefaultMutableTreeNode();
-		tree.add(son);
-		System.out.println(tree.getDepth());
-	}
+	// public static void testTrees() {
+	// DefaultMutableTreeNode tree = new DefaultMutableTreeNode();
+	// DefaultMutableTreeNode son = new DefaultMutableTreeNode();
+	// tree.add(son);
+	// System.out.println(tree.getDepth());
+	// }
 
-	public void TreeDemo() {
-		final JTree tree = new JTree(node);
-		// Where the tree is initialized:
-		tree.getSelectionModel().setSelectionMode(
-				TreeSelectionModel.DISCONTIGUOUS_TREE_SELECTION);
-
-		// Listen for when the selection changes.
-		tree.addTreeSelectionListener(new TreeSelectionListener() {
-			public void valueChanged(TreeSelectionEvent e) {
-				for (TreePath tp : e.getPaths()) {
-					DefaultMutableTreeNode finalNode = (DefaultMutableTreeNode) tp
-							.getLastPathComponent();
-					LessonTree finalLesson = (LessonTree) finalNode
-							.getUserObject();
-
-					if (e.isAddedPath(tp)) {
-						System.out.println("Added:" + tp);
-
-					} else {
-						System.out.println("Removed:" + tp);
-					}
-
-					System.out.println("Final lesson:" + finalLesson);
-				}
-			}
-		});
-
-		JScrollPane treeView = new JScrollPane(tree);
-		JFrame jf = new JFrame("jframe");
-		jf.add(treeView);
-		jf.pack();
-		jf.setVisible(true);
-	}
+	// public void TreeDemo() {
+	// final JTree tree = new JTree(node);
+	// // Where the tree is initialized:
+	// tree.getSelectionModel().setSelectionMode(
+	// TreeSelectionModel.DISCONTIGUOUS_TREE_SELECTION);
+	//
+	// // Listen for when the selection changes.
+	// tree.addTreeSelectionListener(new TreeSelectionListener() {
+	// public void valueChanged(TreeSelectionEvent e) {
+	// for (TreePath tp : e.getPaths()) {
+	// DefaultMutableTreeNode finalNode = (DefaultMutableTreeNode) tp
+	// .getLastPathComponent();
+	// LessonTree finalLesson = (LessonTree) finalNode
+	// .getUserObject();
+	//
+	// if (e.isAddedPath(tp)) {
+	// System.out.println("Added:" + tp);
+	//
+	// } else {
+	// System.out.println("Removed:" + tp);
+	// }
+	//
+	// System.out.println("Final lesson:" + finalLesson);
+	// }
+	// }
+	// });
+	//
+	// JScrollPane treeView = new JScrollPane(tree);
+	// JFrame jf = new JFrame("jframe");
+	// jf.add(treeView);
+	// jf.pack();
+	// jf.setVisible(true);
+	// }
 
 	/**
 	 * some tests
@@ -195,7 +223,6 @@ public class LessonTree {
 		LessonTree tree = new LessonTree(ListOfWords.defaultListOfWords(),
 				"root");
 		System.out.println(tree);
-		// tree.TreeDemo();
 	}
 
 }
