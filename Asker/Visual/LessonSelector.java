@@ -105,7 +105,7 @@ public class LessonSelector extends JPanel {
 		}
 	}
 	
-	public void buildPanel() {
+	private void buildPanel() {
 		// Where the tree is initialized:
 		jtree.getSelectionModel().setSelectionMode(
 				TreeSelectionModel.DISCONTIGUOUS_TREE_SELECTION);
@@ -152,6 +152,13 @@ public class LessonSelector extends JPanel {
 		this.add(treeView, c);
 
 		refreshSelection();
+	}
+
+	/**
+	 * @return the selection of lessons
+	 */
+	public LessonSelection getLessonSelection() {
+		return lessonSelection;
 	}
 
 	public static void debug(String s) {
