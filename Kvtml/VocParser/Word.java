@@ -16,9 +16,8 @@ public class Word {
 	int index;
 
 	/** the name of the lesson */
-	String lesson_name;
-	public LessonTree lessonTree;
-	
+	// String lesson_name;
+	private LessonTree lessonTree;
 
 	/** the number of available languages */
 	int numberOfLanguages;
@@ -43,7 +42,7 @@ public class Word {
 	public ListOfWords getFatherList() {
 		return fatherList;
 	}
-
+	
 	/**
 	 * add a new field to the word
 	 * 
@@ -80,22 +79,23 @@ public class Word {
 	/**
 	 * the proba of being chosen - between 1 and 100
 	 */
-	public void computeProba() {
-		double proba = 30;
+	public void computeProba(WordPicker wp) {
+		double newProba = 30;
+		int thisCount = getCount();
+		int maxCount = wp.getMaxWordCount();
 
 		if (getCount() > 0) {
 			// word already asked ?
-			double alreadyAsked = 1.0f * (fatherList.maxCount - getCount())
-					/ fatherList.maxCount;
-			double alreadyMistaken = 1.0f * getErrorCount() / getCount();
+			double alreadyAsked = 1.0f * (maxCount - thisCount) / maxCount;
+			double alreadyMistaken = 1.0f * getErrorCount() / thisCount;
 			// System.out.println("alreadyAsked:" + alreadyAsked + " -
 			// alreadyMistaken:" + alreadyMistaken);
 
-			proba = 20 * alreadyAsked + 80 * alreadyMistaken;
-			proba = Math.max(1, Math.min(proba, 100));
+			newProba = 20 * alreadyAsked + 80 * alreadyMistaken;
+			newProba = Math.max(1, Math.min(newProba, 100));
 		}
 
-		this.proba = proba;
+		this.proba = newProba;
 	}
 
 	public boolean containsLine(String line) {
@@ -218,19 +218,18 @@ public class Word {
 		String rep = getField(l, "text");
 		return rep;
 	}
-	
+
 	public int getIndex() {
 		return index;
 	}
 
-
-	public int getLessonNumber() {
-		return fatherList.lessons.indexOf(lesson_name);
-	}
-
-	public String getLessonName() {
-		return lesson_name;
-	}
+	// public int getLessonNumber() {
+	// return fatherList.lessons.indexOf(lesson_name);
+	// }
+	//
+	// public String getLessonName() {
+	// return lesson_name;
+	// }
 
 	/**
 	 * return a line containing a special text
@@ -284,6 +283,14 @@ public class Word {
 		return 0;
 	}
 
+	public String getLessonName() {
+		return lessonTree.getLessonName();
+	}
+
+	public String getLessonFullName() {
+		return lessonTree.getLessonFullName();
+	}
+
 	/**
 	 * @return the success rate in %
 	 */
@@ -302,10 +309,10 @@ public class Word {
 		setErrorCount(1 + getErrorCount());
 	}
 
-	public void know() {
+	public void know(WordPicker wp) {
 		increaseCount();
 		decreaseErrorCount(); // only if needed
-		computeProba();
+		computeProba(wp);
 	}
 
 	/**
@@ -361,14 +368,15 @@ public class Word {
 	 *            the new value
 	 */
 	public void setCount(int val) {
-		fatherList.totalCounts -= getCount();
 		setField(beginningLine, "count", "" + val);
-		fatherList.maxCount = Math.max(fatherList.maxCount, val);
-		fatherList.totalCounts += val;
 	}
 
 	public void setErrorCount(int val) {
 		setField(beginningLine, "errorcount", "" + val);
+	}
+
+	public void setLessonTree(LessonTree lessonTree) {
+		this.lessonTree = lessonTree;
 	}
 
 	/**
@@ -411,6 +419,11 @@ public class Word {
 		fatherList.setLine(goodLineNb, newLine);
 	}
 
+	/**
+	 * set the translation of the word
+	 * @param idLanguage
+	 * @param text
+	 */
 	public void setForeignWord(int idLanguage, String text) {
 		String line_one_line = "<translation id=\"" + idLanguage + "\" />";
 		String line_multi_begin = "<translation id=\"" + idLanguage + "\" >";
@@ -485,12 +498,15 @@ public class Word {
 		}
 	}
 
+	/**
+	 * the string version
+	 */
 	public String toString() {
 		String rep = "";
 		rep += "#" + index;
 		rep += " (line ";
 		rep += beginningLine;
-		rep += ", " + lesson_name + "=" + getLessonNumber();
+		rep += ", lesson:" + lessonTree.getLessonFullName();
 		rep += ") ";
 		rep += toString_onlyWords();
 		rep += (containsPicture() ? " [" + getPictureFilename() + "]" : "");
@@ -500,6 +516,9 @@ public class Word {
 		return rep;
 	}
 
+	/**
+	 * @return the short {@link String} version
+	 */
 	public String toString_onlyWords() {
 		String rep = "";
 		for (int i = 0; i < numberOfLanguages; i++) {
@@ -509,10 +528,10 @@ public class Word {
 		return rep;
 	}
 
-	public void unknow() {
+	public void unknow(WordPicker wp) {
 		increaseCount();
 		increaseErrorCount();
-		computeProba();
+		computeProba(wp);
 	}
 
 	/**
@@ -562,9 +581,8 @@ public class Word {
 	}
 
 	public static void main(String[] args) {
-		ListOfWords m = new ListOfWords();
-		m.readFile("/voc.kvtml");
-		System.out.println(m.infoString());
+		ListOfWords m = ListOfWords.defaultListOfWords();
+		System.out.println(m.toString(true));
 
 		// nbWord = 209;
 		Word w = m.getRandomWord();

@@ -13,8 +13,8 @@ public class ConsoleAsker {
 
 	static int chooseLesson() {
 		System.out.println("Choose your lesson :");
-		for (int i = 0; i < QuestionQueue.possible_lessons.length; i++)
-			System.out.println(QuestionQueue.possible_lessons[i]);
+		for (int i = 0; i < QuestionQueue.possible_type_of_questions.length; i++)
+			System.out.println(QuestionQueue.possible_type_of_questions[i]);
 		System.out.print("Choice ? ");
 		int choice = IO.readInt();
 		return choice;
@@ -25,7 +25,7 @@ public class ConsoleAsker {
 	 */
 	public ConsoleAsker() {
 		System.out.println("*** Starting interrogation... ***");
-		queue.setLesson(chooseLesson());
+		queue.setTypeOfQuestion(chooseLesson());
 		changeQuestion();
 		loop();
 	}

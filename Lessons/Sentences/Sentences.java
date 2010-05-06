@@ -9,8 +9,7 @@ public class Sentences {
 
 	private static int MINIMUM_WORDS = 6;
 
-	private static Word randomSentence() {
-		WordPicker wp = WordPicker.defaultWordPicker();
+	private static Word randomSentence(WordPicker wp) {
 		Word w = null;
 		boolean OK = false;
 
@@ -58,8 +57,8 @@ public class Sentences {
 	 * @return a {@link Question} with a sentence in swedish were the words have
 	 *         been shuffled
 	 */
-	public static Question randomShuffleSentence() {
-		Word word = randomSentence();
+	public static Question randomShuffleSentence(WordPicker wp) {
+		Word word = randomSentence(wp);
 		/* prepare the split /= */
 		String answer = word.get1();
 		String sentence = answer;
@@ -83,17 +82,18 @@ public class Sentences {
 	/**
 	 * @return a {@link Question} with the swedish to translate
 	 */
-	public static Question randomQuestion() {
-		Word w = randomSentence();
+	public static Question randomQuestion(WordPicker wp) {
+		Word w = randomSentence(wp);
 		Question q = new Question("Sentences", w.get0(), w.get1());
 		return q;
 	}
 
 	public static void main(String[] args) {
+		WordPicker wp = WordPicker.defaultWordPicker(true);
 		// System.out.println(randomSentence().get1());
-		System.out.println(randomShuffleSentence());
+		System.out.println(randomShuffleSentence(wp));
 		System.out.println();
-		System.out.println(randomQuestion());
+		System.out.println(randomQuestion(wp));
 
 		// String[] arr = new String[] { "1", "2", "3", "4", "5","6", "7", "8",
 		// "9", "10" };

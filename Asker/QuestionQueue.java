@@ -2,6 +2,7 @@ package Asker;
 
 import java.util.LinkedList;
 
+import Kvtml.IO.IO;
 import Kvtml.VocParser.WordImagePicker;
 import Kvtml.VocParser.WordPicker;
 import Lessons.Articles.Articles;
@@ -15,16 +16,17 @@ import Lessons.Verbs.Verb;
 
 public class QuestionQueue {
 	static int WORD_QUEUE_SIZE = 5;
+	private static int TYPE_OF_QUESTION_RANDOM = -1;
 
 	private LinkedList<Question> queue = new LinkedList<Question>();
 
-	public WordPicker wp;
+	public WordPicker wp = null;
 
-	private int type_of_question = -1;
+	private int type_of_question = TYPE_OF_QUESTION_RANDOM;
 
 	public static int VOCABULARY = 1;
 
-	public static String[] possible_lessons = {
+	public static String[] possible_type_of_questions = {
 			"0: random questions in all the lessons",//
 			"1: vocabulary",//
 			"2: vocabulary (only images)",//
@@ -43,46 +45,73 @@ public class QuestionQueue {
 	};
 
 	/**
+	 * constructor
+	 */
+	public QuestionQueue() {
+	}
+
+	private void checkWordPickerStarted() {
+		if (wp == null)
+			setDefaultWordPicker();
+	}
+
+	/**
 	 * fill the queue with askable words
 	 */
 	private void repopulateQueue() {
-		// System.out.println("repopulateQueue()");
+		debug("repopulateQueue()");
 		// System.out.println("type_of_question:" + type_of_question);
 
 		while (queue.size() < WORD_QUEUE_SIZE) {
-			int l = type_of_question;
-			if (l == 0 || l == -1)
-				l = 1 + (int) ((possible_lessons.length - 1) * Math.random());
+			int this_type_of_question = type_of_question;
+			if (this_type_of_question == 0
+					|| this_type_of_question == TYPE_OF_QUESTION_RANDOM)
+				this_type_of_question = 1 + (int) ((possible_type_of_questions.length - 1) * Math
+						.random());
+			debug("Finding a question of type " + this_type_of_question + " ("
+					+ possible_type_of_questions[this_type_of_question] + ")");
 			Question new_question = new Question();
 
 			// choose a new question and look if it is new
 			do {
-				if (l == VOCABULARY)
+				if (this_type_of_question == VOCABULARY) {
+					checkWordPickerStarted();
 					new_question = wp.getRandomQuestion();
-				if (l == 2)
-					new_question = WordImagePicker.randomQuestion();
-				if (l == 3)
-					new_question = Sentences.randomQuestion();
-				if (l == 4)
-					new_question = Sentences.randomShuffleSentence();
-				if (l == 5)
+				}
+				if (this_type_of_question == 2) {
+					checkWordPickerStarted();
+					new_question = WordImagePicker.randomQuestion(wp);
+				}
+				if (this_type_of_question == 3) {
+					checkWordPickerStarted();
+					new_question = Sentences.randomQuestion(wp);
+				}
+				if (this_type_of_question == 4) {
+					checkWordPickerStarted();
+					new_question = Sentences.randomShuffleSentence(wp);
+				}
+				if (this_type_of_question == 5)
 					new_question = NumberTranslator.randomQuestion(20);
-				if (l == 6)
+				if (this_type_of_question == 6)
 					new_question = NumberTranslator.randomQuestion(2100);
-				if (l == 7)
+				if (this_type_of_question == 7)
 					new_question = RankingTranslator.randomQuestion(31);
-				if (l == 8)
+				if (this_type_of_question == 8)
 					new_question = RankingTranslator.randomQuestion(1000);
-				if (l == 9)
+				if (this_type_of_question == 9)
 					new_question = HourTranslator.randomQuestion();
-				if (l == 10)
+				if (this_type_of_question == 10)
 					new_question = Verb.randomVerb();
-				if (l == 11)
+				if (this_type_of_question == 11)
 					new_question = Pronouns.randomQuestion();
-				if (l == 12)
-					new_question = Prepositions.randomQuestion();
-				if (l == 13)
-					new_question = Articles.randomQuestion();
+				if (this_type_of_question == 12) {
+					checkWordPickerStarted();
+					new_question = Prepositions.randomQuestion(wp);
+				}
+				if (this_type_of_question == 13) {
+					checkWordPickerStarted();
+					new_question = Articles.randomQuestion(wp);
+				}
 
 				// System.out.println(new_question);
 
@@ -95,26 +124,17 @@ public class QuestionQueue {
 	 * clear the queue and repopulate it
 	 */
 	public void clearQueueAndRepopulate() {
-		// System.out.println("clearQueueAndRepopulate()");
+		debug("clearQueueAndRepopulate()");
 		queue.clear();
 		repopulateQueue();
 	}
 
 	/**
-	 * constructor
-	 */
-	public QuestionQueue() {
-	}
-
-	/**
 	 * change the loaded lesson
 	 */
-	public void setLesson(int l) {
+	public void setTypeOfQuestion(int newType) {
 		// System.out.println("setLesson()" + l);
-		type_of_question = l;
-		/* load the word picker if needed */
-		if ((type_of_question == 1 || type_of_question == 0) && wp == null)
-			setDefaultWordPicker();
+		type_of_question = newType;
 		clearQueueAndRepopulate();
 	}
 
@@ -130,7 +150,7 @@ public class QuestionQueue {
 	 */
 	public void setDefaultWordPicker() {
 		// System.out.println("setDefaultWordPicker()");
-		setWordPicker(WordPicker.defaultWordPicker());
+		setWordPicker(WordPicker.defaultWordPicker(true));
 	}
 
 	/**
@@ -142,7 +162,7 @@ public class QuestionQueue {
 	public void setWordPicker(WordPicker wp) {
 		// System.out.println("setWordPicker() - " + wp.toString());
 		this.wp = wp;
-		clearQueueAndRepopulate();
+		// clearQueueAndRepopulate();
 	}
 
 	/**
@@ -170,6 +190,10 @@ public class QuestionQueue {
 		queue.addLast(q);
 	}
 
+	public static void debug(String s) {
+		IO.debug("QuestionQueue::" + s);
+	}
+
 	/**
 	 * the string version
 	 */
@@ -186,9 +210,9 @@ public class QuestionQueue {
 	public static void main(String[] args) {
 		QuestionQueue qq = new QuestionQueue();
 		qq.setDefaultWordPicker();
-		qq.wp.forbidAllLessons();
-		qq.wp.setLesson(0, true);
-		// qq.clearQueueAndRepopulate();
+		qq.wp.getSelection().forbidAllLessons();
+		qq.wp.getSelection().setLesson("Aug", true);
+		qq.clearQueueAndRepopulate();
 
 		System.out.println(qq);
 		System.out.println("-----------------------------");

@@ -42,8 +42,7 @@ public class Prepositions {
 	/**
 	 * @return a {@link Question} where the preposition was hidden
 	 */
-	public static Question randomQuestion() {
-		WordPicker wp = WordPicker.defaultWordPicker();
+	public static Question randomQuestion(WordPicker wp) {
 		Word w = null;
 		int pronoun_index = (int) (Math.random() * PREPOSITIONS.length);
 
@@ -78,7 +77,8 @@ public class Prepositions {
 	}
 
 	public static void main(String[] args) {
+		WordPicker wp = WordPicker.defaultWordPicker(true);
 		for (int i = 0; i < 10; i++)
-			System.out.println(randomQuestion());
+			System.out.println(randomQuestion(wp));
 	}
 }

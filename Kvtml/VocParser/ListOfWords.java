@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.util.Vector;
 
 import Kvtml.IO.IO;
+import Kvtml.VocParser.Lessons.LessonTree;
 
 public class ListOfWords {
 	private String filename = "";
@@ -15,15 +16,16 @@ public class ListOfWords {
 
 	private Vector<Word> words = new Vector<Word>();
 
-	public Vector<String> lessons = new Vector<String>();
+	private LessonTree lessonTree = null;
 
-	/** the max number of times a word was asked */
-	int maxCount;
-
-	/** the sum of all the times the words were asked */
-	double totalCounts;
-
-	public ListOfWords() {
+	/**
+	 * constructor
+	 * 
+	 * @param filename
+	 *            the kvtml file
+	 */
+	public ListOfWords(String filename) {
+		readFile(filename);
 	}
 
 	/**
@@ -32,7 +34,7 @@ public class ListOfWords {
 	public String getFilename() {
 		return filename;
 	}
-	
+
 	public Vector<String> getLanguages() {
 		return languages;
 	}
@@ -79,45 +81,10 @@ public class ListOfWords {
 		}
 
 		/* find lessons and associating with them */
-		boolean record = false;
-		Vector<String> current_lesson_name_queue = new Vector<String>();
-		String current_lesson_name = "";
-
-		for (; curr_line_index < lines.size(); curr_line_index++) {
-			String l = lines.get(curr_line_index);
-			if (l.contains("<lessons>"))
-				record = true;
-			if (l.contains("</lessons>"))
-				break;
-
-			if (record) {
-				// beginning of lesson -> push the name
-				if (l.contains("<name>")) {
-					current_lesson_name_queue.add(Word.extractFieldFromAnchors(
-							l, "name"));
-					current_lesson_name = current_lesson_name_queue.toString();
-					lessons.add(current_lesson_name);
-				}
-				// end of lesson -> remove the name
-				if (l.contains("</container>")) {
-					current_lesson_name_queue.remove(current_lesson_name_queue
-							.size() - 1);
-					current_lesson_name = current_lesson_name_queue.toString();
-				}
-				// word id -> push the lesson
-				if (l.contains("<entry")) {
-					String id_string = Word.extractFieldFromQuotes(l, "id");
-					int id = Integer.parseInt(id_string);
-					getWord(id).lesson_name = current_lesson_name;
-					// System.out.println("id:" + id);
-				}
-			} // end of if record
-		}
-		// System.out.println(lessons);
+		lessonTree = new LessonTree(this, "root");
 
 		/* compute data for each word */
 		compute_number_of_languages_for_each_word();
-		compute_counts();
 	}
 
 	/**
@@ -188,16 +155,16 @@ public class ListOfWords {
 		// add the line
 		lines.add(lineNb, newline);
 	}
-	
+
 	public void addLines(int lineNb, Vector<String> newLines) {
 		// add the new lines backward
-		for (int i = newLines.size()-1; i >= 0; i--) {
+		for (int i = newLines.size() - 1; i >= 0; i--) {
 			this.lines.add(lineNb, newLines.elementAt(i));
 		}
 		// shift the lines after
 		for (Word w : words) {
 			if (w.beginningLine >= lineNb)
-				w.beginningLine+= newLines.size();
+				w.beginningLine += newLines.size();
 		}
 	}
 
@@ -224,13 +191,13 @@ public class ListOfWords {
 	public int nbWords() {
 		return words.size();
 	}
-	
-	/**
-	 * @return the number of lessons
-	 */
-	public int nbLessons() {
-		return lessons.size();
-	}
+
+	// /**
+	// * @return the number of lessons
+	// */
+	// public int nbLessons() {
+	// return lessons.size();
+	// }
 
 	/**
 	 * get the {@link Word} at a certain index in the list
@@ -251,10 +218,10 @@ public class ListOfWords {
 	}
 
 	/**
-	 * @return the average count of a {@link Word} in the list
+	 * @return the lessonTree
 	 */
-	private double getAverageCount() {
-		return totalCounts / nbWords();
+	public LessonTree getLessonTree() {
+		return lessonTree;
 	}
 
 	/**
@@ -266,50 +233,27 @@ public class ListOfWords {
 	}
 
 	/**
-	 * compute the proba of every word
+	 * @return an info {@link String}
 	 */
-	private void compute_counts() {
-		double sum = 0;
-
-		for (Word w : words) {
-			int currCount = w.getCount();
-			if (currCount > maxCount)
-				maxCount = currCount;
-			sum += currCount;
-		}
-
-		totalCounts = sum;
-	}
-
-	/**
-	 * @param lesson
-	 *            the index of the lesson
-	 * @return the number of words in this lesson
-	 */
-	public int getNumberOfWordsInLesson(int lesson) {
-		int rep = 0;
-		for (Word w : words)
-			if (w.getLessonNumber() == lesson)
-				++rep;
-		return rep;
+	public String toString() {
+		return toString(true);
 	}
 
 	/**
 	 * @return an info {@link String}
 	 */
-	public String infoString() {
+	public String toString(boolean breakLines) {
 		String rep = "";
-		rep += "File:'" + filename + "'";
-		rep += " - Languages:" + languages.toString();
-		rep += " - Nb lines:" + lines.size();
-		rep += " - Nb words:" + nbWords();
-		rep += " - Counts:avg=" + ((int) (100f * getAverageCount()) / 100f)
-				+ ", max=" + maxCount;
+		String endLine = (breakLines ? "\n" : "");
+		rep += "File:'" + filename + "'" + endLine;
+		rep += " - Languages : " + languages.toString() + endLine;
+		rep += " - Nb lines : " + lines.size() + endLine;
+		rep += " - Nb words : " + nbWords() + endLine;
 		return rep;
 	}
 
 	/**
-	 * dispolay all the {@link Word} of words on {@link System}.out
+	 * display all the {@link Word} of words on {@link System}.out
 	 */
 	public void displayAllWords() {
 		for (Word w : words)
@@ -320,23 +264,21 @@ public class ListOfWords {
 	 * @return the default {@link ListOfWords}
 	 */
 	public static ListOfWords defaultListOfWords() {
-		ListOfWords l = new ListOfWords();
-		l.readFile("/voc.kvtml");
+		ListOfWords l = new ListOfWords("/voc.kvtml");
 		return l;
 	}
 
 	public static void test() {
 		ListOfWords l = ListOfWords.defaultListOfWords();
-		System.out.println(l.infoString());
+		System.out.println(l.toString(true));
 		// l.displayAllWords();
 		System.out.println(l.getRandomWord());
 	}
 
 	public static void test2() {
-		ListOfWords l = new ListOfWords();
-		l.readFile("/test.kvtml");
+		ListOfWords l = new ListOfWords("/test.kvtml");
 
-		System.out.println(l.infoString());
+		System.out.println(l.toString(true));
 		l.displayAllWords();
 		// l.removeLine(77);
 
