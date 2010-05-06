@@ -29,7 +29,7 @@ public class LessonSelection {
 		return lessonTree.getWords();
 	}
 
-	public TreePath[] getSelectionsPath() {
+	public TreePath[] getSelectionsPathes() {
 		Vector<TreePath> ans = new Vector<TreePath>();
 		getSelectionsPath_rec(lessonTree, ans);
 		TreePath[] array = new TreePath[0];
@@ -94,19 +94,29 @@ public class LessonSelection {
 	// for (LessonTree child : node.getChildren())
 	// allLessons(child, ans);
 	// }
-	
+
 	/**
 	 * @return the number of allowed lessons
 	 */
 	public int getNbAllowedLessons() {
 		return nbAlllowedLessons;
 	}
-	
+
 	/**
 	 * @return the size of words in the selection
 	 */
 	public int getNbAllowedWords() {
 		return allowedWords.size();
+	}
+
+	/**
+	 * @return all the allowed words
+	 */
+	public Vector<Word> getWords() {
+		Vector<Word> ans = new Vector<Word>();
+		for (int i : allowedWords)
+			ans.add(words().getWord(i));
+		return ans;
 	}
 
 	/**
@@ -174,13 +184,13 @@ public class LessonSelection {
 		buffer.append("-> LessonSelection :\n");
 
 		buffer.append("Allowed lessons : (" + getNbAllowedLessons() + ")\n");
-		TreePath[] paths = getSelectionsPath();
+		TreePath[] paths = getSelectionsPathes();
 		for (TreePath tp : paths)
 			buffer.append(" * " + tp + '\n');
 
 		buffer.append("Allowed words : (" + getNbAllowedWords() + ")\n");
-		// for (int word_idx : allowedWords)
-		// buffer.append(" * " + words().getWord(word_idx) + '\n');
+		// for (Word w : getWords())
+		// buffer.append(" * " + w + '\n');
 
 		return buffer.toString();
 	}
@@ -198,7 +208,7 @@ public class LessonSelection {
 		LessonSelection selection = new LessonSelection(tree);
 		selection.setLesson("Es", true);
 		System.out.println(selection);
-		for (int i = 0; i < 10	; i++) {
+		for (int i = 0; i < 10; i++) {
 			System.out.println(selection.getNextWord().toString_onlyWords());
 		}
 	}

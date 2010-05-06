@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
 import Asker.Question;
-import Asker.VisualAsker;
+import Asker.Visual.VisualAsker;
 import Kvtml.IO.LibUtils;
 
 public class WordPicker {
@@ -30,7 +30,7 @@ public class WordPicker {
 
 	private int chosenLanguage = LANGUAGE_RANDOM;
 
-	public void setQuestiontType(int chosenLanguage) {
+	public void setQuestiontLanguage(int chosenLanguage) {
 		this.chosenLanguage = chosenLanguage;
 	}
 
@@ -313,10 +313,10 @@ public class WordPicker {
 		list.setSelectedIndex(list.getItemCount() - 1);
 		list.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				setQuestiontType(list.getSelectedIndex());
+				setQuestiontLanguage(list.getSelectedIndex());
 				// if random item selected => set random
 				if (list.getSelectedIndex() == list.getItemCount() - 1)
-					setQuestiontType(LANGUAGE_RANDOM);
+					setQuestiontLanguage(LANGUAGE_RANDOM);
 			}
 		});
 
