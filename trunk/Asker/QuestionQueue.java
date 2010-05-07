@@ -184,8 +184,9 @@ public class QuestionQueue {
 	public void declareQuestion_known() {
 		nbQuestionsDone++;
 		nbQuestionsKnown++;
+		int wordIdx = Integer.parseInt(queue.peekFirst().userObject.toString());
 		if (typeOfQuestion == TYPE_OF_QUESTION_VOCABULARY)
-			wp.setLastWordKnown();
+			wp.setWordKnown(wordIdx);
 
 		queue.removeFirst();
 		repopulateQueue();
@@ -197,8 +198,9 @@ public class QuestionQueue {
 	 */
 	public void declareQuestion_unknown() {
 		nbQuestionsDone++;
+		int wordIdx = Integer.parseInt(queue.peekFirst().userObject.toString());
 		if (typeOfQuestion == TYPE_OF_QUESTION_VOCABULARY)
-			wp.setLastWordUnknown();
+			wp.setWordUnknown(wordIdx);
 
 		Question q = queue.pollFirst();
 		queue.addLast(q);

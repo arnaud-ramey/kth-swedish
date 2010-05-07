@@ -14,6 +14,8 @@ public class Question {
 	public String answer = "";
 
 	public boolean is_image = false;
+	
+	public Object userObject;
 
 	/**
 	 * constructor
