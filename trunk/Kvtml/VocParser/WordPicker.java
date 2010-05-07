@@ -35,10 +35,9 @@ public class WordPicker implements Observer {
 		this.selection = selection;
 		selection.addObserver(this);
 		resetSelectionCounts();
-		computeProbas();
 	}
 
-	private void resetSelectionCounts() {
+	public void resetSelectionCounts() {
 		debug("resetSelectionCounts()");
 		for (Word w : getSelection().getWords()) {
 			// System.out.println();
@@ -46,6 +45,8 @@ public class WordPicker implements Observer {
 			w.setCount(0);
 			w.setErrorCount(0);
 		}
+		// recompute the new probas
+		computeProbas();
 	}
 
 	@Override
@@ -54,8 +55,6 @@ public class WordPicker implements Observer {
 		// the selection has been modified
 		// => reset the counters
 		resetSelectionCounts();
-		// => recompute the probas
-		computeProbas();
 	}
 
 	/**

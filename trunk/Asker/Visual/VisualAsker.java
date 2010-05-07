@@ -54,6 +54,7 @@ public class VisualAsker extends JPanel {
 	private JTextField info_field = new JTextField("");
 
 	private JButton goToMainTitleButton = new JButton();
+	private JButton resetStatsButton = new JButton();
 	private JButton knowButton = new JButton();
 	private JButton doNotKnowButton = new JButton();
 
@@ -244,10 +245,18 @@ public class VisualAsker extends JPanel {
 				KeyStroke.getKeyStroke("F2"), "unknow");
 		doNotKnowButton.getActionMap().put("unknow", unknowAction);
 		doNotKnowButton.setText("I dunno. (F2)");
+		
+		resetStatsButton.setAction(new AbstractAction() {
+			private static final long serialVersionUID = 1L;
+			public void actionPerformed(ActionEvent arg0) {
+				queue.resetStats();
+				displayQuestion();
+			}
+		});
+		resetStatsButton.setText("Reset stats");
 
 		goToMainTitleButton.setAction(new AbstractAction() {
 			private static final long serialVersionUID = 1L;
-
 			public void actionPerformed(ActionEvent e) {
 				goToMainPage(true);
 			}
@@ -285,13 +294,18 @@ public class VisualAsker extends JPanel {
 
 		c.gridy++;
 		c.weighty = 100;
-		c.gridwidth = 3;
+		c.gridwidth = 2;
 		c.gridx = 0;
 		add(answer_field, c);
 
 		c.gridy++;
 		c.weighty = 10;
+		c.gridwidth = 1;
+		c.gridx = 0;
 		add(info_field, c);
+//		c.gridwidth = 1;
+		c.gridx = 1;
+		add(resetStatsButton, c);
 
 		displayQuestion();
 	}
