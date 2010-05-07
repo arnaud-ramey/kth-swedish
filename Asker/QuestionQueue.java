@@ -128,8 +128,7 @@ public class QuestionQueue {
 	 */
 	public void clearQueueAndRepopulate() {
 		debug("clearQueueAndRepopulate()");
-		nbQuestionsDone = 0;
-		nbQuestionsKnown = 0;
+		resetStats();
 		queue.clear();
 		repopulateQueue();
 	}
@@ -219,6 +218,14 @@ public class QuestionQueue {
 		if (nbQuestionsDone == 0)
 			return 100;
 		return (int) (100f * nbQuestionsKnown / nbQuestionsDone);
+	}
+	
+	public void resetStats() {
+		debug("resetStats()");
+		nbQuestionsDone = 0;
+		nbQuestionsKnown = 0;
+		if (typeOfQuestion == TYPE_OF_QUESTION_VOCABULARY)
+			wp.resetSelectionCounts();
 	}
 
 	/**
