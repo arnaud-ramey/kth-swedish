@@ -26,4 +26,19 @@ public class LibUtils {
 		return firstLetterUpperCase(low);
 	}
 
+	public static String breakInTwo(String msg, boolean html) {
+		int length = msg.length();
+		int pos = msg.indexOf(' ', length / 2);
+		if (pos == -1)
+			return msg;
+		String ans = msg.substring(0, pos) + (html ? "<br>" : "\n")
+				+ msg.substring(pos + 1);
+		return ans;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(breakInTwo("allo allo", true));
+		System.out.println(breakInTwo("al llololoallo", true));
+		System.out.println(breakInTwo("alllololoal lo", true));
+	}
 }

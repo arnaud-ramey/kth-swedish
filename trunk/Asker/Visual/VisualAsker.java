@@ -34,6 +34,10 @@ public class VisualAsker extends JPanel {
 
 	public static Color BLUE = new Color(210, 255, 255);
 
+	Font answerFieldFont = new Font(Font.SANS_SERIF, Font.PLAIN, 16);
+	Font lessonTitleFieldFont = new Font(Font.DIALOG, Font.ITALIC, 14);
+	Font infoFieldFont = new Font(Font.DIALOG, Font.ITALIC, 12);
+
 	/*
 	 * Questions, etc
 	 */
@@ -89,7 +93,10 @@ public class VisualAsker extends JPanel {
 			int size = 8;
 			if (text.length() > 30)
 				size = 6;
-			text = "<font face=Arial size=" + size + ">" + text + "</font>";
+			if (text.length() > 50)
+				text = LibUtils.breakInTwo(text, true);
+			
+            text = "<font face=Arial size=" + size + ">" + text + "</font>";
 			text = "<center>" + text + "</center>";
 			text = "<html>" + text + "</html>";
 			unknownWord_field.setBackground(YELLOW);
@@ -190,17 +197,17 @@ public class VisualAsker extends JPanel {
 		debug("showQuestion_makeButtons()");
 
 		answer_field.setBackground(BLUE);
-		answer_field.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 16));
+		answer_field.setFont(answerFieldFont);
 		answer_field.setHorizontalAlignment(JTextField.CENTER);
 
 		lessonTitle_field.setEditable(false);
 		lessonTitle_field.setBackground(BLUE);
-		lessonTitle_field.setFont(new Font(Font.DIALOG, Font.ITALIC, 14));
+		lessonTitle_field.setFont(lessonTitleFieldFont);
 		lessonTitle_field.setHorizontalAlignment(JTextField.RIGHT);
 
 		info_field.setEditable(false);
 		info_field.setBackground(Color.LIGHT_GRAY);
-		info_field.setFont(new Font(Font.DIALOG, Font.ITALIC, 12));
+		info_field.setFont(infoFieldFont);
 		info_field.setHorizontalAlignment(JTextField.CENTER);
 
 		/* create actions */
