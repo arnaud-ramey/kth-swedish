@@ -110,8 +110,6 @@ public class WordPicker implements Observer {
 		return ans;
 	}
 
-	int lastQuestionWordIndex;
-
 	/**
 	 * get a random {@link Word} according to the proba algorithms
 	 * 
@@ -142,7 +140,6 @@ public class WordPicker implements Observer {
 		for (Word w : selection.getWords()) {
 			sumProba += w.proba;
 			if (sumProba > choice) {
-				lastQuestionWordIndex = w.getIndex();
 				return w;
 			}
 		}
@@ -166,20 +163,22 @@ public class WordPicker implements Observer {
 
 		// determine the question
 		String lessonName = "VOC:" + w.getLessonName();
-		String question = w.getForeignWord(this_chosen_language);
+		String unknownWord = w.getForeignWord(this_chosen_language);
 		// empty question => next question
-		if (question.length() == 0) {
+		if (unknownWord.length() == 0) {
 			debug("The word '" + w.toString_onlyWords()
 					+ "' makes an empty question.");
 			return getRandomQuestion();
 		}
-		String ans = w.toString_onlyWords();
-		Question rep = new Question(lessonName, question, ans);
+		String questionAnswer = w.toString_onlyWords();
+		Question question = new Question(lessonName, unknownWord,
+				questionAnswer);
+		question.userObject = w.getIndex();
 
 		// if there is an image, take it
 		if (this_chosen_language == 0 && w.containsPicture())
-			rep.setImage_question(w.getPictureFilename());
-		return rep;
+			question.setImage_question(w.getPictureFilename());
+		return question;
 	}
 
 	/**
@@ -204,23 +203,23 @@ public class WordPicker implements Observer {
 			rep += " - Counts: ";
 			rep += "total=" + getTotalWordsCount();
 			rep += ", max=" + getMaxWordCount();
-			rep += " (avg=" + (int) (100f * getAverageCount()) + "%)"
-					+ endl;
+			rep += " (avg=" + (int) (100f * getAverageCount()) + "%)" + endl;
 			rep += " - ";
 		}
-		rep += "Knonwn:" + known + " = "
-				+ (int) (100f * known / nbWords) + "%";
+		rep += "Knonwn:" + known + " = " + (int) (100f * known / nbWords) + "%";
 		return rep;
 	}
 
-	public void setLastWordKnown() {
-		debug("setLastWordKnown()");
-		selection.getWord(lastQuestionWordIndex).know(this);
+	public void setWordKnown(int index) {
+		Word lastWord = selection.getWord(index);
+		debug("setWordKnown(), word='" + lastWord.toString_onlyWords() + "'");
+		lastWord.know(this);
 	}
 
-	public void setLastWordUnknown() {
-		debug("setLastWordUnknown()");
-		selection.getWord(lastQuestionWordIndex).unknow(this);
+	public void setWordUnknown(int index) {
+		Word lastWord = selection.getWord(index);
+		debug("setWordUnknown(), word='" + lastWord.toString_onlyWords() + "'");
+		lastWord.unknow(this);
 	}
 
 	public String toString() {
