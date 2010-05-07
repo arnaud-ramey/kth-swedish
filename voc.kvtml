@@ -7,7 +7,7 @@
     <author>Arnaud</author>
     <contact>arnaud.ramey@m4x.org</contact>
     <license>Public Domain</license>
-    <date>2010-05-06</date>
+    <date>2010-05-07</date>
     <category>Languages</category>
   </information>
   <identifiers>
@@ -10320,7 +10320,7 @@
         <text>the judgement</text>
       </translation>
       <translation id="1">
-        <text>ondöme -t -n</text>
+        <text>omdöme -t -n</text>
       </translation>
       <translation id="2"/>
       <translation id="3"/>
