@@ -73,10 +73,11 @@ public class QuestionQueue {
 						.random());
 			debug("Finding a question of type " + this_type_of_question + " ("
 					+ possible_type_of_questions[this_type_of_question] + ")");
-			Question new_question = new Question();
+			Question new_question = null;
+			boolean isQuestionOK = false;
 
 			// choose a new question and look if it is new
-			do {
+			while (!isQuestionOK) {
 				if (this_type_of_question == TYPE_OF_QUESTION_VOCABULARY) {
 					checkWordPickerStarted();
 					new_question = wp.getRandomQuestion();
@@ -117,10 +118,14 @@ public class QuestionQueue {
 				}
 
 				// System.out.println(new_question);
+				isQuestionOK = (queue.contains(new_question) == false);
+				if (!isQuestionOK)
+					debug("The question " + new_question.toString(false)
+							+ " was already in the queue ! Getting a new one.");
+			} // end of OK loop
 
-			} while (queue.contains(new_question));
 			queue.addLast(new_question);
-		}
+		} // end of while queue not long enough
 	}
 
 	/**
@@ -184,7 +189,8 @@ public class QuestionQueue {
 		nbQuestionsDone++;
 		nbQuestionsKnown++;
 		if (typeOfQuestion == TYPE_OF_QUESTION_VOCABULARY) {
-			int wordIdx = Integer.parseInt(queue.peekFirst().userObject.toString());
+			int wordIdx = Integer.parseInt(queue.peekFirst().userObject
+					.toString());
 			wp.setWordKnown(wordIdx);
 		}
 
@@ -199,7 +205,8 @@ public class QuestionQueue {
 	public void declareQuestion_unknown() {
 		nbQuestionsDone++;
 		if (typeOfQuestion == TYPE_OF_QUESTION_VOCABULARY) {
-			int wordIdx = Integer.parseInt(queue.peekFirst().userObject.toString());
+			int wordIdx = Integer.parseInt(queue.peekFirst().userObject
+					.toString());
 			wp.setWordUnknown(wordIdx);
 		}
 
@@ -219,7 +226,7 @@ public class QuestionQueue {
 			return 100;
 		return (int) (100f * nbQuestionsKnown / nbQuestionsDone);
 	}
-	
+
 	public void resetStats() {
 		debug("resetStats()");
 		nbQuestionsDone = 0;
