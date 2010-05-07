@@ -42,14 +42,20 @@ public class Question {
 	/**
 	 * the {@link String} version
 	 */
+	@Override
 	public String toString() {
-		String rep = lesson.toUpperCase() + ":\n";
+		return toString(true);
+	}
+	
+	public String toString(boolean breakLines) {
+		String endl = (breakLines ? "\n" : ",");
+		String rep = lesson.toUpperCase() + ":" + endl;
 		rep += " | Q:'";
 		if (is_image)
 			rep += "FILE:" + question;
 		else
 			rep += question;
-		rep += "'\n";
+		rep += "'" + endl;
 		rep += " | A:'" + answer + "'";
 		return rep;
 	}
