@@ -205,18 +205,35 @@ public class Word {
 	/**
 	 * get the field containing the foreign word
 	 * 
-	 * @param indx
+	 * @param langIndx
 	 *            the number of the language
 	 * @return the word
 	 */
-	public String getForeignWord(int indx) {
-		int l = getLineContaining(beginningLine, "translation id=\"" + indx);
-		// System.out.println("line:" + l);
+	public String getForeignWord(int langIndx) {
+		// find the beginning and end line of the possible foreign word
+		int beginning_line = getLineContaining(beginningLine,
+				"translation id=\"" + langIndx);
+		int end_line = getEndLineIndex();
+		if (langIndx < numberOfLanguages - 1)
+			end_line = getLineContaining(beginningLine, "translation id=\""
+					+ (langIndx + 1));
+		// System.out.println("numberOfLanguages:" + numberOfLanguages);
+		// System.out.println("beginning_line:" + beginning_line);
+		// System.out.println("end_line:" + end_line);
 
 		// jump a line
-		l = l + 1;
-		String rep = getField(l, "text");
+		beginning_line = beginning_line + 1;
+
+		// try to find <text>
+		int text_line = getLineContaining(beginning_line, "<text>");
+		// System.out.println("text_line:" + text_line);
+		if (text_line < beginning_line || text_line > end_line) // out of bounds
+			return "";
+		String rep = getField(text_line, "text");
+
+		// String rep = getField(beginning_line, "text");
 		return rep;
+
 	}
 
 	public int getIndex() {
@@ -641,7 +658,7 @@ public class Word {
 		return line.substring(begin, end);
 	}
 
-	public static void main(String[] args) {
+	static void test1() {
 		ListOfWords m = ListOfWords.defaultListOfWords();
 		System.out.println(m.toString(true));
 
@@ -665,5 +682,19 @@ public class Word {
 		w.setCount(10);
 		System.out.println();
 		w.printLines();
+	}
+
+	static void test2() {
+		ListOfWords m = ListOfWords.defaultListOfWords();
+		System.out.println(m.toString(true));
+		// Word w = m.getWord(3);
+		Word w = m.getRandomWord();
+		w.printLines();
+		System.out.println(w.toString());
+		System.out.println(w.toString_onlyWords());
+	}
+
+	public static void main(String[] args) {
+		test2();
 	}
 }
