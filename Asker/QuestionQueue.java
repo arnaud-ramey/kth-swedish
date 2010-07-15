@@ -54,6 +54,7 @@ public class QuestionQueue {
 	}
 
 	public void checkWordPickerStarted() {
+		debug("checkWordPickerStarted()");
 		if (wp == null)
 			setDefaultWordPicker(true);
 	}
