@@ -1,3 +1,4 @@
+#!/bin/sh
 ### a script to compile the program
 CLASSPATH=
 for x in $(find | grep jar$); do
