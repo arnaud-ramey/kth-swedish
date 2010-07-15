@@ -11,6 +11,23 @@ public class ConsoleAsker {
 
 	QuestionQueue queue = new QuestionQueue();
 
+	/**
+	 * ctor
+	 */
+	public ConsoleAsker() {
+		System.out.println("*** Starting interrogation... ***");
+		// choose the lesson
+		int lessonChosen = chooseLesson();
+		// start the queue
+		queue.setTypeOfQuestion(lessonChosen);
+		// repopulate the queue
+		queue.clearQueueAndRepopulate();
+		// get the first question
+		currentQuestion = queue.getQuestion();
+		loop();
+	}
+
+
 	static int chooseLesson() {
 		System.out.println("Choose your lesson :");
 		for (int i = 0; i < QuestionQueue.possible_type_of_questions.length; i++)
@@ -18,16 +35,6 @@ public class ConsoleAsker {
 		System.out.print("Choice ? ");
 		int choice = IO.readInt();
 		return choice;
-	}
-
-	/**
-	 * ctor
-	 */
-	public ConsoleAsker() {
-		System.out.println("*** Starting interrogation... ***");
-		queue.setTypeOfQuestion(chooseLesson());
-		changeQuestion();
-		loop();
 	}
 
 	/**
