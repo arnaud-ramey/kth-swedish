@@ -62,19 +62,22 @@ public class Sentences {
 		/* prepare the split /= */
 		String answer = word.get1();
 		String sentence = answer;
-		sentence = sentence.replace("...", " ...");
-		if (sentence.endsWith(".") && !sentence.endsWith("..."))
-			sentence = sentence.substring(0, sentence.length() - 1) + " .";
+		sentence = sentence.replace("?", " ? ");
+		sentence = sentence.replace("!", " ! ");
+		sentence = sentence.replace("...", " <three_dots> ");
+		sentence = sentence.replace(".", " <dot> ");
+		sentence = sentence.replace("<dot>", ".");
+		sentence = sentence.replace("<three_dots>", "...");
 
 		/* split and shuffle */
-		String[] words = sentence.split(" ");
-		shuffleArray(words);
+		String[] mixedWords = sentence.split(" ");
+		shuffleArray(mixedWords);
 
 		// make the question
 		Question q = new Question();
 		q.lesson = "Mixed words";
-		q.answer = word.get0() + " | " + answer;
-		for (String s : words)
+		q.answer = answer;
+		for (String s : mixedWords)
 			q.question += s + " ";
 		return q;
 	}
@@ -84,7 +87,9 @@ public class Sentences {
 	 */
 	public static Question randomQuestion(WordPicker wp) {
 		Word w = randomSentence(wp);
-		Question q = new Question("Sentences", w.get0(), w.get1());
+		String question = w.get0();
+		String answer = w.get0() + " | " + w.get1();
+		Question q = new Question("Sentences", question, answer);
 		return q;
 	}
 
