@@ -11,10 +11,7 @@ public class Translator {
 	public static String ENGLISH = "English", SPANISH = "Spanish",
 			SWEDISH = "Swedish", GERMAN = "German";
 
-	public Translator() {
-	}
-
-	public String code_language_short(String code_language_long) {
+	public static String code_language_short(String code_language_long) {
 		if (code_language_long.equalsIgnoreCase(ENGLISH))
 			return "en";
 		if (code_language_long.equalsIgnoreCase(SPANISH))
@@ -26,7 +23,7 @@ public class Translator {
 		return "";
 	}
 
-	public String translate(String query, String language_orig,
+	public static String translate(String query, String language_orig,
 			String language_dest) {
 		System.out.println("Query: '" + query + "'");
 
@@ -85,7 +82,7 @@ public class Translator {
 		return trans;
 	}
 
-	public String translate(Word w, int id_language_orig, int id_language_dest) {
+	public static String translate(Word w, int id_language_orig, int id_language_dest) {
 		String query = w.getForeignWord(id_language_orig);
 		String language_orig = w.getFatherList().getLanguages().elementAt(
 				id_language_orig);
@@ -97,24 +94,8 @@ public class Translator {
 
 	public static void main(String[] args) {
 		ListOfWords words = ListOfWords.defaultListOfWords();
-		Translator t = new Translator();
-		// t.translate(t.w.getWord(98));
-		// System.out.println("\n\n***\n\n");
-
-		// Word w = null;
-		// while (true) {
-		// w = t.w.getRandomWord();
-		// if (!w.containsLanguage(2)) break;
-		// }
-		// t.translate(w);
-
-		// for (Word w : words.getWords()) {
-		// System.out.println();
-		// t.translate(w,0,1);
-		// }
-
 		Word w = words.getRandomWord();
 		System.out.println(w);
-		System.out.println(t.translate(w, 1, 0));
+		System.out.println(Translator.translate(w, Word.ENGLISH, Word.SWEDISH));
 	}
 }

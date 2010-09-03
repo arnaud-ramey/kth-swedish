@@ -12,10 +12,12 @@ import java.util.LinkedList;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 
@@ -25,13 +27,20 @@ import Kvtml.VocParser.Word;
 public class TranslatorGUI extends JPanel {
 	private static final long serialVersionUID = 1L;
 
-	Translator t = new Translator();
 	ListOfWords words;
 
+	int originLanguage;
 	int targetLanguage;
-	
+
 	boolean use_lesson_filter = false;
 	String lesson_filter;
+
+	JCheckBox use_lesson_filter_switch = new JCheckBox("use_lesson_filter?");
+	JTextArea lesson_filter_zone = new JTextArea("");
+	JButton lesson_filter_refresh_button = new JButton("Refresh !");
+	JButton save_JButton = new JButton("Save");
+	JPanel list = new JPanel();
+	JScrollPane scrollPane = new JScrollPane(list);
 
 	/**
 	 * @param t
@@ -39,7 +48,7 @@ public class TranslatorGUI extends JPanel {
 	public TranslatorGUI(ListOfWords words) {
 		this.words = words;
 
-		//makeButtons();
+		// makeButtons();
 	}
 
 	/**
@@ -56,7 +65,22 @@ public class TranslatorGUI extends JPanel {
 	 */
 	public void makeButtons(final Word w, final int line,
 			final JPanel panel_whereToAdd, final GridBagConstraints c) {
-		boolean hasAlreadyTraduction = w.containsLanguage(targetLanguage);
+		// determine if we need to translate
+		boolean isNotEmpty = w.containsLanguage(originLanguage)
+				&& w.getForeignWord(originLanguage).length() > 0;
+		if (isNotEmpty == false)
+			return;
+		boolean hasAlreadyTraduction = w.containsLanguage(targetLanguage)
+				&& w.getForeignWord(targetLanguage).length() > 0;
+		final String translation_String;
+
+		// translate if needed
+		if (hasAlreadyTraduction) {
+			translation_String = w.getForeignWord(targetLanguage);
+		} else {
+			translation_String = Translator.translate(w, originLanguage,
+					targetLanguage);
+		}
 
 		final Border normalBorder = BorderFactory.createEmptyBorder();
 		final Border underlinedBorder = BorderFactory.createLineBorder(
@@ -65,7 +89,8 @@ public class TranslatorGUI extends JPanel {
 		final LinkedList<JComponent> j_components = new LinkedList<JComponent>();
 
 		// the original
-		final JTextField words_textField = new JTextField(w.get0());
+		final JTextField words_textField = new JTextField(w
+				.getForeignWord(originLanguage));
 		words_textField.setMinimumSize(new Dimension(10, 10));
 		words_textField.setEditable(false);
 		words_textField.setToolTipText(w.toString_onlyWords());
@@ -74,17 +99,12 @@ public class TranslatorGUI extends JPanel {
 		j_components.add(words_textField);
 
 		// the translation
-		final String translation_String;
 		final Color translation_color;
 		final String tooltip_String;
 		if (hasAlreadyTraduction) {
-			translation_String = w.getForeignWord(targetLanguage);
 			translation_color = new Color(255, 200, 200);
 			tooltip_String = "This is the translation saved in the file";
-		}
-
-		else {
-			translation_String = t.translate(w, 0, targetLanguage);
+		} else {
 			translation_color = new Color(200, 255, 200);
 			tooltip_String = "This is the translation coming from Google Translator";
 		}
@@ -140,62 +160,109 @@ public class TranslatorGUI extends JPanel {
 		}
 	}
 
-	public void makeButtons() {
-		/* button for saving */
-		JButton save_JButton = new JButton("Save");
-		save_JButton.setBackground(Color.orange);
-		save_JButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				words.writeFile("out.kvtml");
-			}
-		});
+	public void refreshList() {
+		System.out.println("refreshList()");
 
-		/* make the list */
-		JPanel list = new JPanel();
-		JScrollPane scrollPane = new JScrollPane(list);
+		/* purge the list */
+		list.removeAll();
 		scrollPane.getVerticalScrollBar().setUnitIncrement(20);
-
 		list.setLayout(new GridBagLayout());
 		GridBagConstraints c = new GridBagConstraints();
 		c.fill = GridBagConstraints.BOTH;
 		c.weighty = 1;
 		c.weightx = 1;
 
+		/* loop through the words */
 		System.out.println("*** Starting the translations...");
 		for (int i = 0; i < words.nbWords(); i++) {
 			final Word w = words.getWord(i);
-			if (use_lesson_filter && !w.getLessonName().contains(lesson_filter))
+
+			if (use_lesson_filter && !w.getLessonName().contains(lesson_filter)) {
+				System.out.println("Current word:" + w.toString_onlyWords()
+						+ "does not pass filter");
 				continue;
+			}
+			System.out.println("-> Current word:" + w.toString_onlyWords());
 			makeButtons(w, i, list, c);
 		}
 		System.out.println("*** Translations ended.");
 
+		this.validate();
+	}
+
+	public void makeButtons() {
+		/* button for the lesson filter */
+		lesson_filter_zone.setText(lesson_filter);
+		lesson_filter_refresh_button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				refreshList();
+			}
+		});
+		use_lesson_filter_switch.setSelected(use_lesson_filter);
+		use_lesson_filter_switch.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("Switch");
+				use_lesson_filter = use_lesson_filter_switch.isSelected();
+				refreshList();
+			}
+		});
+
+		/* button for saving */
+		save_JButton.setBackground(Color.orange);
+		save_JButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("saving !");
+				words.writeFile("out.kvtml");
+			}
+		});
+
+		/* list */
+		refreshList();
+
 		/* layout */
-		// add(list, c);
-		removeAll();
-		setLayout(new GridBagLayout());
+		this.removeAll();
+		this.setLayout(new GridBagLayout());
+		GridBagConstraints c = new GridBagConstraints();
+		c.fill = GridBagConstraints.BOTH;
+		c.weighty = 1;
+		c.weightx = 1;
 		c.gridy = 0;
-		c.weighty = .01;
+		c.weighty = 1;
+
+		c.gridy++;
+		add(lesson_filter_zone, c);
+
+		c.gridy++;
+		add(use_lesson_filter_switch, c);
+
+		c.gridy++;
+		add(lesson_filter_refresh_button, c);
+
+		c.gridy++;
 		add(save_JButton, c);
 
-		c.gridy = 1;
-		c.weighty = 1;
+		c.gridy++;
+		c.weighty = 100;
 		add(scrollPane, c);
+
+		this.validate();
 	}
 
 	/**
 	 * create a nice window
 	 */
-	public static void window(ListOfWords words, int targetLanguage, String lessonFilter) {
+	public static void window(ListOfWords words, int originLanguage,
+			int targetLanguage, String lessonFilter) {
 		TranslatorGUI trans = new TranslatorGUI(words);
+		trans.originLanguage = originLanguage;
 		trans.targetLanguage = targetLanguage;
 		if (!lessonFilter.equals("")) {
 			trans.use_lesson_filter = true;
 			trans.lesson_filter = lessonFilter;
 		}
 		trans.makeButtons();
-		
-		JFrame jf = new JFrame("Tran");
+
+		JFrame jf = new JFrame("TranslatorGUI");
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		jf.add(trans);
 		jf.setSize(900, 600);
@@ -207,6 +274,6 @@ public class TranslatorGUI extends JPanel {
 		// ListOfWords w = new ListOfWords();
 		// w.readFile("/test.kvtml");
 
-		window(w, Word.SPANISH, "Win.");
+		window(w, Word.SPANISH, Word.ENGLISH, "");
 	}
 }
