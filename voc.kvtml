@@ -2,12 +2,12 @@
 <!DOCTYPE kvtml PUBLIC "kvtml2.dtd" "http://edu.kde.org/kvtml/kvtml2.dtd">
 <kvtml version="2.0">
   <information>
-    <generator>Parley 0.9.3</generator>
+    <generator>Parley 0.9.4</generator>
     <title>words</title>
     <author>Arnaud</author>
     <contact>arnaud.ramey@m4x.org</contact>
     <license>Public Domain</license>
-    <date>2010-09-03</date>
+    <date>2010-11-07</date>
     <category>Languages</category>
   </information>
   <identifiers>
@@ -5369,9 +5369,9 @@
       </translation>
     </entry>
     <entry id="473">
-    <translation id="0" >
-      <text>the dog</text>
-    </translation>
+      <translation id="0">
+        <text>the dog</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>el perro</text>
@@ -5384,9 +5384,9 @@
       </translation>
     </entry>
     <entry id="474">
-    <translation id="0" >
-      <text>but</text>
-    </translation>
+      <translation id="0">
+        <text>but</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>pero</text>
@@ -5399,9 +5399,9 @@
       </translation>
     </entry>
     <entry id="475">
-    <translation id="0" >
-      <text>the chief</text>
-    </translation>
+      <translation id="0">
+        <text>the chief</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>el jefe</text>
@@ -5453,9 +5453,9 @@
       </translation>
     </entry>
     <entry id="479">
-    <translation id="0" >
-      <text>overworked</text>
-    </translation>
+      <translation id="0">
+        <text>overworked</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>agobiado de trabajo</text>
@@ -5468,9 +5468,9 @@
       </translation>
     </entry>
     <entry id="480">
-    <translation id="0" >
-      <text>the fellow</text>
-    </translation>
+      <translation id="0">
+        <text>the fellow</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>el becario</text>
@@ -5496,9 +5496,9 @@
       </translation>
     </entry>
     <entry id="482">
-    <translation id="0" >
-      <text>the profession</text>
-    </translation>
+      <translation id="0">
+        <text>the profession</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>el profession</text>
@@ -5511,9 +5511,9 @@
       </translation>
     </entry>
     <entry id="483">
-    <translation id="0" >
-      <text>search</text>
-    </translation>
+      <translation id="0">
+        <text>search</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>buscar</text>
@@ -5526,9 +5526,9 @@
       </translation>
     </entry>
     <entry id="484">
-    <translation id="0" >
-      <text>to the left</text>
-    </translation>
+      <translation id="0">
+        <text>to the left</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>a la izquierda</text>
@@ -5541,9 +5541,9 @@
       </translation>
     </entry>
     <entry id="485">
-    <translation id="0" >
-      <text>to the right</text>
-    </translation>
+      <translation id="0">
+        <text>to the right</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>a la derecha</text>
@@ -5556,9 +5556,9 @@
       </translation>
     </entry>
     <entry id="486">
-    <translation id="0" >
-      <text>to walk</text>
-    </translation>
+      <translation id="0">
+        <text>to walk</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>caminar</text>
@@ -5571,9 +5571,9 @@
       </translation>
     </entry>
     <entry id="487">
-    <translation id="0" >
-      <text>to turn</text>
-    </translation>
+      <translation id="0">
+        <text>to turn</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>girar</text>
@@ -5586,9 +5586,9 @@
       </translation>
     </entry>
     <entry id="488">
-    <translation id="0" >
-      <text>far</text>
-    </translation>
+      <translation id="0">
+        <text>far</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>lejos</text>
@@ -5601,9 +5601,9 @@
       </translation>
     </entry>
     <entry id="489">
-    <translation id="0" >
-      <text>close</text>
-    </translation>
+      <translation id="0">
+        <text>close</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>cerca</text>
@@ -5616,9 +5616,9 @@
       </translation>
     </entry>
     <entry id="490">
-    <translation id="0" >
-      <text>the heat</text>
-    </translation>
+      <translation id="0">
+        <text>the heat</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>el calor</text>
@@ -5631,9 +5631,9 @@
       </translation>
     </entry>
     <entry id="491">
-    <translation id="0" >
-      <text>the holidays</text>
-    </translation>
+      <translation id="0">
+        <text>the holidays</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>las dias festivos</text>
@@ -5646,9 +5646,9 @@
       </translation>
     </entry>
     <entry id="492">
-    <translation id="0" >
-      <text>it is easy to do something</text>
-    </translation>
+      <translation id="0">
+        <text>it is easy to do something</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>es facil hacer algo</text>
@@ -5674,9 +5674,9 @@
       </translation>
     </entry>
     <entry id="494">
-    <translation id="0" >
-      <text>to cost</text>
-    </translation>
+      <translation id="0">
+        <text>to cost</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>costar</text>
@@ -5689,9 +5689,9 @@
       </translation>
     </entry>
     <entry id="495">
-    <translation id="0" >
-      <text>to remember</text>
-    </translation>
+      <translation id="0">
+        <text>to remember</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>recordar</text>
@@ -5704,9 +5704,9 @@
       </translation>
     </entry>
     <entry id="496">
-    <translation id="0" >
-      <text>to have a drink</text>
-    </translation>
+      <translation id="0">
+        <text>to have a drink</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>tomer algo</text>
@@ -5719,9 +5719,9 @@
       </translation>
     </entry>
     <entry id="497">
-    <translation id="0" >
-      <text>also</text>
-    </translation>
+      <translation id="0">
+        <text>also</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>tambien</text>
@@ -5734,9 +5734,9 @@
       </translation>
     </entry>
     <entry id="498">
-    <translation id="0" >
-      <text>the killer</text>
-    </translation>
+      <translation id="0">
+        <text>the killer</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>matador</text>
@@ -5749,9 +5749,9 @@
       </translation>
     </entry>
     <entry id="499">
-    <translation id="0" >
-      <text>there is a price</text>
-    </translation>
+      <translation id="0">
+        <text>there is a price</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>hay un precio</text>
@@ -5764,9 +5764,9 @@
       </translation>
     </entry>
     <entry id="500">
-    <translation id="0" >
-      <text>Have you seen Ben?</text>
-    </translation>
+      <translation id="0">
+        <text>Have you seen Ben?</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>Has vista a ben ?</text>
@@ -5779,9 +5779,9 @@
       </translation>
     </entry>
     <entry id="501">
-    <translation id="0" >
-      <text>when and where?</text>
-    </translation>
+      <translation id="0">
+        <text>when and where?</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>cuando y donde ?</text>
@@ -5794,9 +5794,9 @@
       </translation>
     </entry>
     <entry id="502">
-    <translation id="0" >
-      <text>the high school</text>
-    </translation>
+      <translation id="0">
+        <text>the high school</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>el bachillerato</text>
@@ -5809,9 +5809,9 @@
       </translation>
     </entry>
     <entry id="503">
-    <translation id="0" >
-      <text>I have no option</text>
-    </translation>
+      <translation id="0">
+        <text>I have no option</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>no tengo opcion</text>
@@ -5824,9 +5824,9 @@
       </translation>
     </entry>
     <entry id="504">
-    <translation id="0" >
-      <text>the Company</text>
-    </translation>
+      <translation id="0">
+        <text>the Company</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>la empresa</text>
@@ -5878,9 +5878,9 @@
       </translation>
     </entry>
     <entry id="508">
-    <translation id="0" >
-      <text>the goal</text>
-    </translation>
+      <translation id="0">
+        <text>the goal</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>el objectivo</text>
@@ -5893,9 +5893,9 @@
       </translation>
     </entry>
     <entry id="509">
-    <translation id="0" >
-      <text>the blood</text>
-    </translation>
+      <translation id="0">
+        <text>the blood</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>el sangre</text>
@@ -5934,9 +5934,9 @@
       </translation>
     </entry>
     <entry id="512">
-    <translation id="0" >
-      <text>vacation</text>
-    </translation>
+      <translation id="0">
+        <text>vacation</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>vacaciones</text>
@@ -5949,9 +5949,9 @@
       </translation>
     </entry>
     <entry id="513">
-    <translation id="0" >
-      <text>to find</text>
-    </translation>
+      <translation id="0">
+        <text>to find</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>encontrar</text>
@@ -5964,9 +5964,9 @@
       </translation>
     </entry>
     <entry id="514">
-    <translation id="0" >
-      <text>to eat</text>
-    </translation>
+      <translation id="0">
+        <text>to eat</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>comer</text>
@@ -5979,9 +5979,9 @@
       </translation>
     </entry>
     <entry id="515">
-    <translation id="0" >
-      <text>the fork</text>
-    </translation>
+      <translation id="0">
+        <text>the fork</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>el tenedor</text>
@@ -5994,9 +5994,9 @@
       </translation>
     </entry>
     <entry id="516">
-    <translation id="0" >
-      <text>the knife</text>
-    </translation>
+      <translation id="0">
+        <text>the knife</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>el cuchillo</text>
@@ -6022,9 +6022,9 @@
       </translation>
     </entry>
     <entry id="518">
-    <translation id="0" >
-      <text>the spoon</text>
-    </translation>
+      <translation id="0">
+        <text>the spoon</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>la cuchara</text>
@@ -6037,9 +6037,9 @@
       </translation>
     </entry>
     <entry id="519">
-    <translation id="0" >
-      <text>the hair</text>
-    </translation>
+      <translation id="0">
+        <text>the hair</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>el pelo</text>
@@ -6052,9 +6052,9 @@
       </translation>
     </entry>
     <entry id="520">
-    <translation id="0" >
-      <text>here</text>
-    </translation>
+      <translation id="0">
+        <text>here</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>aqui</text>
@@ -6080,9 +6080,9 @@
       </translation>
     </entry>
     <entry id="522">
-    <translation id="0" >
-      <text>after</text>
-    </translation>
+      <translation id="0">
+        <text>after</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>despues</text>
@@ -6095,9 +6095,9 @@
       </translation>
     </entry>
     <entry id="523">
-    <translation id="0" >
-      <text>follow me</text>
-    </translation>
+      <translation id="0">
+        <text>follow me</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>sigueme</text>
@@ -6110,9 +6110,9 @@
       </translation>
     </entry>
     <entry id="524">
-    <translation id="0" >
-      <text>the template</text>
-    </translation>
+      <translation id="0">
+        <text>the template</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>el plantilla</text>
@@ -6138,9 +6138,9 @@
       </translation>
     </entry>
     <entry id="526">
-    <translation id="0" >
-      <text>the face</text>
-    </translation>
+      <translation id="0">
+        <text>the face</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>la cara</text>
@@ -6153,9 +6153,9 @@
       </translation>
     </entry>
     <entry id="527">
-    <translation id="0" >
-      <text>to blink</text>
-    </translation>
+      <translation id="0">
+        <text>to blink</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>parpadear</text>
@@ -6168,9 +6168,9 @@
       </translation>
     </entry>
     <entry id="528">
-    <translation id="0" >
-      <text>all of a sudden</text>
-    </translation>
+      <translation id="0">
+        <text>all of a sudden</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>de subito</text>
@@ -6183,9 +6183,9 @@
       </translation>
     </entry>
     <entry id="529">
-    <translation id="0" >
-      <text>to store</text>
-    </translation>
+      <translation id="0">
+        <text>to store</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>almacenar</text>
@@ -6198,9 +6198,9 @@
       </translation>
     </entry>
     <entry id="530">
-    <translation id="0" >
-      <text>to increase</text>
-    </translation>
+      <translation id="0">
+        <text>to increase</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>subir</text>
@@ -6213,9 +6213,9 @@
       </translation>
     </entry>
     <entry id="531">
-    <translation id="0" >
-      <text>the ability</text>
-    </translation>
+      <translation id="0">
+        <text>the ability</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>la habilidad</text>
@@ -6228,9 +6228,9 @@
       </translation>
     </entry>
     <entry id="532">
-    <translation id="0" >
-      <text>the instance</text>
-    </translation>
+      <translation id="0">
+        <text>the instance</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>la instancia</text>
@@ -6256,9 +6256,9 @@
       </translation>
     </entry>
     <entry id="534">
-    <translation id="0" >
-      <text>short term</text>
-    </translation>
+      <translation id="0">
+        <text>short term</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>corto plazo</text>
@@ -6271,9 +6271,9 @@
       </translation>
     </entry>
     <entry id="535">
-    <translation id="0" >
-      <text>an amount</text>
-    </translation>
+      <translation id="0">
+        <text>an amount</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>cantidad</text>
@@ -6286,9 +6286,9 @@
       </translation>
     </entry>
     <entry id="536">
-    <translation id="0" >
-      <text>behind</text>
-    </translation>
+      <translation id="0">
+        <text>behind</text>
+      </translation>
       <translation id="1"/>
       <translation id="2">
         <text>detras de</text>
@@ -26087,6 +26087,442 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
+    <entry id="2206">
+      <translation id="0">
+        <text>an orange juice</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>un zumo de naranja</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2207">
+      <translation id="0">
+        <text>a ring</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>un anillo</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2208">
+      <translation id="0">
+        <text>a cycle way</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>una via ciclista = un carril bici</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2209">
+      <translation id="0">
+        <text>a bus lane</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>un carril bus</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2210"/>
+    <entry id="2211">
+      <translation id="0">
+        <text>humble</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>humilde</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2212">
+      <translation id="0">
+        <text>abosrbed</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>absorto</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2213">
+      <translation id="0">
+        <text>to make angry</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>enfadar</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2214">
+      <translation id="0">
+        <text>a transfer</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>un translado</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2215">
+      <translation id="0">
+        <text>a rocket</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>un cohete</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2216">
+      <translation id="0">
+        <text>to state</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>afirmar</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2217">
+      <translation id="0">
+        <text>to defeat = win over</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>vencer</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2218">
+      <translation id="0">
+        <text>the notary's office</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>la notaria</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2219">
+      <translation id="0">
+        <text>to stay</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>quedarse</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2220">
+      <translation id="0">
+        <text>a bet</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>una apuesta</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2221">
+      <translation id="0">
+        <text>one ones shoulders</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>a hombros</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2222">
+      <translation id="0">
+        <text>the steps of the method</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>los pasos del metodo</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2223">
+      <translation id="0">
+        <text>the supporters of the method</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>los aficionados al metodo</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2224">
+      <translation id="0">
+        <text>the cloud</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>el nube</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2225">
+      <translation id="0">
+        <text>the knife</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>la navaja</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2226">
+      <translation id="0">
+        <text>the platform</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>la tarima</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2227">
+      <translation id="0">
+        <text>in unison</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>a unisono</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2228">
+      <translation id="0">
+        <text>to pass (an exam)</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>aprobar (un examen)</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2229">
+      <translation id="0">
+        <text>to write fast</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>escribir deprisa</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2230">
+      <translation id="0">
+        <text>the ballpoint pen</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>el boligrafo</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2231">
+      <translation id="0">
+        <text>kind</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>bondadoso</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2232">
+      <translation id="0">
+        <text>the owner</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>el dueño</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2233">
+      <translation id="0">
+        <text>for a while</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>durante un rato</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2234">
+      <translation id="0">
+        <text>to ask for = order</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>pedir</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2235">
+      <translation id="0">
+        <text>the tent (for a circus)</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>la carpa (de un circo)</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2236">
+      <translation id="0">
+        <text>a dining room</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>un comedor</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2237">
+      <translation id="0">
+        <text>bitter</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>amargo</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2238">
+      <translation id="0">
+        <text>a hoax (X2)</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>un camelo = una patraña</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2239">
+      <translation id="0">
+        <text>from beginning to end</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>de cabo a rabo</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2240">
+      <translation id="0">
+        <text>a crack = a chap (on the skin)</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>una grieta (en la piel)</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2241">
+      <translation id="0">
+        <text>to horrify</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>espeluznar</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2242">
+      <translation id="0">
+        <text>to answer wrong</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>contestar de manera incorecta</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2243">
+      <translation id="0">
+        <text>the liar</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2">
+        <text>el mentiroso</text>
+      </translation>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2244">
+      <translation id="0"/>
+      <translation id="1"/>
+      <translation id="2"/>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2245">
+      <translation id="0"/>
+      <translation id="1"/>
+      <translation id="2"/>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2246">
+      <translation id="0"/>
+      <translation id="1"/>
+      <translation id="2"/>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
+    <entry id="2247">
+      <translation id="0"/>
+      <translation id="1"/>
+      <translation id="2"/>
+      <translation id="3"/>
+      <translation id="4"/>
+    </entry>
   </entries>
   <lessons>
     <container>
@@ -28739,6 +29175,52 @@
         <entry id="2203"/>
         <entry id="2204"/>
         <entry id="2205"/>
+        <entry id="2206"/>
+        <entry id="2207"/>
+        <entry id="2208"/>
+        <entry id="2209"/>
+        <entry id="2210"/>
+      </container>
+      <container>
+        <name>relatos urbanos</name>
+        <inpractice>true</inpractice>
+        <entry id="2211"/>
+        <entry id="2212"/>
+        <entry id="2213"/>
+        <entry id="2214"/>
+        <entry id="2215"/>
+        <entry id="2216"/>
+        <entry id="2217"/>
+        <entry id="2218"/>
+        <entry id="2219"/>
+        <entry id="2220"/>
+        <entry id="2221"/>
+        <entry id="2222"/>
+        <entry id="2223"/>
+        <entry id="2224"/>
+        <entry id="2225"/>
+        <entry id="2226"/>
+        <entry id="2227"/>
+        <entry id="2228"/>
+        <entry id="2229"/>
+        <entry id="2230"/>
+        <entry id="2231"/>
+        <entry id="2232"/>
+        <entry id="2233"/>
+        <entry id="2234"/>
+        <entry id="2235"/>
+        <entry id="2236"/>
+        <entry id="2237"/>
+        <entry id="2238"/>
+        <entry id="2239"/>
+        <entry id="2240"/>
+        <entry id="2241"/>
+        <entry id="2242"/>
+        <entry id="2243"/>
+        <entry id="2244"/>
+        <entry id="2245"/>
+        <entry id="2246"/>
+        <entry id="2247"/>
       </container>
     </container>
   </lessons>
