@@ -7,7 +7,7 @@
     <author>Arnaud</author>
     <contact>arnaud.ramey@m4x.org</contact>
     <license>Public Domain</license>
-    <date>2010-11-07</date>
+    <date>2011-10-10</date>
     <category>Languages</category>
   </information>
   <identifiers>
@@ -1411,6 +1411,12 @@
     <entry id="125">
       <translation id="0">
         <text>Does he have the same blood group as his sister ?</text>
+        <grade>
+          <currentgrade>2</currentgrade>
+          <count>1</count>
+          <errorcount>0</errorcount>
+          <date>2011-10-05T16:50:45</date>
+        </grade>
       </translation>
       <translation id="1"/>
       <translation id="2"/>
@@ -1873,6 +1879,12 @@
     <entry id="167">
       <translation id="0">
         <text>No one is allowed in / You are not allowed to enter the concert hall once the concert has started.</text>
+        <grade>
+          <currentgrade>2</currentgrade>
+          <count>1</count>
+          <errorcount>0</errorcount>
+          <date>2011-10-05T16:50:23</date>
+        </grade>
       </translation>
       <translation id="1"/>
       <translation id="2"/>
@@ -2093,6 +2105,12 @@
     <entry id="187">
       <translation id="0">
         <text>He is not gifted and he isn't hardworking either.</text>
+        <grade>
+          <currentgrade>2</currentgrade>
+          <count>1</count>
+          <errorcount>0</errorcount>
+          <date>2011-10-05T16:50:27</date>
+        </grade>
       </translation>
       <translation id="1"/>
       <translation id="2"/>
@@ -2214,6 +2232,12 @@
     <entry id="198">
       <translation id="0">
         <text>The person I'm telling you about is Australian.</text>
+        <grade>
+          <currentgrade>1</currentgrade>
+          <count>1</count>
+          <errorcount>1</errorcount>
+          <date>2011-10-05T16:50:38</date>
+        </grade>
       </translation>
       <translation id="1"/>
       <translation id="2"/>
@@ -4187,6 +4211,12 @@
     <entry id="373">
       <translation id="0">
         <text>the result / outcome</text>
+        <grade>
+          <currentgrade>2</currentgrade>
+          <count>1</count>
+          <errorcount>0</errorcount>
+          <date>2011-10-05T16:50:14</date>
+        </grade>
       </translation>
       <translation id="1"/>
       <translation id="2"/>
@@ -4330,6 +4360,12 @@
     <entry id="384">
       <translation id="0">
         <text>doped</text>
+        <grade>
+          <currentgrade>2</currentgrade>
+          <count>1</count>
+          <errorcount>0</errorcount>
+          <date>2011-10-05T16:50:09</date>
+        </grade>
       </translation>
       <translation id="1"/>
       <translation id="2"/>
@@ -5211,6 +5247,12 @@
     <entry id="459">
       <translation id="0">
         <text>to shatter</text>
+        <grade>
+          <currentgrade>2</currentgrade>
+          <count>1</count>
+          <errorcount>0</errorcount>
+          <date>2011-10-05T16:50:30</date>
+        </grade>
       </translation>
       <translation id="1"/>
       <translation id="2"/>
@@ -11311,8 +11353,12 @@
       <translation id="2">
         <image>Images/a_chair,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_chair,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_chair,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="945">
       <translation id="0">
@@ -11326,8 +11372,12 @@
       <translation id="2">
         <image>Images/a_armchair.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_armchair.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_armchair.jpg</image>
+      </translation>
     </entry>
     <entry id="946">
       <translation id="0">
@@ -11341,8 +11391,12 @@
       <translation id="2">
         <image>Images/a_sofa,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_sofa,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_sofa,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="947">
       <translation id="0">
@@ -11356,8 +11410,12 @@
       <translation id="2">
         <image>Images/a_desk,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_desk,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_desk,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="948">
       <translation id="0">
@@ -11371,8 +11429,12 @@
       <translation id="2">
         <image>Images/a_dining_table,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_dining_table,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_dining_table,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="949">
       <translation id="0">
@@ -11386,8 +11448,12 @@
       <translation id="2">
         <image>Images/a_coffee_table.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_coffee_table.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_coffee_table.jpg</image>
+      </translation>
     </entry>
     <entry id="950">
       <translation id="0">
@@ -11401,8 +11467,12 @@
       <translation id="2">
         <image>Images/a_carpet__-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_carpet__-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_carpet__-s.jpg</image>
+      </translation>
     </entry>
     <entry id="951">
       <translation id="0">
@@ -11416,8 +11486,12 @@
       <translation id="2">
         <image>Images/a_lamp,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_lamp,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_lamp,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="952">
       <translation id="0">
@@ -11431,8 +11505,12 @@
       <translation id="2">
         <image>Images/a_bookshelf,_-ves.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_bookshelf,_-ves.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_bookshelf,_-ves.jpg</image>
+      </translation>
     </entry>
     <entry id="953">
       <translation id="0">
@@ -11446,8 +11524,12 @@
       <translation id="2">
         <image>Images/a_bed,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_bed,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_bed,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="954">
       <translation id="0">
@@ -11461,8 +11543,12 @@
       <translation id="2">
         <image>Images/a_sideboard,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_sideboard,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_sideboard,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="955">
       <translation id="0">
@@ -11476,8 +11562,12 @@
       <translation id="2">
         <image>Images/an_alarm_clock__-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/an_alarm_clock__-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/an_alarm_clock__-s.jpg</image>
+      </translation>
     </entry>
     <entry id="956">
       <translation id="0">
@@ -11491,8 +11581,12 @@
       <translation id="2">
         <image>Images/a_window,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_window,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_window,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="957">
       <translation id="0">
@@ -11506,8 +11600,12 @@
       <translation id="2">
         <image>Images/a_garden,_s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_garden,_s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_garden,_s.jpg</image>
+      </translation>
     </entry>
     <entry id="958">
       <translation id="0">
@@ -11521,8 +11619,12 @@
       <translation id="2">
         <image>Images/a_mirror,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_mirror,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_mirror,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="959">
       <translation id="0">
@@ -11536,8 +11638,12 @@
       <translation id="2">
         <image>Images/a_phone,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_phone,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_phone,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="960">
       <translation id="0">
@@ -11551,8 +11657,12 @@
       <translation id="2">
         <image>Images/a_poster,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_poster,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_poster,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="961">
       <translation id="0">
@@ -11566,8 +11676,12 @@
       <translation id="2">
         <image>Images/a_painting,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_painting,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_painting,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="962">
       <translation id="0">
@@ -11581,8 +11695,12 @@
       <translation id="2">
         <image>Images/a_fridge,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_fridge,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_fridge,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="963">
       <translation id="0">
@@ -11596,8 +11714,12 @@
       <translation id="2">
         <image>Images/a_oven,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_oven,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_oven,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="964">
       <translation id="0">
@@ -11611,8 +11733,12 @@
       <translation id="2">
         <image>Images/a_computer,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_computer,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_computer,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="965">
       <translation id="0">
@@ -11626,8 +11752,12 @@
       <translation id="2">
         <image>Images/a_shelf,_-ves.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_shelf,_-ves.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_shelf,_-ves.jpg</image>
+      </translation>
     </entry>
     <entry id="966">
       <translation id="0">
@@ -11641,8 +11771,12 @@
       <translation id="2">
         <image>Images/a_radio__-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_radio__-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_radio__-s.jpg</image>
+      </translation>
     </entry>
     <entry id="967">
       <translation id="0">
@@ -11656,8 +11790,12 @@
       <translation id="2">
         <image>Images/a_TV,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_TV,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_TV,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="968">
       <translation id="0">
@@ -11671,8 +11809,12 @@
       <translation id="2">
         <image>Images/a_living_room,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_living_room,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_living_room,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="969">
       <translation id="0">
@@ -11686,8 +11828,12 @@
       <translation id="2">
         <image>Images/a_door,_-s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_door,_-s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_door,_-s.jpg</image>
+      </translation>
     </entry>
     <entry id="970">
       <translation id="0">
@@ -11701,8 +11847,12 @@
       <translation id="2">
         <image>Images/a_sink.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_sink.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_sink.jpg</image>
+      </translation>
     </entry>
     <entry id="971">
       <translation id="0">
@@ -11716,8 +11866,12 @@
       <translation id="2">
         <image>Images/a_wall,_s.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_wall,_s.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_wall,_s.jpg</image>
+      </translation>
     </entry>
     <entry id="972">
       <translation id="0">
@@ -11731,8 +11885,12 @@
       <translation id="2">
         <image>Images/a_ceiling.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_ceiling.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_ceiling.jpg</image>
+      </translation>
     </entry>
     <entry id="973">
       <translation id="0">
@@ -11743,9 +11901,15 @@
         <text>ett golv</text>
         <image>Images/a_floor.jpg</image>
       </translation>
-      <translation id="2"/>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="2">
+        <image>Images/a_floor.jpg</image>
+      </translation>
+      <translation id="3">
+        <image>Images/a_floor.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_floor.jpg</image>
+      </translation>
     </entry>
     <entry id="974">
       <translation id="0">
@@ -18258,8 +18422,12 @@
         <text>un castillo</text>
         <image>Images/a_castle.jpg</image>
       </translation>
-      <translation id="3"/>
-      <translation id="4"/>
+      <translation id="3">
+        <image>Images/a_castle.jpg</image>
+      </translation>
+      <translation id="4">
+        <image>Images/a_castle.jpg</image>
+      </translation>
     </entry>
     <entry id="1526">
       <translation id="0">
@@ -20663,7 +20831,7 @@
     </entry>
     <entry id="1720">
       <translation id="0">
-        <text>to prefer (to)</text>
+        <text>to prefer N/V+ING (to N/V+ING)</text>
       </translation>
       <translation id="1">
         <text>före/ dra -drar -drog -dragit (framför)</text>
@@ -20902,14 +21070,18 @@
     </entry>
     <entry id="1737">
       <translation id="0">
-        <text>a need</text>
+        <text>a need for stg</text>
       </translation>
       <translation id="1">
         <text>behov -et -</text>
       </translation>
-      <translation id="2"/>
+      <translation id="2">
+        <text>una necesidad</text>
+      </translation>
       <translation id="3"/>
-      <translation id="4"/>
+      <translation id="4">
+        <text>un besoin de qqch</text>
+      </translation>
     </entry>
     <entry id="1738">
       <translation id="0">
@@ -21430,10 +21602,10 @@
     </entry>
     <entry id="1785">
       <translation id="0">
-        <text>to apply</text>
+        <text>to apply for sth</text>
       </translation>
       <translation id="1">
-        <text>ansök /a -er -de -t</text>
+        <text>ansök /a -er -de -t om ngt</text>
       </translation>
       <translation id="2"/>
       <translation id="3"/>
@@ -25425,17 +25597,6 @@
     </entry>
     <entry id="2148">
       <translation id="0">
-        <text>a need</text>
-      </translation>
-      <translation id="1"/>
-      <translation id="2">
-        <text>una necesidad</text>
-      </translation>
-      <translation id="3"/>
-      <translation id="4"/>
-    </entry>
-    <entry id="2149">
-      <translation id="0">
         <text>an handicap</text>
       </translation>
       <translation id="1"/>
@@ -25445,7 +25606,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2150">
+    <entry id="2149">
       <translation id="0">
         <text>a depth</text>
       </translation>
@@ -25456,7 +25617,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2151">
+    <entry id="2150">
       <translation id="0">
         <text>to have a skill for languages</text>
       </translation>
@@ -25467,7 +25628,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2152">
+    <entry id="2151">
       <translation id="0">
         <text>because of</text>
       </translation>
@@ -25478,7 +25639,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2153">
+    <entry id="2152">
       <translation id="0">
         <text>a pleasure</text>
       </translation>
@@ -25489,7 +25650,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2154">
+    <entry id="2153">
       <translation id="0">
         <text>to work as a profesor</text>
       </translation>
@@ -25500,7 +25661,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2155">
+    <entry id="2154">
       <translation id="0">
         <text>to be capable of doing stg</text>
       </translation>
@@ -25511,7 +25672,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2156">
+    <entry id="2155">
       <translation id="0">
         <text>thanks to stg</text>
       </translation>
@@ -25522,7 +25683,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2157">
+    <entry id="2156">
       <translation id="0">
         <text>an influence</text>
       </translation>
@@ -25533,7 +25694,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2158">
+    <entry id="2157">
       <translation id="0">
         <text>an understanding</text>
       </translation>
@@ -25544,7 +25705,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2159">
+    <entry id="2158">
       <translation id="0">
         <text>conform with</text>
       </translation>
@@ -25555,7 +25716,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2160">
+    <entry id="2159">
       <translation id="0">
         <text>to keep</text>
       </translation>
@@ -25566,7 +25727,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2161">
+    <entry id="2160">
       <translation id="0">
         <text>with exception to stg</text>
       </translation>
@@ -25575,9 +25736,11 @@
         <text>a / con excepcion de algo</text>
       </translation>
       <translation id="3"/>
-      <translation id="4"/>
+      <translation id="4">
+        <text>a l'exception de qqch</text>
+      </translation>
     </entry>
-    <entry id="2162">
+    <entry id="2161">
       <translation id="0">
         <text>the lack of</text>
       </translation>
@@ -25588,7 +25751,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2163">
+    <entry id="2162">
       <translation id="0">
         <text>around</text>
       </translation>
@@ -25599,7 +25762,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2164">
+    <entry id="2163">
       <translation id="0">
         <text>without any doubt</text>
       </translation>
@@ -25610,7 +25773,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2165">
+    <entry id="2164">
       <translation id="0">
         <text>a constant</text>
       </translation>
@@ -25621,7 +25784,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2166">
+    <entry id="2165">
       <translation id="0">
         <text>the merchandise, goods</text>
       </translation>
@@ -25632,7 +25795,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2167">
+    <entry id="2166">
       <translation id="0">
         <text>the current</text>
       </translation>
@@ -25643,7 +25806,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2168">
+    <entry id="2167">
       <translation id="0">
         <text>to use in a purpose</text>
       </translation>
@@ -25654,7 +25817,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2169">
+    <entry id="2168">
       <translation id="0">
         <text>the effort</text>
       </translation>
@@ -25665,7 +25828,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2170">
+    <entry id="2169">
       <translation id="0">
         <text>an european inspector</text>
       </translation>
@@ -25676,7 +25839,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2171">
+    <entry id="2170">
       <translation id="0">
         <text>to ratify</text>
       </translation>
@@ -25687,7 +25850,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2172">
+    <entry id="2171">
       <translation id="0">
         <text>the rate of surviving people</text>
       </translation>
@@ -25698,7 +25861,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2173">
+    <entry id="2172">
       <translation id="0">
         <text>an earthquake</text>
       </translation>
@@ -25709,7 +25872,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2174">
+    <entry id="2173">
       <translation id="0">
         <text>to damage</text>
       </translation>
@@ -25720,7 +25883,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2175">
+    <entry id="2174">
       <translation id="0">
         <text>a report (of thief)</text>
       </translation>
@@ -25731,7 +25894,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2176">
+    <entry id="2175">
       <translation id="0">
         <text>a cordless network</text>
       </translation>
@@ -25742,7 +25905,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2177">
+    <entry id="2176">
       <translation id="0">
         <text>the first child</text>
       </translation>
@@ -25753,7 +25916,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2178">
+    <entry id="2177">
       <translation id="0">
         <text>to get fantastic grades</text>
       </translation>
@@ -25764,7 +25927,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2179">
+    <entry id="2178">
       <translation id="0">
         <text>to be educated</text>
       </translation>
@@ -25775,7 +25938,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2180">
+    <entry id="2179">
       <translation id="0">
         <text>to support oneself</text>
       </translation>
@@ -25786,7 +25949,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2181">
+    <entry id="2180">
       <translation id="0">
         <text>the source of a disease</text>
       </translation>
@@ -25797,7 +25960,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2182">
+    <entry id="2181">
       <translation id="0">
         <text>measures of precaucion</text>
       </translation>
@@ -25808,7 +25971,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2183">
+    <entry id="2182">
       <translation id="0">
         <text>to affect</text>
       </translation>
@@ -25819,7 +25982,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2184">
+    <entry id="2183">
       <translation id="0">
         <text>to investigate about</text>
       </translation>
@@ -25830,7 +25993,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2185">
+    <entry id="2184">
       <translation id="0">
         <text>to leave stg aside</text>
       </translation>
@@ -25841,7 +26004,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2186">
+    <entry id="2185">
       <translation id="0">
         <text>to wake up</text>
       </translation>
@@ -25852,7 +26015,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2187">
+    <entry id="2186">
       <translation id="0">
         <text>to get</text>
       </translation>
@@ -25865,7 +26028,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2188">
+    <entry id="2187">
       <translation id="0">
         <text>a crime</text>
       </translation>
@@ -25878,7 +26041,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2189">
+    <entry id="2188">
       <translation id="0">
         <text>torn</text>
       </translation>
@@ -25891,7 +26054,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2190">
+    <entry id="2189">
       <translation id="0">
         <text>one floor downstairs</text>
       </translation>
@@ -25904,7 +26067,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2191">
+    <entry id="2190">
       <translation id="0">
         <text>to borrow</text>
       </translation>
@@ -25917,7 +26080,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2192">
+    <entry id="2191">
       <translation id="0">
         <text>to shake</text>
       </translation>
@@ -25930,7 +26093,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2193">
+    <entry id="2192">
       <translation id="0">
         <text>to pay attention to</text>
       </translation>
@@ -25943,7 +26106,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2194">
+    <entry id="2193">
       <translation id="0">
         <text>to commit, perpetrate</text>
       </translation>
@@ -25956,7 +26119,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2195">
+    <entry id="2194">
       <translation id="0">
         <text>rubbish</text>
       </translation>
@@ -25967,7 +26130,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2196">
+    <entry id="2195">
       <translation id="0">
         <text>a pocket</text>
       </translation>
@@ -25980,7 +26143,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2197">
+    <entry id="2196">
       <translation id="0">
         <text>a jacket</text>
       </translation>
@@ -25993,7 +26156,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2198">
+    <entry id="2197">
       <translation id="0">
         <text>a mark</text>
       </translation>
@@ -26004,7 +26167,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2199">
+    <entry id="2198">
       <translation id="0">
         <text>awful</text>
       </translation>
@@ -26017,7 +26180,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2200">
+    <entry id="2199">
       <translation id="0">
         <text>to push</text>
       </translation>
@@ -26030,7 +26193,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2201">
+    <entry id="2200">
       <translation id="0">
         <text>to stark naked</text>
       </translation>
@@ -26043,7 +26206,7 @@
         <text>être à poil</text>
       </translation>
     </entry>
-    <entry id="2202">
+    <entry id="2201">
       <translation id="0">
         <text>to be excited</text>
       </translation>
@@ -26054,7 +26217,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2203">
+    <entry id="2202">
       <translation id="0">
         <text>to be dumb</text>
       </translation>
@@ -26065,7 +26228,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2204">
+    <entry id="2203">
       <translation id="0">
         <text>to start a diet</text>
       </translation>
@@ -26076,7 +26239,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2205">
+    <entry id="2204">
       <translation id="0">
         <text>to laugh (lol)</text>
       </translation>
@@ -26087,7 +26250,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2206">
+    <entry id="2205">
       <translation id="0">
         <text>an orange juice</text>
       </translation>
@@ -26098,7 +26261,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2207">
+    <entry id="2206">
       <translation id="0">
         <text>a ring</text>
       </translation>
@@ -26109,7 +26272,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2208">
+    <entry id="2207">
       <translation id="0">
         <text>a cycle way</text>
       </translation>
@@ -26120,7 +26283,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2209">
+    <entry id="2208">
       <translation id="0">
         <text>a bus lane</text>
       </translation>
@@ -26131,8 +26294,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2210"/>
-    <entry id="2211">
+    <entry id="2209">
       <translation id="0">
         <text>humble</text>
       </translation>
@@ -26143,7 +26305,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2212">
+    <entry id="2210">
       <translation id="0">
         <text>abosrbed</text>
       </translation>
@@ -26154,7 +26316,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2213">
+    <entry id="2211">
       <translation id="0">
         <text>to make angry</text>
       </translation>
@@ -26165,7 +26327,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2214">
+    <entry id="2212">
       <translation id="0">
         <text>a transfer</text>
       </translation>
@@ -26176,7 +26338,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2215">
+    <entry id="2213">
       <translation id="0">
         <text>a rocket</text>
       </translation>
@@ -26187,7 +26349,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2216">
+    <entry id="2214">
       <translation id="0">
         <text>to state</text>
       </translation>
@@ -26198,7 +26360,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2217">
+    <entry id="2215">
       <translation id="0">
         <text>to defeat = win over</text>
       </translation>
@@ -26209,7 +26371,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2218">
+    <entry id="2216">
       <translation id="0">
         <text>the notary's office</text>
       </translation>
@@ -26220,7 +26382,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2219">
+    <entry id="2217">
       <translation id="0">
         <text>to stay</text>
       </translation>
@@ -26231,7 +26393,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2220">
+    <entry id="2218">
       <translation id="0">
         <text>a bet</text>
       </translation>
@@ -26242,7 +26404,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2221">
+    <entry id="2219">
       <translation id="0">
         <text>one ones shoulders</text>
       </translation>
@@ -26253,7 +26415,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2222">
+    <entry id="2220">
       <translation id="0">
         <text>the steps of the method</text>
       </translation>
@@ -26264,7 +26426,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2223">
+    <entry id="2221">
       <translation id="0">
         <text>the supporters of the method</text>
       </translation>
@@ -26275,7 +26437,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2224">
+    <entry id="2222">
       <translation id="0">
         <text>the cloud</text>
       </translation>
@@ -26286,7 +26448,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2225">
+    <entry id="2223">
       <translation id="0">
         <text>the knife</text>
       </translation>
@@ -26297,7 +26459,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2226">
+    <entry id="2224">
       <translation id="0">
         <text>the platform</text>
       </translation>
@@ -26308,7 +26470,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2227">
+    <entry id="2225">
       <translation id="0">
         <text>in unison</text>
       </translation>
@@ -26319,7 +26481,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2228">
+    <entry id="2226">
       <translation id="0">
         <text>to pass (an exam)</text>
       </translation>
@@ -26330,7 +26492,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2229">
+    <entry id="2227">
       <translation id="0">
         <text>to write fast</text>
       </translation>
@@ -26341,7 +26503,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2230">
+    <entry id="2228">
       <translation id="0">
         <text>the ballpoint pen</text>
       </translation>
@@ -26352,7 +26514,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2231">
+    <entry id="2229">
       <translation id="0">
         <text>kind</text>
       </translation>
@@ -26363,7 +26525,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2232">
+    <entry id="2230">
       <translation id="0">
         <text>the owner</text>
       </translation>
@@ -26374,7 +26536,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2233">
+    <entry id="2231">
       <translation id="0">
         <text>for a while</text>
       </translation>
@@ -26385,7 +26547,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2234">
+    <entry id="2232">
       <translation id="0">
         <text>to ask for = order</text>
       </translation>
@@ -26396,7 +26558,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2235">
+    <entry id="2233">
       <translation id="0">
         <text>the tent (for a circus)</text>
       </translation>
@@ -26407,7 +26569,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2236">
+    <entry id="2234">
       <translation id="0">
         <text>a dining room</text>
       </translation>
@@ -26418,7 +26580,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2237">
+    <entry id="2235">
       <translation id="0">
         <text>bitter</text>
       </translation>
@@ -26429,7 +26591,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2238">
+    <entry id="2236">
       <translation id="0">
         <text>a hoax (X2)</text>
       </translation>
@@ -26440,7 +26602,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2239">
+    <entry id="2237">
       <translation id="0">
         <text>from beginning to end</text>
       </translation>
@@ -26451,7 +26613,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2240">
+    <entry id="2238">
       <translation id="0">
         <text>a crack = a chap (on the skin)</text>
       </translation>
@@ -26462,7 +26624,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2241">
+    <entry id="2239">
       <translation id="0">
         <text>to horrify</text>
       </translation>
@@ -26473,7 +26635,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2242">
+    <entry id="2240">
       <translation id="0">
         <text>to answer wrong</text>
       </translation>
@@ -26484,7 +26646,7 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2243">
+    <entry id="2241">
       <translation id="0">
         <text>the liar</text>
       </translation>
@@ -26495,33 +26657,126 @@
       <translation id="3"/>
       <translation id="4"/>
     </entry>
-    <entry id="2244">
-      <translation id="0"/>
+    <entry id="2242">
+      <translation id="0">
+        <text>to apply stg to stg</text>
+      </translation>
       <translation id="1"/>
       <translation id="2"/>
       <translation id="3"/>
-      <translation id="4"/>
+      <translation id="4">
+        <text>apliquer qqch a qqch</text>
+      </translation>
+    </entry>
+    <entry id="2243">
+      <translation id="0">
+        <text>Nick remains open to any suggestion.</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2"/>
+      <translation id="3"/>
+      <translation id="4">
+        <text>Nick est ouvert à toute suggestion.</text>
+      </translation>
+    </entry>
+    <entry id="2244">
+      <translation id="0">
+        <text>there is concern for her safety.</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2"/>
+      <translation id="3"/>
+      <translation id="4">
+        <text>on s'inquiète pour sa sécurité.</text>
+      </translation>
     </entry>
     <entry id="2245">
-      <translation id="0"/>
+      <translation id="0">
+        <text>overlaid on stg</text>
+      </translation>
       <translation id="1"/>
       <translation id="2"/>
       <translation id="3"/>
-      <translation id="4"/>
+      <translation id="4">
+        <text>superpose a qqch</text>
+      </translation>
     </entry>
     <entry id="2246">
-      <translation id="0"/>
+      <translation id="0">
+        <text>improvemenrt</text>
+      </translation>
       <translation id="1"/>
       <translation id="2"/>
       <translation id="3"/>
-      <translation id="4"/>
+      <translation id="4">
+        <text>amelioration</text>
+      </translation>
     </entry>
     <entry id="2247">
-      <translation id="0"/>
+      <translation id="0">
+        <text>to replace stg with stg</text>
+      </translation>
       <translation id="1"/>
       <translation id="2"/>
       <translation id="3"/>
-      <translation id="4"/>
+      <translation id="4">
+        <text>remplacer qqch par qqch</text>
+      </translation>
+    </entry>
+    <entry id="2248">
+      <translation id="0">
+        <text>to substitute stg for stg</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2"/>
+      <translation id="3"/>
+      <translation id="4">
+        <text>substituer qqch a qqch</text>
+      </translation>
+    </entry>
+    <entry id="2249">
+      <translation id="0">
+        <text>to comply with a rule</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2"/>
+      <translation id="3"/>
+      <translation id="4">
+        <text>etre conforme a un reglement</text>
+      </translation>
+    </entry>
+    <entry id="2250">
+      <translation id="0">
+        <text>to be of a political nature</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2"/>
+      <translation id="3"/>
+      <translation id="4">
+        <text>avoir un caractere politique</text>
+      </translation>
+    </entry>
+    <entry id="2251">
+      <translation id="0">
+        <text>They act in a way similar to Jesus.</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2"/>
+      <translation id="3"/>
+      <translation id="4">
+        <text>Ils se comportent d'une façon semblable à celle de Jésus.</text>
+      </translation>
+    </entry>
+    <entry id="2252">
+      <translation id="0">
+        <text>When he saw the flashing lights in the rearview mirror, he pulled over.</text>
+      </translation>
+      <translation id="1"/>
+      <translation id="2"/>
+      <translation id="3"/>
+      <translation id="4">
+        <text>Lorsqu'il vit le gyrophare dans son rétroviseur, il se rangea sur le bas-côté de la route.</text>
+      </translation>
     </entry>
   </entries>
   <lessons>
@@ -29117,10 +29372,10 @@
               <entry id="2161"/>
               <entry id="2162"/>
               <entry id="2163"/>
-              <entry id="2164"/>
             </container>
             <container>
               <name>Exam</name>
+              <entry id="2164"/>
               <entry id="2165"/>
               <entry id="2166"/>
               <entry id="2167"/>
@@ -29140,12 +29395,11 @@
               <entry id="2181"/>
               <entry id="2182"/>
               <entry id="2183"/>
-              <entry id="2184"/>
             </container>
             <container>
               <name>Ensayo</name>
+              <entry id="2184"/>
               <entry id="2185"/>
-              <entry id="2186"/>
             </container>
           </container>
         </container>
@@ -29156,6 +29410,7 @@
       <inpractice>true</inpractice>
       <container>
         <name>misc</name>
+        <entry id="2186"/>
         <entry id="2187"/>
         <entry id="2188"/>
         <entry id="2189"/>
@@ -29178,12 +29433,12 @@
         <entry id="2206"/>
         <entry id="2207"/>
         <entry id="2208"/>
-        <entry id="2209"/>
-        <entry id="2210"/>
       </container>
       <container>
         <name>relatos urbanos</name>
         <inpractice>true</inpractice>
+        <entry id="2209"/>
+        <entry id="2210"/>
         <entry id="2211"/>
         <entry id="2212"/>
         <entry id="2213"/>
@@ -29215,12 +29470,25 @@
         <entry id="2239"/>
         <entry id="2240"/>
         <entry id="2241"/>
+      </container>
+    </container>
+    <container>
+      <name>2011</name>
+      <inpractice>true</inpractice>
+      <container>
+        <name>misc</name>
+        <inpractice>true</inpractice>
         <entry id="2242"/>
         <entry id="2243"/>
         <entry id="2244"/>
         <entry id="2245"/>
         <entry id="2246"/>
         <entry id="2247"/>
+        <entry id="2248"/>
+        <entry id="2249"/>
+        <entry id="2250"/>
+        <entry id="2251"/>
+        <entry id="2252"/>
       </container>
     </container>
   </lessons>
