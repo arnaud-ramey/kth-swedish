@@ -1,0 +1,1 @@
+PROJECT(kth-swedish)
